@@ -1,0 +1,51 @@
+{
+  "id": "46d54b0577f544d8",
+  "action": "cipher",
+  "title": "AES / DES / 3DES / RC4 / XOR",
+  "state": "completed",
+  "command": "& 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\runtime\\python\\python.exe' 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\tools\\casework.py' 'cipher' '--args' 'E:\\学习培训\\培训\\取证\\output\\工作台验收_d3656ec2\\labs\\out\\platform_runs\\46d54b0577f544d8\\_case_args.json' '--out' 'E:\\学习培训\\培训\\取证\\output\\工作台验收_d3656ec2\\labs\\out\\platform_runs\\46d54b0577f544d8\\evidence' '--kit' 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64' '--labs' 'E:\\学习培训\\培训\\取证\\output\\工作台验收_d3656ec2\\labs'",
+  "created": "2026-10-23T09:41:34.289452+08:00",
+  "exit_code": 0,
+  "text": "{\"title\": \"字节转换结果\", \"result\": \"result.json\", \"note\": \"请以正确格式或已知明文复核。CBC/ECB/CTR 等模式本身不提供完整性认证；GCM 必须验证 tag。密钥和口令不写入运行报告。\"}\r\n",
+  "error": "",
+  "duration": 0.16,
+  "files": [
+    {
+      "name": "evidence/result.json",
+      "bytes": 617,
+      "path": "out/platform_runs/46d54b0577f544d8/evidence/result.json"
+    },
+    {
+      "name": "evidence/结果报告.html",
+      "bytes": 1094,
+      "path": "out/platform_runs/46d54b0577f544d8/evidence/结果报告.html"
+    },
+    {
+      "name": "evidence/转换结果.bin",
+      "bytes": 16,
+      "path": "out/platform_runs/46d54b0577f544d8/evidence/转换结果.bin"
+    },
+    {
+      "name": "运行报告.txt",
+      "bytes": 1031,
+      "path": "out/platform_runs/46d54b0577f544d8/运行报告.txt"
+    }
+  ],
+  "data": {
+    "kind": "casework",
+    "operation": "transform",
+    "title": "字节转换结果",
+    "bytes": 16,
+    "sha256": "a8faed6abbf35c12a4b26e40f6feb19d736d90045c83b9f9a31f638d323e6811",
+    "text": "\u0000\u0011\"3DUfw��������",
+    "hex": "00112233445566778899aabbccddeeff",
+    "base64": "ABEiM0RVZneImaq7zN3u/w==",
+    "preview_limited": false,
+    "output": "转换结果.bin",
+    "note": "请以正确格式或已知明文复核。CBC/ECB/CTR 等模式本身不提供完整性认证；GCM 必须验证 tag。密钥和口令不写入运行报告。",
+    "text_roundtrip": false,
+    "cryptography": {}
+  },
+  "host": "Windows · PowerShell",
+  "input": ""
+}

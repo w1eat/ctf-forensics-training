@@ -1,0 +1,15 @@
+{
+  "columns": [
+    "字节偏移",
+    "编码",
+    "关键词",
+    "上下文"
+  ],
+  "rows": [],
+  "flag_candidates": [],
+  "scanned_bytes": 201,
+  "total_bytes": 201,
+  "partial": false,
+  "limited": false,
+  "note": "flag 形态是候选，必须回到文件 / 业务语义验证。命中条数有上限，扫描不会因普通字符串表满而提前结束。"
+}

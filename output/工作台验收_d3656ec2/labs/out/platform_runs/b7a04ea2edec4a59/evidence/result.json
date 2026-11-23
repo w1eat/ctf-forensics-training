@@ -1,0 +1,42 @@
+{
+  "kind": "casework",
+  "operation": "photorec",
+  "title": "PhotoRec 签名恢复",
+  "columns": [
+    "恢复文件",
+    "字节数",
+    "SHA256"
+  ],
+  "rows": [
+    [
+      "recup.1/f0000008.png",
+      794,
+      "2200c35fc95416c9e301c62313145e183890f30cc3aaa1456f9996e6ca980380"
+    ],
+    [
+      "recup.1/f0000032_README.zip",
+      298,
+      "5ffd6a9e79cbccdac0ad90ede8e7c473b604bb100481cd7db128b50b81442a3e"
+    ],
+    [
+      "recup.1/report.xml",
+      1866,
+      "66df6b6e1ee6506d1bb7f647bf32c3eb4184274326e72758a880182ab0b013b2"
+    ]
+  ],
+  "argv": [
+    "E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\tools\\testdisk\\photorec_win.exe",
+    "/log",
+    "/logname",
+    "E:\\学习培训\\培训\\取证\\output\\工作台验收_d3656ec2\\labs\\out\\platform_runs\\b7a04ea2edec4a59\\evidence\\photorec.log",
+    "/d",
+    "E:\\学习培训\\培训\\取证\\output\\工作台验收_d3656ec2\\labs\\out\\platform_runs\\b7a04ea2edec4a59\\evidence\\recup",
+    "/cmd",
+    "E:\\学习培训\\培训\\取证\\output\\工作台验收_d3656ec2\\labs\\inputs\\casework_samples\\salvage.img",
+    "partition_none,fileopt,everything,disable,png,enable,zip,enable,wholespace,search"
+  ],
+  "exit_code": 0,
+  "limited": false,
+  "recovered_files": 3,
+  "note": "基于签名雕刻，通常不能还原原文件名和目录。已输出不代表完整；任务达到时间或空间上限时应逐个验证，输出目录保留 PhotoRec XML / 日志。"
+}

@@ -1,0 +1,26 @@
+{
+  "kind": "scan",
+  "strings": {
+    "columns": [
+      "字节偏移",
+      "编码",
+      "可读内容（最多 1024 字节）",
+      "匹配字节数"
+    ],
+    "rows": []
+  },
+  "signatures": {
+    "columns": [
+      "字节偏移",
+      "签名",
+      "含义"
+    ],
+    "rows": []
+  },
+  "scanned_bytes": 0,
+  "total_bytes": 0,
+  "partial": false,
+  "string_rows_limited": false,
+  "signature_rows_limited": false,
+  "note": "仅提取 ASCII 可打印字符及其 UTF-16LE 表示；不覆盖所有语言。跨块长串可能分段显示。"
+}

@@ -1,0 +1,12 @@
+Directory Entry: 4
+Not Allocated
+File Attributes: File, Archive
+Size: 31
+Name: _ECRET.TXT
+
+Directory Entry Times:
+Written:	2026-10-18 09:00:00 (Accessed:	0000-00-00 00:00:00 (UTC)
+Created:	0000-00-00 00:00:00 (UTC)
+
+Sectors:
+162 

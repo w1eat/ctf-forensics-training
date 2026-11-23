@@ -1,0 +1,31 @@
+{
+  "columns": [
+    "路径",
+    "展开字节",
+    "压缩字节",
+    "加密",
+    "CRC"
+  ],
+  "rows": [
+    [
+      "4number.txt",
+      "15",
+      "29",
+      "+",
+      "AE4C3446"
+    ]
+  ],
+  "kind": "archive",
+  "listing": {
+    "command": "& 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\tools\\7zip\\7z.exe' 'l' '-slt' '-ba' '-sccUTF-8' '-p__no_password_supplied__' '--' 'E:\\学习培训\\培训\\取证\\练习材料\\inputs\\bc2a8904e00f45f4805c98c6\\0002_0000000001d7.zip'",
+    "exit_code": 0,
+    "preview": "Path = 4number.txt\r\nFolder = -\r\nSize = 15\r\nPacked Size = 29\r\nModified = 2016-01-15 10:04:23.9648128\r\nCreated = 2016-01-12 12:40:41.5787621\r\nAccessed = 2016-01-12 12:40:41.5787621\r\nAttributes = A\r\nEncrypted = +\r\nComment = \r\nCRC = AE4C3446\r\nMethod = ZipCrypto Deflate\r\nCharacteristics = NTFS : Encrypt Descriptor\r\nHost OS = FAT\r\nVersion = 20\r\nVolume Index = 0\r\nOffset = 0\r\n\r\n",
+    "diagnostics": "",
+    "log": "archive_listing.txt",
+    "argument_file": null
+  },
+  "entries": 1,
+  "mode": "list",
+  "exit_code": 0,
+  "skipped": "加密压缩包：已列目录，未尝试口令或提取。"
+}

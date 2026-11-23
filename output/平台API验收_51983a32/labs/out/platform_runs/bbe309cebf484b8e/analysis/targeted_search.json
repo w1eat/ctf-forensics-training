@@ -1,0 +1,22 @@
+{
+  "columns": [
+    "字节偏移",
+    "编码",
+    "关键词",
+    "上下文"
+  ],
+  "rows": [
+    [
+      "0x2f",
+      "utf-8",
+      "ctf",
+      "�PNG\r\n\u001a\n···\rIHDR··\u0001····�\b\u0002···l{%k···$tEXtTitle·CTF Foundation - File Identity����···4tEXtComment·ZmxhZ3tmaWxlX3R5cGVfYmVmb3JlX2V4dGVuc2lvbn0=C�\u0005\t··\u0002qI"
+    ]
+  ],
+  "flag_candidates": [],
+  "scanned_bytes": 794,
+  "total_bytes": 794,
+  "partial": false,
+  "limited": false,
+  "note": "flag 形态是候选，必须回到文件 / 业务语义验证。命中条数有上限，扫描不会因普通字符串表满而提前结束。"
+}

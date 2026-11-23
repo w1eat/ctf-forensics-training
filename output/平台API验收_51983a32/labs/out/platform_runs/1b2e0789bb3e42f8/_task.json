@@ -1,0 +1,59 @@
+{
+  "id": "1b2e0789bb3e42f8",
+  "action": "sqlite_preview",
+  "title": "按表名预览数据库",
+  "state": "completed",
+  "command": "& 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\runtime\\python\\python.exe' 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\tools\\analysis_engine.py' 'sqlite' 'E:\\学习培训\\培训\\取证\\output\\平台API验收_51983a32\\labs\\06_sqlite\\case.db' '--out' 'E:\\学习培训\\培训\\取证\\output\\平台API验收_51983a32\\labs\\out\\platform_runs\\1b2e0789bb3e42f8' '--kit' 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64' '--rows' '200' '--table' 'artifacts'",
+  "created": "2026-10-22T10:16:15.125543+08:00",
+  "exit_code": 0,
+  "text": "{\"columns\": [\"id\", \"name\", \"deleted\", \"note\"], \"rows\": [[1, \"readme\", 0, \"Synthetic training database\"], [2, \"old-note\", 1, \"flag{query_the_schema_first}\"], [3, \"active-note\", 0, \"Use the schema before guessing column names\"]], \"kind\": \"sqlite_query\", \"limited\": false, \"query\": \"SELECT * FROM \\\"artifacts\\\"\", \"limit\": 200, \"note\": \"只读连接；需完整提取时在副本上使用 SQLite CLI。若存在 WAL，需将匹配的 -wal / -shm 与数据库一起放在同一目录。\"}\r\n",
+  "error": "",
+  "duration": 0.16,
+  "files": [
+    {
+      "name": "result.json",
+      "bytes": 657,
+      "path": "out/platform_runs/1b2e0789bb3e42f8/result.json"
+    },
+    {
+      "name": "运行报告.txt",
+      "bytes": 1134,
+      "path": "out/platform_runs/1b2e0789bb3e42f8/运行报告.txt"
+    }
+  ],
+  "data": {
+    "columns": [
+      "id",
+      "name",
+      "deleted",
+      "note"
+    ],
+    "rows": [
+      [
+        1,
+        "readme",
+        0,
+        "Synthetic training database"
+      ],
+      [
+        2,
+        "old-note",
+        1,
+        "flag{query_the_schema_first}"
+      ],
+      [
+        3,
+        "active-note",
+        0,
+        "Use the schema before guessing column names"
+      ]
+    ],
+    "kind": "sqlite_query",
+    "limited": false,
+    "query": "SELECT * FROM \"artifacts\"",
+    "limit": 200,
+    "note": "只读连接；需完整提取时在副本上使用 SQLite CLI。若存在 WAL，需将匹配的 -wal / -shm 与数据库一起放在同一目录。"
+  },
+  "host": "Windows · PowerShell",
+  "input": "06_sqlite/case.db"
+}

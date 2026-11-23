@@ -1,0 +1,22 @@
+{
+  "id": "e21a0dd0fc46465c",
+  "action": "sqlite_query",
+  "title": "自定义只读 SQL 查询",
+  "state": "failed",
+  "command": "& 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\runtime\\python\\python.exe' 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\tools\\analysis_engine.py' 'sqlite' 'E:\\学习培训\\培训\\取证\\output\\平台API验收_51983a32\\labs\\inputs\\_platform_qa_bc170e0df4\\自选数据库.db' '--out' 'E:\\学习培训\\培训\\取证\\output\\平台API验收_51983a32\\labs\\out\\platform_runs\\e21a0dd0fc46465c' '--kit' 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64' '--rows' '200' '--query' '.shell whoami'",
+  "created": "2026-10-22T10:16:23.358091+08:00",
+  "exit_code": 2,
+  "text": "\n\n[stderr / 诊断信息]\n只接受单条 SELECT / WITH 查询。\r\n",
+  "error": "",
+  "duration": 0.16,
+  "files": [
+    {
+      "name": "运行报告.txt",
+      "bytes": 754,
+      "path": "out/platform_runs/e21a0dd0fc46465c/运行报告.txt"
+    }
+  ],
+  "data": null,
+  "host": "Windows · PowerShell",
+  "input": "inputs/_platform_qa_bc170e0df4/自选数据库.db"
+}

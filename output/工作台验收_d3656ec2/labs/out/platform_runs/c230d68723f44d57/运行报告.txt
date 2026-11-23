@@ -1,0 +1,11 @@
+操作：摘要计算与口令候选验证
+运行环境：Windows PowerShell
+创建时间：2026-10-23T09:41:34.493450+08:00
+状态：completed
+退出码：0
+命令：& 'E:\学习培训\培训\取证\学员工具包_Windows64\runtime\python\python.exe' 'E:\学习培训\培训\取证\学员工具包_Windows64\tools\casework.py' 'hash' '--args' 'E:\学习培训\培训\取证\output\工作台验收_d3656ec2\labs\out\platform_runs\c230d68723f44d57\_case_args.json' '--out' 'E:\学习培训\培训\取证\output\工作台验收_d3656ec2\labs\out\platform_runs\c230d68723f44d57\evidence' '--kit' 'E:\学习培训\培训\取证\学员工具包_Windows64' '--labs' 'E:\学习培训\培训\取证\output\工作台验收_d3656ec2\labs'
+
+
+{"title": "摘要候选验证", "result": "result.json", "note": "候选计算出的摘要相同；这是候选验证，不是哈希逆运算。"}
+
+参数文件含私密输入，未写入本报告并已清理。

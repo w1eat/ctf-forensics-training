@@ -1,0 +1,21 @@
+[ExifTool]      ExifTool Version Number         : 13.59
+[System]        File Name                       : 中文 附件.png
+[System]        Directory                       : ./inputs/_platform_qa_bc170e0df4
+[System]        File Size                       : 733 bytes
+[System]        File Modification Date/Time     : 2026:10:22 10:16:20+08:00
+[System]        File Access Date/Time           : 2026:10:22 10:16:20+08:00
+[System]        File Creation Date/Time         : 2026:10:22 10:16:20+08:00
+[System]        File Permissions                : -rw-rw-rw-
+[File]          File Type                       : PNG
+[File]          File Type Extension             : png
+[File]          MIME Type                       : image/png
+[PNG]           Image Width                     : 256
+[PNG]           Image Height                    : 160
+[PNG]           Bit Depth                       : 8
+[PNG]           Color Type                      : RGB
+[PNG]           Compression                     : Deflate/Inflate
+[PNG]           Filter                          : Adaptive
+[PNG]           Interlace                       : Noninterlaced
+[PNG]           Comment                         : flag{crc_checks_the_hypothesis}
+[Composite]     Image Size                      : 256x160
+[Composite]     Megapixels                      : 0.041

@@ -1,0 +1,15 @@
+{
+  "kind": "casework",
+  "operation": "transform",
+  "title": "字节转换结果",
+  "bytes": 16,
+  "sha256": "a8faed6abbf35c12a4b26e40f6feb19d736d90045c83b9f9a31f638d323e6811",
+  "text": "\u0000\u0011\"3DUfw��������",
+  "hex": "00112233445566778899aabbccddeeff",
+  "base64": "ABEiM0RVZneImaq7zN3u/w==",
+  "preview_limited": false,
+  "output": "转换结果.bin",
+  "note": "请以正确格式或已知明文复核。CBC/ECB/CTR 等模式本身不提供完整性认证；GCM 必须验证 tag。密钥和口令不写入运行报告。",
+  "text_roundtrip": false,
+  "cryptography": {}
+}

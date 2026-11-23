@@ -1,0 +1,17 @@
+{
+  "kind": "hash",
+  "name": "preview_only.raw",
+  "bytes": 512,
+  "md5": "bf619eac0cdf3f68d496ea9344137e8b",
+  "sha1": "5c3eb80066420002bc3dcc7ca4ab6efad7ed4ae5",
+  "sha256": "076a27c79e5ace2a3d47f9dd2e83e4ff6ea8872b3c2218f66c92b89b55f36560",
+  "entropy": -0.0,
+  "entropy_windows": [
+    {
+      "offset": 0,
+      "bytes": 512,
+      "entropy": -0.0
+    }
+  ],
+  "note": "MD5 / SHA1 仅用于已知摘要对照；证据一致性优先记录 SHA256。熵高不等于一定加密。"
+}

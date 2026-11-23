@@ -1,0 +1,117 @@
+{
+  "verified_date": "2026-10-21",
+  "archive": "学员工具与练习_Windows64.zip",
+  "archive_sha256": "ec2ff8a559f2ec68665bd925b89d919cf15c1717a1626f6e225c13945ce37f9f",
+  "archive_entries": 9892,
+  "files_verified": 9891,
+  "tools_manifest_entries": 26,
+  "tool_cards": 22,
+  "operations": 77,
+  "resources": 15,
+  "guided_routes": 21,
+  "route_steps_with_rationale": 82,
+  "workflow_choices": 10,
+  "worked_cases_with_reasoning": 15,
+  "case_decision_points": 60,
+  "handout_command_blocks_preserved": 113,
+  "handout_windows_powershell_syntax": "pass",
+  "handout_kali_bash_syntax": "pass",
+  "checks": {
+    "api": {
+      "total": 115,
+      "passed": 115,
+      "record": "学习平台API验收记录.json"
+    },
+    "casework_native": {
+      "total": 33,
+      "passed": 33,
+      "record": "工作台新增功能验收.json"
+    },
+    "ui": {
+      "total": 22,
+      "passed": 22,
+      "record": "工作台界面验收.json"
+    },
+    "memory_extensions": {
+      "total": 14,
+      "passed": 14,
+      "record": "工作台内存扩展验收.json"
+    },
+    "cryptography_vectors": {
+      "total": 9,
+      "passed": 9,
+      "record": "工作台加解密向量验收.json"
+    },
+    "automatic_workflows": {
+      "total": 22,
+      "passed": 22,
+      "record": "通用取证流程验收记录.json"
+    },
+    "vol2_compatibility": {
+      "total": 36,
+      "passed": 36,
+      "record": "Volatility2_兼容功能验收.json"
+    },
+    "distribution": {
+      "total": 8,
+      "passed": 8,
+      "record": "工作台分发完整性验收.json"
+    },
+    "community_plugins": {
+      "total": 23,
+      "passed": 23,
+      "record": "Volatility社区插件验收.json"
+    },
+    "community_plugin_ui": {
+      "total": 3,
+      "passed": 3,
+      "record": "Volatility社区插件界面验收.json"
+    },
+    "bootstrap": {
+      "total": 31,
+      "passed": 31,
+      "record": "新手环境安装验收.json"
+    },
+    "bootstrap_ui": {
+      "total": 3,
+      "passed": 3,
+      "record": "新手环境页面验收.json"
+    },
+    "packaged_bootstrap": {
+      "total": 2,
+      "passed": 2,
+      "record": "正式包一键环境验收.json"
+    }
+  },
+  "real_ram_parsed": true,
+  "real_ram_profile": "Win7SP1x86",
+  "relocated_environment_check": "pass",
+  "relocated_casework": "pass",
+  "runtime_extracted": "E:\\学习培训\\培训\\取证\\output\\工具台分发验收_93769cf1\\中文 空格\\学员工具包_Windows64",
+  "temporary_inputs_distributed": false,
+  "scroll_fix_distributed": true,
+  "system_mount_executed": false,
+  "driver_install_executed": false,
+  "kali_executed": false,
+  "content_revision": "2026-10-21",
+  "runtime_checks_scope": "Current Windows bootstrap checks use the bundled runtimes with system Python absent from PATH, Chinese/space/punctuation paths, missing files, hash mismatches, basic-mode HTTP execution and the relocated formal archive. Microsoft VC++ signature was verified; system VC++ installation, Defender changes, clean-VM testing and Kali runtime installation were not performed.",
+  "prior_real_partition_verification": {
+    "date": "2026-10-20",
+    "filesystem": "Ext4 at sector 0",
+    "directory_entries": 5918,
+    "deleted_entries": 134,
+    "flag_candidate_found": false,
+    "rerun_this_revision": false
+  },
+  "local_volatility_installations_updated": true,
+  "community_plugin_real_ram_tested": true,
+  "host_lsass_accessed": false,
+  "new_user_bootstrap": true,
+  "system_python_required": false,
+  "global_python2_installed": false,
+  "vc_redist_bundled": true,
+  "vc_redist_signature_verified": true,
+  "vc_system_install_executed": false,
+  "defender_settings_changed": false,
+  "clean_vm_tested": false
+}

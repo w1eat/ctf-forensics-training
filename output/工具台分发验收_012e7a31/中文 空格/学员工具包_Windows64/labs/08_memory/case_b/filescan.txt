@@ -1,0 +1,3 @@
+TEACHING SUMMARY ONLY; virtual FILE_OBJECT address is explicitly specified.
+Offset Name
+0xffffa10200123070 \Device\HarddiskVolume2\Users\CTF\Desktop\memo.txt

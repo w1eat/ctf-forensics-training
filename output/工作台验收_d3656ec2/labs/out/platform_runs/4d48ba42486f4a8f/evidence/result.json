@@ -1,0 +1,63 @@
+{
+  "kind": "casework",
+  "operation": "disk_recovery",
+  "title": "批量恢复与导出",
+  "columns": [
+    "输出文件",
+    "原路径",
+    "元数据编号",
+    "字节数",
+    "SHA256"
+  ],
+  "rows": [
+    [
+      "recovered/0001_2048_4.TXT",
+      "_ECRET.TXT",
+      "4",
+      31,
+      "88e52e92c1550b0936c60b02aebedb3ca0b411ba3d7a71060ab2c0948aef73bc"
+    ]
+  ],
+  "exports": [
+    {
+      "type": "r/r",
+      "deleted": true,
+      "inode": "4",
+      "path": "_ECRET.TXT",
+      "sector": 2048,
+      "sector_size": 512,
+      "argv": [
+        "E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\tools\\sleuthkit\\bin\\icat.exe",
+        "-r",
+        "-b",
+        "512",
+        "-o",
+        "2048",
+        "E:\\学习培训\\培训\\取证\\output\\工作台验收_d3656ec2\\labs\\05_disk\\tiny_fat16.dd",
+        "4"
+      ],
+      "exit_code": 0,
+      "bytes": 31,
+      "limited": false,
+      "output": "recovered/0001_2048_4.TXT",
+      "sha256": "88e52e92c1550b0936c60b02aebedb3ca0b411ba3d7a71060ab2c0948aef73bc"
+    }
+  ],
+  "failures": [],
+  "volumes": [
+    {
+      "sector": 2048,
+      "sector_size": 512,
+      "length": 16384,
+      "description": "DOS FAT16 (0x06)",
+      "filesystem": "FAT16"
+    }
+  ],
+  "candidate_count": 1,
+  "exported_bytes": 31,
+  "limits": {
+    "max_files": 64,
+    "budget_bytes": 268435456
+  },
+  "note": "仅完整且返回成功的 icat 输出计入恢复列表；失败或达到上限的内容以 .partial 保存。删除后重用、碎片和缺页可能导致无法恢复。"
+}

@@ -1,0 +1,17 @@
+{
+  "date": "2026-10-20",
+  "pages_updated": [
+    "index.html",
+    "学员工具包_Windows64/index.html",
+    "学员工具与练习_Windows64.zip",
+    "CTF取证基础_学员讲义与练习.zip",
+    "CTF取证基础_Kali学习资料.zip",
+    "CTF取证基础_完整培训包.zip",
+    "讲师课件与逐题题解.zip"
+  ],
+  "ui_checks": 15,
+  "ui_passed": 15,
+  "manifest_files_verified": 6357,
+  "user_inputs_distributed": false,
+  "archive_sha256": "311a7fa74bc95894a3f7d6f0b009db4b982ddfac16dd592dd99688b915a91a56"
+}

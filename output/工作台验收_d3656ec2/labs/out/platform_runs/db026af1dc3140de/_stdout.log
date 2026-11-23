@@ -1,0 +1,1 @@
+{"title": "转换为 RAW 工作副本", "result": "result.json", "note": "img_cat 通过当前 TSK 镜像后端读取逻辑字节，不修改容器原件。RAW 可继续浏览、恢复或按分区只读挂载。"}

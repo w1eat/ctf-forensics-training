@@ -1,0 +1,19 @@
+[{
+  "SourceFile": "./inputs/_platform_qa_bc170e0df4/自选文档.pdf",
+  "ExifTool:ExifToolVersion": 13.59,
+  "System:FileName": "自选文档.pdf",
+  "System:Directory": "./inputs/_platform_qa_bc170e0df4",
+  "System:FileSize": "1068 bytes",
+  "System:FileModifyDate": "2026:10:22 10:16:06+08:00",
+  "System:FileAccessDate": "2026:10:22 10:16:24+08:00",
+  "System:FileCreateDate": "2026:10:22 10:16:06+08:00",
+  "System:FilePermissions": "-rw-rw-rw-",
+  "File:FileType": "PDF",
+  "File:FileTypeExtension": "pdf",
+  "File:MIMEType": "application/pdf",
+  "PDF:PDFVersion": 1.3,
+  "PDF:Linearized": "No",
+  "PDF:PageCount": 1,
+  "PDF:Producer": "pypdf",
+  "PDF:Title": "Own uploaded PDF"
+}]

@@ -1,0 +1,150 @@
+{
+  "id": "9a566eb60df64c35",
+  "action": "metadata",
+  "title": "读取元数据",
+  "state": "completed",
+  "command": "& 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\tools\\exiftool\\exiftool.exe' '-charset' 'filename=UTF8' '-@' 'out/platform_runs/9a566eb60df64c35/_exiftool.args'",
+  "created": "2026-10-22T10:16:08.446981+08:00",
+  "exit_code": 0,
+  "text": "[ExifTool]      ExifTool Version Number         : 13.59\r\n[System]        File Name                       : cat_demo.jpg\r\n[System]        Directory                       : ./public_examples\r\n[System]        File Size                       : 8.6 kB\r\n[System]        File Modification Date/Time     : 2026:10:22 10:16:06+08:00\r\n[System]        File Access Date/Time           : 2026:10:22 10:16:06+08:00\r\n[System]        File Creation Date/Time         : 2026:10:22 10:16:06+08:00\r\n[System]        File Permissions                : -rw-rw-rw-\r\n[File]          File Type                       : JPEG\r\n[File]          File Type Extension             : jpg\r\n[File]          MIME Type                       : image/jpeg\r\n[File]          Image Width                     : 320\r\n[File]          Image Height                    : 180\r\n[File]          Encoding Process                : Baseline DCT, Huffman coding\r\n[File]          Bits Per Sample                 : 8\r\n[File]          Color Components                : 3\r\n[File]          Y Cb Cr Sub Sampling            : YCbCr4:2:0 (2 2)\r\n[XMP-cc]        License                         : ZmxhZ3ttZXRhZGF0YV90aGVuX2Jhc2U2NH0=\r\n[JFIF]          JFIF Version                    : 1.01\r\n[JFIF]          Resolution Unit                 : None\r\n[JFIF]          X Resolution                    : 1\r\n[JFIF]          Y Resolution                    : 1\r\n[Composite]     Image Size                      : 320x180\r\n[Composite]     Megapixels                      : 0.058\r\n",
+  "error": "",
+  "duration": 0.16,
+  "files": [
+    {
+      "name": "运行报告.txt",
+      "bytes": 1933,
+      "path": "out/platform_runs/9a566eb60df64c35/运行报告.txt"
+    }
+  ],
+  "data": {
+    "columns": [
+      "字段组",
+      "标签",
+      "值"
+    ],
+    "rows": [
+      [
+        "ExifTool",
+        "ExifTool Version Number",
+        "13.59"
+      ],
+      [
+        "System",
+        "File Name",
+        "cat_demo.jpg"
+      ],
+      [
+        "System",
+        "Directory",
+        "./public_examples"
+      ],
+      [
+        "System",
+        "File Size",
+        "8.6 kB"
+      ],
+      [
+        "System",
+        "File Modification Date/Time",
+        "2026:10:22 10:16:06+08:00"
+      ],
+      [
+        "System",
+        "File Access Date/Time",
+        "2026:10:22 10:16:06+08:00"
+      ],
+      [
+        "System",
+        "File Creation Date/Time",
+        "2026:10:22 10:16:06+08:00"
+      ],
+      [
+        "System",
+        "File Permissions",
+        "-rw-rw-rw-"
+      ],
+      [
+        "File",
+        "File Type",
+        "JPEG"
+      ],
+      [
+        "File",
+        "File Type Extension",
+        "jpg"
+      ],
+      [
+        "File",
+        "MIME Type",
+        "image/jpeg"
+      ],
+      [
+        "File",
+        "Image Width",
+        "320"
+      ],
+      [
+        "File",
+        "Image Height",
+        "180"
+      ],
+      [
+        "File",
+        "Encoding Process",
+        "Baseline DCT, Huffman coding"
+      ],
+      [
+        "File",
+        "Bits Per Sample",
+        "8"
+      ],
+      [
+        "File",
+        "Color Components",
+        "3"
+      ],
+      [
+        "File",
+        "Y Cb Cr Sub Sampling",
+        "YCbCr4:2:0 (2 2)"
+      ],
+      [
+        "XMP-cc",
+        "License",
+        "ZmxhZ3ttZXRhZGF0YV90aGVuX2Jhc2U2NH0="
+      ],
+      [
+        "JFIF",
+        "JFIF Version",
+        "1.01"
+      ],
+      [
+        "JFIF",
+        "Resolution Unit",
+        "None"
+      ],
+      [
+        "JFIF",
+        "X Resolution",
+        "1"
+      ],
+      [
+        "JFIF",
+        "Y Resolution",
+        "1"
+      ],
+      [
+        "Composite",
+        "Image Size",
+        "320x180"
+      ],
+      [
+        "Composite",
+        "Megapixels",
+        "0.058"
+      ]
+    ]
+  },
+  "host": "Windows · PowerShell",
+  "input": "public_examples/cat_demo.jpg"
+}

@@ -1,0 +1,50 @@
+{
+  "id": "d35bb13577a740c8",
+  "action": "codec",
+  "title": "编码转换 / 凯撒 / XOR / 核心价值观",
+  "state": "completed",
+  "command": "& 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\runtime\\python\\python.exe' 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\tools\\casework.py' 'codec' '--args' 'E:\\学习培训\\培训\\取证\\output\\工作台验收_d3656ec2\\labs\\out\\platform_runs\\d35bb13577a740c8\\_case_args.json' '--out' 'E:\\学习培训\\培训\\取证\\output\\工作台验收_d3656ec2\\labs\\out\\platform_runs\\d35bb13577a740c8\\evidence' '--kit' 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64' '--labs' 'E:\\学习培训\\培训\\取证\\output\\工作台验收_d3656ec2\\labs'",
+  "created": "2026-10-23T09:41:34.084786+08:00",
+  "exit_code": 0,
+  "text": "{\"title\": \"字节转换结果\", \"result\": \"result.json\", \"note\": \"下载 .bin 保留完整字节。UTF-8、HEX 与 Base64 为预览，原始二进制不会经过文本重编码。\"}\r\n",
+  "error": "",
+  "duration": 0.16,
+  "files": [
+    {
+      "name": "evidence/result.json",
+      "bytes": 537,
+      "path": "out/platform_runs/d35bb13577a740c8/evidence/result.json"
+    },
+    {
+      "name": "evidence/结果报告.html",
+      "bytes": 999,
+      "path": "out/platform_runs/d35bb13577a740c8/evidence/结果报告.html"
+    },
+    {
+      "name": "evidence/转换结果.bin",
+      "bytes": 20,
+      "path": "out/platform_runs/d35bb13577a740c8/evidence/转换结果.bin"
+    },
+    {
+      "name": "运行报告.txt",
+      "bytes": 1002,
+      "path": "out/platform_runs/d35bb13577a740c8/运行报告.txt"
+    }
+  ],
+  "data": {
+    "kind": "casework",
+    "operation": "transform",
+    "title": "字节转换结果",
+    "bytes": 20,
+    "sha256": "d72571f5a9bd94d5b76bde8f8ec96178b1b7afb9db7b8ecaf001d3ea7e22c284",
+    "text": "flag{platform_codec}",
+    "hex": "666c61677b706c6174666f726d5f636f6465637d",
+    "base64": "ZmxhZ3twbGF0Zm9ybV9jb2RlY30=",
+    "preview_limited": false,
+    "output": "转换结果.bin",
+    "note": "下载 .bin 保留完整字节。UTF-8、HEX 与 Base64 为预览，原始二进制不会经过文本重编码。",
+    "text_roundtrip": true
+  },
+  "host": "Windows · PowerShell",
+  "input": ""
+}

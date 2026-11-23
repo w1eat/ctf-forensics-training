@@ -1,0 +1,19 @@
+
+7-Zip 26.04 (x64) : Copyright (c) 1999-2026 Igor Pavlov : 2026-10-05
+
+Scanning the drive for archives:
+1 file, 298 bytes (1 KiB)
+
+Listing archive: E:\学习培训\培训\取证\output\平台API验收_51983a32\labs\out\platform_runs\d5c728ac602f4806\carved.zip
+
+--
+Path = E:\学习培训\培训\取证\output\平台API验收_51983a32\labs\out\platform_runs\d5c728ac602f4806\carved.zip
+Type = zip
+Physical Size = 298
+
+   Date      Time    Attr         Size   Compressed  Name
+------------------- ----- ------------ ------------  ------------------------
+2026-10-18 09:00:00 .....           42           44  README.txt
+2026-10-18 09:00:00 .....           38           40  answer.txt
+------------------- ----- ------------ ------------  ------------------------
+2026-10-18 09:00:00                 80           84  2 files

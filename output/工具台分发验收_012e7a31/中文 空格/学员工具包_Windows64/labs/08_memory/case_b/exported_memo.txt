@@ -1,0 +1,2 @@
+Synthetic cached-file export for discussion only.
+flag{follow_the_file_object}

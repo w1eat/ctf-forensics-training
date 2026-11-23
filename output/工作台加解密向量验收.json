@@ -1,0 +1,14 @@
+{
+  "passed": 9,
+  "checks": [
+    "AES NIST ECB",
+    "AES NIST CBC",
+    "RC4 known vector",
+    "DES known vector",
+    "NTLM known password",
+    "PPT core values",
+    "PPT inverse script order",
+    "GCM auth roundtrip",
+    "GCM rejects bad tag"
+  ]
+}

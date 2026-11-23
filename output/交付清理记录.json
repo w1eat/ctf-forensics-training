@@ -1,0 +1,1160 @@
+{
+  "date": "2026-10-21",
+  "applied": true,
+  "targets": 230,
+  "files": 113312,
+  "logical_bytes": 19874614452,
+  "note": "Logical sizes include hard-linked QA copies; original uploaded inputs are retained.",
+  "records": [
+    {
+      "relative": "讲师手册.md",
+      "files": 1,
+      "logical_bytes": 36228
+    },
+    {
+      "relative": "学员任务单.md",
+      "files": 1,
+      "logical_bytes": 4400
+    },
+    {
+      "relative": "工具包构建\\编译暂存",
+      "files": 277,
+      "logical_bytes": 4648925
+    },
+    {
+      "relative": "工具包使用指南.md",
+      "files": 1,
+      "logical_bytes": 13324
+    },
+    {
+      "relative": "学习平台使用指南.md",
+      "files": 1,
+      "logical_bytes": 12381
+    },
+    {
+      "relative": "自动化取证流程指南.md",
+      "files": 1,
+      "logical_bytes": 9651
+    },
+    {
+      "relative": "环境安装与故障排查.md",
+      "files": 1,
+      "logical_bytes": 7209
+    },
+    {
+      "relative": "讲师题解_逐题讲解.md",
+      "files": 1,
+      "logical_bytes": 65298
+    },
+    {
+      "relative": "output\\讲义语法检查",
+      "files": 66,
+      "logical_bytes": 23856
+    },
+    {
+      "relative": "output\\通用验证 空格",
+      "files": 6828,
+      "logical_bytes": 334228456
+    },
+    {
+      "relative": "output\\旧分发验证副本",
+      "files": 13490,
+      "logical_bytes": 1166154388
+    },
+    {
+      "relative": "练习材料\\out\\_setup",
+      "files": 0,
+      "logical_bytes": 0
+    },
+    {
+      "relative": "output\\社区插件命令语法",
+      "files": 3,
+      "logical_bytes": 1532
+    },
+    {
+      "relative": "CTF取证基础_学员讲义.md",
+      "files": 1,
+      "logical_bytes": 103431
+    },
+    {
+      "relative": ".playwright-mcp",
+      "files": 23,
+      "logical_bytes": 215080
+    },
+    {
+      "relative": "课件源码\\__pycache__",
+      "files": 18,
+      "logical_bytes": 607718
+    },
+    {
+      "relative": "PPT解题思路与工作台指南.md",
+      "files": 1,
+      "logical_bytes": 29506
+    },
+    {
+      "relative": "output\\vol2_兼容验收",
+      "files": 14,
+      "logical_bytes": 14820
+    },
+    {
+      "relative": "output\\学员工具导航.png",
+      "files": 1,
+      "logical_bytes": 86786
+    },
+    {
+      "relative": "output\\playwright",
+      "files": 6,
+      "logical_bytes": 787910
+    },
+    {
+      "relative": "CTF取证基础_完整培训包.zip",
+      "files": 1,
+      "logical_bytes": 100346793
+    },
+    {
+      "relative": "工具包构建\\__pycache__",
+      "files": 36,
+      "logical_bytes": 940672
+    },
+    {
+      "relative": "output\\统一平台_手机.png",
+      "files": 1,
+      "logical_bytes": 56943
+    },
+    {
+      "relative": "output\\统一平台_首页.png",
+      "files": 1,
+      "logical_bytes": 148083
+    },
+    {
+      "relative": "output\\学员讲义_首页.png",
+      "files": 1,
+      "logical_bytes": 71083
+    },
+    {
+      "relative": "练习材料\\out\\setup_runs",
+      "files": 5,
+      "logical_bytes": 13506
+    },
+    {
+      "relative": "output\\通用工具台_桌面.png",
+      "files": 1,
+      "logical_bytes": 120765
+    },
+    {
+      "relative": "练习材料\\out\\vol2_cache",
+      "files": 0,
+      "logical_bytes": 0
+    },
+    {
+      "relative": "output\\通用工具台_手机.png",
+      "files": 1,
+      "logical_bytes": 52031
+    },
+    {
+      "relative": "output\\engine_smoke",
+      "files": 11,
+      "logical_bytes": 39803
+    },
+    {
+      "relative": "output\\逐题题解_移动端.png",
+      "files": 1,
+      "logical_bytes": 62616
+    },
+    {
+      "relative": "CTF取证基础_学员讲义与练习.zip",
+      "files": 1,
+      "logical_bytes": 33480859
+    },
+    {
+      "relative": "output\\逐题题解_桌面端.png",
+      "files": 1,
+      "logical_bytes": 24710
+    },
+    {
+      "relative": "output\\自动化工作流_手机.png",
+      "files": 1,
+      "logical_bytes": 55967
+    },
+    {
+      "relative": "output\\文件实验台_LSB.png",
+      "files": 1,
+      "logical_bytes": 45905
+    },
+    {
+      "relative": "output\\安装验收_043ff410",
+      "files": 9913,
+      "logical_bytes": 759998698
+    },
+    {
+      "relative": "output\\统一平台_手机题解.png",
+      "files": 1,
+      "logical_bytes": 67933
+    },
+    {
+      "relative": "output\\安装验收_f4b4503d",
+      "files": 9892,
+      "logical_bytes": 759928901
+    },
+    {
+      "relative": "output\\安装验收_836e2593",
+      "files": 9942,
+      "logical_bytes": 760166614
+    },
+    {
+      "relative": "output\\自动化工作流_桌面.png",
+      "files": 1,
+      "logical_bytes": 91566
+    },
+    {
+      "relative": "output\\安装验收_65ad4778",
+      "files": 9942,
+      "logical_bytes": 760166617
+    },
+    {
+      "relative": "output\\工作台验收_e814572b",
+      "files": 221,
+      "logical_bytes": 29787813
+    },
+    {
+      "relative": "output\\工作台验收_a846408c",
+      "files": 215,
+      "logical_bytes": 29776299
+    },
+    {
+      "relative": "Volatility2_兼容分析指南.md",
+      "files": 1,
+      "logical_bytes": 11924
+    },
+    {
+      "relative": "output\\工作台验收_a7af8cc7",
+      "files": 222,
+      "logical_bytes": 29788912
+    },
+    {
+      "relative": "output\\工作台验收_0a4e2425",
+      "files": 222,
+      "logical_bytes": 29790186
+    },
+    {
+      "relative": "output\\平台测试留存_20261019",
+      "files": 2479,
+      "logical_bytes": 278806122
+    },
+    {
+      "relative": "output\\Vol2_UI测试输入.txt",
+      "files": 1,
+      "logical_bytes": 40
+    },
+    {
+      "relative": "Volatility_社区插件使用指南.md",
+      "files": 1,
+      "logical_bytes": 8140
+    },
+    {
+      "relative": "练习材料\\out\\platform_runs",
+      "files": 1837,
+      "logical_bytes": 48963988
+    },
+    {
+      "relative": "output\\工具台分发验收_2809de62",
+      "files": 6958,
+      "logical_bytes": 586471825
+    },
+    {
+      "relative": "output\\工具台分发验收_93769cf1",
+      "files": 10533,
+      "logical_bytes": 768865048
+    },
+    {
+      "relative": "output\\工具台分发验收_c5f77c77",
+      "files": 10517,
+      "logical_bytes": 743161097
+    },
+    {
+      "relative": "output\\平台API验收_28fa3559",
+      "files": 553,
+      "logical_bytes": 79281985
+    },
+    {
+      "relative": "output\\PPT参考解析_20261021",
+      "files": 118,
+      "logical_bytes": 5832252
+    },
+    {
+      "relative": "学员工具包_Windows64\\讲师手册.md",
+      "files": 1,
+      "logical_bytes": 36228
+    },
+    {
+      "relative": "output\\平台API验收_e1aef1ec",
+      "files": 553,
+      "logical_bytes": 79381055
+    },
+    {
+      "relative": "output\\平台API验收_e4ec07b4",
+      "files": 553,
+      "logical_bytes": 79294718
+    },
+    {
+      "relative": "output\\partition4_自动化验收",
+      "files": 148,
+      "logical_bytes": 4180227
+    },
+    {
+      "relative": "output\\自动分析报告_页面验收.html",
+      "files": 1,
+      "logical_bytes": 16245
+    },
+    {
+      "relative": "output\\统一平台_一键Base64.png",
+      "files": 1,
+      "logical_bytes": 108764
+    },
+    {
+      "relative": "学员工具包_Windows64\\学员任务单.md",
+      "files": 1,
+      "logical_bytes": 4400
+    },
+    {
+      "relative": "output\\CyberChef_离线解码.png",
+      "files": 1,
+      "logical_bytes": 54484
+    },
+    {
+      "relative": "学员工具包_Windows64\\工具包使用指南.md",
+      "files": 1,
+      "logical_bytes": 13324
+    },
+    {
+      "relative": "output\\workflow_smoke_disk",
+      "files": 28,
+      "logical_bytes": 88207
+    },
+    {
+      "relative": "output\\vol_plugin_preflight",
+      "files": 870,
+      "logical_bytes": 38137865
+    },
+    {
+      "relative": "Volatility3_内存镜像分析_命令与题解.md",
+      "files": 1,
+      "logical_bytes": 28484
+    },
+    {
+      "relative": "学员工具包_Windows64\\学习平台使用指南.md",
+      "files": 1,
+      "logical_bytes": 12381
+    },
+    {
+      "relative": "学员工具包_Windows64\\自动化取证流程指南.md",
+      "files": 1,
+      "logical_bytes": 9651
+    },
+    {
+      "relative": "学员工具包_Windows64\\讲师题解_逐题讲解.md",
+      "files": 1,
+      "logical_bytes": 65298
+    },
+    {
+      "relative": "学员工具包_Windows64\\环境安装与故障排查.md",
+      "files": 1,
+      "logical_bytes": 7209
+    },
+    {
+      "relative": "output\\workflow_guide_syntax",
+      "files": 2,
+      "logical_bytes": 421
+    },
+    {
+      "relative": "output\\vol2_release_24e5b2d1ef",
+      "files": 6413,
+      "logical_bytes": 362771772
+    },
+    {
+      "relative": "output\\vol2_platform_905b1e716a",
+      "files": 49,
+      "logical_bytes": 1251281377
+    },
+    {
+      "relative": "学员工具包_Windows64\\labs\\out\\_setup",
+      "files": 1,
+      "logical_bytes": 7785
+    },
+    {
+      "relative": "学员工具包_Windows64\\CTF取证基础_学员讲义.md",
+      "files": 1,
+      "logical_bytes": 103431
+    },
+    {
+      "relative": "练习材料\\inputs\\_vol2_ui_e4e0d5e71c",
+      "files": 1,
+      "logical_bytes": 1048510464
+    },
+    {
+      "relative": "output\\vol2_platform_001e37987b",
+      "files": 49,
+      "logical_bytes": 1251283965
+    },
+    {
+      "relative": "output\\vol2_platform_349594a6c8",
+      "files": 8,
+      "logical_bytes": 76221
+    },
+    {
+      "relative": "output\\vol2_platform_a7f8a86edf",
+      "files": 49,
+      "logical_bytes": 1251299469
+    },
+    {
+      "relative": "output\\vol2_platform_c7e9bcb0ff",
+      "files": 8,
+      "logical_bytes": 76221
+    },
+    {
+      "relative": "学员工具包_Windows64\\PPT解题思路与工作台指南.md",
+      "files": 1,
+      "logical_bytes": 29506
+    },
+    {
+      "relative": "output\\memory_extension_af6d3e7c",
+      "files": 41,
+      "logical_bytes": 1048561989
+    },
+    {
+      "relative": "output\\memory_extension_5eae6e7b",
+      "files": 60,
+      "logical_bytes": 1048598099
+    },
+    {
+      "relative": "工具包构建\\下载缓存\\veracrypt_msi_payload",
+      "files": 694,
+      "logical_bytes": 64481684
+    },
+    {
+      "relative": "output\\memory_extension_1aaa6e2f",
+      "files": 13,
+      "logical_bytes": 1048516500
+    },
+    {
+      "relative": "学员工具包_Windows64\\tools\\__pycache__",
+      "files": 7,
+      "logical_bytes": 180430
+    },
+    {
+      "relative": "练习材料\\inputs\\_casework_qa_9533bf7a",
+      "files": 0,
+      "logical_bytes": 0
+    },
+    {
+      "relative": "output\\community_plugins_30d56f2d",
+      "files": 49,
+      "logical_bytes": 1048572148
+    },
+    {
+      "relative": "练习材料\\inputs\\_casework_qa_44683df4",
+      "files": 5,
+      "logical_bytes": 10499433
+    },
+    {
+      "relative": "output\\workflow_checks_2b48d14fbd",
+      "files": 538,
+      "logical_bytes": 100031033
+    },
+    {
+      "relative": "output\\workflow_checks_9222152dbd",
+      "files": 537,
+      "logical_bytes": 100022389
+    },
+    {
+      "relative": "output\\community_plugins_f7beae0e",
+      "files": 49,
+      "logical_bytes": 1048569762
+    },
+    {
+      "relative": "output\\community_plugins_b3df8410",
+      "files": 49,
+      "logical_bytes": 1048572868
+    },
+    {
+      "relative": "练习材料\\inputs\\_casework_qa_9a57d890",
+      "files": 6,
+      "logical_bytes": 10564969
+    },
+    {
+      "relative": "练习材料\\inputs\\_casework_qa_3110ecdc",
+      "files": 0,
+      "logical_bytes": 0
+    },
+    {
+      "relative": "output\\release_workflows_2941fa7a",
+      "files": 6807,
+      "logical_bytes": 333965736
+    },
+    {
+      "relative": "output\\workflow_checks_f321ce4470",
+      "files": 390,
+      "logical_bytes": 96075579
+    },
+    {
+      "relative": "学员工具包_Windows64\\labs\\out\\qa_dd.zip",
+      "files": 1,
+      "logical_bytes": 298
+    },
+    {
+      "relative": "学员工具包_Windows64\\labs\\out\\qa_carved",
+      "files": 2,
+      "logical_bytes": 80
+    },
+    {
+      "relative": "学员工具包_Windows64\\labs\\out\\setup_runs",
+      "files": 5,
+      "logical_bytes": 15606
+    },
+    {
+      "relative": "学员工具包_Windows64\\labs\\out\\vol2_cache",
+      "files": 0,
+      "logical_bytes": 0
+    },
+    {
+      "relative": "练习材料\\inputs\\_platform_qa_b26a860510",
+      "files": 12,
+      "logical_bytes": 68302616
+    },
+    {
+      "relative": "练习材料\\inputs\\_platform_qa_03b7647d20",
+      "files": 12,
+      "logical_bytes": 68302616
+    },
+    {
+      "relative": "学员工具包_Windows64\\labs\\out\\qa_fat.txt",
+      "files": 1,
+      "logical_bytes": 31
+    },
+    {
+      "relative": "学员工具包_Windows64\\labs\\out\\qa_lsb.bin",
+      "files": 1,
+      "logical_bytes": 768
+    },
+    {
+      "relative": "学员工具包_Windows64\\labs\\out\\qa_unlocked",
+      "files": 1,
+      "logical_bytes": 48
+    },
+    {
+      "relative": "学员工具包_Windows64\\labs\\out\\qa_width.png",
+      "files": 1,
+      "logical_bytes": 733
+    },
+    {
+      "relative": "学员工具包_Windows64\\Volatility2_兼容分析指南.md",
+      "files": 1,
+      "logical_bytes": 11924
+    },
+    {
+      "relative": "学员工具包_Windows64\\labs\\out\\qa_flags.zip",
+      "files": 1,
+      "logical_bytes": 185
+    },
+    {
+      "relative": "学员工具包_Windows64\\labs\\out\\qa_zsteg.bin",
+      "files": 1,
+      "logical_bytes": 22
+    },
+    {
+      "relative": "学员工具包_Windows64\\labs\\out\\qa_carved.zip",
+      "files": 1,
+      "logical_bytes": 298
+    },
+    {
+      "relative": "学员工具包_Windows64\\Volatility_社区插件使用指南.md",
+      "files": 1,
+      "logical_bytes": 8140
+    },
+    {
+      "relative": "学员工具包_Windows64\\labs\\out\\qa_header.png",
+      "files": 1,
+      "logical_bytes": 733
+    },
+    {
+      "relative": "工具包构建\\下载缓存\\veracrypt_legacy_msi_payload",
+      "files": 235,
+      "logical_bytes": 40602086
+    },
+    {
+      "relative": "学员工具包_Windows64\\labs\\out\\qa_recovered.txt",
+      "files": 1,
+      "logical_bytes": 31
+    },
+    {
+      "relative": "学员工具包_Windows64\\labs\\out\\generic_cli_check",
+      "files": 1,
+      "logical_bytes": 397
+    },
+    {
+      "relative": "学员工具包_Windows64\\Volatility3_内存镜像分析_命令与题解.md",
+      "files": 1,
+      "logical_bytes": 28484
+    },
+    {
+      "relative": "学员工具包_Windows64\\tools\\volatility3_extra\\__pycache__",
+      "files": 2,
+      "logical_bytes": 18749
+    },
+    {
+      "relative": "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\__pycache__",
+      "files": 2,
+      "logical_bytes": 572090
+    },
+    {
+      "relative": "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\PIL\\__pycache__",
+      "files": 29,
+      "logical_bytes": 662803
+    },
+    {
+      "relative": "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\cffi\\__pycache__",
+      "files": 7,
+      "logical_bytes": 135074
+    },
+    {
+      "relative": "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\pypdf\\__pycache__",
+      "files": 19,
+      "logical_bytes": 657576
+    },
+    {
+      "relative": "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\Crypto\\__pycache__",
+      "files": 1,
+      "logical_bytes": 3224
+    },
+    {
+      "relative": "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\winacl\\__pycache__",
+      "files": 1,
+      "logical_bytes": 207
+    },
+    {
+      "relative": "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\minidump\\__pycache__",
+      "files": 9,
+      "logical_bytes": 84913
+    },
+    {
+      "relative": "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\capstone\\__pycache__",
+      "files": 37,
+      "logical_bytes": 610001
+    },
+    {
+      "relative": "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\pypykatz\\__pycache__",
+      "files": 3,
+      "logical_bytes": 26939
+    },
+    {
+      "relative": "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\unicrypto\\__pycache__",
+      "files": 3,
+      "logical_bytes": 10424
+    },
+    {
+      "relative": "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\ordlookup\\__pycache__",
+      "files": 8,
+      "logical_bytes": 70981
+    },
+    {
+      "relative": "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\pycparser\\__pycache__",
+      "files": 5,
+      "logical_bytes": 189683
+    },
+    {
+      "relative": "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\asn1crypto\\__pycache__",
+      "files": 11,
+      "logical_bytes": 237818
+    },
+    {
+      "relative": "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\Cryptodome\\__pycache__",
+      "files": 1,
+      "logical_bytes": 497
+    },
+    {
+      "relative": "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\winacl\\dtyp\\__pycache__",
+      "files": 1,
+      "logical_bytes": 212
+    },
+    {
+      "relative": "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\Crypto\\Util\\__pycache__",
+      "files": 10,
+      "logical_bytes": 112616
+    },
+    {
+      "relative": "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\Crypto\\Hash\\__pycache__",
+      "files": 4,
+      "logical_bytes": 30654
+    },
+    {
+      "relative": "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\volatility3\\__pycache__",
+      "files": 1,
+      "logical_bytes": 3077
+    },
+    {
+      "relative": "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\cryptography\\__pycache__",
+      "files": 4,
+      "logical_bytes": 10103
+    },
+    {
+      "relative": "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\minikerberos\\__pycache__",
+      "files": 1,
+      "logical_bytes": 726
+    },
+    {
+      "relative": "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\pypdf\\_codecs\\__pycache__",
+      "files": 8,
+      "logical_bytes": 997310
+    },
+    {
+      "relative": "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\Crypto\\Random\\__pycache__",
+      "files": 1,
+      "logical_bytes": 1629
+    },
+    {
+      "relative": "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\pypdf\\generic\\__pycache__",
+      "files": 14,
+      "logical_bytes": 289569
+    },
+    {
+      "relative": "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\Crypto\\Cipher\\__pycache__",
+      "files": 10,
+      "logical_bytes": 106931
+    },
+    {
+      "relative": "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\pypdf\\actions\\__pycache__",
+      "files": 2,
+      "logical_bytes": 9256
+    },
+    {
+      "relative": "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\pypykatz\\dpapi\\__pycache__",
+      "files": 3,
+      "logical_bytes": 56364
+    },
+    {
+      "relative": "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\Cryptodome\\Util\\__pycache__",
+      "files": 6,
+      "logical_bytes": 26237
+    },
+    {
+      "relative": "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\volatility3\\cli\\__pycache__",
+      "files": 4,
+      "logical_bytes": 92977
+    },
+    {
+      "relative": "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\pypykatz\\commons\\__pycache__",
+      "files": 5,
+      "logical_bytes": 57338
+    },
+    {
+      "relative": "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\minidump\\streams\\__pycache__",
+      "files": 23,
+      "logical_bytes": 184700
+    },
+    {
+      "relative": "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\winacl\\dtyp\\wcee\\__pycache__",
+      "files": 5,
+      "logical_bytes": 31180
+    },
+    {
+      "relative": "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\Cryptodome\\Cipher\\__pycache__",
+      "files": 6,
+      "logical_bytes": 37526
+    },
+    {
+      "relative": "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\Cryptodome\\Random\\__pycache__",
+      "files": 1,
+      "logical_bytes": 1465
+    },
+    {
+      "relative": "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\unicrypto\\backends\\__pycache__",
+      "files": 1,
+      "logical_bytes": 219
+    },
+    {
+      "relative": "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\minikerberos\\common\\__pycache__",
+      "files": 5,
+      "logical_bytes": 69860
+    },
+    {
+      "relative": "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\cryptography\\hazmat\\__pycache__",
+      "files": 2,
+      "logical_bytes": 22529
+    },
+    {
+      "relative": "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\minidump\\structures\\__pycache__",
+      "files": 2,
+      "logical_bytes": 8475
+    },
+    {
+      "relative": "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\volatility3\\schemas\\__pycache__",
+      "files": 1,
+      "logical_bytes": 8426
+    },
+    {
+      "relative": "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\volatility3\\symbols\\__pycache__",
+      "files": 1,
+      "logical_bytes": 501
+    },
+    {
+      "relative": "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\volatility3\\plugins\\__pycache__",
+      "files": 3,
+      "logical_bytes": 19653
+    },
+    {
+      "relative": "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\minikerberos\\protocol\\__pycache__",
+      "files": 3,
+      "logical_bytes": 48962
+    },
+    {
+      "relative": "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\pypykatz\\lsadecryptor\\__pycache__",
+      "files": 8,
+      "logical_bytes": 73612
+    },
+    {
+      "relative": "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\volatility3\\framework\\__pycache__",
+      "files": 4,
+      "logical_bytes": 31313
+    },
+    {
+      "relative": "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\pypdf\\_crypt_providers\\__pycache__",
+      "files": 4,
+      "logical_bytes": 16820
+    },
+    {
+      "relative": "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\pypykatz\\dpapi\\finders\\__pycache__",
+      "files": 3,
+      "logical_bytes": 7939
+    },
+    {
+      "relative": "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\pypdf\\_text_extraction\\__pycache__",
+      "files": 2,
+      "logical_bytes": 29133
+    },
+    {
+      "relative": "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\volatility3\\plugins\\mac\\__pycache__",
+      "files": 1,
+      "logical_bytes": 1244
+    },
+    {
+      "relative": "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\pypykatz\\commons\\winapi\\__pycache__",
+      "files": 3,
+      "logical_bytes": 20848
+    },
+    {
+      "relative": "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\unicrypto\\backends\\pure\\__pycache__",
+      "files": 5,
+      "logical_bytes": 16212
+    },
+    {
+      "relative": "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\pypykatz\\commons\\readers\\__pycache__",
+      "files": 1,
+      "logical_bytes": 225
+    },
+    {
+      "relative": "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\volatility3\\plugins\\linux\\__pycache__",
+      "files": 1,
+      "logical_bytes": 1248
+    },
+    {
+      "relative": "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\pypykatz\\dpapi\\structures\\__pycache__",
+      "files": 5,
+      "logical_bytes": 58377
+    },
+    {
+      "relative": "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\volatility3\\plugins\\windows\\__pycache__",
+      "files": 2,
+      "logical_bytes": 5691
+    },
+    {
+      "relative": "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\cryptography\\hazmat\\bindings\\__pycache__",
+      "files": 1,
+      "logical_bytes": 280
+    },
+    {
+      "relative": "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\cryptography\\hazmat\\decrepit\\__pycache__",
+      "files": 1,
+      "logical_bytes": 280
+    },
+    {
+      "relative": "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\volatility3\\framework\\layers\\__pycache__",
+      "files": 17,
+      "logical_bytes": 192520
+    },
+    {
+      "relative": "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\cryptography\\hazmat\\backends\\__pycache__",
+      "files": 1,
+      "logical_bytes": 528
+    },
+    {
+      "relative": "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\volatility3\\framework\\symbols\\__pycache__",
+      "files": 5,
+      "logical_bytes": 73688
+    },
+    {
+      "relative": "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\volatility3\\framework\\objects\\__pycache__",
+      "files": 3,
+      "logical_bytes": 74503
+    },
+    {
+      "relative": "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\volatility3\\framework\\plugins\\__pycache__",
+      "files": 10,
+      "logical_bytes": 73361
+    },
+    {
+      "relative": "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\pypykatz\\commons\\winapi\\local\\__pycache__",
+      "files": 6,
+      "logical_bytes": 9496
+    },
+    {
+      "relative": "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\volatility3\\framework\\contexts\\__pycache__",
+      "files": 1,
+      "logical_bytes": 22829
+    },
+    {
+      "relative": "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\pypykatz\\lsadecryptor\\packages\\__pycache__",
+      "files": 1,
+      "logical_bytes": 1513
+    },
+    {
+      "relative": "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\cryptography\\hazmat\\primitives\\__pycache__",
+      "files": 7,
+      "logical_bytes": 30626
+    },
+    {
+      "relative": "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\unicrypto\\backends\\pure\\padding\\__pycache__",
+      "files": 2,
+      "logical_bytes": 1136
+    },
+    {
+      "relative": "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\volatility3\\framework\\automagic\\__pycache__",
+      "files": 10,
+      "logical_bytes": 141642
+    },
+    {
+      "relative": "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\volatility3\\framework\\constants\\__pycache__",
+      "files": 3,
+      "logical_bytes": 7282
+    },
+    {
+      "relative": "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\volatility3\\framework\\renderers\\__pycache__",
+      "files": 3,
+      "logical_bytes": 37057
+    },
+    {
+      "relative": "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\unicrypto\\backends\\pure\\external\\__pycache__",
+      "files": 1,
+      "logical_bytes": 233
+    },
+    {
+      "relative": "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\unicrypto\\backends\\pycryptodomex\\__pycache__",
+      "files": 5,
+      "logical_bytes": 10056
+    },
+    {
+      "relative": "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\volatility3\\framework\\interfaces\\__pycache__",
+      "files": 9,
+      "logical_bytes": 161885
+    },
+    {
+      "relative": "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\volatility3\\framework\\plugins\\mac\\__pycache__",
+      "files": 23,
+      "logical_bytes": 136911
+    },
+    {
+      "relative": "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\volatility3\\framework\\symbols\\mac\\__pycache__",
+      "files": 1,
+      "logical_bytes": 11848
+    },
+    {
+      "relative": "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\pypykatz\\lsadecryptor\\packages\\msv\\__pycache__",
+      "files": 3,
+      "logical_bytes": 87703
+    },
+    {
+      "relative": "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\pypykatz\\lsadecryptor\\packages\\ssp\\__pycache__",
+      "files": 3,
+      "logical_bytes": 10508
+    },
+    {
+      "relative": "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\pypdf\\_text_extraction\\_layout_mode\\__pycache__",
+      "files": 4,
+      "logical_bytes": 40756
+    },
+    {
+      "relative": "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\volatility3\\framework\\plugins\\linux\\__pycache__",
+      "files": 41,
+      "logical_bytes": 318438
+    },
+    {
+      "relative": "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\volatility3\\framework\\symbols\\linux\\__pycache__",
+      "files": 4,
+      "logical_bytes": 118639
+    },
+    {
+      "relative": "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\volatility3\\framework\\configuration\\__pycache__",
+      "files": 2,
+      "logical_bytes": 37672
+    },
+    {
+      "relative": "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\pypykatz\\commons\\readers\\volatility3\\__pycache__",
+      "files": 2,
+      "logical_bytes": 15878
+    },
+    {
+      "relative": "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\cryptography\\hazmat\\decrepit\\ciphers\\__pycache__",
+      "files": 3,
+      "logical_bytes": 8835
+    },
+    {
+      "relative": "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\volatility3\\plugins\\windows\\registry\\__pycache__",
+      "files": 2,
+      "logical_bytes": 8198
+    },
+    {
+      "relative": "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\pypykatz\\lsadecryptor\\packages\\dpapi\\__pycache__",
+      "files": 3,
+      "logical_bytes": 10936
+    },
+    {
+      "relative": "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\pypykatz\\lsadecryptor\\packages\\tspkg\\__pycache__",
+      "files": 3,
+      "logical_bytes": 12992
+    },
+    {
+      "relative": "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\unicrypto\\backends\\pure\\external\\AES\\__pycache__",
+      "files": 4,
+      "logical_bytes": 60077
+    },
+    {
+      "relative": "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\unicrypto\\backends\\pure\\external\\DES\\__pycache__",
+      "files": 2,
+      "logical_bytes": 35230
+    },
+    {
+      "relative": "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\unicrypto\\backends\\pure\\external\\RC4\\__pycache__",
+      "files": 2,
+      "logical_bytes": 3697
+    },
+    {
+      "relative": "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\volatility3\\framework\\plugins\\windows\\__pycache__",
+      "files": 78,
+      "logical_bytes": 692590
+    },
+    {
+      "relative": "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\volatility3\\framework\\symbols\\windows\\__pycache__",
+      "files": 4,
+      "logical_bytes": 88371
+    },
+    {
+      "relative": "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\volatility3\\framework\\constants\\linux\\__pycache__",
+      "files": 1,
+      "logical_bytes": 11536
+    },
+    {
+      "relative": "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\volatility3\\framework\\layers\\scanners\\__pycache__",
+      "files": 2,
+      "logical_bytes": 9679
+    },
+    {
+      "relative": "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\volatility3\\framework\\symbols\\generic\\__pycache__",
+      "files": 1,
+      "logical_bytes": 3026
+    },
+    {
+      "relative": "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\pypykatz\\lsadecryptor\\packages\\livessp\\__pycache__",
+      "files": 3,
+      "logical_bytes": 10818
+    },
+    {
+      "relative": "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\pypykatz\\lsadecryptor\\packages\\cloudap\\__pycache__",
+      "files": 3,
+      "logical_bytes": 15443
+    },
+    {
+      "relative": "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\pypykatz\\lsadecryptor\\packages\\credman\\__pycache__",
+      "files": 2,
+      "logical_bytes": 16983
+    },
+    {
+      "relative": "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\cryptography\\hazmat\\primitives\\ciphers\\__pycache__",
+      "files": 4,
+      "logical_bytes": 20105
+    },
+    {
+      "relative": "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\pypykatz\\lsadecryptor\\packages\\wdigest\\__pycache__",
+      "files": 3,
+      "logical_bytes": 13954
+    },
+    {
+      "relative": "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\pypykatz\\lsadecryptor\\packages\\kerberos\\__pycache__",
+      "files": 3,
+      "logical_bytes": 97667
+    },
+    {
+      "relative": "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\volatility3\\framework\\constants\\windows\\__pycache__",
+      "files": 1,
+      "logical_bytes": 672
+    },
+    {
+      "relative": "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\volatility3\\framework\\plugins\\renderers\\__pycache__",
+      "files": 2,
+      "logical_bytes": 11509
+    },
+    {
+      "relative": "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\cryptography\\hazmat\\primitives\\asymmetric\\__pycache__",
+      "files": 5,
+      "logical_bytes": 34042
+    },
+    {
+      "relative": "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\pypykatz\\commons\\winapi\\local\\function_defs\\__pycache__",
+      "files": 6,
+      "logical_bytes": 187654
+    },
+    {
+      "relative": "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\volatility3\\framework\\plugins\\linux\\malware\\__pycache__",
+      "files": 13,
+      "logical_bytes": 122323
+    },
+    {
+      "relative": "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\volatility3\\framework\\plugins\\linux\\tracing\\__pycache__",
+      "files": 4,
+      "logical_bytes": 31514
+    },
+    {
+      "relative": "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\volatility3\\framework\\symbols\\mac\\extensions\\__pycache__",
+      "files": 1,
+      "logical_bytes": 27370
+    },
+    {
+      "relative": "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\volatility3\\framework\\plugins\\linux\\graphics\\__pycache__",
+      "files": 2,
+      "logical_bytes": 15945
+    },
+    {
+      "relative": "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\volatility3\\framework\\symbols\\linux\\utilities\\__pycache__",
+      "files": 3,
+      "logical_bytes": 68556
+    },
+    {
+      "relative": "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\volatility3\\framework\\plugins\\windows\\malware\\__pycache__",
+      "files": 14,
+      "logical_bytes": 130879
+    },
+    {
+      "relative": "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\volatility3\\framework\\plugins\\windows\\registry\\__pycache__",
+      "files": 10,
+      "logical_bytes": 191624
+    },
+    {
+      "relative": "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\volatility3\\framework\\symbols\\linux\\extensions\\__pycache__",
+      "files": 4,
+      "logical_bytes": 210883
+    },
+    {
+      "relative": "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\volatility3\\framework\\symbols\\windows\\extensions\\__pycache__",
+      "files": 14,
+      "logical_bytes": 228458
+    }
+  ]
+}

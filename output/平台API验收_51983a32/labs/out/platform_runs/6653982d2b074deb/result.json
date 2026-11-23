@@ -1,0 +1,39 @@
+{
+  "columns": [
+    "字节偏移",
+    "签名",
+    "含义"
+  ],
+  "rows": [
+    [
+      "0x200",
+      "ZIP local",
+      "候选；需验证结构和边界"
+    ],
+    [
+      "0x254",
+      "ZIP local",
+      "候选；需验证结构和边界"
+    ],
+    [
+      "0x2a4",
+      "ZIP central",
+      "候选；需验证结构和边界"
+    ],
+    [
+      "0x2dc",
+      "ZIP central",
+      "候选；需验证结构和边界"
+    ],
+    [
+      "0x314",
+      "ZIP end",
+      "候选；需验证结构和边界"
+    ]
+  ],
+  "scanned_bytes": 810,
+  "total_bytes": 810,
+  "partial": false,
+  "limited": false,
+  "note": "仅提取 ASCII 可打印字符及其 UTF-16LE 表示；不覆盖所有语言。跨块长串可能分段显示。"
+}

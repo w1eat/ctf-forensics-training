@@ -1,0 +1,54 @@
+{
+  "id": "a384270d5ef04ae7",
+  "action": "byte_search",
+  "title": "搜索 HEX / UTF-8 / UTF-16LE 字节",
+  "state": "completed",
+  "command": "& 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\runtime\\python\\python.exe' 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\tools\\casework.py' 'search' '--args' 'E:\\学习培训\\培训\\取证\\output\\工作台验收_d3656ec2\\labs\\out\\platform_runs\\a384270d5ef04ae7\\_case_args.json' '--out' 'E:\\学习培训\\培训\\取证\\output\\工作台验收_d3656ec2\\labs\\out\\platform_runs\\a384270d5ef04ae7\\evidence' '--kit' 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64' '--labs' 'E:\\学习培训\\培训\\取证\\output\\工作台验收_d3656ec2\\labs'",
+  "created": "2026-10-23T09:41:33.269114+08:00",
+  "exit_code": 0,
+  "text": "{\"title\": \"原始字节检索\", \"result\": \"result.json\", \"note\": \"匹配的是原始字节；文本搜索先转换为所选编码。最多返回 1000 条；达到条数或扫描范围上限时，请缩小范围或从后续偏移继续检索。读取字节数可能包含最后一块中未继续枚举的部分。\"}\r\n",
+  "error": "",
+  "duration": 0.16,
+  "files": [
+    {
+      "name": "evidence/result.json",
+      "bytes": 625,
+      "path": "out/platform_runs/a384270d5ef04ae7/evidence/result.json"
+    },
+    {
+      "name": "evidence/结果报告.html",
+      "bytes": 1057,
+      "path": "out/platform_runs/a384270d5ef04ae7/evidence/结果报告.html"
+    },
+    {
+      "name": "运行报告.txt",
+      "bytes": 1366,
+      "path": "out/platform_runs/a384270d5ef04ae7/运行报告.txt"
+    }
+  ],
+  "data": {
+    "kind": "casework",
+    "operation": "byte_search",
+    "title": "原始字节检索",
+    "columns": [
+      "字节偏移 HEX",
+      "字节偏移十进制"
+    ],
+    "rows": [
+      [
+        "0xffffe",
+        1048574
+      ]
+    ],
+    "offsets": [
+      1048574
+    ],
+    "read_bytes": 1048599,
+    "start_offset": 0,
+    "total_bytes": 1048599,
+    "limited": false,
+    "note": "匹配的是原始字节；文本搜索先转换为所选编码。最多返回 1000 条；达到条数或扫描范围上限时，请缩小范围或从后续偏移继续检索。读取字节数可能包含最后一块中未继续枚举的部分。"
+  },
+  "host": "Windows · PowerShell",
+  "input": "inputs/casework_samples/跨块搜索.bin"
+}

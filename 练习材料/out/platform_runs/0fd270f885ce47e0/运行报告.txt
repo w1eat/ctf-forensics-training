@@ -1,0 +1,24 @@
+操作：解压 ZIP 到新目录
+运行环境：Windows PowerShell
+创建时间：2026-10-23T09:58:32.202224+08:00
+状态：completed
+退出码：0
+命令：& 'E:\学习培训\培训\取证\学员工具包_Windows64\tools\7zip\7z.exe' 'x' 'E:\学习培训\培训\取证\练习材料\out\platform_runs\c24678b69ffb4b1c\evidence\0002_0000000001d7.zip' '-p7639' '-oE:\学习培训\培训\取证\练习材料\out\platform_runs\0fd270f885ce47e0\extracted' '-y'
+
+
+
+7-Zip 26.04 (x64) : Copyright (c) 1999-2026 Igor Pavlov : 2026-10-05
+
+Scanning the drive for archives:
+1 file, 201 bytes (1 KiB)
+
+Extracting archive: E:\学习培训\培训\取证\练习材料\out\platform_runs\c24678b69ffb4b1c\evidence\0002_0000000001d7.zip
+--
+Path = E:\学习培训\培训\取证\练习材料\out\platform_runs\c24678b69ffb4b1c\evidence\0002_0000000001d7.zip
+Type = zip
+Physical Size = 201
+
+Everything is Ok
+
+Size:       15
+Compressed: 201

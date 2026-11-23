@@ -1,0 +1,229 @@
+{
+  "kind": "analysis",
+  "source": "自选事件.jsonl",
+  "created": "2026-10-22T10:16:24.812752+08:00",
+  "host": "Windows PowerShell",
+  "profile": "standard",
+  "workflow": "auto",
+  "sections": [
+    {
+      "id": "identify",
+      "title": "识别文件结构与类型",
+      "status": "completed",
+      "seconds": 0.0,
+      "data": {
+        "kind": "text",
+        "label": "JSON / JSONL 候选",
+        "evidence": "utf-8-sig 抽样可读率 100.0%",
+        "extension": ".jsonl",
+        "bytes": 62,
+        "header": "7b 22 65 76 65 6e 74 22 3a 22 75 70 6c 6f 61 64 22 2c 22 74 69 63 6b 65 74 22 3a 37 7d 0d 0a 7b 22 65 76 65 6e 74 22 3a 22 72 65 76 69 65 77 22 2c 22 74 69 63 6b 65 74 22 3a 37 7d 0d 0a"
+      }
+    },
+    {
+      "id": "fingerprint",
+      "title": "全文件摘要与字节熵",
+      "status": "completed",
+      "seconds": 0.0,
+      "data": {
+        "kind": "hash",
+        "name": "自选事件.jsonl",
+        "bytes": 62,
+        "md5": "deca03ca28db98f85d8aba1da96bc384",
+        "sha1": "3d81912b61fbc7fc13b0ed491f87a364a2f4d423",
+        "sha256": "b33f475959d73a6dc5fd354d7a32eb31c2db22592aa61b84e8bb729b7c25bfed",
+        "entropy": 4.05034,
+        "entropy_windows": [
+          {
+            "offset": 0,
+            "bytes": 62,
+            "entropy": 4.05034
+          }
+        ],
+        "note": "MD5 / SHA1 仅用于已知摘要对照；证据一致性优先记录 SHA256。熵高不等于一定加密。"
+      }
+    },
+    {
+      "id": "clues",
+      "title": "通用字符串与嵌入签名",
+      "status": "completed",
+      "seconds": 0.0,
+      "data": {
+        "kind": "scan",
+        "strings": {
+          "columns": [
+            "字节偏移",
+            "编码",
+            "可读内容（最多 1024 字节）",
+            "匹配字节数"
+          ],
+          "rows": [
+            [
+              "0x0",
+              "ASCII",
+              "{\"event\":\"upload\",\"ticket\":7}",
+              29
+            ],
+            [
+              "0x1f",
+              "ASCII",
+              "{\"event\":\"review\",\"ticket\":7}",
+              29
+            ]
+          ]
+        },
+        "signatures": {
+          "columns": [
+            "字节偏移",
+            "签名",
+            "含义"
+          ],
+          "rows": []
+        },
+        "scanned_bytes": 62,
+        "total_bytes": 62,
+        "partial": false,
+        "string_rows_limited": false,
+        "signature_rows_limited": false,
+        "note": "仅提取 ASCII 可打印字符及其 UTF-16LE 表示；不覆盖所有语言。跨块长串可能分段显示。"
+      }
+    },
+    {
+      "id": "workflow_text",
+      "title": "文本、日志与编码",
+      "status": "completed",
+      "seconds": 0.002,
+      "data": {
+        "kind": "workflow_text",
+        "tables": [
+          {
+            "title": "结构预览",
+            "columns": [
+              "行号",
+              "JSON / 原始内容"
+            ],
+            "rows": [
+              [
+                1,
+                "{\"event\": \"upload\", \"ticket\": 7}"
+              ],
+              [
+                2,
+                "{\"event\": \"review\", \"ticket\": 7}"
+              ]
+            ]
+          },
+          {
+            "title": "编码候选",
+            "columns": [
+              "编码候选",
+              "文本字符位置",
+              "解码预览",
+              "输出"
+            ],
+            "rows": []
+          },
+          {
+            "title": "实际字段与关联值（统计前 20000 行）",
+            "columns": [
+              "字段",
+              "值",
+              "出现次数"
+            ],
+            "rows": [
+              [
+                "event",
+                "upload",
+                1
+              ],
+              [
+                "event",
+                "review",
+                1
+              ]
+            ]
+          }
+        ],
+        "encoding": "utf-8-sig",
+        "read_bytes": 62,
+        "limited": false,
+        "decodings": {
+          "encoding": "utf-8-sig",
+          "read_bytes": 62,
+          "total_bytes": 62,
+          "limited": false,
+          "columns": [
+            "编码候选",
+            "文本字符位置",
+            "解码预览",
+            "输出"
+          ],
+          "rows": [],
+          "note": "只做一层严格 Base64 / Hex 候选解码，字符位置不是原始文件字节偏移。编码形态不等于加密。"
+        }
+      }
+    },
+    {
+      "id": "targeted_search",
+      "title": "全文件关键词与 flag 形态检索",
+      "status": "completed",
+      "seconds": 0.0,
+      "data": {
+        "columns": [
+          "字节偏移",
+          "编码",
+          "关键词",
+          "上下文"
+        ],
+        "rows": [],
+        "flag_candidates": [],
+        "scanned_bytes": 62,
+        "total_bytes": 62,
+        "partial": false,
+        "limited": false,
+        "note": "flag 形态是候选，必须回到文件 / 业务语义验证。命中条数有上限，扫描不会因普通字符串表满而提前结束。"
+      }
+    },
+    {
+      "id": "yara",
+      "title": "内置 YARA 线索规则",
+      "status": "completed",
+      "seconds": 0.001,
+      "data": {
+        "columns": [
+          "规则",
+          "字符串",
+          "字节偏移",
+          "匹配字节（截取）",
+          "文本预览"
+        ],
+        "rows": [],
+        "kind": "yara",
+        "matched_rules": [],
+        "note": "规则命中是线索，不能据此直接判定恶意或确认答案。自定义规则禁用 include。"
+      }
+    }
+  ],
+  "recommendations": [
+    "命中仅是候选；请结合路径、对象结构和原始输出确认。未导出、跳过与预算限制均保留在报告中。"
+  ],
+  "identification": {
+    "kind": "text",
+    "label": "JSON / JSONL 候选",
+    "evidence": "utf-8-sig 抽样可读率 100.0%",
+    "extension": ".jsonl",
+    "bytes": 62,
+    "header": "7b 22 65 76 65 6e 74 22 3a 22 75 70 6c 6f 61 64 22 2c 22 74 69 63 6b 65 74 22 3a 37 7d 0d 0a 7b 22 65 76 65 6e 74 22 3a 22 72 65 76 69 65 77 22 2c 22 74 69 63 6b 65 74 22 3a 37 7d 0d 0a"
+  },
+  "selected_workflow": "text",
+  "findings": [],
+  "children": [],
+  "next_actions": [],
+  "limits": {
+    "max_exported_files": 32,
+    "exported_files": 0,
+    "max_exported_bytes": 134217728,
+    "accounted_bytes": 0,
+    "child_depth": 2
+  }
+}

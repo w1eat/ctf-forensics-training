@@ -1,0 +1,158 @@
+﻿[
+    {
+        "name":  "01 PNG identification",
+        "pass":  true
+    },
+    {
+        "name":  "01 Comment and Base64",
+        "pass":  true
+    },
+    {
+        "name":  "02 damaged IHDR is detected",
+        "pass":  true
+    },
+    {
+        "name":  "02 width recovery",
+        "pass":  true
+    },
+    {
+        "name":  "02 repaired PNG",
+        "pass":  true
+    },
+    {
+        "name":  "02 metadata",
+        "pass":  true
+    },
+    {
+        "name":  "03 Python LSB",
+        "pass":  true
+    },
+    {
+        "name":  "03 zsteg scanner",
+        "pass":  true
+    },
+    {
+        "name":  "03 zsteg raw extraction",
+        "pass":  true
+    },
+    {
+        "name":  "04 signature offset",
+        "pass":  true
+    },
+    {
+        "name":  "04 carve and CRC",
+        "pass":  true
+    },
+    {
+        "name":  "04 dd byte-for-byte",
+        "pass":  true
+    },
+    {
+        "name":  "05 mmls partition",
+        "pass":  true
+    },
+    {
+        "name":  "05 fls deleted metadata number",
+        "pass":  true
+    },
+    {
+        "name":  "05 icat byte export",
+        "pass":  true
+    },
+    {
+        "name":  "05 independent FAT parse",
+        "pass":  true
+    },
+    {
+        "name":  "06 SQLite CLI",
+        "pass":  true
+    },
+    {
+        "name":  "06 SQLite Python",
+        "pass":  true
+    },
+    {
+        "name":  "07 timeline UTC+8",
+        "pass":  true
+    },
+    {
+        "name":  "08 strings and grep",
+        "pass":  true
+    },
+    {
+        "name":  "09 XMP and Base64",
+        "pass":  true
+    },
+    {
+        "name":  "10 signature restoration",
+        "pass":  true
+    },
+    {
+        "name":  "11 ZIP flags and CRC",
+        "pass":  true
+    },
+    {
+        "name":  "12 tiny wordlist and real decryption",
+        "pass":  true
+    },
+    {
+        "name":  "13 process and command line",
+        "pass":  true
+    },
+    {
+        "name":  "14 file object relationship",
+        "pass":  true
+    },
+    {
+        "name":  "15 UTF-16LE flag and offset",
+        "pass":  true
+    },
+    {
+        "name":  "Vol3 windows.info help",
+        "pass":  true
+    },
+    {
+        "name":  "Vol3 windows.pslist help",
+        "pass":  true
+    },
+    {
+        "name":  "Vol3 windows.pstree help",
+        "pass":  true
+    },
+    {
+        "name":  "Vol3 windows.psscan help",
+        "pass":  true
+    },
+    {
+        "name":  "Vol3 windows.cmdline help",
+        "pass":  true
+    },
+    {
+        "name":  "Vol3 windows.cmdscan help",
+        "pass":  true
+    },
+    {
+        "name":  "Vol3 windows.consoles help",
+        "pass":  true
+    },
+    {
+        "name":  "Vol3 windows.filescan help",
+        "pass":  true
+    },
+    {
+        "name":  "Vol3 windows.handles help",
+        "pass":  true
+    },
+    {
+        "name":  "Vol3 windows.dumpfiles help",
+        "pass":  true
+    },
+    {
+        "name":  "Vol3 windows.memmap help",
+        "pass":  true
+    },
+    {
+        "name":  "Environment selfcheck",
+        "pass":  true
+    }
+]

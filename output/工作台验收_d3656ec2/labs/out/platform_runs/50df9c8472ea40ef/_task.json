@@ -1,0 +1,45 @@
+{
+  "id": "50df9c8472ea40ef",
+  "action": "disk_mount",
+  "title": "只读挂载 / 卸载镜像",
+  "state": "completed",
+  "command": "& 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\runtime\\python\\python.exe' 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\tools\\casework.py' 'mount' '--args' 'E:\\学习培训\\培训\\取证\\output\\工作台验收_d3656ec2\\labs\\out\\platform_runs\\50df9c8472ea40ef\\_case_args.json' '--out' 'E:\\学习培训\\培训\\取证\\output\\工作台验收_d3656ec2\\labs\\out\\platform_runs\\50df9c8472ea40ef\\evidence' '--kit' 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64' '--labs' 'E:\\学习培训\\培训\\取证\\output\\工作台验收_d3656ec2\\labs'",
+  "created": "2026-10-23T09:41:39.089709+08:00",
+  "exit_code": 0,
+  "text": "{\"title\": \"本工作区挂载状态\", \"result\": \"result.json\", \"note\": \"仅列本工作区创建的记录，不列举或卸载其他磁盘。ImDisk 驱动状态：未检测到\"}\r\n",
+  "error": "",
+  "duration": 0.16,
+  "files": [
+    {
+      "name": "evidence/result.json",
+      "bytes": 337,
+      "path": "out/platform_runs/50df9c8472ea40ef/evidence/result.json"
+    },
+    {
+      "name": "evidence/结果报告.html",
+      "bytes": 735,
+      "path": "out/platform_runs/50df9c8472ea40ef/evidence/结果报告.html"
+    },
+    {
+      "name": "运行报告.txt",
+      "bytes": 980,
+      "path": "out/platform_runs/50df9c8472ea40ef/运行报告.txt"
+    }
+  ],
+  "data": {
+    "kind": "casework",
+    "title": "本工作区挂载状态",
+    "columns": [
+      "盘符",
+      "方式",
+      "输入镜像",
+      "只读",
+      "创建时间"
+    ],
+    "rows": [],
+    "driver_installed": false,
+    "note": "仅列本工作区创建的记录，不列举或卸载其他磁盘。ImDisk 驱动状态：未检测到"
+  },
+  "host": "Windows · PowerShell",
+  "input": "05_disk/tiny_fat16.dd"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "db3d7a430df448cf",
+  "action": "zip_list",
+  "title": "查看压缩包目录",
+  "state": "completed",
+  "command": "& 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\tools\\7zip\\7z.exe' 'l' 'E:\\学习培训\\培训\\取证\\练习材料\\out\\platform_runs\\c24678b69ffb4b1c\\evidence\\0002_0000000001d7.zip'",
+  "created": "2026-10-23T09:57:09.410139+08:00",
+  "exit_code": 0,
+  "text": "\r\n7-Zip 26.04 (x64) : Copyright (c) 1999-2026 Igor Pavlov : 2026-10-05\r\n\r\nScanning the drive for archives:\r\n1 file, 201 bytes (1 KiB)\r\n\r\nListing archive: E:\\学习培训\\培训\\取证\\练习材料\\out\\platform_runs\\c24678b69ffb4b1c\\evidence\\0002_0000000001d7.zip\r\n\r\n--\r\nPath = E:\\学习培训\\培训\\取证\\练习材料\\out\\platform_runs\\c24678b69ffb4b1c\\evidence\\0002_0000000001d7.zip\r\nType = zip\r\nPhysical Size = 201\r\n\r\n   Date      Time    Attr         Size   Compressed  Name\r\n------------------- ----- ------------ ------------  ------------------------\r\n2016-01-15 10:04:23 ....A           15           29  4number.txt\r\n------------------- ----- ------------ ------------  ------------------------\r\n2016-01-15 10:04:23                 15           29  1 files\r\n",
+  "error": "",
+  "duration": 0.16,
+  "files": [
+    {
+      "name": "运行报告.txt",
+      "bytes": 1143,
+      "path": "out/platform_runs/db3d7a430df448cf/运行报告.txt"
+    }
+  ],
+  "data": null,
+  "host": "Windows · PowerShell",
+  "input": "out/platform_runs/c24678b69ffb4b1c/evidence/0002_0000000001d7.zip"
+}

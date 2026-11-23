@@ -1,0 +1,106 @@
+{
+  "id": "c24678b69ffb4b1c",
+  "action": "separate_files",
+  "title": "自动分离嵌入文件",
+  "state": "completed",
+  "command": "& 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\runtime\\python\\python.exe' 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\tools\\casework.py' 'separate' '--args' 'E:\\学习培训\\培训\\取证\\练习材料\\out\\platform_runs\\c24678b69ffb4b1c\\_case_args.json' '--out' 'E:\\学习培训\\培训\\取证\\练习材料\\out\\platform_runs\\c24678b69ffb4b1c\\evidence' '--kit' 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64' '--labs' 'E:\\学习培训\\培训\\取证\\练习材料'",
+  "created": "2026-10-23T09:55:36.834132+08:00",
+  "exit_code": 0,
+  "text": "{\"title\": \"自动文件分离\", \"result\": \"result.json\", \"note\": \"偏移属于该行 source 文件；签名命中不等于完整文件。已记录边界与验证方式，不能恢复所有碎片文件。\"}\r\n",
+  "error": "",
+  "duration": 0.16,
+  "files": [
+    {
+      "name": "evidence/0001_000000000000.png",
+      "bytes": 471,
+      "path": "out/platform_runs/c24678b69ffb4b1c/evidence/0001_000000000000.png"
+    },
+    {
+      "name": "evidence/0002_0000000001d7.zip",
+      "bytes": 201,
+      "path": "out/platform_runs/c24678b69ffb4b1c/evidence/0002_0000000001d7.zip"
+    },
+    {
+      "name": "evidence/result.json",
+      "bytes": 1747,
+      "path": "out/platform_runs/c24678b69ffb4b1c/evidence/result.json"
+    },
+    {
+      "name": "evidence/分离清单.csv",
+      "bytes": 573,
+      "path": "out/platform_runs/c24678b69ffb4b1c/evidence/分离清单.csv"
+    },
+    {
+      "name": "evidence/结果报告.html",
+      "bytes": 2609,
+      "path": "out/platform_runs/c24678b69ffb4b1c/evidence/结果报告.html"
+    },
+    {
+      "name": "运行报告.txt",
+      "bytes": 1136,
+      "path": "out/platform_runs/c24678b69ffb4b1c/运行报告.txt"
+    }
+  ],
+  "data": {
+    "kind": "casework",
+    "operation": "separate",
+    "title": "自动文件分离",
+    "columns": [
+      "导出文件",
+      "源字节偏移",
+      "字节数",
+      "格式",
+      "边界验证"
+    ],
+    "rows": [
+      [
+        "0001_000000000000.png",
+        "0x0",
+        471,
+        "png",
+        "块边界到 IEND；CRC 全部一致"
+      ],
+      [
+        "0002_0000000001d7.zip",
+        "0x1d7",
+        201,
+        "zip",
+        "EOCD / 中央目录通过；加密或较大条目未验证内容 CRC"
+      ]
+    ],
+    "exports": [
+      {
+        "file": "0001_000000000000.png",
+        "source": "E:\\学习培训\\培训\\取证\\练习材料\\inputs\\d58289c7315e46c0bbcde2d0\\QR_code.png",
+        "parent": null,
+        "offset": 0,
+        "offset_hex": "0x0",
+        "length": 471,
+        "format": "png",
+        "sha256": "b93364548806b9370c1a0fccdd36e1cdc0f6dda146906260ca370e4aa612c10d",
+        "validation": "块边界到 IEND；CRC 全部一致",
+        "depth": 0
+      },
+      {
+        "file": "0002_0000000001d7.zip",
+        "source": "E:\\学习培训\\培训\\取证\\练习材料\\inputs\\d58289c7315e46c0bbcde2d0\\QR_code.png",
+        "parent": null,
+        "offset": 471,
+        "offset_hex": "0x1d7",
+        "length": 201,
+        "format": "zip",
+        "sha256": "a386d9a1660175a7ae008af533d4b5346d1b0520bbb72b896d2d3fe5cc42ffda",
+        "validation": "EOCD / 中央目录通过；加密或较大条目未验证内容 CRC",
+        "depth": 0
+      }
+    ],
+    "candidates": 4,
+    "exported_bytes": 672,
+    "warnings": [],
+    "scan_mib": 0,
+    "total_input_bytes": 672,
+    "note": "偏移属于该行 source 文件；签名命中不等于完整文件。已记录边界与验证方式，不能恢复所有碎片文件。"
+  },
+  "host": "Windows · PowerShell",
+  "input": "inputs/d58289c7315e46c0bbcde2d0/QR_code.png"
+}

@@ -1,0 +1,23 @@
+{
+  "unified_index": "index.html",
+  "resources": 10,
+  "cases": 15,
+  "actions": 35,
+  "base64_gui": true,
+  "png_crc_gui": true,
+  "png_repair_to_recheck": true,
+  "sqlite_gui_table": true,
+  "unicode_upload_and_metadata": true,
+  "inline_solutions": true,
+  "handout_reader": true,
+  "search": true,
+  "copy_only_code": true,
+  "mobile_all_six_sections_no_overflow": true,
+  "mobile_expanded_solution_no_overflow": true,
+  "relocated_windows_launcher": true,
+  "workspace_windows_launcher": true,
+  "relocated_native_checks": 39,
+  "api_checks": 55,
+  "kali_executed": false,
+  "real_ram_parsed": false
+}

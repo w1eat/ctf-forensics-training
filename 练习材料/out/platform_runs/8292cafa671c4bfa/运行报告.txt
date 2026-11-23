@@ -1,0 +1,9 @@
+操作：全文件关键词 / flag 检索
+运行环境：Windows PowerShell
+创建时间：2026-10-23T09:58:44.458568+08:00
+状态：completed
+退出码：0
+命令：& 'E:\学习培训\培训\取证\学员工具包_Windows64\runtime\python\python.exe' 'E:\学习培训\培训\取证\学员工具包_Windows64\tools\analysis_engine.py' 'search' 'E:\学习培训\培训\取证\练习材料\inputs\bc2a8904e00f45f4805c98c6\0002_0000000001d7.zip' '--out' 'E:\学习培训\培训\取证\练习材料\out\platform_runs\8292cafa671c4bfa' '--kit' 'E:\学习培训\培训\取证\学员工具包_Windows64' '--keywords' 'flag,picoCTF,ctf,secret,password,credential,密码'
+
+
+{"columns": ["字节偏移", "编码", "关键词", "上下文"], "rows": [], "flag_candidates": [], "scanned_bytes": 201, "total_bytes": 201, "partial": false, "limited": false, "note": "flag 形态是候选，必须回到文件 / 业务语义验证。命中条数有上限，扫描不会因普通字符串表满而提前结束。"}

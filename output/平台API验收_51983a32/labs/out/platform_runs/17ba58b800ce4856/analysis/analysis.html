@@ -1,0 +1,170 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>文件分析报告</title><style>body{font:14px/1.85 system-ui,sans-serif;max-width:1140px;margin:36px auto;padding:0 24px;color:#254a36;background:#f5f7ed}section{border:1px solid #ccdabb;background:#fffef8;margin:22px 0;padding:22px;border-radius:8px}h1{font-size:29px}h2{font-size:20px}h3{font-size:14px;margin-top:22px}small,.label{font-size:11px;font-weight:normal;color:#7a895f}.table{overflow:auto;max-height:540px}table{border-collapse:collapse;width:100%;font-size:11px}th,td{text-align:left;vertical-align:top;padding:8px 10px;border-bottom:1px solid #dce4d0;max-width:450px;overflow-wrap:anywhere}th{background:#e5edd9;position:sticky;top:0}pre{white-space:pre-wrap;overflow-wrap:anywhere;font:11px/1.85 Consolas,monospace;background:#edf2e5;padding:14px;border-radius:4px;max-height:480px;overflow:auto}details{margin-top:16px}summary{cursor:pointer;color:#66844f;font-size:12px}.error{background:#f6e4d7;padding:12px;border-radius:4px}@media(max-width:650px){body{padding:0 13px;margin:20px auto}section{padding:15px}h1{font-size:24px}}</style><h1>文件自动分析报告</h1><h2>SQLite</h2><p>自选数据库.db</p><p>2026-10-22T10:16:21.303116+08:00 · Windows PowerShell</p><p>流程：database · 模式：standard · 子文件深度：2 · 导出 / 分析文件：0 / 32</p><p>本次未检出已支持的 flag 形态；这不等于没有隐藏内容。请继续查看格式结果与覆盖范围。</p><section><h2>识别文件结构与类型 <small>已执行</small></h2><details><summary>原始结构与完整范围记录</summary><pre>{
+  &quot;kind&quot;: &quot;sqlite&quot;,
+  &quot;label&quot;: &quot;SQLite&quot;,
+  &quot;evidence&quot;: &quot;文件头 53 51 4c 69 74 65 20 66 6f 72 6d 61 74 20 33 00&quot;,
+  &quot;extension&quot;: &quot;.db&quot;,
+  &quot;bytes&quot;: 8192,
+  &quot;header&quot;: &quot;53 51 4c 69 74 65 20 66 6f 72 6d 61 74 20 33 00 10 00 01 01 00 40 20 20 00 00 00 02 00 00 00 02 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 04 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00&quot;
+}</pre></details></section><section><h2>全文件摘要与字节熵 <small>已执行</small></h2><pre>SHA256 00f71ab49ab1edb007f1ca1ca9cd0ea6693db6708e4476e235895c0c0c48c72f
+字节数 8192 · 熵 0.25</pre><p>MD5 / SHA1 仅用于已知摘要对照；证据一致性优先记录 SHA256。熵高不等于一定加密。</p><details><summary>原始结构与完整范围记录</summary><pre>{
+  &quot;kind&quot;: &quot;hash&quot;,
+  &quot;name&quot;: &quot;自选数据库.db&quot;,
+  &quot;bytes&quot;: 8192,
+  &quot;md5&quot;: &quot;81e74abb57fcb87dc777241c1fe18d5a&quot;,
+  &quot;sha1&quot;: &quot;04ef9723a95a5763919f7d58f1848f752b302807&quot;,
+  &quot;sha256&quot;: &quot;00f71ab49ab1edb007f1ca1ca9cd0ea6693db6708e4476e235895c0c0c48c72f&quot;,
+  &quot;entropy&quot;: 0.25,
+  &quot;entropy_windows&quot;: [
+    {
+      &quot;offset&quot;: 0,
+      &quot;bytes&quot;: 8192,
+      &quot;entropy&quot;: 0.25
+    }
+  ],
+  &quot;note&quot;: &quot;MD5 / SHA1 仅用于已知摘要对照；证据一致性优先记录 SHA256。熵高不等于一定加密。&quot;
+}</pre></details></section><section><h2>通用字符串与嵌入签名 <small>已执行</small></h2><p>仅提取 ASCII 可打印字符及其 UTF-16LE 表示；不覆盖所有语言。跨块长串可能分段显示。</p><p>扫描范围：8192 / 8192 字节</p><details><summary>原始结构与完整范围记录</summary><pre>{
+  &quot;kind&quot;: &quot;scan&quot;,
+  &quot;strings&quot;: {
+    &quot;columns&quot;: [
+      &quot;字节偏移&quot;,
+      &quot;编码&quot;,
+      &quot;可读内容（最多 1024 字节）&quot;,
+      &quot;匹配字节数&quot;
+    ],
+    &quot;rows&quot;: [
+      [
+        &quot;0x0&quot;,
+        &quot;ASCII&quot;,
+        &quot;SQLite format 3&quot;,
+        15
+      ],
+      [
+        &quot;0xfb1&quot;,
+        &quot;ASCII&quot;,
+        &quot;tableordersorders&quot;,
+        17
+      ],
+      [
+        &quot;0xfc3&quot;,
+        &quot;ASCII&quot;,
+        &quot;CREATE TABLE orders(order_no TEXT, amount INTEGER, note TEXT)&quot;,
+        61
+      ],
+      [
+        &quot;0x1fe4&quot;,
+        &quot;ASCII&quot;,
+        &quot;5A-2026*&quot;,
+        8
+      ],
+      [
+        &quot;0x1ff2&quot;,
+        &quot;ASCII&quot;,
+        &quot; artifacts &quot;,
+        11
+      ]
+    ]
+  },
+  &quot;signatures&quot;: {
+    &quot;columns&quot;: [
+      &quot;字节偏移&quot;,
+      &quot;签名&quot;,
+      &quot;含义&quot;
+    ],
+    &quot;rows&quot;: [
+      [
+        &quot;0x0&quot;,
+        &quot;SQLite&quot;,
+        &quot;候选；需验证结构和边界&quot;
+      ]
+    ]
+  },
+  &quot;scanned_bytes&quot;: 8192,
+  &quot;total_bytes&quot;: 8192,
+  &quot;partial&quot;: false,
+  &quot;string_rows_limited&quot;: false,
+  &quot;signature_rows_limited&quot;: false,
+  &quot;note&quot;: &quot;仅提取 ASCII 可打印字符及其 UTF-16LE 表示；不覆盖所有语言。跨块长串可能分段显示。&quot;
+}</pre></details></section><section><h2>SQLite 数据库 <small>已执行</small></h2><h3>SQLite 表结构</h3><div class="table"><table><thead><tr><th>类型</th><th>名称</th><th>所属表</th><th>SQL</th></tr></thead><tbody><tr><td>table</td><td>orders</td><td>orders</td><td>CREATE TABLE orders(order_no TEXT, amount INTEGER, note TEXT)</td></tr></tbody></table></div><h3>预览表：orders</h3><div class="table"><table><thead><tr><th>order_no</th><th>amount</th><th>note</th></tr></thead><tbody><tr><td>A-2026</td><td>42</td><td>不是 artifacts 表</td></tr></tbody></table></div><h3>逐表检索命中</h3><div class="table"><table><thead><tr><th>表</th><th>查询结果行号</th><th>字段</th><th>值</th></tr></thead><tbody></tbody></table></div><p>结果行号是本次 SELECT 的位置，不保证是 rowid；最多 20 表、每表 1000 行。业务软删除与物理删除恢复不同。</p><details><summary>原始结构与完整范围记录</summary><pre>{
+  &quot;kind&quot;: &quot;workflow_database&quot;,
+  &quot;tables&quot;: [
+    {
+      &quot;title&quot;: &quot;SQLite 表结构&quot;,
+      &quot;columns&quot;: [
+        &quot;类型&quot;,
+        &quot;名称&quot;,
+        &quot;所属表&quot;,
+        &quot;SQL&quot;
+      ],
+      &quot;rows&quot;: [
+        [
+          &quot;table&quot;,
+          &quot;orders&quot;,
+          &quot;orders&quot;,
+          &quot;CREATE TABLE orders(order_no TEXT, amount INTEGER, note TEXT)&quot;
+        ]
+      ]
+    },
+    {
+      &quot;title&quot;: &quot;预览表：orders&quot;,
+      &quot;columns&quot;: [
+        &quot;order_no&quot;,
+        &quot;amount&quot;,
+        &quot;note&quot;
+      ],
+      &quot;rows&quot;: [
+        [
+          &quot;A-2026&quot;,
+          42,
+          &quot;不是 artifacts 表&quot;
+        ]
+      ]
+    },
+    {
+      &quot;title&quot;: &quot;逐表检索命中&quot;,
+      &quot;columns&quot;: [
+        &quot;表&quot;,
+        &quot;查询结果行号&quot;,
+        &quot;字段&quot;,
+        &quot;值&quot;
+      ],
+      &quot;rows&quot;: []
+    }
+  ],
+  &quot;scanned_tables&quot;: [
+    {
+      &quot;table&quot;: &quot;orders&quot;,
+      &quot;rows&quot;: 1,
+      &quot;limited&quot;: false
+    }
+  ],
+  &quot;table_limit&quot;: 20,
+  &quot;row_limit_per_table&quot;: 1000,
+  &quot;companions&quot;: [],
+  &quot;note&quot;: &quot;结果行号是本次 SELECT 的位置，不保证是 rowid；最多 20 表、每表 1000 行。业务软删除与物理删除恢复不同。&quot;
+}</pre></details></section><section><h2>全文件关键词与 flag 形态检索 <small>已执行</small></h2><div class="table"><table><thead><tr><th>字节偏移</th><th>编码</th><th>关键词</th><th>上下文</th></tr></thead><tbody></tbody></table></div><p>flag 形态是候选，必须回到文件 / 业务语义验证。命中条数有上限，扫描不会因普通字符串表满而提前结束。</p><p>扫描范围：8192 / 8192 字节</p><details><summary>原始结构与完整范围记录</summary><pre>{
+  &quot;columns&quot;: [
+    &quot;字节偏移&quot;,
+    &quot;编码&quot;,
+    &quot;关键词&quot;,
+    &quot;上下文&quot;
+  ],
+  &quot;rows&quot;: [],
+  &quot;flag_candidates&quot;: [],
+  &quot;scanned_bytes&quot;: 8192,
+  &quot;total_bytes&quot;: 8192,
+  &quot;partial&quot;: false,
+  &quot;limited&quot;: false,
+  &quot;note&quot;: &quot;flag 形态是候选，必须回到文件 / 业务语义验证。命中条数有上限，扫描不会因普通字符串表满而提前结束。&quot;
+}</pre></details></section><section><h2>内置 YARA 线索规则 <small>已执行</small></h2><div class="table"><table><thead><tr><th>规则</th><th>字符串</th><th>字节偏移</th><th>匹配字节（截取）</th><th>文本预览</th></tr></thead><tbody></tbody></table></div><p>规则命中是线索，不能据此直接判定恶意或确认答案。自定义规则禁用 include。</p><details><summary>原始结构与完整范围记录</summary><pre>{
+  &quot;columns&quot;: [
+    &quot;规则&quot;,
+    &quot;字符串&quot;,
+    &quot;字节偏移&quot;,
+    &quot;匹配字节（截取）&quot;,
+    &quot;文本预览&quot;
+  ],
+  &quot;rows&quot;: [],
+  &quot;kind&quot;: &quot;yara&quot;,
+  &quot;matched_rules&quot;: [],
+  &quot;note&quot;: &quot;规则命中是线索，不能据此直接判定恶意或确认答案。自定义规则禁用 include。&quot;
+}</pre></details></section><section><h2>下一步与原始证据</h2><ul><li>命中仅是候选；请结合路径、对象结构和原始输出确认。未导出、跳过与预算限制均保留在报告中。</li></ul><p>派生文件、CSV 与原始工具日志可在平台结果区另行下载。原件保持只读；命令使用上方标注的宿主系统。</p></section></html>

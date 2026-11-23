@@ -1,0 +1,84 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>文件分析报告</title><style>body{font:14px/1.85 system-ui,sans-serif;max-width:1140px;margin:36px auto;padding:0 24px;color:#254a36;background:#f5f7ed}section{border:1px solid #ccdabb;background:#fffef8;margin:22px 0;padding:22px;border-radius:8px}h1{font-size:29px}h2{font-size:20px}h3{font-size:14px;margin-top:22px}small,.label{font-size:11px;font-weight:normal;color:#7a895f}.table{overflow:auto;max-height:540px}table{border-collapse:collapse;width:100%;font-size:11px}th,td{text-align:left;vertical-align:top;padding:8px 10px;border-bottom:1px solid #dce4d0;max-width:450px;overflow-wrap:anywhere}th{background:#e5edd9;position:sticky;top:0}pre{white-space:pre-wrap;overflow-wrap:anywhere;font:11px/1.85 Consolas,monospace;background:#edf2e5;padding:14px;border-radius:4px;max-height:480px;overflow:auto}details{margin-top:16px}summary{cursor:pointer;color:#66844f;font-size:12px}.error{background:#f6e4d7;padding:12px;border-radius:4px}@media(max-width:650px){body{padding:0 13px;margin:20px auto}section{padding:15px}h1{font-size:24px}}</style><h1>文件自动分析报告</h1><h2>空文件</h2><p>empty.bin</p><p>2026-10-22T10:16:28.458884+08:00 · Windows PowerShell</p><p>流程：embedded · 模式：standard · 子文件深度：2 · 导出 / 分析文件：0 / 32</p><p>本次未检出已支持的 flag 形态；这不等于没有隐藏内容。请继续查看格式结果与覆盖范围。</p><section><h2>识别文件结构与类型 <small>已执行</small></h2><details><summary>原始结构与完整范围记录</summary><pre>{
+  &quot;kind&quot;: &quot;empty&quot;,
+  &quot;label&quot;: &quot;空文件&quot;,
+  &quot;evidence&quot;: &quot;0 bytes&quot;,
+  &quot;extension&quot;: &quot;.bin&quot;,
+  &quot;bytes&quot;: 0,
+  &quot;header&quot;: &quot;&quot;
+}</pre></details></section><section><h2>全文件摘要与字节熵 <small>已执行</small></h2><pre>SHA256 e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+字节数 0 · 熵 0</pre><p>MD5 / SHA1 仅用于已知摘要对照；证据一致性优先记录 SHA256。熵高不等于一定加密。</p><details><summary>原始结构与完整范围记录</summary><pre>{
+  &quot;kind&quot;: &quot;hash&quot;,
+  &quot;name&quot;: &quot;empty.bin&quot;,
+  &quot;bytes&quot;: 0,
+  &quot;md5&quot;: &quot;d41d8cd98f00b204e9800998ecf8427e&quot;,
+  &quot;sha1&quot;: &quot;da39a3ee5e6b4b0d3255bfef95601890afd80709&quot;,
+  &quot;sha256&quot;: &quot;e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855&quot;,
+  &quot;entropy&quot;: 0,
+  &quot;entropy_windows&quot;: [],
+  &quot;note&quot;: &quot;MD5 / SHA1 仅用于已知摘要对照；证据一致性优先记录 SHA256。熵高不等于一定加密。&quot;
+}</pre></details></section><section><h2>通用字符串与嵌入签名 <small>已执行</small></h2><p>仅提取 ASCII 可打印字符及其 UTF-16LE 表示；不覆盖所有语言。跨块长串可能分段显示。</p><p>扫描范围：0 / 0 字节</p><details><summary>原始结构与完整范围记录</summary><pre>{
+  &quot;kind&quot;: &quot;scan&quot;,
+  &quot;strings&quot;: {
+    &quot;columns&quot;: [
+      &quot;字节偏移&quot;,
+      &quot;编码&quot;,
+      &quot;可读内容（最多 1024 字节）&quot;,
+      &quot;匹配字节数&quot;
+    ],
+    &quot;rows&quot;: []
+  },
+  &quot;signatures&quot;: {
+    &quot;columns&quot;: [
+      &quot;字节偏移&quot;,
+      &quot;签名&quot;,
+      &quot;含义&quot;
+    ],
+    &quot;rows&quot;: []
+  },
+  &quot;scanned_bytes&quot;: 0,
+  &quot;total_bytes&quot;: 0,
+  &quot;partial&quot;: false,
+  &quot;string_rows_limited&quot;: false,
+  &quot;signature_rows_limited&quot;: false,
+  &quot;note&quot;: &quot;仅提取 ASCII 可打印字符及其 UTF-16LE 表示；不覆盖所有语言。跨块长串可能分段显示。&quot;
+}</pre></details></section><section><h2>嵌入对象与雕刻 <small>已执行</small></h2><div class="table"><table><thead><tr><th>起始字节</th><th>字节数</th><th>格式</th><th>验证</th><th>边界依据</th><th>输出</th><th>诊断</th></tr></thead><tbody></tbody></table></div><p>自动雕刻仅支持可验证边界的 PNG / 经典 ZIP / PDF，单对象最多 16 MiB；其他签名继续用字节范围雕刻。</p><p>扫描范围：0 / 0 字节</p><details><summary>原始结构与完整范围记录</summary><pre>{
+  &quot;columns&quot;: [
+    &quot;起始字节&quot;,
+    &quot;字节数&quot;,
+    &quot;格式&quot;,
+    &quot;验证&quot;,
+    &quot;边界依据&quot;,
+    &quot;输出&quot;,
+    &quot;诊断&quot;
+  ],
+  &quot;rows&quot;: [],
+  &quot;scanned_bytes&quot;: 0,
+  &quot;total_bytes&quot;: 0,
+  &quot;note&quot;: &quot;自动雕刻仅支持可验证边界的 PNG / 经典 ZIP / PDF，单对象最多 16 MiB；其他签名继续用字节范围雕刻。&quot;
+}</pre></details></section><section><h2>全文件关键词与 flag 形态检索 <small>已执行</small></h2><div class="table"><table><thead><tr><th>字节偏移</th><th>编码</th><th>关键词</th><th>上下文</th></tr></thead><tbody></tbody></table></div><p>flag 形态是候选，必须回到文件 / 业务语义验证。命中条数有上限，扫描不会因普通字符串表满而提前结束。</p><p>扫描范围：0 / 0 字节</p><details><summary>原始结构与完整范围记录</summary><pre>{
+  &quot;columns&quot;: [
+    &quot;字节偏移&quot;,
+    &quot;编码&quot;,
+    &quot;关键词&quot;,
+    &quot;上下文&quot;
+  ],
+  &quot;rows&quot;: [],
+  &quot;flag_candidates&quot;: [],
+  &quot;scanned_bytes&quot;: 0,
+  &quot;total_bytes&quot;: 0,
+  &quot;partial&quot;: false,
+  &quot;limited&quot;: false,
+  &quot;note&quot;: &quot;flag 形态是候选，必须回到文件 / 业务语义验证。命中条数有上限，扫描不会因普通字符串表满而提前结束。&quot;
+}</pre></details></section><section><h2>内置 YARA 线索规则 <small>已执行</small></h2><div class="table"><table><thead><tr><th>规则</th><th>字符串</th><th>字节偏移</th><th>匹配字节（截取）</th><th>文本预览</th></tr></thead><tbody></tbody></table></div><p>规则命中是线索，不能据此直接判定恶意或确认答案。自定义规则禁用 include。</p><details><summary>原始结构与完整范围记录</summary><pre>{
+  &quot;columns&quot;: [
+    &quot;规则&quot;,
+    &quot;字符串&quot;,
+    &quot;字节偏移&quot;,
+    &quot;匹配字节（截取）&quot;,
+    &quot;文本预览&quot;
+  ],
+  &quot;rows&quot;: [],
+  &quot;kind&quot;: &quot;yara&quot;,
+  &quot;matched_rules&quot;: [],
+  &quot;note&quot;: &quot;规则命中是线索，不能据此直接判定恶意或确认答案。自定义规则禁用 include。&quot;
+}</pre></details></section><section><h2>下一步与原始证据</h2><ul><li>命中仅是候选；请结合路径、对象结构和原始输出确认。未导出、跳过与预算限制均保留在报告中。</li></ul><p>派生文件、CSV 与原始工具日志可在平台结果区另行下载。原件保持只读；命令使用上方标注的宿主系统。</p></section></html>

@@ -1,0 +1,38 @@
+{
+  "columns": [
+    "路径",
+    "展开字节",
+    "压缩字节",
+    "加密",
+    "CRC"
+  ],
+  "rows": [
+    [
+      "note.txt",
+      "48",
+      "60",
+      "+",
+      "B6F751AE"
+    ]
+  ],
+  "kind": "archive",
+  "listing": {
+    "command": "& 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\tools\\7zip\\7z.exe' 'l' '-slt' '-ba' '-sccUTF-8' '-pwrong-password' '--' 'E:\\学习培训\\培训\\取证\\output\\平台API验收_51983a32\\labs\\04_archive\\locked.zip'",
+    "exit_code": 0,
+    "preview": "Path = note.txt\r\nFolder = -\r\nSize = 48\r\nPacked Size = 60\r\nModified = 2026-10-18 00:00:00\r\nCreated = \r\nAccessed = \r\nAttributes = \r\nEncrypted = +\r\nComment = \r\nCRC = B6F751AE\r\nMethod = ZipCrypto Store\r\nCharacteristics = Encrypt\r\nHost OS = FAT\r\nVersion = 20\r\nVolume Index = 0\r\nOffset = 0\r\n\r\n",
+    "diagnostics": "",
+    "log": "archive_listing.txt",
+    "argument_file": null
+  },
+  "entries": 1,
+  "mode": "test",
+  "exit_code": 2,
+  "test": {
+    "command": "& 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\tools\\7zip\\7z.exe' 't' '-sccUTF-8' '-pwrong-password' '--' 'E:\\学习培训\\培训\\取证\\output\\平台API验收_51983a32\\labs\\04_archive\\locked.zip'",
+    "exit_code": 2,
+    "preview": "\r\n7-Zip 26.04 (x64) : Copyright (c) 1999-2026 Igor Pavlov : 2026-10-05\r\n\r\nScanning the drive for archives:\r\n1 file, 174 bytes (1 KiB)\r\n\r\nTesting archive: E:\\学习培训\\培训\\取证\\output\\平台API验收_51983a32\\labs\\04_archive\\locked.zip\r\n--\r\nPath = E:\\学习培训\\培训\\取证\\output\\平台API验收_51983a32\\labs\\04_archive\\locked.zip\r\nType = zip\r\nPhysical Size = 174\r\n\r\n\r\nSub items Errors: 1\r\n\r\nArchives with Errors: 1\r\n\r\nSub items Errors: 1\r\n",
+    "diagnostics": "ERROR: Wrong password : note.txt\r\n",
+    "log": "archive_test.txt",
+    "argument_file": null
+  }
+}

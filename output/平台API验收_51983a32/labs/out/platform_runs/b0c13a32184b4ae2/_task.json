@@ -1,0 +1,32 @@
+{
+  "id": "b0c13a32184b4ae2",
+  "action": "archive_general",
+  "title": "通用压缩包分析 / 提取",
+  "state": "failed",
+  "command": "& 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\runtime\\python\\python.exe' 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\tools\\analysis_engine.py' 'archive' 'E:\\学习培训\\培训\\取证\\output\\平台API验收_51983a32\\labs\\inputs\\_platform_qa_bc170e0df4\\outside.zip' '--out' 'E:\\学习培训\\培训\\取证\\output\\平台API验收_51983a32\\labs\\out\\platform_runs\\b0c13a32184b4ae2\\archive' '--kit' 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64' '--mode' 'extract' '--password' ''",
+  "created": "2026-10-22T10:16:25.746858+08:00",
+  "exit_code": 2,
+  "text": "\n\n[stderr / 诊断信息]\n压缩包含目录外路径，未解压。\r\n",
+  "error": "",
+  "duration": 0.31,
+  "files": [
+    {
+      "name": "archive/archive_listing.txt",
+      "bytes": 283,
+      "path": "out/platform_runs/b0c13a32184b4ae2/archive/archive_listing.txt"
+    },
+    {
+      "name": "archive/archive_listing_diagnostics.txt",
+      "bytes": 0,
+      "path": "out/platform_runs/b0c13a32184b4ae2/archive/archive_listing_diagnostics.txt"
+    },
+    {
+      "name": "运行报告.txt",
+      "bytes": 757,
+      "path": "out/platform_runs/b0c13a32184b4ae2/运行报告.txt"
+    }
+  ],
+  "data": null,
+  "host": "Windows · PowerShell",
+  "input": "inputs/_platform_qa_bc170e0df4/outside.zip"
+}

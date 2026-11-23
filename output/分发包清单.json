@@ -1,0 +1,41 @@
+{
+  "date": "2026-10-23",
+  "student_files": 9881,
+  "student_uncompressed_bytes": 759665264,
+  "operations": 78,
+  "guided_routes": 22,
+  "worked_cases": 15,
+  "releases": [
+    {
+      "file": "学员工具与练习_Windows64.zip",
+      "bytes": 421072905,
+      "sha256": "87e6ff20f39b18875cec80c1a4f8b27e7d3db2de7ab9af69e494bcb7abda69bd"
+    },
+    {
+      "file": "CTF取证基础_Kali学习资料.zip",
+      "bytes": 33450542,
+      "sha256": "9461de9e37eceebcb7cc245a3f106121d0a398ffc1ed734eb4ed5f159b8da325"
+    },
+    {
+      "file": "讲师课件与逐题题解.zip",
+      "bytes": 33819096,
+      "sha256": "ee418e6dd9473647636ae064c9f70bfb71651236538e1e0a0bd2f88b518b107f"
+    },
+    {
+      "file": "Volatility3_Windows离线符号.zip",
+      "bytes": 839727133,
+      "sha256": "231d69735b9a5482b16bdbf1ec356e0a95574c44079e68dfb02ebddb34d55f3e"
+    },
+    {
+      "file": "CTF取证基础_学员练习.zip",
+      "bytes": 67918,
+      "sha256": "f493784738610ed4cfc5ebf434359c02bd2f97c181caaf56630fc834d16d87d9"
+    },
+    {
+      "file": "Volatility3_例题与命令.zip",
+      "bytes": 14152,
+      "sha256": "ad3b6fc246dd2051e3f02cff6280b5b0c6c5af5b6e2df1cb96999fa4d7bba6d2"
+    }
+  ],
+  "public_docs": "HTML; editable sources retained in instructor package"
+}

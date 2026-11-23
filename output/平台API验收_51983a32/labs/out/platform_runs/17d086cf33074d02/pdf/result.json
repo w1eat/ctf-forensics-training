@@ -1,0 +1,15 @@
+{
+  "kind": "pdf",
+  "encrypted": false,
+  "pages": 1,
+  "extracted_pages": 1,
+  "metadata": {
+    "/Producer": "pypdf",
+    "/Title": "Own uploaded PDF"
+  },
+  "attachments": [
+    "memo.txt"
+  ],
+  "preview": "\n--- PAGE 1 ---\nIndependent PDF example 42",
+  "note": "最多 100 页 / 约 2 MiB 文本；扫描图片型 PDF 需要 OCR，本工具不把无文本解释为无内容。"
+}

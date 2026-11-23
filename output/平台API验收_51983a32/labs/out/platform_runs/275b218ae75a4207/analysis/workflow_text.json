@@ -1,0 +1,69 @@
+{
+  "kind": "workflow_text",
+  "tables": [
+    {
+      "title": "结构预览",
+      "columns": [
+        "行号",
+        "JSON / 原始内容"
+      ],
+      "rows": [
+        [
+          1,
+          "{\"event\": \"upload\", \"ticket\": 7}"
+        ],
+        [
+          2,
+          "{\"event\": \"review\", \"ticket\": 7}"
+        ]
+      ]
+    },
+    {
+      "title": "编码候选",
+      "columns": [
+        "编码候选",
+        "文本字符位置",
+        "解码预览",
+        "输出"
+      ],
+      "rows": []
+    },
+    {
+      "title": "实际字段与关联值（统计前 20000 行）",
+      "columns": [
+        "字段",
+        "值",
+        "出现次数"
+      ],
+      "rows": [
+        [
+          "event",
+          "upload",
+          1
+        ],
+        [
+          "event",
+          "review",
+          1
+        ]
+      ]
+    }
+  ],
+  "encoding": "utf-8-sig",
+  "read_bytes": 62,
+  "limited": false,
+  "decodings": {
+    "encoding": "utf-8-sig",
+    "read_bytes": 62,
+    "total_bytes": 62,
+    "limited": false,
+    "columns": [
+      "编码候选",
+      "文本字符位置",
+      "解码预览",
+      "输出"
+    ],
+    "rows": [],
+    "note": "只做一层严格 Base64 / Hex 候选解码，字符位置不是原始文件字节偏移。编码形态不等于加密。"
+  }
+}

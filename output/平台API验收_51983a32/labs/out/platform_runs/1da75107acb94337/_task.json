@@ -1,0 +1,712 @@
+{
+  "id": "1da75107acb94337",
+  "action": "auto_analyze",
+  "title": "自动分析上传文件",
+  "state": "completed",
+  "command": "& 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\runtime\\python\\python.exe' 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\tools\\analysis_engine.py' 'auto' 'E:\\学习培训\\培训\\取证\\output\\平台API验收_51983a32\\labs\\05_disk\\tiny_fat16.dd' '--out' 'E:\\学习培训\\培训\\取证\\output\\平台API验收_51983a32\\labs\\out\\platform_runs\\1da75107acb94337\\analysis' '--kit' 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64' '--profile' 'quick' '--workflow' 'disk' '--keywords' 'flag,picoCTF,ctf,secret,password,credential,密码' '--max-files' '32' '--depth' '2' '--password' ''",
+  "created": "2026-10-22T10:16:28.643993+08:00",
+  "exit_code": 0,
+  "text": "{\"kind\": \"analysis\", \"source\": \"tiny_fat16.dd\", \"selected_workflow\": \"disk\", \"stages\": [{\"title\": \"识别文件结构与类型\", \"status\": \"completed\"}, {\"title\": \"全文件摘要与字节熵\", \"status\": \"completed\"}, {\"title\": \"通用字符串与嵌入签名\", \"status\": \"completed\"}, {\"title\": \"文件系统 2048：递归目录与删除项\", \"status\": \"completed\"}, {\"title\": \"磁盘 / 分区镜像\", \"status\": \"completed\"}, {\"title\": \"全文件关键词与 flag 形态检索\", \"status\": \"completed\"}], \"flag_candidates\": 2, \"report\": \"E:\\\\学习培训\\\\培训\\\\取证\\\\output\\\\平台API验收_51983a32\\\\labs\\\\out\\\\platform_runs\\\\1da75107acb94337\\\\analysis\\\\analysis.html\"}\r\n",
+  "error": "",
+  "duration": 1.06,
+  "files": [
+    {
+      "name": "analysis/analysis.html",
+      "bytes": 19279,
+      "path": "out/platform_runs/1da75107acb94337/analysis/analysis.html"
+    },
+    {
+      "name": "analysis/analysis.json",
+      "bytes": 17636,
+      "path": "out/platform_runs/1da75107acb94337/analysis/analysis.json"
+    },
+    {
+      "name": "analysis/analysis.txt",
+      "bytes": 17636,
+      "path": "out/platform_runs/1da75107acb94337/analysis/analysis.txt"
+    },
+    {
+      "name": "analysis/clues.json",
+      "bytes": 1237,
+      "path": "out/platform_runs/1da75107acb94337/analysis/clues.json"
+    },
+    {
+      "name": "analysis/disk_files_1.json",
+      "bytes": 494,
+      "path": "out/platform_runs/1da75107acb94337/analysis/disk_files_1.json"
+    },
+    {
+      "name": "analysis/fingerprint.json",
+      "bytes": 1229,
+      "path": "out/platform_runs/1da75107acb94337/analysis/fingerprint.json"
+    },
+    {
+      "name": "analysis/identify.json",
+      "bytes": 406,
+      "path": "out/platform_runs/1da75107acb94337/analysis/identify.json"
+    },
+    {
+      "name": "analysis/result.json",
+      "bytes": 17636,
+      "path": "out/platform_runs/1da75107acb94337/analysis/result.json"
+    },
+    {
+      "name": "analysis/targeted_search.json",
+      "bytes": 1613,
+      "path": "out/platform_runs/1da75107acb94337/analysis/targeted_search.json"
+    },
+    {
+      "name": "analysis/workflow/fs_2048/file_inventory.csv",
+      "bytes": 177,
+      "path": "out/platform_runs/1da75107acb94337/analysis/workflow/fs_2048/file_inventory.csv"
+    },
+    {
+      "name": "analysis/workflow/fs_2048/fls.txt",
+      "bytes": 122,
+      "path": "out/platform_runs/1da75107acb94337/analysis/workflow/fs_2048/fls.txt"
+    },
+    {
+      "name": "analysis/workflow/fs_2048/fls_diagnostics.txt",
+      "bytes": 0,
+      "path": "out/platform_runs/1da75107acb94337/analysis/workflow/fs_2048/fls_diagnostics.txt"
+    },
+    {
+      "name": "analysis/workflow/fs_2048/fsstat.txt",
+      "bytes": 844,
+      "path": "out/platform_runs/1da75107acb94337/analysis/workflow/fs_2048/fsstat.txt"
+    },
+    {
+      "name": "analysis/workflow/fs_2048/fsstat_diagnostics.txt",
+      "bytes": 0,
+      "path": "out/platform_runs/1da75107acb94337/analysis/workflow/fs_2048/fsstat_diagnostics.txt"
+    },
+    {
+      "name": "analysis/workflow/fs_2048/istat_1.txt",
+      "bytes": 242,
+      "path": "out/platform_runs/1da75107acb94337/analysis/workflow/fs_2048/istat_1.txt"
+    },
+    {
+      "name": "analysis/workflow/fs_2048/istat_1_diagnostics.txt",
+      "bytes": 0,
+      "path": "out/platform_runs/1da75107acb94337/analysis/workflow/fs_2048/istat_1_diagnostics.txt"
+    },
+    {
+      "name": "analysis/workflow/fs_2048/istat_2.txt",
+      "bytes": 238,
+      "path": "out/platform_runs/1da75107acb94337/analysis/workflow/fs_2048/istat_2.txt"
+    },
+    {
+      "name": "analysis/workflow/fs_2048/istat_2_diagnostics.txt",
+      "bytes": 0,
+      "path": "out/platform_runs/1da75107acb94337/analysis/workflow/fs_2048/istat_2_diagnostics.txt"
+    },
+    {
+      "name": "analysis/workflow/fs_2048/recovered/001__ECRET.TXT",
+      "bytes": 31,
+      "path": "out/platform_runs/1da75107acb94337/analysis/workflow/fs_2048/recovered/001__ECRET.TXT"
+    },
+    {
+      "name": "analysis/workflow/fs_2048/recovered/001__ECRET.TXT.diagnostics.txt",
+      "bytes": 0,
+      "path": "out/platform_runs/1da75107acb94337/analysis/workflow/fs_2048/recovered/001__ECRET.TXT.diagnostics.txt"
+    },
+    {
+      "name": "analysis/workflow/fs_2048/recovered/002_README.TXT",
+      "bytes": 64,
+      "path": "out/platform_runs/1da75107acb94337/analysis/workflow/fs_2048/recovered/002_README.TXT"
+    },
+    {
+      "name": "analysis/workflow/fs_2048/recovered/002_README.TXT.diagnostics.txt",
+      "bytes": 0,
+      "path": "out/platform_runs/1da75107acb94337/analysis/workflow/fs_2048/recovered/002_README.TXT.diagnostics.txt"
+    },
+    {
+      "name": "analysis/workflow/fs_2048/recovered_index.json",
+      "bytes": 1352,
+      "path": "out/platform_runs/1da75107acb94337/analysis/workflow/fs_2048/recovered_index.json"
+    },
+    {
+      "name": "analysis/workflow/mmls.txt",
+      "bytes": 356,
+      "path": "out/platform_runs/1da75107acb94337/analysis/workflow/mmls.txt"
+    },
+    {
+      "name": "analysis/workflow/mmls_diagnostics.txt",
+      "bytes": 0,
+      "path": "out/platform_runs/1da75107acb94337/analysis/workflow/mmls_diagnostics.txt"
+    },
+    {
+      "name": "analysis/workflow_disk.json",
+      "bytes": 4615,
+      "path": "out/platform_runs/1da75107acb94337/analysis/workflow_disk.json"
+    },
+    {
+      "name": "运行报告.txt",
+      "bytes": 1455,
+      "path": "out/platform_runs/1da75107acb94337/运行报告.txt"
+    }
+  ],
+  "data": {
+    "kind": "analysis",
+    "source": "tiny_fat16.dd",
+    "created": "2026-10-22T10:16:28.714172+08:00",
+    "host": "Windows PowerShell",
+    "profile": "quick",
+    "workflow": "disk",
+    "sections": [
+      {
+        "id": "identify",
+        "title": "识别文件结构与类型",
+        "status": "completed",
+        "seconds": 0.0,
+        "data": {
+          "kind": "disk",
+          "label": "MBR 磁盘候选",
+          "evidence": "结构标记候选；继续由 TSK fsstat 验证，不使用练习固定扇区。",
+          "extension": ".dd",
+          "bytes": 9437184,
+          "header": "00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+        }
+      },
+      {
+        "id": "fingerprint",
+        "title": "全文件摘要与字节熵",
+        "status": "completed",
+        "seconds": 0.179,
+        "data": {
+          "kind": "hash",
+          "name": "tiny_fat16.dd",
+          "bytes": 9437184,
+          "md5": "4d05fcb24f6bf93efc8add1b611c9c20",
+          "sha1": "fbd56008f62412d88e19af80facaefc2860e78cd",
+          "sha256": "4293659eb90411fd57ae90c14745a8c3a2e57db360552e6a2e6dcb6398fd65ed",
+          "entropy": 0.00048,
+          "entropy_windows": [
+            {
+              "offset": 0,
+              "bytes": 1048576,
+              "entropy": 0.00022
+            },
+            {
+              "offset": 1048576,
+              "bytes": 1048576,
+              "entropy": 0.00349
+            },
+            {
+              "offset": 2097152,
+              "bytes": 1048576,
+              "entropy": -0.0
+            },
+            {
+              "offset": 3145728,
+              "bytes": 1048576,
+              "entropy": -0.0
+            },
+            {
+              "offset": 4194304,
+              "bytes": 1048576,
+              "entropy": -0.0
+            },
+            {
+              "offset": 5242880,
+              "bytes": 1048576,
+              "entropy": -0.0
+            },
+            {
+              "offset": 6291456,
+              "bytes": 1048576,
+              "entropy": -0.0
+            },
+            {
+              "offset": 7340032,
+              "bytes": 1048576,
+              "entropy": -0.0
+            },
+            {
+              "offset": 8388608,
+              "bytes": 1048576,
+              "entropy": -0.0
+            }
+          ],
+          "note": "MD5 / SHA1 仅用于已知摘要对照；证据一致性优先记录 SHA256。熵高不等于一定加密。"
+        }
+      },
+      {
+        "id": "clues",
+        "title": "通用字符串与嵌入签名",
+        "status": "completed",
+        "seconds": 0.078,
+        "data": {
+          "kind": "scan",
+          "strings": {
+            "columns": [
+              "字节偏移",
+              "编码",
+              "可读内容（最多 1024 字节）",
+              "匹配字节数"
+            ],
+            "rows": [
+              [
+                "0x100003",
+                "ASCII",
+                "CTFDEMO ",
+                8
+              ],
+              [
+                "0x10002b",
+                "ASCII",
+                "CTFTRAININGFAT16   ",
+                19
+              ],
+              [
+                "0x110200",
+                "ASCII",
+                "README  TXT ",
+                12
+              ],
+              [
+                "0x110221",
+                "ASCII",
+                "ECRET  TXT ",
+                11
+              ],
+              [
+                "0x114200",
+                "ASCII",
+                "Training FAT16 image. Look for a deleted root directory entry.",
+                62
+              ],
+              [
+                "0x114400",
+                "ASCII",
+                "flag{deleted_entry_is_a_clue}",
+                29
+              ]
+            ]
+          },
+          "signatures": {
+            "columns": [
+              "字节偏移",
+              "签名",
+              "含义"
+            ],
+            "rows": []
+          },
+          "scanned_bytes": 4194304,
+          "total_bytes": 9437184,
+          "partial": true,
+          "string_rows_limited": false,
+          "signature_rows_limited": false,
+          "note": "仅提取 ASCII 可打印字符及其 UTF-16LE 表示；不覆盖所有语言。跨块长串可能分段显示。"
+        }
+      },
+      {
+        "id": "disk_files_1",
+        "title": "文件系统 2048：递归目录与删除项",
+        "status": "completed",
+        "seconds": 0.085,
+        "data": {
+          "command": "& 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\tools\\sleuthkit\\bin\\fls.exe' '-r' '-p' '-b' '512' '-o' '2048' 'E:\\学习培训\\培训\\取证\\output\\平台API验收_51983a32\\labs\\05_disk\\tiny_fat16.dd'",
+          "exit_code": 0,
+          "preview": "r/r 3:\tREADME.TXT\r\nr/r * 4:\t_ECRET.TXT\r\nv/v 260083:\t$MBR\r\nv/v 260084:\t$FAT1\r\nv/v 260085:\t$FAT2\r\nV/V 260086:\t$OrphanFiles\r\n",
+          "diagnostics": "",
+          "log": "fls.txt",
+          "argument_file": null
+        }
+      },
+      {
+        "id": "workflow_disk",
+        "title": "磁盘 / 分区镜像",
+        "status": "completed",
+        "seconds": 0.499,
+        "data": {
+          "kind": "disk",
+          "mode": "partition_table",
+          "volumes": [
+            {
+              "sector": 2048,
+              "sector_size": 512,
+              "length": 16384,
+              "description": "DOS FAT16 (0x06)",
+              "filesystem": "FAT16",
+              "summary": "FILE SYSTEM INFORMATION\r\n--------------------------------------------\r\nFile System Type: FAT16\r\n\r\nOEM Name: CTFDEMO \r\nVolume ID: 0xc7f02610\r\nVolume Label (Boot Sector): CTFTRAINING\r\nVolume Label (Root Directory):\r\nFile System Type Label: FAT16   \r\n\r\nSectors before file system: 2048\r\n\r\nFile System Layout (in sectors)\r\nTotal Range: 0 - 16383\r\n* Reserved: 0 - 0\r\n** Boot Sector: 0\r\n* FAT 0: 1 - 64\r\n* FAT 1: 65 - 128\r\n* Data Area: 129 - 16383\r\n** Root Directory: 129 - 160\r\n** Cluster Area: 161 - 16383\r\n\r\nMETADATA INFORMATION\r\n--------------------------------------------\r\nRange: 2 - 260086\r\nRoot Directory: 2\r\n\r\nCONTENT INFORMATION\r\n--------------------------------------------\r\nSector Size: 512\r\nCluster Size: 512\r\nTotal Cluster Range: 2 - 16224\r\n\r\nFAT CONTENTS (in sectors)\r\n--------------------------------------------\r\n161-161 (1) -> EOF\r\n",
+              "command": "& 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\tools\\sleuthkit\\bin\\fsstat.exe' '-b' '512' '-o' '2048' 'E:\\学习培训\\培训\\取证\\output\\平台API验收_51983a32\\labs\\05_disk\\tiny_fat16.dd'",
+              "entries": 6,
+              "deleted_entries": 1,
+              "candidate_count": 2,
+              "exported": 2,
+              "inventory": "workflow/fs_2048/file_inventory.csv",
+              "budget_limited": false
+            }
+          ],
+          "probe": {
+            "command": "& 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\tools\\sleuthkit\\bin\\mmls.exe' 'E:\\学习培训\\培训\\取证\\output\\平台API验收_51983a32\\labs\\05_disk\\tiny_fat16.dd'",
+            "exit_code": 0,
+            "preview": "DOS Partition Table\r\nOffset Sector: 0\r\nUnits are in 512-byte sectors\r\n\r\n      Slot      Start        End          Length       Description\r\n000:  Meta      0000000000   0000000000   0000000001   Primary Table (#0)\r\n001:  -------   0000000000   0000002047   0000002048   Unallocated\r\n002:  000:000   0000002048   0000018431   0000016384   DOS FAT16 (0x06)\r\n",
+            "diagnostics": "",
+            "log": "mmls.txt",
+            "argument_file": null
+          },
+          "attempts": [
+            {
+              "sector": 2048,
+              "exit_code": 0,
+              "command": "& 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\tools\\sleuthkit\\bin\\fsstat.exe' '-b' '512' '-o' '2048' 'E:\\学习培训\\培训\\取证\\output\\平台API验收_51983a32\\labs\\05_disk\\tiny_fat16.dd'",
+              "diagnostics": ""
+            }
+          ],
+          "partition_limit": 8,
+          "partitions_limited": false,
+          "tables": [
+            {
+              "title": "已验证的文件系统",
+              "columns": [
+                "起始扇区",
+                "扇区字节",
+                "文件系统",
+                "说明"
+              ],
+              "rows": [
+                [
+                  2048,
+                  512,
+                  "FAT16",
+                  "DOS FAT16 (0x06)"
+                ]
+              ]
+            },
+            {
+              "title": "起点 2048：文件 / 删除项（前 500，完整目录见 CSV）",
+              "columns": [
+                "元数据编号",
+                "类型",
+                "删除标记",
+                "路径",
+                "优先分"
+              ],
+              "rows": [
+                [
+                  "3",
+                  "r/r",
+                  false,
+                  "README.TXT",
+                  10
+                ],
+                [
+                  "4",
+                  "r/r",
+                  true,
+                  "_ECRET.TXT",
+                  35
+                ],
+                [
+                  "260083",
+                  "v/v",
+                  false,
+                  "$MBR",
+                  -1
+                ],
+                [
+                  "260084",
+                  "v/v",
+                  false,
+                  "$FAT1",
+                  -1
+                ],
+                [
+                  "260085",
+                  "v/v",
+                  false,
+                  "$FAT2",
+                  -1
+                ],
+                [
+                  "260086",
+                  "V/V",
+                  false,
+                  "$OrphanFiles",
+                  -1
+                ]
+              ]
+            },
+            {
+              "title": "起点 2048：候选文件导出",
+              "columns": [
+                "编号",
+                "原路径",
+                "状态",
+                "字节",
+                "关键词命中",
+                "输出"
+              ],
+              "rows": [
+                [
+                  "4",
+                  "_ECRET.TXT",
+                  "exported",
+                  31,
+                  1,
+                  "workflow/fs_2048/recovered/001__ECRET.TXT"
+                ],
+                [
+                  "3",
+                  "README.TXT",
+                  "exported",
+                  64,
+                  0,
+                  "workflow/fs_2048/recovered/002_README.TXT"
+                ]
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "targeted_search",
+        "title": "全文件关键词与 flag 形态检索",
+        "status": "completed",
+        "seconds": 0.213,
+        "data": {
+          "columns": [
+            "字节偏移",
+            "编码",
+            "关键词",
+            "上下文"
+          ],
+          "rows": [
+            [
+              "0x114400",
+              "utf-8",
+              "flag",
+              "················································flag{deleted_entry_is_a_clue}\r\n·········································································"
+            ],
+            [
+              "0x100003",
+              "utf-8",
+              "ctf",
+              "·············································�<�CTFDEMO ·\u0002\u0001\u0001·\u0002·\u0002·@�@· ·@··\b······�·)\u0010&��CTFTRAININGFAT16   ············································"
+            ],
+            [
+              "0x10002b",
+              "utf-8",
+              "ctf",
+              "·····�<�CTFDEMO ·\u0002\u0001\u0001·\u0002·\u0002·@�@· ·@··\b······�·)\u0010&��CTFTRAININGFAT16   ····················································································"
+            ]
+          ],
+          "flag_candidates": [
+            {
+              "offset": "0x114400",
+              "encoding": "ascii",
+              "value": "flag{deleted_entry_is_a_clue}"
+            }
+          ],
+          "scanned_bytes": 9437184,
+          "total_bytes": 9437184,
+          "partial": false,
+          "limited": false,
+          "note": "flag 形态是候选，必须回到文件 / 业务语义验证。命中条数有上限，扫描不会因普通字符串表满而提前结束。"
+        }
+      }
+    ],
+    "recommendations": [
+      "磁盘已按实际起点分析；文件清单保留 inode、删除标记和完整路径。自动只导出有预算的优先候选，未导出内容需继续用 icat 定向提取。",
+      "普通字符串表覆盖前 4194304 字节；专门的关键词 / flag 形态扫描覆盖范围见独立阶段，不受字符串表条数限制。",
+      "命中仅是候选；请结合路径、对象结构和原始输出确认。未导出、跳过与预算限制均保留在报告中。"
+    ],
+    "identification": {
+      "kind": "disk",
+      "label": "FAT16 分区镜像 · 起点 2048",
+      "evidence": "结构标记候选；继续由 TSK fsstat 验证，不使用练习固定扇区。",
+      "extension": ".dd",
+      "bytes": 9437184,
+      "header": "00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00",
+      "verified_by": "TSK fsstat",
+      "volumes": [
+        {
+          "sector": 2048,
+          "sector_size": 512,
+          "filesystem": "FAT16"
+        }
+      ]
+    },
+    "selected_workflow": "disk",
+    "findings": [
+      {
+        "source": "_ECRET.TXT",
+        "offset": "0x0",
+        "encoding": "ascii",
+        "value": "flag{deleted_entry_is_a_clue}"
+      },
+      {
+        "source": "tiny_fat16.dd",
+        "offset": "0x114400",
+        "encoding": "ascii",
+        "value": "flag{deleted_entry_is_a_clue}"
+      }
+    ],
+    "children": [
+      {
+        "source": "_ECRET.TXT",
+        "path": "workflow/fs_2048/recovered/001__ECRET.TXT",
+        "depth": 1,
+        "identification": {
+          "kind": "text",
+          "label": "文本",
+          "evidence": "utf-8-sig 抽样可读率 100.0%",
+          "extension": ".txt",
+          "bytes": 31,
+          "header": "66 6c 61 67 7b 64 65 6c 65 74 65 64 5f 65 6e 74 72 79 5f 69 73 5f 61 5f 63 6c 75 65 7d 0d 0a"
+        },
+        "sha256": "88e52e92c1550b0936c60b02aebedb3ca0b411ba3d7a71060ab2c0948aef73bc",
+        "hits": [
+          [
+            "0x0",
+            "utf-8",
+            "flag",
+            "flag{deleted_entry_is_a_clue}\r\n"
+          ]
+        ],
+        "flag_candidates": [
+          {
+            "offset": "0x0",
+            "encoding": "ascii",
+            "value": "flag{deleted_entry_is_a_clue}"
+          }
+        ],
+        "decodings": {
+          "encoding": "utf-8-sig",
+          "read_bytes": 31,
+          "total_bytes": 31,
+          "limited": false,
+          "columns": [
+            "编码候选",
+            "文本字符位置",
+            "解码预览",
+            "输出"
+          ],
+          "rows": [],
+          "note": "只做一层严格 Base64 / Hex 候选解码，字符位置不是原始文件字节偏移。编码形态不等于加密。"
+        }
+      },
+      {
+        "source": "README.TXT",
+        "path": "workflow/fs_2048/recovered/002_README.TXT",
+        "depth": 1,
+        "identification": {
+          "kind": "text",
+          "label": "文本",
+          "evidence": "utf-8-sig 抽样可读率 100.0%",
+          "extension": ".txt",
+          "bytes": 64,
+          "header": "54 72 61 69 6e 69 6e 67 20 46 41 54 31 36 20 69 6d 61 67 65 2e 20 4c 6f 6f 6b 20 66 6f 72 20 61 20 64 65 6c 65 74 65 64 20 72 6f 6f 74 20 64 69 72 65 63 74 6f 72 79 20 65 6e 74 72 79 2e 0d 0a"
+        },
+        "sha256": "90ac66f0a82458c5675055363633a49c14f1f660bd82ed44ffbab0c1575168ac",
+        "hits": [],
+        "flag_candidates": [],
+        "decodings": {
+          "encoding": "utf-8-sig",
+          "read_bytes": 64,
+          "total_bytes": 64,
+          "limited": false,
+          "columns": [
+            "编码候选",
+            "文本字符位置",
+            "解码预览",
+            "输出"
+          ],
+          "rows": [],
+          "note": "只做一层严格 Base64 / Hex 候选解码，字符位置不是原始文件字节偏移。编码形态不等于加密。"
+        }
+      }
+    ],
+    "next_actions": [
+      {
+        "title": "浏览起点 2048 的全部文件",
+        "action": "disk_files",
+        "params": {
+          "file": "05_disk/tiny_fat16.dd",
+          "sector": "2048",
+          "deleted": "no"
+        }
+      },
+      {
+        "title": "查看起点 2048 的文件系统",
+        "action": "disk_fsstat",
+        "params": {
+          "file": "05_disk/tiny_fat16.dd",
+          "sector": "2048"
+        }
+      },
+      {
+        "title": "按实际编号导出 _ECRET.TXT",
+        "action": "disk_recover",
+        "params": {
+          "file": "05_disk/tiny_fat16.dd",
+          "sector": "2048",
+          "inode": "4"
+        }
+      },
+      {
+        "title": "按实际编号导出 README.TXT",
+        "action": "disk_recover",
+        "params": {
+          "file": "05_disk/tiny_fat16.dd",
+          "sector": "2048",
+          "inode": "3"
+        }
+      }
+    ],
+    "limits": {
+      "max_exported_files": 32,
+      "exported_files": 2,
+      "max_exported_bytes": 134217728,
+      "accounted_bytes": 95,
+      "child_depth": 2
+    }
+  },
+  "host": "Windows · PowerShell",
+  "input": "05_disk/tiny_fat16.dd",
+  "progress": {
+    "stage": "报告已生成",
+    "state": "completed",
+    "completed": 6,
+    "stages": [
+      {
+        "id": "identify",
+        "title": "识别文件结构与类型",
+        "status": "completed",
+        "seconds": 0.0
+      },
+      {
+        "id": "fingerprint",
+        "title": "全文件摘要与字节熵",
+        "status": "completed",
+        "seconds": 0.179
+      },
+      {
+        "id": "clues",
+        "title": "通用字符串与嵌入签名",
+        "status": "completed",
+        "seconds": 0.078
+      },
+      {
+        "id": "disk_files_1",
+        "title": "文件系统 2048：递归目录与删除项",
+        "status": "completed",
+        "seconds": 0.085
+      },
+      {
+        "id": "workflow_disk",
+        "title": "磁盘 / 分区镜像",
+        "status": "completed",
+        "seconds": 0.499
+      },
+      {
+        "id": "targeted_search",
+        "title": "全文件关键词与 flag 形态检索",
+        "status": "completed",
+        "seconds": 0.213
+      }
+    ]
+  }
+}

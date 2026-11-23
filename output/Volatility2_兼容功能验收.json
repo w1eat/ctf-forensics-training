@@ -1,0 +1,189 @@
+{
+  "total": 36,
+  "passed": 36,
+  "checks": [
+    {
+      "name": "Ten distinct Vol2 actions",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "Vol3 actions remain available",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "Artifacts ready: vol2_help",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "Native profiles listed",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "Artifacts ready: vol2_help",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "Native command-history help",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "Missing profile is rejected",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "Profile argument injection is rejected",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "Plugin must be allowlisted",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "PID must be numeric",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "psscan PID filter is not invented",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "Physical offset must be numeric",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "Synthetic table is not RAM",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "Unsupported structure offers same input in Vol2",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "Missing symbols is a separate diagnosis",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "Artifacts ready: vol2_identify",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "Real image identified without a supplied profile",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "Artifacts ready: vol2_identify",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "KDBG validates architecture and process list",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "Artifacts ready: vol2_processes",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "Real process inventory",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "Artifacts ready: vol2_history",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "History contains the actual script command",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "Artifacts ready: vol2_history",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "Console screen recovered",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "Artifacts ready: vol2_files",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "Physical file-object inventory",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "Use a physical offset from this filescan",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "Artifacts ready: vol2_dumpfiles",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "Cache export uses a real physical object",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "Artifacts ready: vol2_memdump",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "Process dump uses actual history PID",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "Artifacts ready: vol_history",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "Actual Vol3 failure offers compatibility actions",
+      "pass_": true,
+      "detail": "in get_command_history\r\n    conhost_symbol_table = consoles.Consoles.create_conhost_symbol_table(\r\n        context,\r\n    ...<3 lines>...\r\n        conhostexe_base,\r\n    )\r\n  File \"E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\volatility3\\framework\\plugins\\windows\\consoles.py\", line 348, in create_conhost_symbol_table\r\n    symbol_filename, class_types = cls.determine_conhost_version(\r\n                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\r\n        context,\r\n        ^^^^^^^^\r\n    ...<3 lines>...\r\n        conhost_base,\r\n        ^^^^^^^^^^^^^\r\n    )\r\n    ^\r\n  File \"E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\volatility3\\framework\\plugins\\windows\\consoles.py\", line 317, in determine_conhost_version\r\n    raise NotImplementedError(\r\n        f\"This version of Windows is not supported: {nt_major_version}.{nt_minor_version} {vers.MajorVersion}.{vers_minor_version}!\"\r\n    )\r\nNotImplementedError: This version of Windows is not supported: 6.1 15.7601!\r\n"
+    },
+    {
+      "name": "Failure handoff retains the same source",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "Source bytes unchanged",
+      "pass_": true,
+      "detail": ""
+    }
+  ],
+  "real_ram_parsed": true,
+  "kali_executed": false,
+  "validation_folder": "E:\\学习培训\\培训\\取证\\output\\vol2_platform_001e37987b"
+}

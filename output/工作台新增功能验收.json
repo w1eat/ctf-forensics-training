@@ -1,0 +1,201 @@
+{
+  "date": "2026-10-23",
+  "passed": 38,
+  "total": 38,
+  "tests": [
+    {
+      "name": "FAT inventory identifies sector 2048",
+      "pass_": true,
+      "detail": "{\"id\": \"7c66933fbbef4965\", \"state\": \"completed\", \"error\": \"\", \"text\": \"{\\\"title\\\": \\\"镜像目录与删除项\\\", \\\"result\\\": \\\"result.json\\\", \\\"note\\\": \\\"目录与删除标记不保证数据仍完整。可按本次元数据编号导出；CSV 保存全部匹配条目。支持当前 TSK 识别的 RAW / E01 / VMDK / VHD。\\\"}\\r\\n\"}"
+    },
+    {
+      "name": "MACB timeline identifies partition and exports complete CSV",
+      "pass_": true,
+      "detail": "{\"id\": \"54517f68e3c34e34\", \"state\": \"completed\", \"error\": \"\", \"text\": \"{\\\"title\\\": \\\"文件时间线 / MACB\\\", \\\"result\\\": \\\"result.json\\\", \\\"note\\\": \\\"UTC 时间；CSV 保存所有匹配事件，网页有展示上限。M=内容修改、A=访问、C=元数据变更、B=创建（文件系统支持时）。C 不是创建时间；时间戳可被修改，需结合内容与其他痕迹验证。结束日期包含当日，带时间的结束值为不包含边界。\\\"}\\r\\n\"}"
+    },
+    {
+      "name": "Timeline CSV retains hidden rows and chronological UTC epochs",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "Timeline inclusive end-date and timestamp type filter",
+      "pass_": true,
+      "detail": "{\"id\": \"237555424fcc484f\", \"state\": \"completed\", \"error\": \"\", \"text\": \"{\\\"title\\\": \\\"文件时间线 / MACB\\\", \\\"result\\\": \\\"result.json\\\", \\\"note\\\": \\\"UTC 时间；CSV 保存所有匹配事件，网页有展示上限。M=内容修改、A=访问、C=元数据变更、B=创建（文件系统支持时）。C 不是创建时间；时间戳可被修改，需结合内容与其他痕迹验证。结束日期包含当日，带时间的结束值为不包含边界。\\\"}\\r\\n\"}"
+    },
+    {
+      "name": "Timeline rejects malformed dates",
+      "pass_": true,
+      "detail": "{\"id\": \"3700698223744652\", \"state\": \"failed\", \"error\": \"\", \"text\": \"\\n\\n[stderr / 诊断信息]\\n时间请填写 YYYY-MM-DD 或带时区的 ISO 8601；未指定时区按 UTC。\\r\\n\"}"
+    },
+    {
+      "name": "Timeline rejects reversed date bounds",
+      "pass_": true,
+      "detail": "{\"id\": \"7ed12245ebdb4ecc\", \"state\": \"failed\", \"error\": \"\", \"text\": \"\\n\\n[stderr / 诊断信息]\\n开始时间必须早于结束时间。\\r\\n\"}"
+    },
+    {
+      "name": "Deleted file batch recovery",
+      "pass_": true,
+      "detail": "{\"id\": \"4d48ba42486f4a8f\", \"state\": \"completed\", \"error\": \"\", \"text\": \"{\\\"title\\\": \\\"批量恢复与导出\\\", \\\"result\\\": \\\"result.json\\\", \\\"note\\\": \\\"仅完整且返回成功的 icat 输出计入恢复列表；失败或达到上限的内容以 .partial 保存。删除后重用、碎片和缺页可能导致无法恢复。\\\"}\\r\\n\"}"
+    },
+    {
+      "name": "Recovered FAT bytes contain exact expected content",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "Single export uses sector size",
+      "pass_": true,
+      "detail": "{\"id\": \"6b7eaa58618d4af6\", \"state\": \"completed\", \"error\": \"\", \"text\": \"Saved 31 bytes to E:\\\\学习培训\\\\培训\\\\取证\\\\output\\\\工作台验收_d3656ec2\\\\labs\\\\out\\\\platform_runs\\\\6b7eaa58618d4af6\\\\recovered.bin\\r\\n\\n[导出内容预览]\\nflag{deleted_entry_is_a_clue}\\r\\n\"}"
+    },
+    {
+      "name": "Structural PNG ZIP gzip bzip separation",
+      "pass_": true,
+      "detail": "{\"id\": \"2b9b7a9df7174c19\", \"state\": \"completed\", \"error\": \"\", \"text\": \"{\\\"title\\\": \\\"自动文件分离\\\", \\\"result\\\": \\\"result.json\\\", \\\"note\\\": \\\"偏移属于该行 source 文件；签名命中不等于完整文件。已记录边界与验证方式，不能恢复所有碎片文件。\\\"}\\r\\n\"}"
+    },
+    {
+      "name": "Hex range agrees with source bytes",
+      "pass_": true,
+      "detail": "{\"id\": \"3405915321ed42d6\", \"state\": \"completed\", \"error\": \"\", \"text\": \"{\\\"title\\\": \\\"交互式十六进制\\\", \\\"result\\\": \\\"result.json\\\", \\\"note\\\": \\\"偏移从 0 开始，以字节计数。使用前后页、定位或搜索，不需要把大镜像读入浏览器。\\\"}\\r\\n\"}"
+    },
+    {
+      "name": "Search crosses input chunks without duplicate offsets",
+      "pass_": true,
+      "detail": "{\"id\": \"a384270d5ef04ae7\", \"state\": \"completed\", \"error\": \"\", \"text\": \"{\\\"title\\\": \\\"原始字节检索\\\", \\\"result\\\": \\\"result.json\\\", \\\"note\\\": \\\"匹配的是原始字节；文本搜索先转换为所选编码。最多返回 1000 条；达到条数或扫描范围上限时，请缩小范围或从后续偏移继续检索。读取字节数可能包含最后一块中未继续枚举的部分。\\\"}\\r\\n\"}"
+    },
+    {
+      "name": "UTF16LE byte search",
+      "pass_": true,
+      "detail": "{\"id\": \"8854011ba98448ee\", \"state\": \"completed\", \"error\": \"\", \"text\": \"{\\\"title\\\": \\\"原始字节检索\\\", \\\"result\\\": \\\"result.json\\\", \\\"note\\\": \\\"匹配的是原始字节；文本搜索先转换为所选编码。最多返回 1000 条；达到条数或扫描范围上限时，请缩小范围或从后续偏移继续检索。读取字节数可能包含最后一块中未继续枚举的部分。\\\"}\\r\\n\"}"
+    },
+    {
+      "name": "Binary patch writes a copy",
+      "pass_": true,
+      "detail": "{\"id\": \"d9a94b39e514417a\", \"state\": \"completed\", \"error\": \"\", \"text\": \"{\\\"title\\\": \\\"副本字节补丁\\\", \\\"result\\\": \\\"result.json\\\", \\\"note\\\": \\\"只修改新副本中指定的等长字节；原件保持不变。修复后继续使用相应格式解析器验证。\\\"}\\r\\n\"}"
+    },
+    {
+      "name": "Wrong expected bytes stop patching",
+      "pass_": true,
+      "detail": "{\"id\": \"d9462f6dea6449e5\", \"state\": \"failed\", \"error\": \"\", \"text\": \"\\n\\n[stderr / 诊断信息]\\n原字节与预期不一致，已停止；请重新定位。\\r\\n\"}"
+    },
+    {
+      "name": "Base64 decodes bytes through job API",
+      "pass_": true,
+      "detail": "{\"id\": \"d35bb13577a740c8\", \"state\": \"completed\", \"error\": \"\", \"text\": \"{\\\"title\\\": \\\"字节转换结果\\\", \\\"result\\\": \\\"result.json\\\", \\\"note\\\": \\\"下载 .bin 保留完整字节。UTF-8、HEX 与 Base64 为预览，原始二进制不会经过文本重编码。\\\"}\\r\\n\"}"
+    },
+    {
+      "name": "Private codec parameter file removed",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "Input text not copied into runtime report",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "AES NIST decrypt through workbench",
+      "pass_": true,
+      "detail": "{\"id\": \"46d54b0577f544d8\", \"state\": \"completed\", \"error\": \"\", \"text\": \"{\\\"title\\\": \\\"字节转换结果\\\", \\\"result\\\": \\\"result.json\\\", \\\"note\\\": \\\"请以正确格式或已知明文复核。CBC/ECB/CTR 等模式本身不提供完整性认证；GCM 必须验证 tag。密钥和口令不写入运行报告。\\\"}\\r\\n\"}"
+    },
+    {
+      "name": "MD5 candidate verification",
+      "pass_": true,
+      "detail": "{\"id\": \"c230d68723f44d57\", \"state\": \"completed\", \"error\": \"\", \"text\": \"{\\\"title\\\": \\\"摘要候选验证\\\", \\\"result\\\": \\\"result.json\\\", \\\"note\\\": \\\"候选计算出的摘要相同；这是候选验证，不是哈希逆运算。\\\"}\\r\\n\"}"
+    },
+    {
+      "name": "Browser history with live WAL snapshot",
+      "pass_": true,
+      "detail": "{\"id\": \"d78267eead7545a2\", \"state\": \"completed\", \"error\": \"\", \"text\": \"{\\\"title\\\": \\\"浏览器历史与时间\\\", \\\"result\\\": \\\"result.json\\\", \\\"note\\\": \\\"在工作副本中查询，保留同目录 WAL / SHM。UTC 为按已知 Firefox / Chromium 时间单位换算；访问记录不单独证明现实人物操作，字段随应用版本变化。\\\"}\\r\\n\"}"
+    },
+    {
+      "name": "VMDK reads actual logical FAT directory",
+      "pass_": true,
+      "detail": "{\"id\": \"8285cd674863450b\", \"state\": \"completed\", \"error\": \"\", \"text\": \"{\\\"title\\\": \\\"镜像目录与删除项\\\", \\\"result\\\": \\\"result.json\\\", \\\"note\\\": \\\"目录与删除标记不保证数据仍完整。可按本次元数据编号导出；CSV 保存全部匹配条目。支持当前 TSK 识别的 RAW / E01 / VMDK / VHD。\\\"}\\r\\n\"}"
+    },
+    {
+      "name": "VMDK to RAW byte preserving conversion",
+      "pass_": true,
+      "detail": "{\"id\": \"db026af1dc3140de\", \"state\": \"completed\", \"error\": \"\", \"text\": \"{\\\"title\\\": \\\"转换为 RAW 工作副本\\\", \\\"result\\\": \\\"result.json\\\", \\\"note\\\": \\\"img_cat 通过当前 TSK 镜像后端读取逻辑字节，不修改容器原件。RAW 可继续浏览、恢复或按分区只读挂载。\\\"}\\r\\n\"}"
+    },
+    {
+      "name": "PhotoRec actual recovery from damaged-layout carrier",
+      "pass_": true,
+      "detail": "{\"id\": \"b7a04ea2edec4a59\", \"state\": \"completed\", \"error\": \"\", \"text\": \"{\\\"title\\\": \\\"PhotoRec 签名恢复\\\", \\\"result\\\": \\\"result.json\\\", \\\"note\\\": \\\"基于签名雕刻，通常不能还原原文件名和目录。已输出不代表完整；任务达到时间或空间上限时应逐个验证，输出目录保留 PhotoRec XML / 日志。\\\"}\\r\\n\"}"
+    },
+    {
+      "name": "PhotoRec recovers the original PNG byte sequence",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "Read-only mount plan computes byte offset",
+      "pass_": true,
+      "detail": "{\"id\": \"5ff68b04f1a74243\", \"state\": \"completed\", \"error\": \"\", \"text\": \"{\\\"title\\\": \\\"只读挂载准备\\\", \\\"result\\\": \\\"result.json\\\", \\\"note\\\": \\\"先确认文件系统与分区起点。挂载只允许只读；卸载只处理本工作区记录的盘符。Windows 的原生文件系统驱动不能浏览 Ext4。\\\"}\\r\\n\"}"
+    },
+    {
+      "name": "Mount password is absent from result and report",
+      "pass_": true,
+      "detail": "{\"id\": \"68d9b2d8afce4eee\", \"state\": \"completed\", \"error\": \"\", \"text\": \"{\\\"title\\\": \\\"只读挂载准备\\\", \\\"result\\\": \\\"result.json\\\", \\\"note\\\": \\\"先确认文件系统与分区起点。挂载只允许只读；卸载只处理本工作区记录的盘符。Windows 的原生文件系统驱动不能浏览 Ext4。\\\"}\\r\\n\"}"
+    },
+    {
+      "name": "TrueCrypt uses a separate supported legacy mode",
+      "pass_": true,
+      "detail": "{\"id\": \"31068d3ee7b84c52\", \"state\": \"completed\", \"error\": \"\", \"text\": \"{\\\"title\\\": \\\"只读挂载准备\\\", \\\"result\\\": \\\"result.json\\\", \\\"note\\\": \\\"先确认文件系统与分区起点。挂载只允许只读；卸载只处理本工作区记录的盘符。Windows 的原生文件系统驱动不能浏览 Ext4。 旧 TrueCrypt 容器使用随包 1.25.9 兼容运行文件；1.26.29 已移除 TrueCrypt 模式。\\\"}\\r\\n\"}"
+    },
+    {
+      "name": "Mount status has no side effects",
+      "pass_": true,
+      "detail": "{\"id\": \"50df9c8472ea40ef\", \"state\": \"completed\", \"error\": \"\", \"text\": \"{\\\"title\\\": \\\"本工作区挂载状态\\\", \\\"result\\\": \\\"result.json\\\", \\\"note\\\": \\\"仅列本工作区创建的记录，不列举或卸载其他磁盘。ImDisk 驱动状态：未检测到\\\"}\\r\\n\"}"
+    },
+    {
+      "name": "Kali Ext mount plan disables journal replay",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "Kali FAT plan omits Ext-only mount options",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "Kali TrueCrypt plan uses explicit compatibility mode",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "Reject unsafe plan hex_view",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "Reject unsafe plan disk_mount",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "Reject unsafe plan disk_photorec",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "Reject unsafe plan cipher",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "Reject unsafe plan vol2_registry",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "Source disk hash unchanged",
+      "pass_": true,
+      "detail": ""
+    }
+  ],
+  "fixture_directory": "E:\\学习培训\\培训\\取证\\output\\工作台验收_d3656ec2\\labs\\inputs\\casework_samples",
+  "system_mount_executed": false,
+  "driver_install_executed": false,
+  "kali_executed": false
+}

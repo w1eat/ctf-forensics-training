@@ -1,0 +1,7 @@
+﻿sector,sector_size,type,inode,deleted,path
+2048,512,r/r,3,False,README.TXT
+2048,512,r/r,4,True,_ECRET.TXT
+2048,512,v/v,260083,False,$MBR
+2048,512,v/v,260084,False,$FAT1
+2048,512,v/v,260085,False,$FAT2
+2048,512,V/V,260086,False,$OrphanFiles

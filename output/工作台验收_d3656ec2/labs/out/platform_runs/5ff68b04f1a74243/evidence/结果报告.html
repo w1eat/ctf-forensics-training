@@ -1,0 +1,59 @@
+<!doctype html><meta charset="utf-8"><title>取证分析结果</title><style>body{font:15px/1.8 Microsoft YaHei;background:#f7f8f2;color:#193c33;padding:32px}pre{white-space:pre-wrap;overflow-wrap:anywhere}</style><h1>只读挂载准备</h1><pre>{
+  &quot;kind&quot;: &quot;casework&quot;,
+  &quot;title&quot;: &quot;只读挂载准备&quot;,
+  &quot;columns&quot;: [
+    &quot;参数&quot;,
+    &quot;值&quot;
+  ],
+  &quot;rows&quot;: [
+    [
+      &quot;方式&quot;,
+      &quot;imdisk&quot;
+    ],
+    [
+      &quot;字节偏移&quot;,
+      1048576
+    ],
+    [
+      &quot;计划命令&quot;,
+      &quot;&amp; &#x27;E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\tools\\imdisk\\cli\\amd64\\imdisk.exe&#x27; &#x27;-a&#x27; &#x27;-t&#x27; &#x27;file&#x27; &#x27;-f&#x27; &#x27;E:\\学习培训\\培训\\取证\\output\\工作台验收_d3656ec2\\labs\\05_disk\\tiny_fat16.dd&#x27; &#x27;-b&#x27; &#x27;1048576&#x27; &#x27;-o&#x27; &#x27;ro&#x27; &#x27;-m&#x27; &#x27;R:&#x27;&quot;
+    ],
+    [
+      &quot;Windows 权限&quot;,
+      &quot;系统挂载 / 驱动需要管理员，执行时可能出现 UAC&quot;
+    ],
+    [
+      &quot;普通查看 / 恢复&quot;,
+      &quot;使用镜像目录与恢复工具，无需系统挂载&quot;
+    ]
+  ],
+  &quot;note&quot;: &quot;先确认文件系统与分区起点。挂载只允许只读；卸载只处理本工作区记录的盘符。Windows 的原生文件系统驱动不能浏览 Ext4。&quot;,
+  &quot;next_actions&quot;: [
+    {
+      &quot;title&quot;: &quot;执行只读挂载&quot;,
+      &quot;action&quot;: &quot;disk_mount&quot;,
+      &quot;params&quot;: {
+        &quot;file&quot;: &quot;05_disk/tiny_fat16.dd&quot;,
+        &quot;mode&quot;: &quot;mount&quot;,
+        &quot;method&quot;: &quot;imdisk&quot;,
+        &quot;drive&quot;: &quot;R&quot;,
+        &quot;sector&quot;: &quot;2048&quot;,
+        &quot;sector_size&quot;: &quot;512&quot;,
+        &quot;pim&quot;: &quot;&quot;
+      }
+    },
+    {
+      &quot;title&quot;: &quot;检查当前挂载和驱动状态&quot;,
+      &quot;action&quot;: &quot;disk_mount&quot;,
+      &quot;params&quot;: {
+        &quot;file&quot;: &quot;05_disk/tiny_fat16.dd&quot;,
+        &quot;mode&quot;: &quot;status&quot;,
+        &quot;method&quot;: &quot;imdisk&quot;,
+        &quot;drive&quot;: &quot;R&quot;,
+        &quot;sector&quot;: &quot;2048&quot;,
+        &quot;sector_size&quot;: &quot;512&quot;,
+        &quot;pim&quot;: &quot;&quot;
+      }
+    }
+  ]
+}</pre>

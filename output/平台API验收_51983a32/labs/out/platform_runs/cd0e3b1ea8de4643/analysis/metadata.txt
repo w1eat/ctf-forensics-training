@@ -1,0 +1,23 @@
+[{
+  "SourceFile": "./inputs/_platform_qa_bc170e0df4/自选图像 17x11.png",
+  "ExifTool:ExifToolVersion": 13.59,
+  "System:FileName": "自选图像 17x11.png",
+  "System:Directory": "./inputs/_platform_qa_bc170e0df4",
+  "System:FileSize": "81 bytes",
+  "System:FileModifyDate": "2026:10:22 10:16:06+08:00",
+  "System:FileAccessDate": "2026:10:22 10:16:21+08:00",
+  "System:FileCreateDate": "2026:10:22 10:16:06+08:00",
+  "System:FilePermissions": "-rw-rw-rw-",
+  "File:FileType": "PNG",
+  "File:FileTypeExtension": "png",
+  "File:MIMEType": "image/png",
+  "PNG:ImageWidth": 17,
+  "PNG:ImageHeight": 11,
+  "PNG:BitDepth": 8,
+  "PNG:ColorType": "RGB",
+  "PNG:Compression": "Deflate/Inflate",
+  "PNG:Filter": "Adaptive",
+  "PNG:Interlace": "Noninterlaced",
+  "Composite:ImageSize": "17x11",
+  "Composite:Megapixels": 0.000187
+}]

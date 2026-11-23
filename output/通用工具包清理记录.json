@@ -1,0 +1,11 @@
+{
+  "cleanup_mode": "Reversible local archive",
+  "automatic_delete_review": "blocked by policy",
+  "test_archive": "output/平台测试留存_20261019",
+  "temporary_extraction": "output/通用验证 空格",
+  "live_input_directories_empty": true,
+  "live_job_history_empty": true,
+  "release_archives_exclude_test_files": true,
+  "catalog_files": 25,
+  "actions": 47
+}

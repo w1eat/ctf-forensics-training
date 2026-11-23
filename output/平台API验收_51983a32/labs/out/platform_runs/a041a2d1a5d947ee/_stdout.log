@@ -1,0 +1,1 @@
+{"columns": ["字节偏移", "编码", "可读内容（最多 1024 字节）", "匹配字节数"], "rows": [["0x4100000", "ASCII", "flag{after_the_old_64MiB_limit}", 31]], "scanned_bytes": 68157471, "total_bytes": 68157471, "partial": false, "limited": false, "note": "仅提取 ASCII 可打印字符及其 UTF-16LE 表示；不覆盖所有语言。跨块长串可能分段显示。"}

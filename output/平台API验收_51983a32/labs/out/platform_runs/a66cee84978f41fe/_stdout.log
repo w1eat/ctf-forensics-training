@@ -1,0 +1,1 @@
+{"columns": ["order_no", "amount"], "rows": [["A-2026", 42]], "kind": "sqlite_query", "limited": false, "query": "SELECT order_no,amount FROM orders WHERE amount > 40", "limit": 200, "note": "只读连接；需完整提取时在副本上使用 SQLite CLI。若存在 WAL，需将匹配的 -wal / -shm 与数据库一起放在同一目录。"}

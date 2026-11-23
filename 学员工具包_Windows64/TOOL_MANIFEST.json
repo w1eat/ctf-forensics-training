@@ -1,0 +1,302 @@
+{
+  "platform": "Windows 10/11 x64",
+  "date": "2026-10-21",
+  "tools": [
+    {
+      "name": "Microsoft Visual C++ x64 Redistributable",
+      "version": "14.44.35211.0",
+      "license": "Microsoft redistributable license; terms embedded in installer",
+      "source": "https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist",
+      "upstream_archive": "VC_redist.x64.exe",
+      "upstream_archive_sha256": "cc0ff0eb1dc3f5188ae6300faef32bf5beeba4bdd6e8e445a9184072096b713b",
+      "entry": "setup/vendor/VC_redist.x64.exe",
+      "entry_sha256": "cc0ff0eb1dc3f5188ae6300faef32bf5beeba4bdd6e8e445a9184072096b713b",
+      "license_location": "setup/vendor/README-Microsoft-VC.md"
+    },
+    {
+      "name": "Vol2 mimikatz community plugin",
+      "version": "fb55ab3edc94 + loader compatibility",
+      "license": "GPL-2.0-or-later",
+      "source": "https://github.com/dfirfpi/hotoloti",
+      "upstream_archive": null,
+      "upstream_archive_sha256": null,
+      "entry": "tools/volatility2/extra_plugins/mimikatz.py",
+      "entry_sha256": "7dd0fb3cb6ac0876ab14556ea65a8d995203b61398cc22cf094dfbbc28ae7801",
+      "license_location": "tools/memory_plugins/licenses/GPL-2.0.txt"
+    },
+    {
+      "name": "Vol2 BitLocker community plugin",
+      "version": "d1c1790045ea",
+      "license": "GPL-2.0-or-later",
+      "source": "https://github.com/elceef/bitlocker",
+      "upstream_archive": null,
+      "upstream_archive_sha256": null,
+      "entry": "tools/volatility2/extra_plugins/bitlocker.py",
+      "entry_sha256": "6373a37b1e3e89795bc4ab797f2ba6845b06d66fee332505cd812630d1793fb9",
+      "license_location": "tools/memory_plugins/licenses/GPL-2.0.txt"
+    },
+    {
+      "name": "Vol3 pypykatz community plugin",
+      "version": "1b722f00f709 / pypykatz 0.6.13",
+      "license": "MIT",
+      "source": "https://github.com/skelsec/pypykatz-volatility3",
+      "upstream_archive": null,
+      "upstream_archive_sha256": null,
+      "entry": "tools/volatility3_extra/vol_pypykatz.py",
+      "entry_sha256": "197a4c3856e48b38fe0f9f6fb31729707d7ba0147a120988cb2c1befc7163df8",
+      "license_location": "tools/memory_plugins/licenses/pypykatz-plugin-MIT.txt"
+    },
+    {
+      "name": "Vol3 BitLocker community plugin",
+      "version": "d2afab51fea4",
+      "license": "GPL-3.0",
+      "source": "https://github.com/lorelyai/volatility3-bitlocker",
+      "upstream_archive": null,
+      "upstream_archive_sha256": null,
+      "entry": "tools/volatility3_extra/bitlocker.py",
+      "entry_sha256": "1cda3c680e665898051dba1f9a638c42a4a711b65da74c8539995ad543a7ffb7",
+      "license_location": "tools/memory_plugins/licenses/bitlocker-GPL-3.0.txt"
+    },
+    {
+      "name": "PhotoRec / TestDisk",
+      "version": "7.2",
+      "license": "GPL-2.0-or-later",
+      "source": "https://www.cgsecurity.org/wiki/TestDisk_Download",
+      "upstream_archive": "testdisk-7.2.win64.zip",
+      "upstream_archive_sha256": "e97e203ce77b6b1a3a37d01beccf069dc6c4632b579ffbb82ae739cdda229f38",
+      "entry": "tools/testdisk/photorec_win.exe",
+      "entry_sha256": "d75b9a6ff60f91479085a578aca518abb1cd7405f24506a61afa2f7e222147bf",
+      "license_location": "tools/testdisk/COPYING.txt"
+    },
+    {
+      "name": "ImDisk",
+      "version": "2.1.2",
+      "license": "MIT-style with GPL and third-party notices",
+      "source": "https://www.ltr-data.se/opencode.html",
+      "upstream_archive": "imdisk-2.1.2.zip",
+      "upstream_archive_sha256": "d42059314384992b5e7754a5734e66e7ad0ad7971f69a2b5aa106429b47c4a9c",
+      "entry": "tools/imdisk/cli/amd64/imdisk.exe",
+      "entry_sha256": "3a6a94c98a4b87e59a136052c50da070c99706db3bcd54ef5b148784b21f75dd",
+      "license_location": "tools/imdisk/LICENSE.md"
+    },
+    {
+      "name": "VeraCrypt",
+      "version": "1.26.29",
+      "license": "VeraCrypt / TrueCrypt and component licenses",
+      "source": "https://veracrypt.io/en/Downloads.html",
+      "upstream_archive": "VeraCrypt_Setup_x64_1.26.29.msi",
+      "upstream_archive_sha256": "5ba6426983123cfb92bc1f09bd888fdbc0f53f300d0d9c5da52ce3aee8d474f0",
+      "entry": "tools/veracrypt/VeraCrypt.exe",
+      "entry_sha256": "7dddcb58a9db6652ee6f1821ad3224b655942145795e2fd309b83230f1ec2862",
+      "license_location": "tools/veracrypt/License.txt"
+    },
+    {
+      "name": "VeraCrypt TrueCrypt compatibility",
+      "version": "1.25.9",
+      "license": "VeraCrypt / TrueCrypt and component licenses",
+      "source": "https://github.com/veracrypt/VeraCrypt/releases/tag/VeraCrypt_1.25.9",
+      "upstream_archive": "VeraCrypt_Setup_x64_1.25.9.msi",
+      "upstream_archive_sha256": "206d31c2ed1a2b0390d4dfa12e74a9b9dae88658d1f9bfa1bb433b23e2b24fd8",
+      "entry": "tools/veracrypt_legacy/VeraCrypt.exe",
+      "entry_sha256": "53f48a0446bcd682dae991651600387b03b8528fca0b54cef7d522b928b6ce74",
+      "license_location": "tools/veracrypt_legacy/License.txt"
+    },
+    {
+      "name": "PyCryptodome",
+      "version": "4.1.0",
+      "license": "BSD / Public domain and component notices",
+      "source": "https://pypi.org/project/pycryptodome/4.1.0/",
+      "upstream_archive": "wheels/pycryptodome-4.1.0-cp39-abi3-win_amd64.whl",
+      "upstream_archive_sha256": "f7bb8fcbfd72c840a17b67543b984018ead3247f7054bb729e24a8dda436eb35",
+      "entry": "runtime/python/Lib/site-packages/Crypto/__init__.py",
+      "entry_sha256": "2bd193e5f0ed889c2a9e1a4aec14fd06c00cb034c519f2e45deb5377f704fedf",
+      "license_location": "runtime/python/Lib/site-packages/pycryptodome-4.1.0.dist-info/licenses/LICENSE.rst"
+    },
+    {
+      "name": "Python",
+      "version": "3.13.16",
+      "license": "PSF",
+      "source": "https://www.python.org/downloads/release/python-31316/",
+      "upstream_archive": "python-3.13.16-embed-amd64.zip",
+      "upstream_archive_sha256": "97dae5274cc54867065e8d5a3226e48c35017ed332a0fdb0e27d5b5821961297",
+      "entry": "runtime/python/python.exe",
+      "entry_sha256": "31fe10b4ed82a2f960af0ef9931f46a4b84ff286f8b6ffd9dee098cf4f10f17f",
+      "license_location": "runtime/python/LICENSE.txt"
+    },
+    {
+      "name": "Pillow",
+      "version": "11.3.0",
+      "license": "MIT-CMU",
+      "source": "https://pypi.org/project/pillow/11.3.0/",
+      "upstream_archive": "wheels/pillow-11.3.0-cp313-cp313-win_amd64.whl",
+      "upstream_archive_sha256": "0bce5c4fd0921f99d2e858dc4d4d64193407e1b99478bc5cacecba2311abde51",
+      "entry": "runtime/python/Lib/site-packages/PIL/Image.py",
+      "entry_sha256": "69e83ffe848083a825546e39216ef5fbbe1221f89090df1dde0d3421c63252cd",
+      "license_location": "runtime/python/Lib/site-packages/pillow-11.3.0.dist-info/licenses/LICENSE"
+    },
+    {
+      "name": "pypdf",
+      "version": "6.21.1",
+      "license": "BSD-3-Clause",
+      "source": "https://pypi.org/project/pypdf/6.21.1/",
+      "upstream_archive": "wheels/pypdf-6.21.1-py3-none-any.whl",
+      "upstream_archive_sha256": "553e2d42f5bb3bb2a785a7d3de8ef90bb7df74b5413eff5a7b4388007ea9254b",
+      "entry": "runtime/python/Lib/site-packages/pypdf/__init__.py",
+      "entry_sha256": "d7786f1b3cb2e52e28b1085f0ea150fa7f029baad252b29af7415c790871f7df",
+      "license_location": "runtime/python/Lib/site-packages/pypdf-6.21.1.dist-info/licenses/LICENSE"
+    },
+    {
+      "name": "pefile",
+      "version": "2024.8.26",
+      "license": "MIT",
+      "source": "https://pypi.org/project/pefile/2024.8.26/",
+      "upstream_archive": "wheels/pefile-2024.8.26-py3-none-any.whl",
+      "upstream_archive_sha256": "76f8b485dcd3b1bb8166f1128d395fa3d87af26360c2358fb75b80019b957c6f",
+      "entry": "runtime/python/Lib/site-packages/pefile.py",
+      "entry_sha256": "0d0eb68f0f169182613dc64b3ab50b20855508c1c1d2faafe8fccf23edb6a345",
+      "license_location": "runtime/python/Lib/site-packages/pefile-2024.8.26.dist-info/LICENSE"
+    },
+    {
+      "name": "yara-python",
+      "version": "4.5.4",
+      "license": "BSD-3-Clause",
+      "source": "https://pypi.org/project/yara-python/4.5.4/",
+      "upstream_archive": "wheels/yara_python-4.5.4-cp313-cp313-win_amd64.whl",
+      "upstream_archive_sha256": "5f1288448991d63c1f6351c9f6d112916b0177ceefaa27d1419427a6ff09f829",
+      "entry": "runtime/python/Lib/site-packages/yara.cp313-win_amd64.pyd",
+      "entry_sha256": "aa7b0ce8a3d5ca444e00fe21f24acc98ebf8587e7b785f3af780d836f733b414",
+      "license_location": "runtime/python/Lib/site-packages/yara_python-4.5.4.dist-info/licenses/LICENSE"
+    },
+    {
+      "name": "Volatility 3",
+      "version": "2.28.2",
+      "license": "Volatility Software License 1.0",
+      "source": "https://pypi.org/project/volatility3/2.28.2/",
+      "upstream_archive": "wheels/volatility3-2.28.2-py3-none-any.whl",
+      "upstream_archive_sha256": "0461d6dd71b9ddbaf70c96e079c06efdf174ac65383b3dcf10dd165181fbd3c3",
+      "entry": "runtime/python/Lib/site-packages/volatility3/cli/__init__.py",
+      "entry_sha256": "96593fddeedd95a3b7987a6f6b907c857234cc9dd1c86f2a03bb55855fe7c2fb",
+      "license_location": "tools/volatility3/LICENSE.txt"
+    },
+    {
+      "name": "Volatility 2",
+      "version": "2.6 standalone",
+      "license": "GPL-2.0-or-later",
+      "source": "https://downloads.volatilityfoundation.org/releases/2.6/",
+      "upstream_archive": "volatility_2.6_win64_standalone.zip",
+      "upstream_archive_sha256": "bb021f3b569bf8ee4a408b2e07b0662699894ff7eecd4473badf0ef0c58f2fce",
+      "entry": "tools/volatility2/windows/volatility_2.6_win64_standalone.exe",
+      "entry_sha256": "672a00461ffb8d59536c86192450b66d552e67809fc8584d1792b42b22c5f4e1",
+      "license_location": "tools/volatility2/windows/LICENSE.txt",
+      "additional_entries": [
+        {
+          "platform": "Linux x64",
+          "entry": "tools/volatility2/linux/volatility_2.6_lin64_standalone",
+          "entry_sha256": "f36943a7c3a483aff94e5b5bc219d5129dba093b42464e1ea5e70643585876fb",
+          "upstream_archive": "volatility_2.6_lin64_standalone.zip",
+          "upstream_archive_sha256": "dc375a0f6909cb93ac17a10e28a0963fcd2decfc3c4291aadb7e5e0cbe28874a",
+          "license_location": "tools/volatility2/linux/LICENSE.txt"
+        }
+      ]
+    },
+    {
+      "name": "7-Zip",
+      "version": "26.04",
+      "license": "LGPL with additional notices; see License.txt",
+      "source": "https://sourceforge.net/projects/sevenzip/files/7-Zip/26.04/",
+      "upstream_archive": "7z2604-sf.exe",
+      "upstream_archive_sha256": "d54bf805f9f3704d1e8db2fa3498ae7ef2df0312b40b558e7c71c734430a665d",
+      "entry": "tools/7zip/7z.exe",
+      "entry_sha256": "95fff19b73eff77c87c0d7bd32822e43fb90dd2932459f962eb532d8dfb6ba53",
+      "license_location": "tools/7zip/License.txt"
+    },
+    {
+      "name": "ExifTool",
+      "version": "13.59",
+      "license": "Perl Artistic / GPL; bundled Perl notices preserved",
+      "source": "https://sourceforge.net/projects/exiftool/files/exiftool-13.59_64.zip/",
+      "upstream_archive": "exiftool-13.59_64.zip",
+      "upstream_archive_sha256": "44b512b25af500724ba579d0a53c8fc5851628b692dd5e5d94ae4a15c2cba9ec",
+      "entry": "tools/exiftool/exiftool.exe",
+      "entry_sha256": "68c079c32fdae0d6c7130e9a5fb73f8ac9dabdf9ab8da312da4f6c549d6d3385",
+      "license_location": "tools/exiftool/exiftool_files/LICENSE"
+    },
+    {
+      "name": "SQLite",
+      "version": "3.54.1",
+      "license": "Public domain",
+      "source": "https://sqlite.org/2026/sqlite-tools-win-x64-3540100.zip",
+      "upstream_archive": "sqlite-tools-win-x64-3540100.zip",
+      "upstream_archive_sha256": "fb20997ade5583a5fbf1e36db7bc3c82c9416b3f314f16961e1572aa4e49487d",
+      "entry": "tools/sqlite/sqlite3.exe",
+      "entry_sha256": "3627c4ce2632949ee6d795c92e0a33f68fb30235f0a55a7719f0636414d8e1d3",
+      "license_location": null
+    },
+    {
+      "name": "The Sleuth Kit",
+      "version": "4.14.0",
+      "license": "CPL / IPL and component licenses",
+      "source": "https://github.com/sleuthkit/sleuthkit/releases/tag/sleuthkit-4.14.0",
+      "upstream_archive": "tsk-api.zip",
+      "upstream_archive_sha256": "76a803a0dbbe203cf19c79e583413a2aa470aaf1f6349488f35d3ef7cb779a2a",
+      "entry": "tools/sleuthkit/bin/fls.exe",
+      "entry_sha256": "5287150c4e454f131e62923e091860e50df602e504f754ca94408c12ec8f8bbe",
+      "license_location": "tools/sleuthkit/licenses/cpl1.0.txt"
+    },
+    {
+      "name": "pngcheck",
+      "version": "4.0.1 + static zlib 1.3.1",
+      "license": "MIT-style / zlib",
+      "source": "https://github.com/pnggroup/pngcheck/releases/tag/v4.0.1",
+      "upstream_archive": "pngcheck-v4.0.1.zip",
+      "upstream_archive_sha256": "ab978f0224b68140cc577995b56bdda0ce02f3b940df00fb9cea8d6ea6220539",
+      "entry": "tools/pngcheck/pngcheck.exe",
+      "entry_sha256": "28a0e0b971fae4a876d35e153ddf9966e2db26df1b0f2ed77f1bf668a98c8688",
+      "license_location": "tools/pngcheck/LICENSE"
+    },
+    {
+      "name": "BusyBox for Windows",
+      "version": "1.38.0-FRP-6075-g169694ebd Unicode x64",
+      "license": "GPL-2.0",
+      "source": "https://frippery.org/busybox/",
+      "upstream_archive": "busybox64u.exe",
+      "upstream_archive_sha256": "6e263d154d8548d1eb936f65d1d8312c80df31c45974e48d6335e4dcc0f4f34c",
+      "entry": "tools/busybox/busybox.exe",
+      "entry_sha256": "6e263d154d8548d1eb936f65d1d8312c80df31c45974e48d6335e4dcc0f4f34c",
+      "license_location": "licenses/source/busybox-source-full.zip"
+    },
+    {
+      "name": "RubyInstaller",
+      "version": "3.3.12-1 x64",
+      "license": "Ruby / BSD and component licenses",
+      "source": "https://github.com/oneclick/rubyinstaller2/releases/tag/RubyInstaller-3.3.12-1",
+      "upstream_archive": "ruby-api.7z",
+      "upstream_archive_sha256": "f8d534a44e47e5b72abe557497763128b93e9356bd91397a3d7b9e0a11572943",
+      "entry": "runtime/ruby/bin/ruby.exe",
+      "entry_sha256": "f95ab21f16a8cdae2ef0f50a9e23b851c2b7d6bf37ed9a308583471465e7dfff",
+      "license_location": "runtime/ruby/LICENSE.txt"
+    },
+    {
+      "name": "zsteg",
+      "version": "0.2.14",
+      "license": "MIT (upstream README and gemspec declaration)",
+      "source": "https://rubygems.org/gems/zsteg/versions/0.2.14",
+      "upstream_archive": "gems/zsteg-0.2.14.gem",
+      "upstream_archive_sha256": "761ee35a8512630606946187ed1a3150c6ab30dd5e32cefe48ebb2b874190f6f",
+      "entry": "runtime/ruby/bin/zsteg",
+      "entry_sha256": "d67d76b694b5d9eaea34336f312251ceb6d26bfff58fcee76715a5c1432b1b87",
+      "license_location": "runtime/ruby/lib/ruby/gems/3.3.0/gems/zsteg-0.2.14/README.md"
+    },
+    {
+      "name": "CyberChef",
+      "version": "9.28.0",
+      "license": "Apache-2.0",
+      "source": "https://github.com/gchq/CyberChef/tree/v9.28.0",
+      "upstream_archive": null,
+      "upstream_archive_sha256": null,
+      "entry": "tools/CyberChef/CyberChef_v9.28.0.html",
+      "entry_sha256": "cd46fda442c4987393ca8de1ca67220a84914a108300818287bdcd60aadd0bde",
+      "license_location": "tools/CyberChef/LICENSE"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "id": "17d086cf33074d02",
+  "action": "pdf_read",
+  "title": "PDF 文字与元数据",
+  "state": "completed",
+  "command": "& 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\runtime\\python\\python.exe' 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\tools\\analysis_engine.py' 'pdf' 'E:\\学习培训\\培训\\取证\\output\\平台API验收_51983a32\\labs\\inputs\\_platform_qa_bc170e0df4\\自选文档.pdf' '--out' 'E:\\学习培训\\培训\\取证\\output\\平台API验收_51983a32\\labs\\out\\platform_runs\\17d086cf33074d02\\pdf' '--kit' 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64' '--password' ''",
+  "created": "2026-10-22T10:16:15.641109+08:00",
+  "exit_code": 0,
+  "text": "{\"kind\": \"pdf\", \"encrypted\": false, \"pages\": 1, \"extracted_pages\": 1, \"metadata\": {\"/Producer\": \"pypdf\", \"/Title\": \"Own uploaded PDF\"}, \"attachments\": [\"memo.txt\"], \"preview\": \"\\n--- PAGE 1 ---\\nIndependent PDF example 42\", \"note\": \"最多 100 页 / 约 2 MiB 文本；扫描图片型 PDF 需要 OCR，本工具不把无文本解释为无内容。\"}\r\n",
+  "error": "",
+  "duration": 0.31,
+  "files": [
+    {
+      "name": "pdf/pdf_text.txt",
+      "bytes": 44,
+      "path": "out/platform_runs/17d086cf33074d02/pdf/pdf_text.txt"
+    },
+    {
+      "name": "pdf/result.json",
+      "bytes": 401,
+      "path": "out/platform_runs/17d086cf33074d02/pdf/result.json"
+    },
+    {
+      "name": "运行报告.txt",
+      "bytes": 1008,
+      "path": "out/platform_runs/17d086cf33074d02/运行报告.txt"
+    }
+  ],
+  "data": {
+    "kind": "pdf",
+    "encrypted": false,
+    "pages": 1,
+    "extracted_pages": 1,
+    "metadata": {
+      "/Producer": "pypdf",
+      "/Title": "Own uploaded PDF"
+    },
+    "attachments": [
+      "memo.txt"
+    ],
+    "preview": "\n--- PAGE 1 ---\nIndependent PDF example 42",
+    "note": "最多 100 页 / 约 2 MiB 文本；扫描图片型 PDF 需要 OCR，本工具不把无文本解释为无内容。"
+  },
+  "host": "Windows · PowerShell",
+  "input": "inputs/_platform_qa_bc170e0df4/自选文档.pdf"
+}

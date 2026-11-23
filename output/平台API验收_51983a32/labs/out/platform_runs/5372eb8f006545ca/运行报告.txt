@@ -1,0 +1,9 @@
+操作：自定义只读 SQL 查询
+运行环境：Windows PowerShell
+创建时间：2026-10-22T10:16:21.496837+08:00
+状态：completed
+退出码：0
+命令：& 'E:\学习培训\培训\取证\学员工具包_Windows64\runtime\python\python.exe' 'E:\学习培训\培训\取证\学员工具包_Windows64\tools\analysis_engine.py' 'sqlite' 'E:\学习培训\培训\取证\output\平台API验收_51983a32\labs\inputs\_platform_qa_bc170e0df4\wal-case.db' '--out' 'E:\学习培训\培训\取证\output\平台API验收_51983a32\labs\out\platform_runs\5372eb8f006545ca' '--kit' 'E:\学习培训\培训\取证\学员工具包_Windows64' '--rows' '200' '--query' 'SELECT value FROM live_records'
+
+
+{"columns": ["value"], "rows": [["committed in WAL"]], "kind": "sqlite_query", "limited": false, "query": "SELECT value FROM live_records", "limit": 200, "note": "只读连接；需完整提取时在副本上使用 SQLite CLI。若存在 WAL，需将匹配的 -wal / -shm 与数据库一起放在同一目录。", "companions": [{"name": "wal-case.db-wal", "bytes": 12392, "sha256": "5dbb0940d91253a699ad1b77afb139bf63c636aab17c7e07778a01dc4ca39349"}, {"name": "wal-case.db-shm", "bytes": 32768, "sha256": "79bf8619b2155ac1b52507db21bbc67343398bc8777edc4f374047ae70075d04"}], "wal_note": "已在临时副本上合并读取同名 WAL / SHM，未改动原始附件。"}

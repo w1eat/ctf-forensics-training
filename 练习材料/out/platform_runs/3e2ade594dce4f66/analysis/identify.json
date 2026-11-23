@@ -1,0 +1,8 @@
+{
+  "kind": "zip",
+  "label": "ZIP local",
+  "evidence": "文件头 50 4b 03 04",
+  "extension": ".zip",
+  "bytes": 201,
+  "header": "50 4b 03 04 14 00 09 00 08 00 8b 50 2f 48 46 34 4c ae 1d 00 00 00 0f 00 00 00 0b 00 00 00 34 6e 75 6d 62 65 72 2e 74 78 74 6e 0d da 0b 3f 5a 17 7a 31 0d 51 6a 78 75 c6 03 4a 9d 97 a9 b7 5b fc"
+}

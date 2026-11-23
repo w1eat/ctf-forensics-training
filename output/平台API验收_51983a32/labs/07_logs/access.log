@@ -1,0 +1,8 @@
+192.0.2.44 - - [18/Oct/2026:09:15:50 +0800] "GET / HTTP/1.1" 200 532 "-" "TrainingBrowser/1.0" rid=r-099
+203.0.113.9 - - [18/Oct/2026:09:16:00 +0800] "GET /admin HTTP/1.1" 404 42 "-" "TestClient/1.0" rid=r-100
+192.0.2.44 - - [18/Oct/2026:09:16:10 +0800] "POST /api/login HTTP/1.1" 200 64 "-" "TrainingBrowser/1.0" rid=r-101
+192.0.2.44 - - [18/Oct/2026:09:17:05 +0800] "GET /dashboard HTTP/1.1" 200 980 "-" "TrainingBrowser/1.0" rid=r-104
+203.0.113.9 - - [18/Oct/2026:09:18:00 +0800] "GET /backup.zip HTTP/1.1" 404 42 "-" "TestClient/1.0" rid=r-105
+192.0.2.44 - - [18/Oct/2026:09:18:30 +0800] "POST /api/export HTTP/1.1" 202 81 "-" "TrainingBrowser/1.0" rid=r-102
+192.0.2.44 - - [18/Oct/2026:09:18:31 +0800] "GET /exports/42.zip HTTP/1.1" 200 2048 "-" "TrainingBrowser/1.0" rid=r-103
+192.0.2.44 - - [18/Oct/2026:09:19:00 +0800] "GET /help HTTP/1.1" 200 420 "-" "TrainingBrowser/1.0" rid=r-106

@@ -1,0 +1,33 @@
+{
+  "command": "& 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\tools\\exiftool\\exiftool.exe' '-charset' 'filename=UTF8' '-@' 'out/platform_runs/cd0e3b1ea8de4643/analysis/_exif.args'",
+  "exit_code": 0,
+  "preview": "[{\r\n  \"SourceFile\": \"./inputs/_platform_qa_bc170e0df4/自选图像 17x11.png\",\r\n  \"ExifTool:ExifToolVersion\": 13.59,\r\n  \"System:FileName\": \"自选图像 17x11.png\",\r\n  \"System:Directory\": \"./inputs/_platform_qa_bc170e0df4\",\r\n  \"System:FileSize\": \"81 bytes\",\r\n  \"System:FileModifyDate\": \"2026:10:22 10:16:06+08:00\",\r\n  \"System:FileAccessDate\": \"2026:10:22 10:16:21+08:00\",\r\n  \"System:FileCreateDate\": \"2026:10:22 10:16:06+08:00\",\r\n  \"System:FilePermissions\": \"-rw-rw-rw-\",\r\n  \"File:FileType\": \"PNG\",\r\n  \"File:FileTypeExtension\": \"png\",\r\n  \"File:MIMEType\": \"image/png\",\r\n  \"PNG:ImageWidth\": 17,\r\n  \"PNG:ImageHeight\": 11,\r\n  \"PNG:BitDepth\": 8,\r\n  \"PNG:ColorType\": \"RGB\",\r\n  \"PNG:Compression\": \"Deflate/Inflate\",\r\n  \"PNG:Filter\": \"Adaptive\",\r\n  \"PNG:Interlace\": \"Noninterlaced\",\r\n  \"Composite:ImageSize\": \"17x11\",\r\n  \"Composite:Megapixels\": 0.000187\r\n}]\r\n",
+  "diagnostics": "",
+  "log": "metadata.txt",
+  "argument_file": "-a\n-u\n-G1\n-j\n./inputs/_platform_qa_bc170e0df4/自选图像 17x11.png\n",
+  "fields": [
+    {
+      "SourceFile": "./inputs/_platform_qa_bc170e0df4/自选图像 17x11.png",
+      "ExifTool:ExifToolVersion": 13.59,
+      "System:FileName": "自选图像 17x11.png",
+      "System:Directory": "./inputs/_platform_qa_bc170e0df4",
+      "System:FileSize": "81 bytes",
+      "System:FileModifyDate": "2026:10:22 10:16:06+08:00",
+      "System:FileAccessDate": "2026:10:22 10:16:21+08:00",
+      "System:FileCreateDate": "2026:10:22 10:16:06+08:00",
+      "System:FilePermissions": "-rw-rw-rw-",
+      "File:FileType": "PNG",
+      "File:FileTypeExtension": "png",
+      "File:MIMEType": "image/png",
+      "PNG:ImageWidth": 17,
+      "PNG:ImageHeight": 11,
+      "PNG:BitDepth": 8,
+      "PNG:ColorType": "RGB",
+      "PNG:Compression": "Deflate/Inflate",
+      "PNG:Filter": "Adaptive",
+      "PNG:Interlace": "Noninterlaced",
+      "Composite:ImageSize": "17x11",
+      "Composite:Megapixels": 0.000187
+    }
+  ]
+}

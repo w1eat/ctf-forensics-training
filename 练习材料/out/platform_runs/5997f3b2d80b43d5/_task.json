@@ -1,0 +1,22 @@
+{
+  "id": "5997f3b2d80b43d5",
+  "action": "zip_dictionary",
+  "title": "小字典恢复 ZIP 口令",
+  "state": "completed",
+  "command": "& 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\runtime\\python\\python.exe' 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\tools\\finspect.py' 'tryzip' 'E:\\学习培训\\培训\\取证\\练习材料\\out\\platform_runs\\c24678b69ffb4b1c\\evidence\\0002_0000000001d7.zip' 'E:\\学习培训\\培训\\取证\\练习材料\\out\\qr_code_candidates\\digits4_7000_7999.txt' '--limit' '1000'",
+  "created": "2026-10-23T09:57:53.027771+08:00",
+  "exit_code": 0,
+  "text": "Password: 7639 (candidate 640/1000, all entries passed CRC)\r\n4number.txt b'CTF{vjpw_wnoei}'\r\n",
+  "error": "",
+  "duration": 0.16,
+  "files": [
+    {
+      "name": "运行报告.txt",
+      "bytes": 654,
+      "path": "out/platform_runs/5997f3b2d80b43d5/运行报告.txt"
+    }
+  ],
+  "data": null,
+  "host": "Windows · PowerShell",
+  "input": "out/platform_runs/c24678b69ffb4b1c/evidence/0002_0000000001d7.zip"
+}

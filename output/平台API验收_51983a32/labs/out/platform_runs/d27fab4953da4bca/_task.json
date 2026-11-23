@@ -1,0 +1,34 @@
+{
+  "id": "d27fab4953da4bca",
+  "action": "file_type",
+  "title": "识别文件格式",
+  "state": "completed",
+  "command": "& 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\runtime\\python\\python.exe' 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\tools\\analysis_engine.py' 'probe' 'E:\\学习培训\\培训\\取证\\output\\平台API验收_51983a32\\labs\\01_file\\unknown.dat' '--out' 'E:\\学习培训\\培训\\取证\\output\\平台API验收_51983a32\\labs\\out\\platform_runs\\d27fab4953da4bca' '--kit' 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64'",
+  "created": "2026-10-22T10:16:07.129214+08:00",
+  "exit_code": 0,
+  "text": "{\"kind\": \"png\", \"label\": \"PNG\", \"evidence\": \"文件头 89 50 4e 47 0d 0a 1a 0a\", \"extension\": \".dat\", \"bytes\": 794, \"header\": \"89 50 4e 47 0d 0a 1a 0a 00 00 00 0d 49 48 44 52 00 00 01 00 00 00 00 a0 08 02 00 00 00 6c 7b 25 6b 00 00 00 24 74 45 58 74 54 69 74 6c 65 00 43 54 46 20 46 6f 75 6e 64 61 74 69 6f 6e 20 2d 20\"}\r\n",
+  "error": "",
+  "duration": 0.16,
+  "files": [
+    {
+      "name": "result.json",
+      "bytes": 341,
+      "path": "out/platform_runs/d27fab4953da4bca/result.json"
+    },
+    {
+      "name": "运行报告.txt",
+      "bytes": 929,
+      "path": "out/platform_runs/d27fab4953da4bca/运行报告.txt"
+    }
+  ],
+  "data": {
+    "kind": "png",
+    "label": "PNG",
+    "evidence": "文件头 89 50 4e 47 0d 0a 1a 0a",
+    "extension": ".dat",
+    "bytes": 794,
+    "header": "89 50 4e 47 0d 0a 1a 0a 00 00 00 0d 49 48 44 52 00 00 01 00 00 00 00 a0 08 02 00 00 00 6c 7b 25 6b 00 00 00 24 74 45 58 74 54 69 74 6c 65 00 43 54 46 20 46 6f 75 6e 64 61 74 69 6f 6e 20 2d 20"
+  },
+  "host": "Windows · PowerShell",
+  "input": "01_file/unknown.dat"
+}

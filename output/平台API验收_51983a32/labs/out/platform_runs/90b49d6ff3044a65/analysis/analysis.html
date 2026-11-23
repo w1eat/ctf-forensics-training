@@ -1,0 +1,593 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>文件分析报告</title><style>body{font:14px/1.85 system-ui,sans-serif;max-width:1140px;margin:36px auto;padding:0 24px;color:#254a36;background:#f5f7ed}section{border:1px solid #ccdabb;background:#fffef8;margin:22px 0;padding:22px;border-radius:8px}h1{font-size:29px}h2{font-size:20px}h3{font-size:14px;margin-top:22px}small,.label{font-size:11px;font-weight:normal;color:#7a895f}.table{overflow:auto;max-height:540px}table{border-collapse:collapse;width:100%;font-size:11px}th,td{text-align:left;vertical-align:top;padding:8px 10px;border-bottom:1px solid #dce4d0;max-width:450px;overflow-wrap:anywhere}th{background:#e5edd9;position:sticky;top:0}pre{white-space:pre-wrap;overflow-wrap:anywhere;font:11px/1.85 Consolas,monospace;background:#edf2e5;padding:14px;border-radius:4px;max-height:480px;overflow:auto}details{margin-top:16px}summary{cursor:pointer;color:#66844f;font-size:12px}.error{background:#f6e4d7;padding:12px;border-radius:4px}@media(max-width:650px){body{padding:0 13px;margin:20px auto}section{padding:15px}h1{font-size:24px}}</style><h1>文件自动分析报告</h1><h2>PDF</h2><p>自选文档.pdf</p><p>2026-10-22T10:16:23.920342+08:00 · Windows PowerShell</p><p>流程：document · 模式：standard · 子文件深度：2 · 导出 / 分析文件：1 / 32</p><p>本次未检出已支持的 flag 形态；这不等于没有隐藏内容。请继续查看格式结果与覆盖范围。</p><section><h2>识别文件结构与类型 <small>已执行</small></h2><details><summary>原始结构与完整范围记录</summary><pre>{
+  &quot;kind&quot;: &quot;pdf&quot;,
+  &quot;label&quot;: &quot;PDF&quot;,
+  &quot;evidence&quot;: &quot;文件头 25 50 44 46 2d&quot;,
+  &quot;extension&quot;: &quot;.pdf&quot;,
+  &quot;bytes&quot;: 1068,
+  &quot;header&quot;: &quot;25 50 44 46 2d 31 2e 33 0a 25 e2 e3 cf d3 0a 31 20 30 20 6f 62 6a 0a 3c 3c 0a 2f 50 72 6f 64 75 63 65 72 20 28 70 79 70 64 66 29 0a 2f 54 69 74 6c 65 20 28 4f 77 6e 20 75 70 6c 6f 61 64 65 64&quot;
+}</pre></details></section><section><h2>全文件摘要与字节熵 <small>已执行</small></h2><pre>SHA256 90ff2b84d6be76149170182db48f483365e9816e78b115b786b8a42835a08bad
+字节数 1068 · 熵 4.79322</pre><p>MD5 / SHA1 仅用于已知摘要对照；证据一致性优先记录 SHA256。熵高不等于一定加密。</p><details><summary>原始结构与完整范围记录</summary><pre>{
+  &quot;kind&quot;: &quot;hash&quot;,
+  &quot;name&quot;: &quot;自选文档.pdf&quot;,
+  &quot;bytes&quot;: 1068,
+  &quot;md5&quot;: &quot;31efd74ce7569b008459b12dfe602566&quot;,
+  &quot;sha1&quot;: &quot;cebcdf695027d0d3165cc85617c269591b836e4b&quot;,
+  &quot;sha256&quot;: &quot;90ff2b84d6be76149170182db48f483365e9816e78b115b786b8a42835a08bad&quot;,
+  &quot;entropy&quot;: 4.79322,
+  &quot;entropy_windows&quot;: [
+    {
+      &quot;offset&quot;: 0,
+      &quot;bytes&quot;: 1068,
+      &quot;entropy&quot;: 4.79322
+    }
+  ],
+  &quot;note&quot;: &quot;MD5 / SHA1 仅用于已知摘要对照；证据一致性优先记录 SHA256。熵高不等于一定加密。&quot;
+}</pre></details></section><section><h2>通用字符串与嵌入签名 <small>已执行</small></h2><p>仅提取 ASCII 可打印字符及其 UTF-16LE 表示；不覆盖所有语言。跨块长串可能分段显示。</p><p>扫描范围：1068 / 1068 字节</p><details><summary>原始结构与完整范围记录</summary><pre>{
+  &quot;kind&quot;: &quot;scan&quot;,
+  &quot;strings&quot;: {
+    &quot;columns&quot;: [
+      &quot;字节偏移&quot;,
+      &quot;编码&quot;,
+      &quot;可读内容（最多 1024 字节）&quot;,
+      &quot;匹配字节数&quot;
+    ],
+    &quot;rows&quot;: [
+      [
+        &quot;0x0&quot;,
+        &quot;ASCII&quot;,
+        &quot;%PDF-1.3&quot;,
+        8
+      ],
+      [
+        &quot;0xf&quot;,
+        &quot;ASCII&quot;,
+        &quot;1 0 obj&quot;,
+        7
+      ],
+      [
+        &quot;0x1a&quot;,
+        &quot;ASCII&quot;,
+        &quot;/Producer (pypdf)&quot;,
+        17
+      ],
+      [
+        &quot;0x2c&quot;,
+        &quot;ASCII&quot;,
+        &quot;/Title (Own uploaded PDF)&quot;,
+        25
+      ],
+      [
+        &quot;0x49&quot;,
+        &quot;ASCII&quot;,
+        &quot;endobj&quot;,
+        6
+      ],
+      [
+        &quot;0x50&quot;,
+        &quot;ASCII&quot;,
+        &quot;2 0 obj&quot;,
+        7
+      ],
+      [
+        &quot;0x5b&quot;,
+        &quot;ASCII&quot;,
+        &quot;/Type /Pages&quot;,
+        12
+      ],
+      [
+        &quot;0x68&quot;,
+        &quot;ASCII&quot;,
+        &quot;/Count 1&quot;,
+        8
+      ],
+      [
+        &quot;0x71&quot;,
+        &quot;ASCII&quot;,
+        &quot;/Kids [ 4 0 R ]&quot;,
+        15
+      ],
+      [
+        &quot;0x84&quot;,
+        &quot;ASCII&quot;,
+        &quot;endobj&quot;,
+        6
+      ],
+      [
+        &quot;0x8b&quot;,
+        &quot;ASCII&quot;,
+        &quot;3 0 obj&quot;,
+        7
+      ],
+      [
+        &quot;0x96&quot;,
+        &quot;ASCII&quot;,
+        &quot;/Type /Catalog&quot;,
+        14
+      ],
+      [
+        &quot;0xa5&quot;,
+        &quot;ASCII&quot;,
+        &quot;/Pages 2 0 R&quot;,
+        12
+      ],
+      [
+        &quot;0xb2&quot;,
+        &quot;ASCII&quot;,
+        &quot;/Names 9 0 R&quot;,
+        12
+      ],
+      [
+        &quot;0xc2&quot;,
+        &quot;ASCII&quot;,
+        &quot;endobj&quot;,
+        6
+      ],
+      [
+        &quot;0xc9&quot;,
+        &quot;ASCII&quot;,
+        &quot;4 0 obj&quot;,
+        7
+      ],
+      [
+        &quot;0xd4&quot;,
+        &quot;ASCII&quot;,
+        &quot;/Type /Page&quot;,
+        11
+      ],
+      [
+        &quot;0xe0&quot;,
+        &quot;ASCII&quot;,
+        &quot;/Resources &lt;&lt;&quot;,
+        13
+      ],
+      [
+        &quot;0xee&quot;,
+        &quot;ASCII&quot;,
+        &quot;/Font &lt;&lt;&quot;,
+        8
+      ],
+      [
+        &quot;0xf7&quot;,
+        &quot;ASCII&quot;,
+        &quot;/F1 5 0 R&quot;,
+        9
+      ],
+      [
+        &quot;0x107&quot;,
+        &quot;ASCII&quot;,
+        &quot;/MediaBox [ 0.0 0.0 200 150 ]&quot;,
+        29
+      ],
+      [
+        &quot;0x125&quot;,
+        &quot;ASCII&quot;,
+        &quot;/Parent 2 0 R&quot;,
+        13
+      ],
+      [
+        &quot;0x133&quot;,
+        &quot;ASCII&quot;,
+        &quot;/Contents 6 0 R&quot;,
+        15
+      ],
+      [
+        &quot;0x146&quot;,
+        &quot;ASCII&quot;,
+        &quot;endobj&quot;,
+        6
+      ],
+      [
+        &quot;0x14d&quot;,
+        &quot;ASCII&quot;,
+        &quot;5 0 obj&quot;,
+        7
+      ],
+      [
+        &quot;0x158&quot;,
+        &quot;ASCII&quot;,
+        &quot;/Type /Font&quot;,
+        11
+      ],
+      [
+        &quot;0x164&quot;,
+        &quot;ASCII&quot;,
+        &quot;/Subtype /Type1&quot;,
+        15
+      ],
+      [
+        &quot;0x174&quot;,
+        &quot;ASCII&quot;,
+        &quot;/BaseFont /Helvetica&quot;,
+        20
+      ],
+      [
+        &quot;0x18c&quot;,
+        &quot;ASCII&quot;,
+        &quot;endobj&quot;,
+        6
+      ],
+      [
+        &quot;0x193&quot;,
+        &quot;ASCII&quot;,
+        &quot;6 0 obj&quot;,
+        7
+      ],
+      [
+        &quot;0x19e&quot;,
+        &quot;ASCII&quot;,
+        &quot;/Length 57&quot;,
+        10
+      ],
+      [
+        &quot;0x1ac&quot;,
+        &quot;ASCII&quot;,
+        &quot;stream&quot;,
+        6
+      ],
+      [
+        &quot;0x1b3&quot;,
+        &quot;ASCII&quot;,
+        &quot;BT /F1 12 Tf 10 100 Td (Independent PDF example 42) Tj ET&quot;,
+        57
+      ],
+      [
+        &quot;0x1ed&quot;,
+        &quot;ASCII&quot;,
+        &quot;endstream&quot;,
+        9
+      ],
+      [
+        &quot;0x1f7&quot;,
+        &quot;ASCII&quot;,
+        &quot;endobj&quot;,
+        6
+      ],
+      [
+        &quot;0x1fe&quot;,
+        &quot;ASCII&quot;,
+        &quot;7 0 obj&quot;,
+        7
+      ],
+      [
+        &quot;0x209&quot;,
+        &quot;ASCII&quot;,
+        &quot;/Type /EmbeddedFile&quot;,
+        19
+      ],
+      [
+        &quot;0x21d&quot;,
+        &quot;ASCII&quot;,
+        &quot;/Length 22&quot;,
+        10
+      ],
+      [
+        &quot;0x22b&quot;,
+        &quot;ASCII&quot;,
+        &quot;stream&quot;,
+        6
+      ],
+      [
+        &quot;0x232&quot;,
+        &quot;ASCII&quot;,
+        &quot;Independent attachment&quot;,
+        22
+      ],
+      [
+        &quot;0x249&quot;,
+        &quot;ASCII&quot;,
+        &quot;endstream&quot;,
+        9
+      ],
+      [
+        &quot;0x253&quot;,
+        &quot;ASCII&quot;,
+        &quot;endobj&quot;,
+        6
+      ],
+      [
+        &quot;0x25a&quot;,
+        &quot;ASCII&quot;,
+        &quot;8 0 obj&quot;,
+        7
+      ],
+      [
+        &quot;0x265&quot;,
+        &quot;ASCII&quot;,
+        &quot;/Type /Filespec&quot;,
+        15
+      ],
+      [
+        &quot;0x275&quot;,
+        &quot;ASCII&quot;,
+        &quot;/F (memo\\056txt)&quot;,
+        16
+      ],
+      [
+        &quot;0x286&quot;,
+        &quot;ASCII&quot;,
+        &quot;/EF &lt;&lt;&quot;,
+        6
+      ],
+      [
+        &quot;0x28d&quot;,
+        &quot;ASCII&quot;,
+        &quot;/F 7 0 R&quot;,
+        8
+      ],
+      [
+        &quot;0x29c&quot;,
+        &quot;ASCII&quot;,
+        &quot;endobj&quot;,
+        6
+      ],
+      [
+        &quot;0x2a3&quot;,
+        &quot;ASCII&quot;,
+        &quot;9 0 obj&quot;,
+        7
+      ],
+      [
+        &quot;0x2ae&quot;,
+        &quot;ASCII&quot;,
+        &quot;/EmbeddedFiles 10 0 R&quot;,
+        21
+      ],
+      [
+        &quot;0x2c7&quot;,
+        &quot;ASCII&quot;,
+        &quot;endobj&quot;,
+        6
+      ],
+      [
+        &quot;0x2ce&quot;,
+        &quot;ASCII&quot;,
+        &quot;10 0 obj&quot;,
+        8
+      ],
+      [
+        &quot;0x2da&quot;,
+        &quot;ASCII&quot;,
+        &quot;/Names [ (memo\\056txt) 8 0 R ]&quot;,
+        30
+      ],
+      [
+        &quot;0x2fc&quot;,
+        &quot;ASCII&quot;,
+        &quot;endobj&quot;,
+        6
+      ],
+      [
+        &quot;0x303&quot;,
+        &quot;ASCII&quot;,
+        &quot;xref&quot;,
+        4
+      ],
+      [
+        &quot;0x308&quot;,
+        &quot;ASCII&quot;,
+        &quot;0 11&quot;,
+        4
+      ],
+      [
+        &quot;0x30d&quot;,
+        &quot;ASCII&quot;,
+        &quot;0000000000 65535 f &quot;,
+        19
+      ],
+      [
+        &quot;0x321&quot;,
+        &quot;ASCII&quot;,
+        &quot;0000000015 00000 n &quot;,
+        19
+      ],
+      [
+        &quot;0x335&quot;,
+        &quot;ASCII&quot;,
+        &quot;0000000080 00000 n &quot;,
+        19
+      ],
+      [
+        &quot;0x349&quot;,
+        &quot;ASCII&quot;,
+        &quot;0000000139 00000 n &quot;,
+        19
+      ],
+      [
+        &quot;0x35d&quot;,
+        &quot;ASCII&quot;,
+        &quot;0000000201 00000 n &quot;,
+        19
+      ],
+      [
+        &quot;0x371&quot;,
+        &quot;ASCII&quot;,
+        &quot;0000000333 00000 n &quot;,
+        19
+      ],
+      [
+        &quot;0x385&quot;,
+        &quot;ASCII&quot;,
+        &quot;0000000403 00000 n &quot;,
+        19
+      ],
+      [
+        &quot;0x399&quot;,
+        &quot;ASCII&quot;,
+        &quot;0000000510 00000 n &quot;,
+        19
+      ],
+      [
+        &quot;0x3ad&quot;,
+        &quot;ASCII&quot;,
+        &quot;0000000602 00000 n &quot;,
+        19
+      ],
+      [
+        &quot;0x3c1&quot;,
+        &quot;ASCII&quot;,
+        &quot;0000000675 00000 n &quot;,
+        19
+      ],
+      [
+        &quot;0x3d5&quot;,
+        &quot;ASCII&quot;,
+        &quot;0000000718 00000 n &quot;,
+        19
+      ],
+      [
+        &quot;0x3e9&quot;,
+        &quot;ASCII&quot;,
+        &quot;trailer&quot;,
+        7
+      ],
+      [
+        &quot;0x3f4&quot;,
+        &quot;ASCII&quot;,
+        &quot;/Size 11&quot;,
+        8
+      ],
+      [
+        &quot;0x3fd&quot;,
+        &quot;ASCII&quot;,
+        &quot;/Root 3 0 R&quot;,
+        11
+      ],
+      [
+        &quot;0x409&quot;,
+        &quot;ASCII&quot;,
+        &quot;/Info 1 0 R&quot;,
+        11
+      ],
+      [
+        &quot;0x418&quot;,
+        &quot;ASCII&quot;,
+        &quot;startxref&quot;,
+        9
+      ],
+      [
+        &quot;0x426&quot;,
+        &quot;ASCII&quot;,
+        &quot;%%EOF&quot;,
+        5
+      ]
+    ]
+  },
+  &quot;signatures&quot;: {
+    &quot;columns&quot;: [
+      &quot;字节偏移&quot;,
+      &quot;签名&quot;,
+      &quot;含义&quot;
+    ],
+    &quot;rows&quot;: [
+      [
+        &quot;0x0&quot;,
+        &quot;PDF&quot;,
+        &quot;候选；需验证结构和边界&quot;
+      ]
+    ]
+  },
+  &quot;scanned_bytes&quot;: 1068,
+  &quot;total_bytes&quot;: 1068,
+  &quot;partial&quot;: false,
+  &quot;string_rows_limited&quot;: false,
+  &quot;signature_rows_limited&quot;: false,
+  &quot;note&quot;: &quot;仅提取 ASCII 可打印字符及其 UTF-16LE 表示；不覆盖所有语言。跨块长串可能分段显示。&quot;
+}</pre></details></section><section><h2>ExifTool 元数据 <small>已执行</small></h2><p class="label">实际命令 · Windows PowerShell</p><pre>&amp; &#x27;E:\学习培训\培训\取证\学员工具包_Windows64\tools\exiftool\exiftool.exe&#x27; &#x27;-charset&#x27; &#x27;filename=UTF8&#x27; &#x27;-@&#x27; &#x27;out/platform_runs/90b49d6ff3044a65/analysis/_exif.args&#x27;</pre><details><summary>原始结构与完整范围记录</summary><pre>{
+  &quot;command&quot;: &quot;&amp; &#x27;E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\tools\\exiftool\\exiftool.exe&#x27; &#x27;-charset&#x27; &#x27;filename=UTF8&#x27; &#x27;-@&#x27; &#x27;out/platform_runs/90b49d6ff3044a65/analysis/_exif.args&#x27;&quot;,
+  &quot;exit_code&quot;: 0,
+  &quot;preview&quot;: &quot;[{\r\n  \&quot;SourceFile\&quot;: \&quot;./inputs/_platform_qa_bc170e0df4/自选文档.pdf\&quot;,\r\n  \&quot;ExifTool:ExifToolVersion\&quot;: 13.59,\r\n  \&quot;System:FileName\&quot;: \&quot;自选文档.pdf\&quot;,\r\n  \&quot;System:Directory\&quot;: \&quot;./inputs/_platform_qa_bc170e0df4\&quot;,\r\n  \&quot;System:FileSize\&quot;: \&quot;1068 bytes\&quot;,\r\n  \&quot;System:FileModifyDate\&quot;: \&quot;2026:10:22 10:16:06+08:00\&quot;,\r\n  \&quot;System:FileAccessDate\&quot;: \&quot;2026:10:22 10:16:24+08:00\&quot;,\r\n  \&quot;System:FileCreateDate\&quot;: \&quot;2026:10:22 10:16:06+08:00\&quot;,\r\n  \&quot;System:FilePermissions\&quot;: \&quot;-rw-rw-rw-\&quot;,\r\n  \&quot;File:FileType\&quot;: \&quot;PDF\&quot;,\r\n  \&quot;File:FileTypeExtension\&quot;: \&quot;pdf\&quot;,\r\n  \&quot;File:MIMEType\&quot;: \&quot;application/pdf\&quot;,\r\n  \&quot;PDF:PDFVersion\&quot;: 1.3,\r\n  \&quot;PDF:Linearized\&quot;: \&quot;No\&quot;,\r\n  \&quot;PDF:PageCount\&quot;: 1,\r\n  \&quot;PDF:Producer\&quot;: \&quot;pypdf\&quot;,\r\n  \&quot;PDF:Title\&quot;: \&quot;Own uploaded PDF\&quot;\r\n}]\r\n&quot;,
+  &quot;diagnostics&quot;: &quot;&quot;,
+  &quot;log&quot;: &quot;metadata.txt&quot;,
+  &quot;argument_file&quot;: &quot;-a\n-u\n-G1\n-j\n./inputs/_platform_qa_bc170e0df4/自选文档.pdf\n&quot;,
+  &quot;fields&quot;: [
+    {
+      &quot;SourceFile&quot;: &quot;./inputs/_platform_qa_bc170e0df4/自选文档.pdf&quot;,
+      &quot;ExifTool:ExifToolVersion&quot;: 13.59,
+      &quot;System:FileName&quot;: &quot;自选文档.pdf&quot;,
+      &quot;System:Directory&quot;: &quot;./inputs/_platform_qa_bc170e0df4&quot;,
+      &quot;System:FileSize&quot;: &quot;1068 bytes&quot;,
+      &quot;System:FileModifyDate&quot;: &quot;2026:10:22 10:16:06+08:00&quot;,
+      &quot;System:FileAccessDate&quot;: &quot;2026:10:22 10:16:24+08:00&quot;,
+      &quot;System:FileCreateDate&quot;: &quot;2026:10:22 10:16:06+08:00&quot;,
+      &quot;System:FilePermissions&quot;: &quot;-rw-rw-rw-&quot;,
+      &quot;File:FileType&quot;: &quot;PDF&quot;,
+      &quot;File:FileTypeExtension&quot;: &quot;pdf&quot;,
+      &quot;File:MIMEType&quot;: &quot;application/pdf&quot;,
+      &quot;PDF:PDFVersion&quot;: 1.3,
+      &quot;PDF:Linearized&quot;: &quot;No&quot;,
+      &quot;PDF:PageCount&quot;: 1,
+      &quot;PDF:Producer&quot;: &quot;pypdf&quot;,
+      &quot;PDF:Title&quot;: &quot;Own uploaded PDF&quot;
+    }
+  ]
+}</pre></details></section><section><h2>元数据中的编码候选 <small>已执行</small></h2><div class="table"><table><thead><tr><th>编码候选</th><th>文本字符位置</th><th>解码预览</th><th>输出</th></tr></thead><tbody></tbody></table></div><p>只做一层严格 Base64 / Hex 候选解码，字符位置不是原始文件字节偏移。编码形态不等于加密。</p><details><summary>原始结构与完整范围记录</summary><pre>{
+  &quot;encoding&quot;: &quot;utf-8-sig&quot;,
+  &quot;read_bytes&quot;: 748,
+  &quot;total_bytes&quot;: 748,
+  &quot;limited&quot;: false,
+  &quot;columns&quot;: [
+    &quot;编码候选&quot;,
+    &quot;文本字符位置&quot;,
+    &quot;解码预览&quot;,
+    &quot;输出&quot;
+  ],
+  &quot;rows&quot;: [],
+  &quot;note&quot;: &quot;只做一层严格 Base64 / Hex 候选解码，字符位置不是原始文件字节偏移。编码形态不等于加密。&quot;
+}</pre></details></section><section><h2>PDF / Office 文档 <small>已执行</small></h2><p>最多 100 页 / 约 2 MiB 文本；扫描图片型 PDF 需要 OCR，本工具不把无文本解释为无内容。</p><details><summary>原始结构与完整范围记录</summary><pre>{
+  &quot;kind&quot;: &quot;pdf&quot;,
+  &quot;encrypted&quot;: false,
+  &quot;pages&quot;: 1,
+  &quot;extracted_pages&quot;: 1,
+  &quot;metadata&quot;: {
+    &quot;/Producer&quot;: &quot;pypdf&quot;,
+    &quot;/Title&quot;: &quot;Own uploaded PDF&quot;
+  },
+  &quot;attachments&quot;: [
+    &quot;memo.txt&quot;
+  ],
+  &quot;preview&quot;: &quot;\n--- PAGE 1 ---\nIndependent PDF example 42&quot;,
+  &quot;note&quot;: &quot;最多 100 页 / 约 2 MiB 文本；扫描图片型 PDF 需要 OCR，本工具不把无文本解释为无内容。&quot;,
+  &quot;text_decodings&quot;: {
+    &quot;encoding&quot;: &quot;utf-8-sig&quot;,
+    &quot;read_bytes&quot;: 44,
+    &quot;total_bytes&quot;: 44,
+    &quot;limited&quot;: false,
+    &quot;columns&quot;: [
+      &quot;编码候选&quot;,
+      &quot;文本字符位置&quot;,
+      &quot;解码预览&quot;,
+      &quot;输出&quot;
+    ],
+    &quot;rows&quot;: [],
+    &quot;note&quot;: &quot;只做一层严格 Base64 / Hex 候选解码，字符位置不是原始文件字节偏移。编码形态不等于加密。&quot;
+  },
+  &quot;extracted_attachments&quot;: [
+    &quot;workflow/1_memo.txt&quot;
+  ]
+}</pre></details></section><section><h2>全文件关键词与 flag 形态检索 <small>已执行</small></h2><div class="table"><table><thead><tr><th>字节偏移</th><th>编码</th><th>关键词</th><th>上下文</th></tr></thead><tbody></tbody></table></div><p>flag 形态是候选，必须回到文件 / 业务语义验证。命中条数有上限，扫描不会因普通字符串表满而提前结束。</p><p>扫描范围：1068 / 1068 字节</p><details><summary>原始结构与完整范围记录</summary><pre>{
+  &quot;columns&quot;: [
+    &quot;字节偏移&quot;,
+    &quot;编码&quot;,
+    &quot;关键词&quot;,
+    &quot;上下文&quot;
+  ],
+  &quot;rows&quot;: [],
+  &quot;flag_candidates&quot;: [],
+  &quot;scanned_bytes&quot;: 1068,
+  &quot;total_bytes&quot;: 1068,
+  &quot;partial&quot;: false,
+  &quot;limited&quot;: false,
+  &quot;note&quot;: &quot;flag 形态是候选，必须回到文件 / 业务语义验证。命中条数有上限，扫描不会因普通字符串表满而提前结束。&quot;
+}</pre></details></section><section><h2>内置 YARA 线索规则 <small>已执行</small></h2><div class="table"><table><thead><tr><th>规则</th><th>字符串</th><th>字节偏移</th><th>匹配字节（截取）</th><th>文本预览</th></tr></thead><tbody></tbody></table></div><p>规则命中是线索，不能据此直接判定恶意或确认答案。自定义规则禁用 include。</p><details><summary>原始结构与完整范围记录</summary><pre>{
+  &quot;columns&quot;: [
+    &quot;规则&quot;,
+    &quot;字符串&quot;,
+    &quot;字节偏移&quot;,
+    &quot;匹配字节（截取）&quot;,
+    &quot;文本预览&quot;
+  ],
+  &quot;rows&quot;: [],
+  &quot;kind&quot;: &quot;yara&quot;,
+  &quot;matched_rules&quot;: [],
+  &quot;note&quot;: &quot;规则命中是线索，不能据此直接判定恶意或确认答案。自定义规则禁用 include。&quot;
+}</pre></details></section><section><h2>下一步与原始证据</h2><ul><li>命中仅是候选；请结合路径、对象结构和原始输出确认。未导出、跳过与预算限制均保留在报告中。</li></ul><p>派生文件、CSV 与原始工具日志可在平台结果区另行下载。原件保持只读；命令使用上方标注的宿主系统。</p></section></html>

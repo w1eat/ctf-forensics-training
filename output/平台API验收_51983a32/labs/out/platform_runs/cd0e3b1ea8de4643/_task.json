@@ -1,0 +1,761 @@
+{
+  "id": "cd0e3b1ea8de4643",
+  "action": "auto_analyze",
+  "title": "自动分析上传文件",
+  "state": "completed",
+  "command": "& 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\runtime\\python\\python.exe' 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\tools\\analysis_engine.py' 'auto' 'E:\\学习培训\\培训\\取证\\output\\平台API验收_51983a32\\labs\\inputs\\_platform_qa_bc170e0df4\\自选图像 17x11.png' '--out' 'E:\\学习培训\\培训\\取证\\output\\平台API验收_51983a32\\labs\\out\\platform_runs\\cd0e3b1ea8de4643\\analysis' '--kit' 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64' '--profile' 'standard' '--workflow' 'auto' '--keywords' 'flag,picoCTF,ctf,secret,password,credential,密码' '--max-files' '32' '--depth' '2' '--password' ''",
+  "created": "2026-10-22T10:16:20.444646+08:00",
+  "exit_code": 0,
+  "text": "{\"kind\": \"analysis\", \"source\": \"自选图像 17x11.png\", \"selected_workflow\": \"image\", \"stages\": [{\"title\": \"识别文件结构与类型\", \"status\": \"completed\"}, {\"title\": \"全文件摘要与字节熵\", \"status\": \"completed\"}, {\"title\": \"通用字符串与嵌入签名\", \"status\": \"completed\"}, {\"title\": \"ExifTool 元数据\", \"status\": \"completed\"}, {\"title\": \"元数据中的编码候选\", \"status\": \"completed\"}, {\"title\": \"图片尺寸、模式与缩略图\", \"status\": \"completed\"}, {\"title\": \"PNG 块、CRC 与尾随数据\", \"status\": \"completed\"}, {\"title\": \"zsteg 枚举常见图片位流\", \"status\": \"completed\"}, {\"title\": \"图片与隐写\", \"status\": \"completed\"}, {\"title\": \"全文件关键词与 flag 形态检索\", \"status\": \"completed\"}, {\"title\": \"内置 YARA 线索规则\", \"status\": \"completed\"}], \"flag_candidates\": 0, \"report\": \"E:\\\\学习培训\\\\培训\\\\取证\\\\output\\\\平台API验收_51983a32\\\\labs\\\\out\\\\platform_runs\\\\cd0e3b1ea8de4643\\\\analysis\\\\analysis.html\"}\r\n",
+  "error": "",
+  "duration": 0.76,
+  "files": [
+    {
+      "name": "analysis/analysis.html",
+      "bytes": 23716,
+      "path": "out/platform_runs/cd0e3b1ea8de4643/analysis/analysis.html"
+    },
+    {
+      "name": "analysis/analysis.json",
+      "bytes": 17730,
+      "path": "out/platform_runs/cd0e3b1ea8de4643/analysis/analysis.json"
+    },
+    {
+      "name": "analysis/analysis.txt",
+      "bytes": 17730,
+      "path": "out/platform_runs/cd0e3b1ea8de4643/analysis/analysis.txt"
+    },
+    {
+      "name": "analysis/clues.json",
+      "bytes": 1022,
+      "path": "out/platform_runs/cd0e3b1ea8de4643/analysis/clues.json"
+    },
+    {
+      "name": "analysis/fingerprint.json",
+      "bytes": 513,
+      "path": "out/platform_runs/cd0e3b1ea8de4643/analysis/fingerprint.json"
+    },
+    {
+      "name": "analysis/identify.json",
+      "bytes": 340,
+      "path": "out/platform_runs/cd0e3b1ea8de4643/analysis/identify.json"
+    },
+    {
+      "name": "analysis/image_info_1.json",
+      "bytes": 119,
+      "path": "out/platform_runs/cd0e3b1ea8de4643/analysis/image_info_1.json"
+    },
+    {
+      "name": "analysis/metadata.json",
+      "bytes": 2320,
+      "path": "out/platform_runs/cd0e3b1ea8de4643/analysis/metadata.json"
+    },
+    {
+      "name": "analysis/metadata.txt",
+      "bytes": 851,
+      "path": "out/platform_runs/cd0e3b1ea8de4643/analysis/metadata.txt"
+    },
+    {
+      "name": "analysis/metadata_decodings.json",
+      "bytes": 354,
+      "path": "out/platform_runs/cd0e3b1ea8de4643/analysis/metadata_decodings.json"
+    },
+    {
+      "name": "analysis/metadata_diagnostics.txt",
+      "bytes": 0,
+      "path": "out/platform_runs/cd0e3b1ea8de4643/analysis/metadata_diagnostics.txt"
+    },
+    {
+      "name": "analysis/metadata_fields.txt",
+      "bytes": 899,
+      "path": "out/platform_runs/cd0e3b1ea8de4643/analysis/metadata_fields.txt"
+    },
+    {
+      "name": "analysis/png_crc_2.json",
+      "bytes": 873,
+      "path": "out/platform_runs/cd0e3b1ea8de4643/analysis/png_crc_2.json"
+    },
+    {
+      "name": "analysis/result.json",
+      "bytes": 17730,
+      "path": "out/platform_runs/cd0e3b1ea8de4643/analysis/result.json"
+    },
+    {
+      "name": "analysis/targeted_search.json",
+      "bytes": 383,
+      "path": "out/platform_runs/cd0e3b1ea8de4643/analysis/targeted_search.json"
+    },
+    {
+      "name": "analysis/workflow/bits_b/lsb.bin",
+      "bytes": 23,
+      "path": "out/platform_runs/cd0e3b1ea8de4643/analysis/workflow/bits_b/lsb.bin"
+    },
+    {
+      "name": "analysis/workflow/bits_bgr/lsb.bin",
+      "bytes": 70,
+      "path": "out/platform_runs/cd0e3b1ea8de4643/analysis/workflow/bits_bgr/lsb.bin"
+    },
+    {
+      "name": "analysis/workflow/bits_g/lsb.bin",
+      "bytes": 23,
+      "path": "out/platform_runs/cd0e3b1ea8de4643/analysis/workflow/bits_g/lsb.bin"
+    },
+    {
+      "name": "analysis/workflow/bits_r/lsb.bin",
+      "bytes": 23,
+      "path": "out/platform_runs/cd0e3b1ea8de4643/analysis/workflow/bits_r/lsb.bin"
+    },
+    {
+      "name": "analysis/workflow/bits_rgb/lsb.bin",
+      "bytes": 70,
+      "path": "out/platform_runs/cd0e3b1ea8de4643/analysis/workflow/bits_rgb/lsb.bin"
+    },
+    {
+      "name": "analysis/workflow/planes/b_bit0.png",
+      "bytes": 69,
+      "path": "out/platform_runs/cd0e3b1ea8de4643/analysis/workflow/planes/b_bit0.png"
+    },
+    {
+      "name": "analysis/workflow/planes/g_bit0.png",
+      "bytes": 69,
+      "path": "out/platform_runs/cd0e3b1ea8de4643/analysis/workflow/planes/g_bit0.png"
+    },
+    {
+      "name": "analysis/workflow/planes/r_bit0.png",
+      "bytes": 69,
+      "path": "out/platform_runs/cd0e3b1ea8de4643/analysis/workflow/planes/r_bit0.png"
+    },
+    {
+      "name": "analysis/workflow/preview.jpg",
+      "bytes": 637,
+      "path": "out/platform_runs/cd0e3b1ea8de4643/analysis/workflow/preview.jpg"
+    },
+    {
+      "name": "analysis/workflow/zsteg.txt",
+      "bytes": 997,
+      "path": "out/platform_runs/cd0e3b1ea8de4643/analysis/workflow/zsteg.txt"
+    },
+    {
+      "name": "analysis/workflow/zsteg_diagnostics.txt",
+      "bytes": 0,
+      "path": "out/platform_runs/cd0e3b1ea8de4643/analysis/workflow/zsteg_diagnostics.txt"
+    },
+    {
+      "name": "analysis/workflow_image.json",
+      "bytes": 4578,
+      "path": "out/platform_runs/cd0e3b1ea8de4643/analysis/workflow_image.json"
+    },
+    {
+      "name": "analysis/yara.json",
+      "bytes": 309,
+      "path": "out/platform_runs/cd0e3b1ea8de4643/analysis/yara.json"
+    },
+    {
+      "name": "analysis/zsteg_3.json",
+      "bytes": 1495,
+      "path": "out/platform_runs/cd0e3b1ea8de4643/analysis/zsteg_3.json"
+    },
+    {
+      "name": "运行报告.txt",
+      "bytes": 1801,
+      "path": "out/platform_runs/cd0e3b1ea8de4643/运行报告.txt"
+    }
+  ],
+  "data": {
+    "kind": "analysis",
+    "source": "自选图像 17x11.png",
+    "created": "2026-10-22T10:16:20.514851+08:00",
+    "host": "Windows PowerShell",
+    "profile": "standard",
+    "workflow": "auto",
+    "sections": [
+      {
+        "id": "identify",
+        "title": "识别文件结构与类型",
+        "status": "completed",
+        "seconds": 0.0,
+        "data": {
+          "kind": "png",
+          "label": "PNG",
+          "evidence": "文件头 89 50 4e 47 0d 0a 1a 0a",
+          "extension": ".png",
+          "bytes": 81,
+          "header": "89 50 4e 47 0d 0a 1a 0a 00 00 00 0d 49 48 44 52 00 00 00 11 00 00 00 0b 08 02 00 00 00 16 42 f1 50 00 00 00 18 49 44 41 54 78 9c 63 94 88 5a c0 40 22 60 22 55 c3 a8 1e 30 18 6e 7a 00 7c 7a 01"
+        }
+      },
+      {
+        "id": "fingerprint",
+        "title": "全文件摘要与字节熵",
+        "status": "completed",
+        "seconds": 0.001,
+        "data": {
+          "kind": "hash",
+          "name": "自选图像 17x11.png",
+          "bytes": 81,
+          "md5": "4a630a24f84f3f3941baecf9d6c8754c",
+          "sha1": "28c387aa47bd430ae04fd840611fa66def3a5ad7",
+          "sha256": "a141a555c276d9aa5a8e6cba206af872d39b1df1776dbfe534e3cfb175777c74",
+          "entropy": 4.87438,
+          "entropy_windows": [
+            {
+              "offset": 0,
+              "bytes": 81,
+              "entropy": 4.87438
+            }
+          ],
+          "note": "MD5 / SHA1 仅用于已知摘要对照；证据一致性优先记录 SHA256。熵高不等于一定加密。"
+        }
+      },
+      {
+        "id": "clues",
+        "title": "通用字符串与嵌入签名",
+        "status": "completed",
+        "seconds": 0.0,
+        "data": {
+          "kind": "scan",
+          "strings": {
+            "columns": [
+              "字节偏移",
+              "编码",
+              "可读内容（最多 1024 字节）",
+              "匹配字节数"
+            ],
+            "rows": [
+              [
+                "0xc",
+                "ASCII",
+                "IHDR",
+                4
+              ],
+              [
+                "0x25",
+                "ASCII",
+                "IDATx",
+                5
+              ],
+              [
+                "0x30",
+                "ASCII",
+                "@\"`\"U",
+                5
+              ],
+              [
+                "0x49",
+                "ASCII",
+                "IEND",
+                4
+              ]
+            ]
+          },
+          "signatures": {
+            "columns": [
+              "字节偏移",
+              "签名",
+              "含义"
+            ],
+            "rows": [
+              [
+                "0x0",
+                "PNG",
+                "候选；需验证结构和边界"
+              ]
+            ]
+          },
+          "scanned_bytes": 81,
+          "total_bytes": 81,
+          "partial": false,
+          "string_rows_limited": false,
+          "signature_rows_limited": false,
+          "note": "仅提取 ASCII 可打印字符及其 UTF-16LE 表示；不覆盖所有语言。跨块长串可能分段显示。"
+        }
+      },
+      {
+        "id": "metadata",
+        "title": "ExifTool 元数据",
+        "status": "completed",
+        "seconds": 0.166,
+        "data": {
+          "command": "& 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\tools\\exiftool\\exiftool.exe' '-charset' 'filename=UTF8' '-@' 'out/platform_runs/cd0e3b1ea8de4643/analysis/_exif.args'",
+          "exit_code": 0,
+          "preview": "[{\r\n  \"SourceFile\": \"./inputs/_platform_qa_bc170e0df4/自选图像 17x11.png\",\r\n  \"ExifTool:ExifToolVersion\": 13.59,\r\n  \"System:FileName\": \"自选图像 17x11.png\",\r\n  \"System:Directory\": \"./inputs/_platform_qa_bc170e0df4\",\r\n  \"System:FileSize\": \"81 bytes\",\r\n  \"System:FileModifyDate\": \"2026:10:22 10:16:06+08:00\",\r\n  \"System:FileAccessDate\": \"2026:10:22 10:16:21+08:00\",\r\n  \"System:FileCreateDate\": \"2026:10:22 10:16:06+08:00\",\r\n  \"System:FilePermissions\": \"-rw-rw-rw-\",\r\n  \"File:FileType\": \"PNG\",\r\n  \"File:FileTypeExtension\": \"png\",\r\n  \"File:MIMEType\": \"image/png\",\r\n  \"PNG:ImageWidth\": 17,\r\n  \"PNG:ImageHeight\": 11,\r\n  \"PNG:BitDepth\": 8,\r\n  \"PNG:ColorType\": \"RGB\",\r\n  \"PNG:Compression\": \"Deflate/Inflate\",\r\n  \"PNG:Filter\": \"Adaptive\",\r\n  \"PNG:Interlace\": \"Noninterlaced\",\r\n  \"Composite:ImageSize\": \"17x11\",\r\n  \"Composite:Megapixels\": 0.000187\r\n}]\r\n",
+          "diagnostics": "",
+          "log": "metadata.txt",
+          "argument_file": "-a\n-u\n-G1\n-j\n./inputs/_platform_qa_bc170e0df4/自选图像 17x11.png\n",
+          "fields": [
+            {
+              "SourceFile": "./inputs/_platform_qa_bc170e0df4/自选图像 17x11.png",
+              "ExifTool:ExifToolVersion": 13.59,
+              "System:FileName": "自选图像 17x11.png",
+              "System:Directory": "./inputs/_platform_qa_bc170e0df4",
+              "System:FileSize": "81 bytes",
+              "System:FileModifyDate": "2026:10:22 10:16:06+08:00",
+              "System:FileAccessDate": "2026:10:22 10:16:21+08:00",
+              "System:FileCreateDate": "2026:10:22 10:16:06+08:00",
+              "System:FilePermissions": "-rw-rw-rw-",
+              "File:FileType": "PNG",
+              "File:FileTypeExtension": "png",
+              "File:MIMEType": "image/png",
+              "PNG:ImageWidth": 17,
+              "PNG:ImageHeight": 11,
+              "PNG:BitDepth": 8,
+              "PNG:ColorType": "RGB",
+              "PNG:Compression": "Deflate/Inflate",
+              "PNG:Filter": "Adaptive",
+              "PNG:Interlace": "Noninterlaced",
+              "Composite:ImageSize": "17x11",
+              "Composite:Megapixels": 0.000187
+            }
+          ]
+        }
+      },
+      {
+        "id": "metadata_decodings",
+        "title": "元数据中的编码候选",
+        "status": "completed",
+        "seconds": 0.001,
+        "data": {
+          "encoding": "utf-8-sig",
+          "read_bytes": 899,
+          "total_bytes": 899,
+          "limited": false,
+          "columns": [
+            "编码候选",
+            "文本字符位置",
+            "解码预览",
+            "输出"
+          ],
+          "rows": [],
+          "note": "只做一层严格 Base64 / Hex 候选解码，字符位置不是原始文件字节偏移。编码形态不等于加密。"
+        }
+      },
+      {
+        "id": "image_info_1",
+        "title": "图片尺寸、模式与缩略图",
+        "status": "completed",
+        "seconds": 0.048,
+        "data": {
+          "format": "PNG",
+          "mode": "RGB",
+          "width": 17,
+          "height": 11,
+          "frames": 1,
+          "preview": "preview.jpg"
+        }
+      },
+      {
+        "id": "png_crc_2",
+        "title": "PNG 块、CRC 与尾随数据",
+        "status": "completed",
+        "seconds": 0.0,
+        "data": {
+          "columns": [
+            "偏移",
+            "块",
+            "数据长度",
+            "保存 CRC",
+            "计算 CRC",
+            "校验"
+          ],
+          "rows": [
+            [
+              "0x8",
+              "IHDR",
+              13,
+              "1642f150",
+              "1642f150",
+              "OK"
+            ],
+            [
+              "0x21",
+              "IDAT",
+              24,
+              "f199a67a",
+              "f199a67a",
+              "OK"
+            ],
+            [
+              "0x45",
+              "IEND",
+              0,
+              "ae426082",
+              "ae426082",
+              "OK"
+            ]
+          ],
+          "kind": "pngmap",
+          "chunks": [
+            {
+              "offset": 8,
+              "type": "IHDR",
+              "length": 13,
+              "valid": true
+            },
+            {
+              "offset": 33,
+              "type": "IDAT",
+              "length": 24,
+              "valid": true
+            },
+            {
+              "offset": 69,
+              "type": "IEND",
+              "length": 0,
+              "valid": true
+            }
+          ],
+          "iend": true,
+          "trailing": 0,
+          "error": "",
+          "limited": false
+        }
+      },
+      {
+        "id": "zsteg_3",
+        "title": "zsteg 枚举常见图片位流",
+        "status": "completed",
+        "seconds": 0.325,
+        "data": {
+          "command": "& 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\runtime\\ruby\\bin\\ruby.exe' 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\runtime\\ruby\\bin\\zsteg' '--no-file' 'E:\\学习培训\\培训\\取证\\output\\平台API验收_51983a32\\labs\\inputs\\_platform_qa_bc170e0df4\\自选图像 17x11.png'",
+          "exit_code": 0,
+          "preview": "\rb1,r,lsb,xy         .. \rb1,r,msb,xy         .. \rb1,g,lsb,xy         .. \rb1,g,msb,xy         .. \rb1,b,lsb,xy         .. \rb1,b,msb,xy         .. \rb1,rgb,lsb,xy       .. \rb1,rgb,msb,xy       .. \rb1,bgr,lsb,xy       .. \rb1,bgr,msb,xy       .. \rb2,r,lsb,xy         .. \rb2,r,msb,xy         .. \rb2,g,lsb,xy         .. \rb2,g,msb,xy         .. \rb2,b,lsb,xy         .. \rb2,b,msb,xy         .. \rb2,rgb,lsb,xy       .. \rb2,rgb,msb,xy       .. \rb2,bgr,lsb,xy       .. \rb2,bgr,msb,xy       .. \rb3,r,lsb,xy         .. \rb3,r,msb,xy         .. \rb3,g,lsb,xy         .. \rb3,g,msb,xy         .. \rb3,b,lsb,xy         .. \rb3,b,msb,xy         .. \rb3,rgb,lsb,xy       .. \rb3,rgb,msb,xy       .. \rb3,bgr,lsb,xy       .. \rb3,bgr,msb,xy       .. \rb4,r,lsb,xy         .. \rb4,r,msb,xy         .. \rb4,g,lsb,xy         .. \rb4,g,msb,xy         .. \rb4,b,lsb,xy         .. \rb4,b,msb,xy         .. \rb4,rgb,lsb,xy       .. \rb4,rgb,msb,xy       .. \rb4,bgr,lsb,xy       .. \rb4,bgr,msb,xy       .. \r[=] nothing :(                    \r\n",
+          "diagnostics": "",
+          "log": "zsteg.txt",
+          "argument_file": null
+        }
+      },
+      {
+        "id": "workflow_image",
+        "title": "图片与隐写",
+        "status": "completed",
+        "seconds": 0.38,
+        "data": {
+          "kind": "workflow_image",
+          "image": {
+            "format": "PNG",
+            "mode": "RGB",
+            "width": 17,
+            "height": 11,
+            "frames": 1,
+            "preview": "preview.jpg"
+          },
+          "tables": [
+            {
+              "title": "LSB 候选 r",
+              "columns": [
+                "位序",
+                "导出字节",
+                "flag 形态",
+                "命中条数"
+              ],
+              "rows": [
+                [
+                  "bit0 / xy / msb",
+                  23,
+                  "",
+                  0
+                ]
+              ]
+            },
+            {
+              "title": "LSB 候选 g",
+              "columns": [
+                "位序",
+                "导出字节",
+                "flag 形态",
+                "命中条数"
+              ],
+              "rows": [
+                [
+                  "bit0 / xy / msb",
+                  23,
+                  "",
+                  0
+                ]
+              ]
+            },
+            {
+              "title": "LSB 候选 b",
+              "columns": [
+                "位序",
+                "导出字节",
+                "flag 形态",
+                "命中条数"
+              ],
+              "rows": [
+                [
+                  "bit0 / xy / msb",
+                  23,
+                  "",
+                  0
+                ]
+              ]
+            },
+            {
+              "title": "LSB 候选 rgb",
+              "columns": [
+                "位序",
+                "导出字节",
+                "flag 形态",
+                "命中条数"
+              ],
+              "rows": [
+                [
+                  "bit0 / xy / msb",
+                  70,
+                  "",
+                  0
+                ]
+              ]
+            },
+            {
+              "title": "LSB 候选 bgr",
+              "columns": [
+                "位序",
+                "导出字节",
+                "flag 形态",
+                "命中条数"
+              ],
+              "rows": [
+                [
+                  "bit0 / xy / msb",
+                  70,
+                  "",
+                  0
+                ]
+              ]
+            }
+          ],
+          "png": {
+            "columns": [
+              "偏移",
+              "块",
+              "数据长度",
+              "保存 CRC",
+              "计算 CRC",
+              "校验"
+            ],
+            "rows": [
+              [
+                "0x8",
+                "IHDR",
+                13,
+                "1642f150",
+                "1642f150",
+                "OK"
+              ],
+              [
+                "0x21",
+                "IDAT",
+                24,
+                "f199a67a",
+                "f199a67a",
+                "OK"
+              ],
+              [
+                "0x45",
+                "IEND",
+                0,
+                "ae426082",
+                "ae426082",
+                "OK"
+              ]
+            ],
+            "kind": "pngmap",
+            "chunks": [
+              {
+                "offset": 8,
+                "type": "IHDR",
+                "length": 13,
+                "valid": true
+              },
+              {
+                "offset": 33,
+                "type": "IDAT",
+                "length": 24,
+                "valid": true
+              },
+              {
+                "offset": 69,
+                "type": "IEND",
+                "length": 0,
+                "valid": true
+              }
+            ],
+            "iend": true,
+            "trailing": 0,
+            "error": "",
+            "limited": false
+          },
+          "zsteg": {
+            "command": "& 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\runtime\\ruby\\bin\\ruby.exe' 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\runtime\\ruby\\bin\\zsteg' '--no-file' 'E:\\学习培训\\培训\\取证\\output\\平台API验收_51983a32\\labs\\inputs\\_platform_qa_bc170e0df4\\自选图像 17x11.png'",
+            "exit_code": 0,
+            "preview": "\rb1,r,lsb,xy         .. \rb1,r,msb,xy         .. \rb1,g,lsb,xy         .. \rb1,g,msb,xy         .. \rb1,b,lsb,xy         .. \rb1,b,msb,xy         .. \rb1,rgb,lsb,xy       .. \rb1,rgb,msb,xy       .. \rb1,bgr,lsb,xy       .. \rb1,bgr,msb,xy       .. \rb2,r,lsb,xy         .. \rb2,r,msb,xy         .. \rb2,g,lsb,xy         .. \rb2,g,msb,xy         .. \rb2,b,lsb,xy         .. \rb2,b,msb,xy         .. \rb2,rgb,lsb,xy       .. \rb2,rgb,msb,xy       .. \rb2,bgr,lsb,xy       .. \rb2,bgr,msb,xy       .. \rb3,r,lsb,xy         .. \rb3,r,msb,xy         .. \rb3,g,lsb,xy         .. \rb3,g,msb,xy         .. \rb3,b,lsb,xy         .. \rb3,b,msb,xy         .. \rb3,rgb,lsb,xy       .. \rb3,rgb,msb,xy       .. \rb3,bgr,lsb,xy       .. \rb3,bgr,msb,xy       .. \rb4,r,lsb,xy         .. \rb4,r,msb,xy         .. \rb4,g,lsb,xy         .. \rb4,g,msb,xy         .. \rb4,b,lsb,xy         .. \rb4,b,msb,xy         .. \rb4,rgb,lsb,xy       .. \rb4,rgb,msb,xy       .. \rb4,bgr,lsb,xy       .. \rb4,bgr,msb,xy       .. \r[=] nothing :(                    \r\n",
+            "diagnostics": "",
+            "log": "zsteg.txt",
+            "argument_file": null
+          },
+          "embedded": {
+            "columns": [
+              "起始字节",
+              "字节数",
+              "格式",
+              "验证",
+              "边界依据",
+              "输出",
+              "诊断"
+            ],
+            "rows": [],
+            "scanned_bytes": 81,
+            "total_bytes": 81,
+            "note": "自动雕刻仅支持可验证边界的 PNG / 经典 ZIP / PDF，单对象最多 16 MiB；其他签名继续用字节范围雕刻。"
+          }
+        }
+      },
+      {
+        "id": "targeted_search",
+        "title": "全文件关键词与 flag 形态检索",
+        "status": "completed",
+        "seconds": 0.0,
+        "data": {
+          "columns": [
+            "字节偏移",
+            "编码",
+            "关键词",
+            "上下文"
+          ],
+          "rows": [],
+          "flag_candidates": [],
+          "scanned_bytes": 81,
+          "total_bytes": 81,
+          "partial": false,
+          "limited": false,
+          "note": "flag 形态是候选，必须回到文件 / 业务语义验证。命中条数有上限，扫描不会因普通字符串表满而提前结束。"
+        }
+      },
+      {
+        "id": "yara",
+        "title": "内置 YARA 线索规则",
+        "status": "completed",
+        "seconds": 0.001,
+        "data": {
+          "columns": [
+            "规则",
+            "字符串",
+            "字节偏移",
+            "匹配字节（截取）",
+            "文本预览"
+          ],
+          "rows": [],
+          "kind": "yara",
+          "matched_rules": [],
+          "note": "规则命中是线索，不能据此直接判定恶意或确认答案。自定义规则禁用 include。"
+        }
+      }
+    ],
+    "recommendations": [
+      "命中仅是候选；请结合路径、对象结构和原始输出确认。未导出、跳过与预算限制均保留在报告中。"
+    ],
+    "identification": {
+      "kind": "png",
+      "label": "PNG",
+      "evidence": "文件头 89 50 4e 47 0d 0a 1a 0a",
+      "extension": ".png",
+      "bytes": 81,
+      "header": "89 50 4e 47 0d 0a 1a 0a 00 00 00 0d 49 48 44 52 00 00 00 11 00 00 00 0b 08 02 00 00 00 16 42 f1 50 00 00 00 18 49 44 41 54 78 9c 63 94 88 5a c0 40 22 60 22 55 c3 a8 1e 30 18 6e 7a 00 7c 7a 01"
+    },
+    "selected_workflow": "image",
+    "findings": [],
+    "children": [],
+    "next_actions": [
+      {
+        "title": "调整位、通道、扫描与组字节顺序",
+        "action": "lsb_custom",
+        "params": {
+          "file": "inputs/_platform_qa_bc170e0df4/自选图像 17x11.png"
+        }
+      }
+    ],
+    "limits": {
+      "max_exported_files": 32,
+      "exported_files": 0,
+      "max_exported_bytes": 134217728,
+      "accounted_bytes": 0,
+      "child_depth": 2
+    }
+  },
+  "host": "Windows · PowerShell",
+  "input": "inputs/_platform_qa_bc170e0df4/自选图像 17x11.png",
+  "progress": {
+    "stage": "报告已生成",
+    "state": "completed",
+    "completed": 11,
+    "stages": [
+      {
+        "id": "identify",
+        "title": "识别文件结构与类型",
+        "status": "completed",
+        "seconds": 0.0
+      },
+      {
+        "id": "fingerprint",
+        "title": "全文件摘要与字节熵",
+        "status": "completed",
+        "seconds": 0.001
+      },
+      {
+        "id": "clues",
+        "title": "通用字符串与嵌入签名",
+        "status": "completed",
+        "seconds": 0.0
+      },
+      {
+        "id": "metadata",
+        "title": "ExifTool 元数据",
+        "status": "completed",
+        "seconds": 0.166
+      },
+      {
+        "id": "metadata_decodings",
+        "title": "元数据中的编码候选",
+        "status": "completed",
+        "seconds": 0.001
+      },
+      {
+        "id": "image_info_1",
+        "title": "图片尺寸、模式与缩略图",
+        "status": "completed",
+        "seconds": 0.048
+      },
+      {
+        "id": "png_crc_2",
+        "title": "PNG 块、CRC 与尾随数据",
+        "status": "completed",
+        "seconds": 0.0
+      },
+      {
+        "id": "zsteg_3",
+        "title": "zsteg 枚举常见图片位流",
+        "status": "completed",
+        "seconds": 0.325
+      },
+      {
+        "id": "workflow_image",
+        "title": "图片与隐写",
+        "status": "completed",
+        "seconds": 0.38
+      },
+      {
+        "id": "targeted_search",
+        "title": "全文件关键词与 flag 形态检索",
+        "status": "completed",
+        "seconds": 0.0
+      },
+      {
+        "id": "yara",
+        "title": "内置 YARA 线索规则",
+        "status": "completed",
+        "seconds": 0.001
+      }
+    ]
+  }
+}

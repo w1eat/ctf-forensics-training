@@ -1,0 +1,22 @@
+{
+  "id": "8692c7716d964671",
+  "action": "zip_flags",
+  "title": "检查 ZIP 加密标志",
+  "state": "completed",
+  "command": "& 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\runtime\\python\\python.exe' 'E:\\学习培训\\培训\\取证\\output\\平台API验收_51983a32\\labs\\tools\\zip_flags.py' 'inspect' 'E:\\学习培训\\培训\\取证\\output\\平台API验收_51983a32\\labs\\04_archive\\flagged.zip'",
+  "created": "2026-10-22T10:16:12.180770+08:00",
+  "exit_code": 0,
+  "text": "note.txt local_flags= 0x1 central_flags= 0x1\r\n",
+  "error": "",
+  "duration": 0.16,
+  "files": [
+    {
+      "name": "运行报告.txt",
+      "bytes": 490,
+      "path": "out/platform_runs/8692c7716d964671/运行报告.txt"
+    }
+  ],
+  "data": null,
+  "host": "Windows · PowerShell",
+  "input": "04_archive/flagged.zip"
+}

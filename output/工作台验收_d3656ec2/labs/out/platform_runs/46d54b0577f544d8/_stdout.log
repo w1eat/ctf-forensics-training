@@ -1,0 +1,1 @@
+{"title": "字节转换结果", "result": "result.json", "note": "请以正确格式或已知明文复核。CBC/ECB/CTR 等模式本身不提供完整性认证；GCM 必须验证 tag。密钥和口令不写入运行报告。"}

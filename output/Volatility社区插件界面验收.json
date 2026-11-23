@@ -1,0 +1,21 @@
+{
+  "date": "2026-10-21",
+  "total": 3,
+  "passed": 3,
+  "checks": [
+    {
+      "name": "Credential recipe opens Vol3 community action",
+      "pass_": true
+    },
+    {
+      "name": "pypykatz UI shows structured credential columns",
+      "pass_": true
+    },
+    {
+      "name": "Same recipe switches to and executes Vol2 mimikatz",
+      "pass_": true
+    }
+  ],
+  "real_ram_parsed": true,
+  "host_lsass_accessed": false
+}

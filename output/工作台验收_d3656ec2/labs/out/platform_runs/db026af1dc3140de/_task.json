@@ -1,0 +1,58 @@
+{
+  "id": "db026af1dc3140de",
+  "action": "disk_image_convert",
+  "title": "VMDK / E01 / VHD 转 RAW 副本",
+  "state": "completed",
+  "command": "& 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\runtime\\python\\python.exe' 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\tools\\casework.py' 'convert' '--args' 'E:\\学习培训\\培训\\取证\\output\\工作台验收_d3656ec2\\labs\\out\\platform_runs\\db026af1dc3140de\\_case_args.json' '--out' 'E:\\学习培训\\培训\\取证\\output\\工作台验收_d3656ec2\\labs\\out\\platform_runs\\db026af1dc3140de\\evidence' '--kit' 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64' '--labs' 'E:\\学习培训\\培训\\取证\\output\\工作台验收_d3656ec2\\labs'",
+  "created": "2026-10-23T09:41:35.633744+08:00",
+  "exit_code": 0,
+  "text": "{\"title\": \"转换为 RAW 工作副本\", \"result\": \"result.json\", \"note\": \"img_cat 通过当前 TSK 镜像后端读取逻辑字节，不修改容器原件。RAW 可继续浏览、恢复或按分区只读挂载。\"}\r\n",
+  "error": "",
+  "duration": 0.16,
+  "files": [
+    {
+      "name": "evidence/converted.raw",
+      "bytes": 9437184,
+      "path": "out/platform_runs/db026af1dc3140de/evidence/converted.raw"
+    },
+    {
+      "name": "evidence/img_cat.diagnostics.txt",
+      "bytes": 0,
+      "path": "out/platform_runs/db026af1dc3140de/evidence/img_cat.diagnostics.txt"
+    },
+    {
+      "name": "evidence/result.json",
+      "bytes": 436,
+      "path": "out/platform_runs/db026af1dc3140de/evidence/result.json"
+    },
+    {
+      "name": "evidence/结果报告.html",
+      "bytes": 826,
+      "path": "out/platform_runs/db026af1dc3140de/evidence/结果报告.html"
+    },
+    {
+      "name": "运行报告.txt",
+      "bytes": 1177,
+      "path": "out/platform_runs/db026af1dc3140de/运行报告.txt"
+    }
+  ],
+  "data": {
+    "kind": "casework",
+    "title": "转换为 RAW 工作副本",
+    "columns": [
+      "输出",
+      "字节数",
+      "SHA256"
+    ],
+    "rows": [
+      [
+        "converted.raw",
+        9437184,
+        "4293659eb90411fd57ae90c14745a8c3a2e57db360552e6a2e6dcb6398fd65ed"
+      ]
+    ],
+    "note": "img_cat 通过当前 TSK 镜像后端读取逻辑字节，不修改容器原件。RAW 可继续浏览、恢复或按分区只读挂载。"
+  },
+  "host": "Windows · PowerShell",
+  "input": "inputs/casework_samples/disk.vmdk"
+}

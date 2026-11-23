@@ -1,0 +1,107 @@
+{
+  "verified_date": "2026-10-20",
+  "mobile": {
+    "actualViewport": 390,
+    "cases": [
+      {
+        "case": 2,
+        "open": true,
+        "cards": true,
+        "labels": "要回答的问题",
+        "decisionRows": 4,
+        "internalVerticalScroll": false,
+        "pageOverflow": false
+      },
+      {
+        "case": 7,
+        "open": true,
+        "cards": true,
+        "labels": "要回答的问题",
+        "decisionRows": 4,
+        "internalVerticalScroll": false,
+        "pageOverflow": false
+      },
+      {
+        "case": 14,
+        "open": true,
+        "cards": true,
+        "labels": "要回答的问题",
+        "decisionRows": 4,
+        "internalVerticalScroll": false,
+        "pageOverflow": false
+      },
+      {
+        "case": 15,
+        "open": true,
+        "cards": true,
+        "labels": "要回答的问题",
+        "decisionRows": 4,
+        "internalVerticalScroll": false,
+        "pageOverflow": false
+      }
+    ]
+  },
+  "desktop": {
+    "viewport": 1365,
+    "cases": [
+      {
+        "case": 2,
+        "layout": "table-row",
+        "columns": 3,
+        "internalVerticalScroll": false,
+        "pageOverflow": false
+      },
+      {
+        "case": 7,
+        "layout": "table-row",
+        "columns": 3,
+        "internalVerticalScroll": false,
+        "pageOverflow": false
+      },
+      {
+        "case": 14,
+        "layout": "table-row",
+        "columns": 3,
+        "internalVerticalScroll": false,
+        "pageOverflow": false
+      },
+      {
+        "case": 15,
+        "layout": "table-row",
+        "columns": 3,
+        "internalVerticalScroll": false,
+        "pageOverflow": false
+      }
+    ]
+  },
+  "standalone": {
+    "cards": true,
+    "noInternalScroll": true,
+    "viewport": 390,
+    "pageOverflow": false
+  },
+  "memorySlides": [
+    {
+      "title": "内存例题 A：启动参数里的编码线索",
+      "hasWhy": true,
+      "pageOverflow": false,
+      "bodyInsideSlide": true
+    },
+    {
+      "title": "内存例题 B：打开过的 memo.txt",
+      "hasWhy": true,
+      "pageOverflow": false,
+      "bodyInsideSlide": true
+    },
+    {
+      "title": "内存例题 C：没有保存的记事本文本",
+      "hasWhy": true,
+      "pageOverflow": false,
+      "bodyInsideSlide": true
+    }
+  ],
+  "screenshots": [
+    "逐题题解_移动端.png",
+    "逐题题解_桌面端.png"
+  ]
+}

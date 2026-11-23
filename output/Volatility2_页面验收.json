@@ -1,0 +1,50 @@
+{
+  "date": "2026-10-20",
+  "operations": 55,
+  "vol2_operations": 7,
+  "real_vol3_unsupported_trace_retained": true,
+  "same_image_handoff_to_vol2": true,
+  "no_profile_guessed": true,
+  "real_gui_imageinfo": true,
+  "real_gui_cmdscan": true,
+  "gui_profile": "Win7SP1x86",
+  "delayed_file_refresh_preserves_new_tool_and_parameters": true,
+  "profile_input_focus_preserved": true,
+  "mobile_scroll_preserved": true,
+  "cmd_wrapper_with_python3_utf8_environment": "pass",
+  "windows_chinese_and_space_paths": "pass",
+  "guide_bash_syntax": "pass",
+  "guide_powershell_blocks": 5,
+  "scrollChecks": [
+    {
+      "id": "vol2_help",
+      "before": {
+        "page": 1289.1055908203125,
+        "list": 1717.5067138671875
+      },
+      "after": {
+        "page": 1289.1055908203125,
+        "list": 1717.5067138671875,
+        "focus": "vol2_help"
+      },
+      "pass": true
+    },
+    {
+      "id": "vol2_history",
+      "before": {
+        "page": 1289.1055908203125,
+        "list": 1717.5067138671875
+      },
+      "after": {
+        "page": 1289.1055908203125,
+        "list": 1717.5067138671875,
+        "focus": "vol2_history"
+      },
+      "pass": true
+    }
+  ],
+  "guideTitle": "Volatility 2：旧镜像兼容分析与排错",
+  "guideContainsVerifiedProfile": true,
+  "guideHasWindowsAndKali": true,
+  "kali_executed": false
+}

@@ -1,0 +1,111 @@
+{
+  "kind": "casework",
+  "operation": "disk_timeline",
+  "title": "文件时间线 / MACB",
+  "columns": [
+    "UTC 时间",
+    "事件",
+    "分区扇区",
+    "元数据编号",
+    "路径",
+    "字节数"
+  ],
+  "rows": [
+    [
+      "2026-10-18T01:00:00Z",
+      "M 内容修改",
+      2048,
+      "4",
+      "/_ECRET.TXT (deleted)",
+      "31"
+    ],
+    [
+      "2026-10-18T01:00:00Z",
+      "M 内容修改",
+      2048,
+      "3",
+      "/README.TXT",
+      "64"
+    ]
+  ],
+  "entries": [
+    {
+      "epoch": 1792285200,
+      "utc": "2026-10-18T01:00:00Z",
+      "event": "M 内容修改",
+      "field": "mtime",
+      "sector": 2048,
+      "sector_size": 512,
+      "inode": "4",
+      "path": "/_ECRET.TXT (deleted)",
+      "mode": "r/rrwxrwxrwx",
+      "bytes": "31"
+    },
+    {
+      "epoch": 1792285200,
+      "utc": "2026-10-18T01:00:00Z",
+      "event": "M 内容修改",
+      "field": "mtime",
+      "sector": 2048,
+      "sector_size": 512,
+      "inode": "3",
+      "path": "/README.TXT",
+      "mode": "r/rrwxrwxrwx",
+      "bytes": "64"
+    }
+  ],
+  "total_events": 2,
+  "file_records": 6,
+  "limited": false,
+  "parse_errors": [],
+  "volumes": [
+    {
+      "sector": 2048,
+      "sector_size": 512,
+      "length": 16384,
+      "description": "DOS FAT16 (0x06)",
+      "filesystem": "FAT16"
+    }
+  ],
+  "commands": [
+    {
+      "argv": [
+        "E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\tools\\sleuthkit\\bin\\mmls.exe",
+        "E:\\学习培训\\培训\\取证\\output\\工作台验收_d3656ec2\\labs\\05_disk\\tiny_fat16.dd"
+      ],
+      "exit_code": 0,
+      "report": "partitions.txt",
+      "diagnostics": "partitions.diagnostics.txt"
+    },
+    {
+      "argv": [
+        "E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\tools\\sleuthkit\\bin\\fsstat.exe",
+        "-b",
+        "512",
+        "-o",
+        "2048",
+        "E:\\学习培训\\培训\\取证\\output\\工作台验收_d3656ec2\\labs\\05_disk\\tiny_fat16.dd"
+      ],
+      "exit_code": 0,
+      "report": "fs_2048.txt",
+      "diagnostics": "fs_2048.diagnostics.txt"
+    },
+    {
+      "argv": [
+        "E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\tools\\sleuthkit\\bin\\fls.exe",
+        "-r",
+        "-m",
+        "/",
+        "-b",
+        "512",
+        "-o",
+        "2048",
+        "E:\\学习培训\\培训\\取证\\output\\工作台验收_d3656ec2\\labs\\05_disk\\tiny_fat16.dd"
+      ],
+      "exit_code": 0,
+      "report": "body_2048.txt",
+      "diagnostics": "body_2048.diagnostics.txt"
+    }
+  ],
+  "note": "UTC 时间；CSV 保存所有匹配事件，网页有展示上限。M=内容修改、A=访问、C=元数据变更、B=创建（文件系统支持时）。C 不是创建时间；时间戳可被修改，需结合内容与其他痕迹验证。结束日期包含当日，带时间的结束值为不包含边界。"
+}

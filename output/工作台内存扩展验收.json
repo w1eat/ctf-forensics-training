@@ -1,0 +1,80 @@
+{
+  "date": "2026-10-21",
+  "passed": 14,
+  "total": 14,
+  "checks": [
+    {
+      "name": "Stock help Vol3 mftscan.ResidentData",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "Stock help Vol3 registry.printkey",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "Stock help Vol3 truecrypt.Passphrase",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "Stock help Vol3 malware.malfind",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "Stock help Vol2 clipboard",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "Stock help Vol2 mftparser",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "Stock help Vol2 truecryptmaster",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "Stock help Vol2 printkey",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "SYSTEM virtual Hive address comes from actual hivelist",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "Select Current is parsed from the same Hive",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "Active ControlSet hostname query succeeds",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "Actual clipboard standard plugin executes",
+      "pass_": true,
+      "detail": "A successful empty result is not evidence of a recovered clipboard flag."
+    },
+    {
+      "name": "Route runs KDBG before registry and retains both outputs",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "RAM source hash unchanged",
+      "pass_": true,
+      "detail": ""
+    }
+  ],
+  "validation_folder": "E:\\学习培训\\培训\\取证\\output\\memory_extension_5eae6e7b",
+  "real_ram_parsed": true,
+  "kali_executed": false
+}

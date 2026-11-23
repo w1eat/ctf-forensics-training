@@ -1,0 +1,513 @@
+[
+  {
+    "slide": 4,
+    "index": 1,
+    "kind": "windows",
+    "platform": "Windows · PowerShell",
+    "code": "New-Item -ItemType Directory -Path .\\work\nGet-FileHash -LiteralPath .\\unknown.dat -Algorithm SHA256\nCopy-Item -LiteralPath .\\unknown.dat -Destination .\\work\\unknown.dat\nGet-FileHash -LiteralPath .\\work\\unknown.dat -Algorithm SHA256"
+  },
+  {
+    "slide": 5,
+    "index": 1,
+    "kind": "windows",
+    "platform": "Windows · PowerShell",
+    "code": "Get-Location\nGet-ChildItem -Force\nGet-Command python\n& 'C:\\Program Files\\7-Zip\\7z.exe' l .\\sample.zip"
+  },
+  {
+    "slide": 5,
+    "index": 2,
+    "kind": "kali",
+    "platform": "Kali Linux · Bash",
+    "code": "pwd\nls -la\ncommand -v python3\n7z l ./sample.zip"
+  },
+  {
+    "slide": 6,
+    "index": 1,
+    "kind": "kali",
+    "platform": "Kali Linux · Bash",
+    "code": "strings -a -t x -n 6 sample.bin | grep -i flag > hits.txt"
+  },
+  {
+    "slide": 8,
+    "index": 1,
+    "kind": "windows",
+    "platform": "Windows · PowerShell",
+    "code": "Format-Hex -LiteralPath .\\unknown.dat"
+  },
+  {
+    "slide": 10,
+    "index": 1,
+    "kind": "kali",
+    "platform": "Kali Linux · Bash",
+    "code": "file 01_file/unknown.dat\nfile -b 01_file/unknown.dat\nfile --mime-type 01_file/unknown.dat"
+  },
+  {
+    "slide": 11,
+    "index": 1,
+    "kind": "kali",
+    "platform": "Kali Linux · Bash",
+    "code": "xxd -g 1 -l 32 01_file/unknown.dat\nxxd -g 1 -s 0x10 -l 16 01_file/unknown.dat"
+  },
+  {
+    "slide": 11,
+    "index": 2,
+    "kind": "windows",
+    "platform": "Windows · PowerShell",
+    "code": "Format-Hex -LiteralPath .\\01_file\\unknown.dat"
+  },
+  {
+    "slide": 12,
+    "index": 1,
+    "kind": "kali",
+    "platform": "Kali Linux · Bash",
+    "code": "strings -a -t x -n 6 sample.bin\nstrings -a -e l -t x sample.bin\nstrings -a sample.bin | grep -i 'flag'"
+  },
+  {
+    "slide": 13,
+    "index": 1,
+    "kind": "kali",
+    "platform": "Kali Linux · Bash",
+    "code": "grep -nEi 'flag|password|secret' notes.txt\ngrep -n -A 2 -B 2 'r-103' access.log"
+  },
+  {
+    "slide": 13,
+    "index": 2,
+    "kind": "windows",
+    "platform": "Windows · PowerShell",
+    "code": "Select-String -Path .\\notes.txt -Pattern 'flag|password|secret'\nSelect-String -Path .\\access.log -Pattern 'r-103' -Context 2,2"
+  },
+  {
+    "slide": 14,
+    "index": 1,
+    "kind": "both",
+    "platform": "Windows PowerShell / Kali Bash（同命令）",
+    "code": "exiftool 01_file/unknown.dat\nexiftool -a -u -G1 -s 01_file/unknown.dat\nexiftool -b -Comment 01_file/unknown.dat"
+  },
+  {
+    "slide": 15,
+    "index": 1,
+    "kind": "python",
+    "platform": "Python 3 源码 · Windows/Kali（编辑器保存后运行）",
+    "code": "from pathlib import Path\ndata = Path(\"01_file/unknown.dat\").read_bytes()\nprint(len(data))\nprint(data[:8].hex(\" \"))\nprint(data.find(b\"Comment\"))\n# 切片 [起点:终点]，终点不包含\nPath(\"first32.bin\").write_bytes(data[:32])"
+  },
+  {
+    "slide": 17,
+    "index": 1,
+    "kind": "python",
+    "platform": "Python 3 源码 · Windows/Kali（编辑器保存后运行）",
+    "code": "import base64\nfrom urllib.parse import unquote\nprint(base64.b64decode(\"ZmxhZ3tkZW1vfQ==\").decode())\nprint(bytes.fromhex(\"66 6c 61 67 7b 64 65 6d 6f 7d\").decode())\nprint(unquote(\"flag%7Bdemo%7D\"))"
+  },
+  {
+    "slide": 17,
+    "index": 2,
+    "kind": "kali",
+    "platform": "Kali Linux · Bash",
+    "code": "printf '%s' 'ZmxhZ3tkZW1vfQ==' | base64 -d"
+  },
+  {
+    "slide": 17,
+    "index": 3,
+    "kind": "windows",
+    "platform": "Windows · PowerShell",
+    "code": "[Text.Encoding]::UTF8.GetString(\n  [Convert]::FromBase64String('ZmxhZ3tkZW1vfQ==')\n)"
+  },
+  {
+    "slide": 18,
+    "index": 1,
+    "kind": "kali",
+    "platform": "Kali Linux · Bash",
+    "code": "file 01_file/unknown.dat\nexiftool -a -G1 -s 01_file/unknown.dat\nexiftool -b -Comment 01_file/unknown.dat"
+  },
+  {
+    "slide": 20,
+    "index": 1,
+    "kind": "kali",
+    "platform": "Kali Linux · Bash",
+    "code": "file garden_demo.jpg\nstrings -a -t x garden_demo.jpg | grep 'flag{'\nxxd -g 1 garden_demo.jpg | tail -n 12"
+  },
+  {
+    "slide": 21,
+    "index": 1,
+    "kind": "both",
+    "platform": "Windows PowerShell / Kali Bash（同命令）",
+    "code": "exiftool -a -G1 -s cat_demo.jpg\nexiftool -b -XMP:License cat_demo.jpg"
+  },
+  {
+    "slide": 22,
+    "index": 1,
+    "kind": "kali",
+    "platform": "Kali Linux · Bash",
+    "code": "exiftool -b -XMP:License cat_demo.jpg | base64 -d"
+  },
+  {
+    "slide": 22,
+    "index": 2,
+    "kind": "python",
+    "platform": "Python 3 源码 · Windows/Kali（编辑器保存后运行）",
+    "code": "import base64\ns = \"ZmxhZ3ttZXRhZGF0YV90aGVuX2Jhc2U2NH0=\"\nprint(base64.b64decode(s).decode(\"utf-8\"))"
+  },
+  {
+    "slide": 24,
+    "index": 1,
+    "kind": "both",
+    "platform": "Windows PowerShell / Kali Bash（同命令）",
+    "code": "pngcheck -v 02_png/broken_width.png\npngcheck -v 02_png/good.png"
+  },
+  {
+    "slide": 25,
+    "index": 1,
+    "kind": "python",
+    "platform": "Python 3 源码 · Windows/Kali（编辑器保存后运行）",
+    "code": "from pathlib import Path\np = Path(\"broken_header.png\")\ndata = bytearray(p.read_bytes())\ndata[:8] = bytes.fromhex(\"89 50 4E 47 0D 0A 1A 0A\")\nPath(\"fixed_header.png\").write_bytes(data)"
+  },
+  {
+    "slide": 26,
+    "index": 1,
+    "kind": "windows",
+    "platform": "Windows · PowerShell",
+    "code": "python tools/recover_width.py 02_png/broken_width.png out/fixed.png\npngcheck -v out/fixed.png"
+  },
+  {
+    "slide": 27,
+    "index": 1,
+    "kind": "output",
+    "platform": "数据 / 示例输出 · 不执行",
+    "code": "0 1 0 0 0 0 0 1\n       ↓\n01000001₂ = 65₁₀ = ASCII A"
+  },
+  {
+    "slide": 28,
+    "index": 1,
+    "kind": "kali",
+    "platform": "Kali Linux · Bash",
+    "code": "zsteg 03_lsb/quiet.png\nzsteg -a 03_lsb/quiet.png\nzsteg -E 'b1,r,lsb,xy' 03_lsb/quiet.png > payload.bin\nstrings -a payload.bin"
+  },
+  {
+    "slide": 29,
+    "index": 1,
+    "kind": "python",
+    "platform": "Python 3 源码 · Windows/Kali（编辑器保存后运行）",
+    "code": "from PIL import Image\nim = Image.open(\"03_lsb/quiet.png\").convert(\"RGB\")\nbits = [r & 1 for r, g, b in im.getdata()]\nout = bytearray()\nfor i in range(0, len(bits) - 7, 8):\n    value = 0\n    for bit in bits[i:i+8]:\n        value = (value << 1) | bit\n    out.append(value)\nprint(bytes(out).split(b\"\\0\", 1)[0].decode())"
+  },
+  {
+    "slide": 29,
+    "index": 2,
+    "kind": "windows",
+    "platform": "Windows · PowerShell",
+    "code": "python tools/extract_lsb.py 03_lsb/quiet.png out/lsb.bin"
+  },
+  {
+    "slide": 30,
+    "index": 1,
+    "kind": "kali",
+    "platform": "Kali Linux · Bash",
+    "code": "steghide info cover.jpg\nsteghide extract -sf cover.jpg -xf extracted.bin"
+  },
+  {
+    "slide": 31,
+    "index": 1,
+    "kind": "windows",
+    "platform": "Windows · PowerShell",
+    "code": "python tools/recover_width.py 02_png/broken_width.png out/fixed.png\nexiftool out/fixed.png"
+  },
+  {
+    "slide": 32,
+    "index": 1,
+    "kind": "windows",
+    "platform": "Windows · PowerShell",
+    "code": "zsteg 03_lsb/quiet.png\npython tools/extract_lsb.py 03_lsb/quiet.png out/lsb.bin"
+  },
+  {
+    "slide": 33,
+    "index": 1,
+    "kind": "both",
+    "platform": "Windows PowerShell / Kali Bash（同命令）",
+    "code": "7z l -slt out/payload.zip\n7z t out/payload.zip\n7z x out/payload.zip -oout/archive"
+  },
+  {
+    "slide": 34,
+    "index": 1,
+    "kind": "windows",
+    "platform": "Windows · PowerShell",
+    "code": "python tools/zip_flags.py inspect 04_archive/flagged.zip"
+  },
+  {
+    "slide": 35,
+    "index": 1,
+    "kind": "windows",
+    "platform": "Windows · PowerShell",
+    "code": "python tools/zip_flags.py inspect 04_archive/flagged.zip\npython tools/zip_flags.py clear 04_archive/flagged.zip out/cleared.zip\n7z t out/cleared.zip\n7z x out/cleared.zip -oout/cleared"
+  },
+  {
+    "slide": 36,
+    "index": 1,
+    "kind": "kali",
+    "platform": "Kali Linux · Bash",
+    "code": "zip2john locked.zip > zip.hash\njohn --wordlist=words.txt zip.hash\njohn --show zip.hash"
+  },
+  {
+    "slide": 37,
+    "index": 1,
+    "kind": "kali",
+    "platform": "Kali Linux · Bash",
+    "code": "binwalk 04_archive/carrier.bin\nbinwalk --help\n# 本机版本与提取依赖支持时\nbinwalk -e 04_archive/carrier.bin"
+  },
+  {
+    "slide": 38,
+    "index": 1,
+    "kind": "kali",
+    "platform": "Kali Linux · Bash",
+    "code": "dd if=04_archive/carrier.bin of=out/payload.zip bs=1 skip=512 status=none\n7z t out/payload.zip"
+  },
+  {
+    "slide": 38,
+    "index": 2,
+    "kind": "python",
+    "platform": "Python 3 源码 · Windows/Kali（编辑器保存后运行）",
+    "code": "from pathlib import Path\ndata = Path(\"04_archive/carrier.bin\").read_bytes()\nPath(\"out\").mkdir(exist_ok=True)\nPath(\"out/payload.zip\").write_bytes(data[512:])"
+  },
+  {
+    "slide": 39,
+    "index": 1,
+    "kind": "windows",
+    "platform": "Windows · PowerShell",
+    "code": "python tools/carve.py 04_archive/carrier.bin out/payload.zip --offset 512\n7z t out/payload.zip\n7z x out/payload.zip -oout/archive"
+  },
+  {
+    "slide": 43,
+    "index": 1,
+    "kind": "kali",
+    "platform": "Kali Linux · Bash",
+    "code": "mmls 05_disk/tiny_fat16.dd\nfsstat -o 2048 05_disk/tiny_fat16.dd"
+  },
+  {
+    "slide": 44,
+    "index": 1,
+    "kind": "kali",
+    "platform": "Kali Linux · Bash",
+    "code": "fls -r -p -o 2048 05_disk/tiny_fat16.dd\nfls -d -o 2048 05_disk/tiny_fat16.dd"
+  },
+  {
+    "slide": 45,
+    "index": 1,
+    "kind": "kali",
+    "platform": "Kali Linux · Bash",
+    "code": "icat -r -o 2048 05_disk/tiny_fat16.dd META > recovered.txt\nfile recovered.txt\ncat recovered.txt"
+  },
+  {
+    "slide": 46,
+    "index": 1,
+    "kind": "windows",
+    "platform": "Windows · PowerShell",
+    "code": "mmls 05_disk/tiny_fat16.dd\nfls -d -o 2048 05_disk/tiny_fat16.dd\n# 没有 TSK 时的本样本教学替代\npython tools/read_training_fat.py 05_disk/tiny_fat16.dd out/recovered.txt"
+  },
+  {
+    "slide": 47,
+    "index": 1,
+    "kind": "both",
+    "platform": "Windows PowerShell / Kali Bash（同命令）",
+    "code": "sqlite3 -readonly 06_sqlite/case.db \".tables\"\nsqlite3 -readonly 06_sqlite/case.db \".schema artifacts\"\nsqlite3 -readonly 06_sqlite/case.db \"PRAGMA table_info(artifacts);\""
+  },
+  {
+    "slide": 48,
+    "index": 1,
+    "kind": "both",
+    "platform": "Windows PowerShell / Kali Bash（同命令）",
+    "code": "sqlite3 -readonly -header -column 06_sqlite/case.db \"SELECT id,name,deleted,note FROM artifacts;\"\nsqlite3 -readonly 06_sqlite/case.db \"SELECT note FROM artifacts WHERE deleted=1;\""
+  },
+  {
+    "slide": 48,
+    "index": 2,
+    "kind": "python",
+    "platform": "Python 3 源码 · Windows/Kali（编辑器保存后运行）",
+    "code": "import sqlite3\ncon = sqlite3.connect(\"file:06_sqlite/case.db?mode=ro\", uri=True)\nfor row in con.execute(\"SELECT id,name,note FROM artifacts WHERE deleted=1\"):\n    print(row)\ncon.close()"
+  },
+  {
+    "slide": 49,
+    "index": 1,
+    "kind": "sql",
+    "platform": "SQLite SQL · Windows/Kali 的 sqlite3 交互终端",
+    "code": "SELECT datetime(1792286311, 'unixepoch');"
+  },
+  {
+    "slide": 50,
+    "index": 1,
+    "kind": "windows",
+    "platform": "Windows · PowerShell",
+    "code": "sqlite3 -readonly 06_sqlite/case.db \".schema artifacts\"\nsqlite3 -readonly 06_sqlite/case.db \"SELECT name,note FROM artifacts WHERE deleted=1;\"\n# 没有 sqlite3 CLI 时\npython tools/query_case.py 06_sqlite/case.db"
+  },
+  {
+    "slide": 52,
+    "index": 1,
+    "kind": "windows",
+    "platform": "Windows · PowerShell",
+    "code": "$v3 = '..\\tools\\volatility3\\vol.py'\npython $v3 -h\npython $v3 windows.dumpfiles -h\npython $v3 windows.memmap -h"
+  },
+  {
+    "slide": 53,
+    "index": 1,
+    "kind": "windows",
+    "platform": "Windows · PowerShell",
+    "code": "$img = '.\\memory.raw'\nNew-Item -ItemType Directory -Force -Path .\\out, .\\out\\files, .\\out\\proc | Out-Null\nGet-FileHash -LiteralPath $img -Algorithm SHA256\nGet-Item -LiteralPath $img | Select-Object Name,Length"
+  },
+  {
+    "slide": 54,
+    "index": 1,
+    "kind": "windows",
+    "platform": "Windows · PowerShell",
+    "code": "python $v3 -f $img windows.info\n# 保存文本报告\npython $v3 -f $img windows.info | Out-File -Encoding utf8 .\\out\\info.txt"
+  },
+  {
+    "slide": 55,
+    "index": 1,
+    "kind": "windows",
+    "platform": "Windows · PowerShell",
+    "code": "python $v3 -f $img windows.pslist\npython $v3 -f $img windows.pstree\npython $v3 -f $img windows.pslist --pid 2460"
+  },
+  {
+    "slide": 56,
+    "index": 1,
+    "kind": "windows",
+    "platform": "Windows · PowerShell",
+    "code": "python $v3 -f $img windows.psscan\npython $v3 -f $img windows.psscan --pid 2460"
+  },
+  {
+    "slide": 57,
+    "index": 1,
+    "kind": "windows",
+    "platform": "Windows · PowerShell",
+    "code": "python $v3 -f $img windows.cmdline\npython $v3 -f $img windows.cmdline --pid 2460\npython $v3 -f $img windows.cmdline --pid 3180"
+  },
+  {
+    "slide": 57,
+    "index": 2,
+    "kind": "output",
+    "platform": "数据 / 示例输出 · 不执行",
+    "code": "2460  notepad.exe C:\\Users\\CTF\\Desktop\\memo.txt\n3180  python.exe show_note.py --note [编码文本]"
+  },
+  {
+    "slide": 58,
+    "index": 1,
+    "kind": "windows",
+    "platform": "Windows · PowerShell",
+    "code": "python $v3 -f $img windows.cmdscan\npython $v3 -f $img windows.consoles"
+  },
+  {
+    "slide": 59,
+    "index": 1,
+    "kind": "windows",
+    "platform": "Windows · PowerShell",
+    "code": "python $v3 -f $img windows.filescan | Out-File -Encoding utf8 .\\out\\filescan.txt\nSelect-String -Path .\\out\\filescan.txt -Pattern 'memo[.]txt'\npython $v3 -f $img windows.handles --pid 2460"
+  },
+  {
+    "slide": 60,
+    "index": 1,
+    "kind": "windows",
+    "platform": "Windows · PowerShell",
+    "code": "python $v3 -f $img -o .\\out\\files windows.dumpfiles --pid 2460 --filter 'memo[.]txt$' --ignore-case\nGet-ChildItem -LiteralPath .\\out\\files\nGet-FileHash -Path .\\out\\files\\* -Algorithm SHA256"
+  },
+  {
+    "slide": 61,
+    "index": 1,
+    "kind": "windows",
+    "platform": "Windows · PowerShell",
+    "code": "# 已确认是虚拟 _FILE_OBJECT 地址的教学示例\npython $v3 -f $img -o .\\out\\files windows.dumpfiles --virtaddr 0xffffa10200123070\n# 已确认是物理 _FILE_OBJECT 地址时才使用\npython $v3 -f $img -o .\\out\\files windows.dumpfiles --physaddr 0x3e92c070"
+  },
+  {
+    "slide": 62,
+    "index": 1,
+    "kind": "windows",
+    "platform": "Windows · PowerShell",
+    "code": "python $v3 -f $img -o .\\out\\proc windows.memmap --pid 2460 --dump\n# 题目要可执行映像时再选择\npython $v3 -f $img -o .\\out\\proc windows.pslist --pid 2460 --dump"
+  },
+  {
+    "slide": 63,
+    "index": 1,
+    "kind": "kali",
+    "platform": "Kali Linux · Bash",
+    "code": "strings -a -t x process_dump.bin | grep 'flag{'\nstrings -a -e l -t x process_dump.bin | grep 'flag{'"
+  },
+  {
+    "slide": 63,
+    "index": 2,
+    "kind": "windows",
+    "platform": "Windows · PowerShell",
+    "code": "python .\\08_memory\\search_excerpt.py .\\08_memory\\case_c\\process_2460_excerpt.bin"
+  },
+  {
+    "slide": 64,
+    "index": 1,
+    "kind": "output",
+    "platform": "数据 / 示例输出 · 不执行",
+    "code": "3180 / python.exe\nshow_note.py --note ZmxhZ3tyZWFkX3RoZV9jb21tYW5kX2xpbmV9"
+  },
+  {
+    "slide": 64,
+    "index": 2,
+    "kind": "windows",
+    "platform": "Windows · PowerShell",
+    "code": "python $v3 -f $img windows.pslist\npython $v3 -f $img windows.cmdline --pid 3180"
+  },
+  {
+    "slide": 64,
+    "index": 3,
+    "kind": "python",
+    "platform": "Python 3 源码 · Windows/Kali（编辑器保存后运行）",
+    "code": "import base64\nprint(base64.b64decode(\"ZmxhZ3tyZWFkX3RoZV9jb21tYW5kX2xpbmV9\").decode())"
+  },
+  {
+    "slide": 65,
+    "index": 1,
+    "kind": "windows",
+    "platform": "Windows · PowerShell",
+    "code": "python $v3 -f $img windows.handles --pid 2460\npython $v3 -f $img windows.filescan\npython $v3 -f $img -o .\\out\\files windows.dumpfiles --virtaddr 0xffffa10200123070"
+  },
+  {
+    "slide": 65,
+    "index": 2,
+    "kind": "windows",
+    "platform": "Windows · PowerShell",
+    "code": "Get-Content .\\08_memory\\case_b\\exported_memo.txt"
+  },
+  {
+    "slide": 66,
+    "index": 1,
+    "kind": "windows",
+    "platform": "Windows · PowerShell",
+    "code": "python $v3 -f $img windows.pslist\npython $v3 -f $img -o .\\out\\proc windows.memmap --pid 2460 --dump"
+  },
+  {
+    "slide": 66,
+    "index": 2,
+    "kind": "windows",
+    "platform": "Windows · PowerShell",
+    "code": "python .\\08_memory\\search_excerpt.py .\\08_memory\\case_c\\process_2460_excerpt.bin"
+  },
+  {
+    "slide": 69,
+    "index": 1,
+    "kind": "output",
+    "platform": "数据 / 示例输出 · 不执行",
+    "code": "192.0.2.44 - - [18/Oct/2026:09:18:31 +0800]\n\"GET /exports/42.zip HTTP/1.1\" 200 2048\n\"-\" \"TrainingBrowser/1.0\" rid=r-103"
+  },
+  {
+    "slide": 71,
+    "index": 1,
+    "kind": "windows",
+    "platform": "Windows · PowerShell",
+    "code": "Select-String -Path .\\access.log -Pattern 'r-103'\nGet-Content .\\audit.jsonl | ForEach-Object { $_ | ConvertFrom-Json } |\n  Where-Object { $_.request_id -eq 'r-103' } |\n  Select-Object timestamp,event,user,client_ip,file_name\n[DateTimeOffset]::Parse('2026-10-18T01:18:31Z').ToOffset(\n  [TimeSpan]::FromHours(8)\n)"
+  },
+  {
+    "slide": 72,
+    "index": 1,
+    "kind": "windows",
+    "platform": "Windows · PowerShell",
+    "code": "Select-String -Path .\\07_logs\\access.log -Pattern 'r-103'\npython tools/timeline.py 07_logs/audit.jsonl"
+  },
+  {
+    "slide": 73,
+    "index": 1,
+    "kind": "output",
+    "platform": "数据 / 示例输出 · 不执行",
+    "code": "题目 / 附件：\n原件 SHA-256：\n工作副本位置：\n工具及版本：\n关键命令 / 菜单操作：\n定位：偏移 / 标签 / 帧号 / 行号 / PID\n观察到的原始值：\n转换步骤：编码 / 时区 / 提取方法\n结论与 flag：\n尚未确认的事项："
+  }
+]

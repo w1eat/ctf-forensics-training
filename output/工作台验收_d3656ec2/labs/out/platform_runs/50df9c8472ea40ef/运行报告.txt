@@ -1,0 +1,11 @@
+操作：只读挂载 / 卸载镜像
+运行环境：Windows PowerShell
+创建时间：2026-10-23T09:41:39.089709+08:00
+状态：completed
+退出码：0
+命令：& 'E:\学习培训\培训\取证\学员工具包_Windows64\runtime\python\python.exe' 'E:\学习培训\培训\取证\学员工具包_Windows64\tools\casework.py' 'mount' '--args' 'E:\学习培训\培训\取证\output\工作台验收_d3656ec2\labs\out\platform_runs\50df9c8472ea40ef\_case_args.json' '--out' 'E:\学习培训\培训\取证\output\工作台验收_d3656ec2\labs\out\platform_runs\50df9c8472ea40ef\evidence' '--kit' 'E:\学习培训\培训\取证\学员工具包_Windows64' '--labs' 'E:\学习培训\培训\取证\output\工作台验收_d3656ec2\labs'
+
+
+{"title": "本工作区挂载状态", "result": "result.json", "note": "仅列本工作区创建的记录，不列举或卸载其他磁盘。ImDisk 驱动状态：未检测到"}
+
+参数文件含私密输入，未写入本报告并已清理。

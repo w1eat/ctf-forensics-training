@@ -1,0 +1,157 @@
+{
+  "id": "54517f68e3c34e34",
+  "action": "disk_timeline",
+  "title": "文件时间线 / MACB",
+  "state": "completed",
+  "command": "& 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\runtime\\python\\python.exe' 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\tools\\casework.py' 'timeline' '--args' 'E:\\学习培训\\培训\\取证\\output\\工作台验收_d3656ec2\\labs\\out\\platform_runs\\54517f68e3c34e34\\_case_args.json' '--out' 'E:\\学习培训\\培训\\取证\\output\\工作台验收_d3656ec2\\labs\\out\\platform_runs\\54517f68e3c34e34\\evidence' '--kit' 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64' '--labs' 'E:\\学习培训\\培训\\取证\\output\\工作台验收_d3656ec2\\labs'",
+  "created": "2026-10-23T09:41:30.326777+08:00",
+  "exit_code": 0,
+  "text": "{\"title\": \"文件时间线 / MACB\", \"result\": \"result.json\", \"note\": \"UTC 时间；CSV 保存所有匹配事件，网页有展示上限。M=内容修改、A=访问、C=元数据变更、B=创建（文件系统支持时）。C 不是创建时间；时间戳可被修改，需结合内容与其他痕迹验证。结束日期包含当日，带时间的结束值为不包含边界。\"}\r\n",
+  "error": "",
+  "duration": 0.46,
+  "files": [
+    {
+      "name": "evidence/body_2048.diagnostics.txt",
+      "bytes": 0,
+      "path": "out/platform_runs/54517f68e3c34e34/evidence/body_2048.diagnostics.txt"
+    },
+    {
+      "name": "evidence/body_2048.txt",
+      "bytes": 310,
+      "path": "out/platform_runs/54517f68e3c34e34/evidence/body_2048.txt"
+    },
+    {
+      "name": "evidence/fs_2048.diagnostics.txt",
+      "bytes": 0,
+      "path": "out/platform_runs/54517f68e3c34e34/evidence/fs_2048.diagnostics.txt"
+    },
+    {
+      "name": "evidence/fs_2048.txt",
+      "bytes": 844,
+      "path": "out/platform_runs/54517f68e3c34e34/evidence/fs_2048.txt"
+    },
+    {
+      "name": "evidence/partitions.diagnostics.txt",
+      "bytes": 0,
+      "path": "out/platform_runs/54517f68e3c34e34/evidence/partitions.diagnostics.txt"
+    },
+    {
+      "name": "evidence/partitions.txt",
+      "bytes": 356,
+      "path": "out/platform_runs/54517f68e3c34e34/evidence/partitions.txt"
+    },
+    {
+      "name": "evidence/result.json",
+      "bytes": 2561,
+      "path": "out/platform_runs/54517f68e3c34e34/evidence/result.json"
+    },
+    {
+      "name": "evidence/文件时间线.csv",
+      "bytes": 263,
+      "path": "out/platform_runs/54517f68e3c34e34/evidence/文件时间线.csv"
+    },
+    {
+      "name": "evidence/结果报告.html",
+      "bytes": 3687,
+      "path": "out/platform_runs/54517f68e3c34e34/evidence/结果报告.html"
+    },
+    {
+      "name": "运行报告.txt",
+      "bytes": 1418,
+      "path": "out/platform_runs/54517f68e3c34e34/运行报告.txt"
+    }
+  ],
+  "data": {
+    "kind": "casework",
+    "operation": "disk_timeline",
+    "title": "文件时间线 / MACB",
+    "columns": [
+      "UTC 时间",
+      "事件",
+      "分区扇区",
+      "元数据编号",
+      "路径",
+      "字节数"
+    ],
+    "rows": [
+      [
+        "2026-10-18T01:00:00Z",
+        "M 内容修改",
+        2048,
+        "3",
+        "/README.TXT",
+        "64"
+      ]
+    ],
+    "entries": [
+      {
+        "epoch": 1792285200,
+        "utc": "2026-10-18T01:00:00Z",
+        "event": "M 内容修改",
+        "field": "mtime",
+        "sector": 2048,
+        "sector_size": 512,
+        "inode": "3",
+        "path": "/README.TXT",
+        "mode": "r/rrwxrwxrwx",
+        "bytes": "64"
+      }
+    ],
+    "total_events": 2,
+    "file_records": 6,
+    "limited": true,
+    "parse_errors": [],
+    "volumes": [
+      {
+        "sector": 2048,
+        "sector_size": 512,
+        "length": 16384,
+        "description": "DOS FAT16 (0x06)",
+        "filesystem": "FAT16"
+      }
+    ],
+    "commands": [
+      {
+        "argv": [
+          "E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\tools\\sleuthkit\\bin\\mmls.exe",
+          "E:\\学习培训\\培训\\取证\\output\\工作台验收_d3656ec2\\labs\\05_disk\\tiny_fat16.dd"
+        ],
+        "exit_code": 0,
+        "report": "partitions.txt",
+        "diagnostics": "partitions.diagnostics.txt"
+      },
+      {
+        "argv": [
+          "E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\tools\\sleuthkit\\bin\\fsstat.exe",
+          "-b",
+          "512",
+          "-o",
+          "2048",
+          "E:\\学习培训\\培训\\取证\\output\\工作台验收_d3656ec2\\labs\\05_disk\\tiny_fat16.dd"
+        ],
+        "exit_code": 0,
+        "report": "fs_2048.txt",
+        "diagnostics": "fs_2048.diagnostics.txt"
+      },
+      {
+        "argv": [
+          "E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\tools\\sleuthkit\\bin\\fls.exe",
+          "-r",
+          "-m",
+          "/",
+          "-b",
+          "512",
+          "-o",
+          "2048",
+          "E:\\学习培训\\培训\\取证\\output\\工作台验收_d3656ec2\\labs\\05_disk\\tiny_fat16.dd"
+        ],
+        "exit_code": 0,
+        "report": "body_2048.txt",
+        "diagnostics": "body_2048.diagnostics.txt"
+      }
+    ],
+    "note": "UTC 时间；CSV 保存所有匹配事件，网页有展示上限。M=内容修改、A=访问、C=元数据变更、B=创建（文件系统支持时）。C 不是创建时间；时间戳可被修改，需结合内容与其他痕迹验证。结束日期包含当日，带时间的结束值为不包含边界。"
+  },
+  "host": "Windows · PowerShell",
+  "input": "05_disk/tiny_fat16.dd"
+}

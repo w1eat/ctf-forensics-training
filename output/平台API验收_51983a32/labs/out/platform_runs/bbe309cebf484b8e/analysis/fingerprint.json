@@ -1,0 +1,17 @@
+{
+  "kind": "hash",
+  "name": "unknown.dat",
+  "bytes": 794,
+  "md5": "95841974e94b4c421ed957b0ac63cfc2",
+  "sha1": "4dafa8cc6852763083326fa94b73dcdb8ee475ba",
+  "sha256": "2200c35fc95416c9e301c62313145e183890f30cc3aaa1456f9996e6ca980380",
+  "entropy": 5.89388,
+  "entropy_windows": [
+    {
+      "offset": 0,
+      "bytes": 794,
+      "entropy": 5.89388
+    }
+  ],
+  "note": "MD5 / SHA1 仅用于已知摘要对照；证据一致性优先记录 SHA256。熵高不等于一定加密。"
+}

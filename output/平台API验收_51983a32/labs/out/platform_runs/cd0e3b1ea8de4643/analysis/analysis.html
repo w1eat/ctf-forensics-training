@@ -1,0 +1,407 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>文件分析报告</title><style>body{font:14px/1.85 system-ui,sans-serif;max-width:1140px;margin:36px auto;padding:0 24px;color:#254a36;background:#f5f7ed}section{border:1px solid #ccdabb;background:#fffef8;margin:22px 0;padding:22px;border-radius:8px}h1{font-size:29px}h2{font-size:20px}h3{font-size:14px;margin-top:22px}small,.label{font-size:11px;font-weight:normal;color:#7a895f}.table{overflow:auto;max-height:540px}table{border-collapse:collapse;width:100%;font-size:11px}th,td{text-align:left;vertical-align:top;padding:8px 10px;border-bottom:1px solid #dce4d0;max-width:450px;overflow-wrap:anywhere}th{background:#e5edd9;position:sticky;top:0}pre{white-space:pre-wrap;overflow-wrap:anywhere;font:11px/1.85 Consolas,monospace;background:#edf2e5;padding:14px;border-radius:4px;max-height:480px;overflow:auto}details{margin-top:16px}summary{cursor:pointer;color:#66844f;font-size:12px}.error{background:#f6e4d7;padding:12px;border-radius:4px}@media(max-width:650px){body{padding:0 13px;margin:20px auto}section{padding:15px}h1{font-size:24px}}</style><h1>文件自动分析报告</h1><h2>PNG</h2><p>自选图像 17x11.png</p><p>2026-10-22T10:16:20.514851+08:00 · Windows PowerShell</p><p>流程：image · 模式：standard · 子文件深度：2 · 导出 / 分析文件：0 / 32</p><p>本次未检出已支持的 flag 形态；这不等于没有隐藏内容。请继续查看格式结果与覆盖范围。</p><section><h2>识别文件结构与类型 <small>已执行</small></h2><details><summary>原始结构与完整范围记录</summary><pre>{
+  &quot;kind&quot;: &quot;png&quot;,
+  &quot;label&quot;: &quot;PNG&quot;,
+  &quot;evidence&quot;: &quot;文件头 89 50 4e 47 0d 0a 1a 0a&quot;,
+  &quot;extension&quot;: &quot;.png&quot;,
+  &quot;bytes&quot;: 81,
+  &quot;header&quot;: &quot;89 50 4e 47 0d 0a 1a 0a 00 00 00 0d 49 48 44 52 00 00 00 11 00 00 00 0b 08 02 00 00 00 16 42 f1 50 00 00 00 18 49 44 41 54 78 9c 63 94 88 5a c0 40 22 60 22 55 c3 a8 1e 30 18 6e 7a 00 7c 7a 01&quot;
+}</pre></details></section><section><h2>全文件摘要与字节熵 <small>已执行</small></h2><pre>SHA256 a141a555c276d9aa5a8e6cba206af872d39b1df1776dbfe534e3cfb175777c74
+字节数 81 · 熵 4.87438</pre><p>MD5 / SHA1 仅用于已知摘要对照；证据一致性优先记录 SHA256。熵高不等于一定加密。</p><details><summary>原始结构与完整范围记录</summary><pre>{
+  &quot;kind&quot;: &quot;hash&quot;,
+  &quot;name&quot;: &quot;自选图像 17x11.png&quot;,
+  &quot;bytes&quot;: 81,
+  &quot;md5&quot;: &quot;4a630a24f84f3f3941baecf9d6c8754c&quot;,
+  &quot;sha1&quot;: &quot;28c387aa47bd430ae04fd840611fa66def3a5ad7&quot;,
+  &quot;sha256&quot;: &quot;a141a555c276d9aa5a8e6cba206af872d39b1df1776dbfe534e3cfb175777c74&quot;,
+  &quot;entropy&quot;: 4.87438,
+  &quot;entropy_windows&quot;: [
+    {
+      &quot;offset&quot;: 0,
+      &quot;bytes&quot;: 81,
+      &quot;entropy&quot;: 4.87438
+    }
+  ],
+  &quot;note&quot;: &quot;MD5 / SHA1 仅用于已知摘要对照；证据一致性优先记录 SHA256。熵高不等于一定加密。&quot;
+}</pre></details></section><section><h2>通用字符串与嵌入签名 <small>已执行</small></h2><p>仅提取 ASCII 可打印字符及其 UTF-16LE 表示；不覆盖所有语言。跨块长串可能分段显示。</p><p>扫描范围：81 / 81 字节</p><details><summary>原始结构与完整范围记录</summary><pre>{
+  &quot;kind&quot;: &quot;scan&quot;,
+  &quot;strings&quot;: {
+    &quot;columns&quot;: [
+      &quot;字节偏移&quot;,
+      &quot;编码&quot;,
+      &quot;可读内容（最多 1024 字节）&quot;,
+      &quot;匹配字节数&quot;
+    ],
+    &quot;rows&quot;: [
+      [
+        &quot;0xc&quot;,
+        &quot;ASCII&quot;,
+        &quot;IHDR&quot;,
+        4
+      ],
+      [
+        &quot;0x25&quot;,
+        &quot;ASCII&quot;,
+        &quot;IDATx&quot;,
+        5
+      ],
+      [
+        &quot;0x30&quot;,
+        &quot;ASCII&quot;,
+        &quot;@\&quot;`\&quot;U&quot;,
+        5
+      ],
+      [
+        &quot;0x49&quot;,
+        &quot;ASCII&quot;,
+        &quot;IEND&quot;,
+        4
+      ]
+    ]
+  },
+  &quot;signatures&quot;: {
+    &quot;columns&quot;: [
+      &quot;字节偏移&quot;,
+      &quot;签名&quot;,
+      &quot;含义&quot;
+    ],
+    &quot;rows&quot;: [
+      [
+        &quot;0x0&quot;,
+        &quot;PNG&quot;,
+        &quot;候选；需验证结构和边界&quot;
+      ]
+    ]
+  },
+  &quot;scanned_bytes&quot;: 81,
+  &quot;total_bytes&quot;: 81,
+  &quot;partial&quot;: false,
+  &quot;string_rows_limited&quot;: false,
+  &quot;signature_rows_limited&quot;: false,
+  &quot;note&quot;: &quot;仅提取 ASCII 可打印字符及其 UTF-16LE 表示；不覆盖所有语言。跨块长串可能分段显示。&quot;
+}</pre></details></section><section><h2>ExifTool 元数据 <small>已执行</small></h2><p class="label">实际命令 · Windows PowerShell</p><pre>&amp; &#x27;E:\学习培训\培训\取证\学员工具包_Windows64\tools\exiftool\exiftool.exe&#x27; &#x27;-charset&#x27; &#x27;filename=UTF8&#x27; &#x27;-@&#x27; &#x27;out/platform_runs/cd0e3b1ea8de4643/analysis/_exif.args&#x27;</pre><details><summary>原始结构与完整范围记录</summary><pre>{
+  &quot;command&quot;: &quot;&amp; &#x27;E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\tools\\exiftool\\exiftool.exe&#x27; &#x27;-charset&#x27; &#x27;filename=UTF8&#x27; &#x27;-@&#x27; &#x27;out/platform_runs/cd0e3b1ea8de4643/analysis/_exif.args&#x27;&quot;,
+  &quot;exit_code&quot;: 0,
+  &quot;preview&quot;: &quot;[{\r\n  \&quot;SourceFile\&quot;: \&quot;./inputs/_platform_qa_bc170e0df4/自选图像 17x11.png\&quot;,\r\n  \&quot;ExifTool:ExifToolVersion\&quot;: 13.59,\r\n  \&quot;System:FileName\&quot;: \&quot;自选图像 17x11.png\&quot;,\r\n  \&quot;System:Directory\&quot;: \&quot;./inputs/_platform_qa_bc170e0df4\&quot;,\r\n  \&quot;System:FileSize\&quot;: \&quot;81 bytes\&quot;,\r\n  \&quot;System:FileModifyDate\&quot;: \&quot;2026:10:22 10:16:06+08:00\&quot;,\r\n  \&quot;System:FileAccessDate\&quot;: \&quot;2026:10:22 10:16:21+08:00\&quot;,\r\n  \&quot;System:FileCreateDate\&quot;: \&quot;2026:10:22 10:16:06+08:00\&quot;,\r\n  \&quot;System:FilePermissions\&quot;: \&quot;-rw-rw-rw-\&quot;,\r\n  \&quot;File:FileType\&quot;: \&quot;PNG\&quot;,\r\n  \&quot;File:FileTypeExtension\&quot;: \&quot;png\&quot;,\r\n  \&quot;File:MIMEType\&quot;: \&quot;image/png\&quot;,\r\n  \&quot;PNG:ImageWidth\&quot;: 17,\r\n  \&quot;PNG:ImageHeight\&quot;: 11,\r\n  \&quot;PNG:BitDepth\&quot;: 8,\r\n  \&quot;PNG:ColorType\&quot;: \&quot;RGB\&quot;,\r\n  \&quot;PNG:Compression\&quot;: \&quot;Deflate/Inflate\&quot;,\r\n  \&quot;PNG:Filter\&quot;: \&quot;Adaptive\&quot;,\r\n  \&quot;PNG:Interlace\&quot;: \&quot;Noninterlaced\&quot;,\r\n  \&quot;Composite:ImageSize\&quot;: \&quot;17x11\&quot;,\r\n  \&quot;Composite:Megapixels\&quot;: 0.000187\r\n}]\r\n&quot;,
+  &quot;diagnostics&quot;: &quot;&quot;,
+  &quot;log&quot;: &quot;metadata.txt&quot;,
+  &quot;argument_file&quot;: &quot;-a\n-u\n-G1\n-j\n./inputs/_platform_qa_bc170e0df4/自选图像 17x11.png\n&quot;,
+  &quot;fields&quot;: [
+    {
+      &quot;SourceFile&quot;: &quot;./inputs/_platform_qa_bc170e0df4/自选图像 17x11.png&quot;,
+      &quot;ExifTool:ExifToolVersion&quot;: 13.59,
+      &quot;System:FileName&quot;: &quot;自选图像 17x11.png&quot;,
+      &quot;System:Directory&quot;: &quot;./inputs/_platform_qa_bc170e0df4&quot;,
+      &quot;System:FileSize&quot;: &quot;81 bytes&quot;,
+      &quot;System:FileModifyDate&quot;: &quot;2026:10:22 10:16:06+08:00&quot;,
+      &quot;System:FileAccessDate&quot;: &quot;2026:10:22 10:16:21+08:00&quot;,
+      &quot;System:FileCreateDate&quot;: &quot;2026:10:22 10:16:06+08:00&quot;,
+      &quot;System:FilePermissions&quot;: &quot;-rw-rw-rw-&quot;,
+      &quot;File:FileType&quot;: &quot;PNG&quot;,
+      &quot;File:FileTypeExtension&quot;: &quot;png&quot;,
+      &quot;File:MIMEType&quot;: &quot;image/png&quot;,
+      &quot;PNG:ImageWidth&quot;: 17,
+      &quot;PNG:ImageHeight&quot;: 11,
+      &quot;PNG:BitDepth&quot;: 8,
+      &quot;PNG:ColorType&quot;: &quot;RGB&quot;,
+      &quot;PNG:Compression&quot;: &quot;Deflate/Inflate&quot;,
+      &quot;PNG:Filter&quot;: &quot;Adaptive&quot;,
+      &quot;PNG:Interlace&quot;: &quot;Noninterlaced&quot;,
+      &quot;Composite:ImageSize&quot;: &quot;17x11&quot;,
+      &quot;Composite:Megapixels&quot;: 0.000187
+    }
+  ]
+}</pre></details></section><section><h2>元数据中的编码候选 <small>已执行</small></h2><div class="table"><table><thead><tr><th>编码候选</th><th>文本字符位置</th><th>解码预览</th><th>输出</th></tr></thead><tbody></tbody></table></div><p>只做一层严格 Base64 / Hex 候选解码，字符位置不是原始文件字节偏移。编码形态不等于加密。</p><details><summary>原始结构与完整范围记录</summary><pre>{
+  &quot;encoding&quot;: &quot;utf-8-sig&quot;,
+  &quot;read_bytes&quot;: 899,
+  &quot;total_bytes&quot;: 899,
+  &quot;limited&quot;: false,
+  &quot;columns&quot;: [
+    &quot;编码候选&quot;,
+    &quot;文本字符位置&quot;,
+    &quot;解码预览&quot;,
+    &quot;输出&quot;
+  ],
+  &quot;rows&quot;: [],
+  &quot;note&quot;: &quot;只做一层严格 Base64 / Hex 候选解码，字符位置不是原始文件字节偏移。编码形态不等于加密。&quot;
+}</pre></details></section><section><h2>图片尺寸、模式与缩略图 <small>已执行</small></h2><details><summary>原始结构与完整范围记录</summary><pre>{
+  &quot;format&quot;: &quot;PNG&quot;,
+  &quot;mode&quot;: &quot;RGB&quot;,
+  &quot;width&quot;: 17,
+  &quot;height&quot;: 11,
+  &quot;frames&quot;: 1,
+  &quot;preview&quot;: &quot;preview.jpg&quot;
+}</pre></details></section><section><h2>PNG 块、CRC 与尾随数据 <small>已执行</small></h2><div class="table"><table><thead><tr><th>偏移</th><th>块</th><th>数据长度</th><th>保存 CRC</th><th>计算 CRC</th><th>校验</th></tr></thead><tbody><tr><td>0x8</td><td>IHDR</td><td>13</td><td>1642f150</td><td>1642f150</td><td>OK</td></tr><tr><td>0x21</td><td>IDAT</td><td>24</td><td>f199a67a</td><td>f199a67a</td><td>OK</td></tr><tr><td>0x45</td><td>IEND</td><td>0</td><td>ae426082</td><td>ae426082</td><td>OK</td></tr></tbody></table></div><details><summary>原始结构与完整范围记录</summary><pre>{
+  &quot;columns&quot;: [
+    &quot;偏移&quot;,
+    &quot;块&quot;,
+    &quot;数据长度&quot;,
+    &quot;保存 CRC&quot;,
+    &quot;计算 CRC&quot;,
+    &quot;校验&quot;
+  ],
+  &quot;rows&quot;: [
+    [
+      &quot;0x8&quot;,
+      &quot;IHDR&quot;,
+      13,
+      &quot;1642f150&quot;,
+      &quot;1642f150&quot;,
+      &quot;OK&quot;
+    ],
+    [
+      &quot;0x21&quot;,
+      &quot;IDAT&quot;,
+      24,
+      &quot;f199a67a&quot;,
+      &quot;f199a67a&quot;,
+      &quot;OK&quot;
+    ],
+    [
+      &quot;0x45&quot;,
+      &quot;IEND&quot;,
+      0,
+      &quot;ae426082&quot;,
+      &quot;ae426082&quot;,
+      &quot;OK&quot;
+    ]
+  ],
+  &quot;kind&quot;: &quot;pngmap&quot;,
+  &quot;chunks&quot;: [
+    {
+      &quot;offset&quot;: 8,
+      &quot;type&quot;: &quot;IHDR&quot;,
+      &quot;length&quot;: 13,
+      &quot;valid&quot;: true
+    },
+    {
+      &quot;offset&quot;: 33,
+      &quot;type&quot;: &quot;IDAT&quot;,
+      &quot;length&quot;: 24,
+      &quot;valid&quot;: true
+    },
+    {
+      &quot;offset&quot;: 69,
+      &quot;type&quot;: &quot;IEND&quot;,
+      &quot;length&quot;: 0,
+      &quot;valid&quot;: true
+    }
+  ],
+  &quot;iend&quot;: true,
+  &quot;trailing&quot;: 0,
+  &quot;error&quot;: &quot;&quot;,
+  &quot;limited&quot;: false
+}</pre></details></section><section><h2>zsteg 枚举常见图片位流 <small>已执行</small></h2><p class="label">实际命令 · Windows PowerShell</p><pre>&amp; &#x27;E:\学习培训\培训\取证\学员工具包_Windows64\runtime\ruby\bin\ruby.exe&#x27; &#x27;E:\学习培训\培训\取证\学员工具包_Windows64\runtime\ruby\bin\zsteg&#x27; &#x27;--no-file&#x27; &#x27;E:\学习培训\培训\取证\output\平台API验收_51983a32\labs\inputs\_platform_qa_bc170e0df4\自选图像 17x11.png&#x27;</pre><details><summary>原始结构与完整范围记录</summary><pre>{
+  &quot;command&quot;: &quot;&amp; &#x27;E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\runtime\\ruby\\bin\\ruby.exe&#x27; &#x27;E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\runtime\\ruby\\bin\\zsteg&#x27; &#x27;--no-file&#x27; &#x27;E:\\学习培训\\培训\\取证\\output\\平台API验收_51983a32\\labs\\inputs\\_platform_qa_bc170e0df4\\自选图像 17x11.png&#x27;&quot;,
+  &quot;exit_code&quot;: 0,
+  &quot;preview&quot;: &quot;\rb1,r,lsb,xy         .. \rb1,r,msb,xy         .. \rb1,g,lsb,xy         .. \rb1,g,msb,xy         .. \rb1,b,lsb,xy         .. \rb1,b,msb,xy         .. \rb1,rgb,lsb,xy       .. \rb1,rgb,msb,xy       .. \rb1,bgr,lsb,xy       .. \rb1,bgr,msb,xy       .. \rb2,r,lsb,xy         .. \rb2,r,msb,xy         .. \rb2,g,lsb,xy         .. \rb2,g,msb,xy         .. \rb2,b,lsb,xy         .. \rb2,b,msb,xy         .. \rb2,rgb,lsb,xy       .. \rb2,rgb,msb,xy       .. \rb2,bgr,lsb,xy       .. \rb2,bgr,msb,xy       .. \rb3,r,lsb,xy         .. \rb3,r,msb,xy         .. \rb3,g,lsb,xy         .. \rb3,g,msb,xy         .. \rb3,b,lsb,xy         .. \rb3,b,msb,xy         .. \rb3,rgb,lsb,xy       .. \rb3,rgb,msb,xy       .. \rb3,bgr,lsb,xy       .. \rb3,bgr,msb,xy       .. \rb4,r,lsb,xy         .. \rb4,r,msb,xy         .. \rb4,g,lsb,xy         .. \rb4,g,msb,xy         .. \rb4,b,lsb,xy         .. \rb4,b,msb,xy         .. \rb4,rgb,lsb,xy       .. \rb4,rgb,msb,xy       .. \rb4,bgr,lsb,xy       .. \rb4,bgr,msb,xy       .. \r[=] nothing :(                    \r\n&quot;,
+  &quot;diagnostics&quot;: &quot;&quot;,
+  &quot;log&quot;: &quot;zsteg.txt&quot;,
+  &quot;argument_file&quot;: null
+}</pre></details></section><section><h2>图片与隐写 <small>已执行</small></h2><h3>LSB 候选 r</h3><div class="table"><table><thead><tr><th>位序</th><th>导出字节</th><th>flag 形态</th><th>命中条数</th></tr></thead><tbody><tr><td>bit0 / xy / msb</td><td>23</td><td></td><td>0</td></tr></tbody></table></div><h3>LSB 候选 g</h3><div class="table"><table><thead><tr><th>位序</th><th>导出字节</th><th>flag 形态</th><th>命中条数</th></tr></thead><tbody><tr><td>bit0 / xy / msb</td><td>23</td><td></td><td>0</td></tr></tbody></table></div><h3>LSB 候选 b</h3><div class="table"><table><thead><tr><th>位序</th><th>导出字节</th><th>flag 形态</th><th>命中条数</th></tr></thead><tbody><tr><td>bit0 / xy / msb</td><td>23</td><td></td><td>0</td></tr></tbody></table></div><h3>LSB 候选 rgb</h3><div class="table"><table><thead><tr><th>位序</th><th>导出字节</th><th>flag 形态</th><th>命中条数</th></tr></thead><tbody><tr><td>bit0 / xy / msb</td><td>70</td><td></td><td>0</td></tr></tbody></table></div><h3>LSB 候选 bgr</h3><div class="table"><table><thead><tr><th>位序</th><th>导出字节</th><th>flag 形态</th><th>命中条数</th></tr></thead><tbody><tr><td>bit0 / xy / msb</td><td>70</td><td></td><td>0</td></tr></tbody></table></div><details><summary>原始结构与完整范围记录</summary><pre>{
+  &quot;kind&quot;: &quot;workflow_image&quot;,
+  &quot;image&quot;: {
+    &quot;format&quot;: &quot;PNG&quot;,
+    &quot;mode&quot;: &quot;RGB&quot;,
+    &quot;width&quot;: 17,
+    &quot;height&quot;: 11,
+    &quot;frames&quot;: 1,
+    &quot;preview&quot;: &quot;preview.jpg&quot;
+  },
+  &quot;tables&quot;: [
+    {
+      &quot;title&quot;: &quot;LSB 候选 r&quot;,
+      &quot;columns&quot;: [
+        &quot;位序&quot;,
+        &quot;导出字节&quot;,
+        &quot;flag 形态&quot;,
+        &quot;命中条数&quot;
+      ],
+      &quot;rows&quot;: [
+        [
+          &quot;bit0 / xy / msb&quot;,
+          23,
+          &quot;&quot;,
+          0
+        ]
+      ]
+    },
+    {
+      &quot;title&quot;: &quot;LSB 候选 g&quot;,
+      &quot;columns&quot;: [
+        &quot;位序&quot;,
+        &quot;导出字节&quot;,
+        &quot;flag 形态&quot;,
+        &quot;命中条数&quot;
+      ],
+      &quot;rows&quot;: [
+        [
+          &quot;bit0 / xy / msb&quot;,
+          23,
+          &quot;&quot;,
+          0
+        ]
+      ]
+    },
+    {
+      &quot;title&quot;: &quot;LSB 候选 b&quot;,
+      &quot;columns&quot;: [
+        &quot;位序&quot;,
+        &quot;导出字节&quot;,
+        &quot;flag 形态&quot;,
+        &quot;命中条数&quot;
+      ],
+      &quot;rows&quot;: [
+        [
+          &quot;bit0 / xy / msb&quot;,
+          23,
+          &quot;&quot;,
+          0
+        ]
+      ]
+    },
+    {
+      &quot;title&quot;: &quot;LSB 候选 rgb&quot;,
+      &quot;columns&quot;: [
+        &quot;位序&quot;,
+        &quot;导出字节&quot;,
+        &quot;flag 形态&quot;,
+        &quot;命中条数&quot;
+      ],
+      &quot;rows&quot;: [
+        [
+          &quot;bit0 / xy / msb&quot;,
+          70,
+          &quot;&quot;,
+          0
+        ]
+      ]
+    },
+    {
+      &quot;title&quot;: &quot;LSB 候选 bgr&quot;,
+      &quot;columns&quot;: [
+        &quot;位序&quot;,
+        &quot;导出字节&quot;,
+        &quot;flag 形态&quot;,
+        &quot;命中条数&quot;
+      ],
+      &quot;rows&quot;: [
+        [
+          &quot;bit0 / xy / msb&quot;,
+          70,
+          &quot;&quot;,
+          0
+        ]
+      ]
+    }
+  ],
+  &quot;png&quot;: {
+    &quot;columns&quot;: [
+      &quot;偏移&quot;,
+      &quot;块&quot;,
+      &quot;数据长度&quot;,
+      &quot;保存 CRC&quot;,
+      &quot;计算 CRC&quot;,
+      &quot;校验&quot;
+    ],
+    &quot;rows&quot;: [
+      [
+        &quot;0x8&quot;,
+        &quot;IHDR&quot;,
+        13,
+        &quot;1642f150&quot;,
+        &quot;1642f150&quot;,
+        &quot;OK&quot;
+      ],
+      [
+        &quot;0x21&quot;,
+        &quot;IDAT&quot;,
+        24,
+        &quot;f199a67a&quot;,
+        &quot;f199a67a&quot;,
+        &quot;OK&quot;
+      ],
+      [
+        &quot;0x45&quot;,
+        &quot;IEND&quot;,
+        0,
+        &quot;ae426082&quot;,
+        &quot;ae426082&quot;,
+        &quot;OK&quot;
+      ]
+    ],
+    &quot;kind&quot;: &quot;pngmap&quot;,
+    &quot;chunks&quot;: [
+      {
+        &quot;offset&quot;: 8,
+        &quot;type&quot;: &quot;IHDR&quot;,
+        &quot;length&quot;: 13,
+        &quot;valid&quot;: true
+      },
+      {
+        &quot;offset&quot;: 33,
+        &quot;type&quot;: &quot;IDAT&quot;,
+        &quot;length&quot;: 24,
+        &quot;valid&quot;: true
+      },
+      {
+        &quot;offset&quot;: 69,
+        &quot;type&quot;: &quot;IEND&quot;,
+        &quot;length&quot;: 0,
+        &quot;valid&quot;: true
+      }
+    ],
+    &quot;iend&quot;: true,
+    &quot;trailing&quot;: 0,
+    &quot;error&quot;: &quot;&quot;,
+    &quot;limited&quot;: false
+  },
+  &quot;zsteg&quot;: {
+    &quot;command&quot;: &quot;&amp; &#x27;E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\runtime\\ruby\\bin\\ruby.exe&#x27; &#x27;E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\runtime\\ruby\\bin\\zsteg&#x27; &#x27;--no-file&#x27; &#x27;E:\\学习培训\\培训\\取证\\output\\平台API验收_51983a32\\labs\\inputs\\_platform_qa_bc170e0df4\\自选图像 17x11.png&#x27;&quot;,
+    &quot;exit_code&quot;: 0,
+    &quot;preview&quot;: &quot;\rb1,r,lsb,xy         .. \rb1,r,msb,xy         .. \rb1,g,lsb,xy         .. \rb1,g,msb,xy         .. \rb1,b,lsb,xy         .. \rb1,b,msb,xy         .. \rb1,rgb,lsb,xy       .. \rb1,rgb,msb,xy       .. \rb1,bgr,lsb,xy       .. \rb1,bgr,msb,xy       .. \rb2,r,lsb,xy         .. \rb2,r,msb,xy         .. \rb2,g,lsb,xy         .. \rb2,g,msb,xy         .. \rb2,b,lsb,xy         .. \rb2,b,msb,xy         .. \rb2,rgb,lsb,xy       .. \rb2,rgb,msb,xy       .. \rb2,bgr,lsb,xy       .. \rb2,bgr,msb,xy       .. \rb3,r,lsb,xy         .. \rb3,r,msb,xy         .. \rb3,g,lsb,xy         .. \rb3,g,msb,xy         .. \rb3,b,lsb,xy         .. \rb3,b,msb,xy         .. \rb3,rgb,lsb,xy       .. \rb3,rgb,msb,xy       .. \rb3,bgr,lsb,xy       .. \rb3,bgr,msb,xy       .. \rb4,r,lsb,xy         .. \rb4,r,msb,xy         .. \rb4,g,lsb,xy         .. \rb4,g,msb,xy         .. \rb4,b,lsb,xy         .. \rb4,b,msb,xy         .. \rb4,rgb,lsb,xy       .. \rb4,rgb,msb,xy       .. \rb4,bgr,lsb,xy       .. \rb4,bgr,msb,xy       .. \r[=] nothing :(                    \r\n&quot;,
+    &quot;diagnostics&quot;: &quot;&quot;,
+    &quot;log&quot;: &quot;zsteg.txt&quot;,
+    &quot;argument_file&quot;: null
+  },
+  &quot;embedded&quot;: {
+    &quot;columns&quot;: [
+      &quot;起始字节&quot;,
+      &quot;字节数&quot;,
+      &quot;格式&quot;,
+      &quot;验证&quot;,
+      &quot;边界依据&quot;,
+      &quot;输出&quot;,
+      &quot;诊断&quot;
+    ],
+    &quot;rows&quot;: [],
+    &quot;scanned_bytes&quot;: 81,
+    &quot;total_bytes&quot;: 81,
+    &quot;note&quot;: &quot;自动雕刻仅支持可验证边界的 PNG / 经典 ZIP / PDF，单对象最多 16 MiB；其他签名继续用字节范围雕刻。&quot;
+  }
+}</pre></details></section><section><h2>全文件关键词与 flag 形态检索 <small>已执行</small></h2><div class="table"><table><thead><tr><th>字节偏移</th><th>编码</th><th>关键词</th><th>上下文</th></tr></thead><tbody></tbody></table></div><p>flag 形态是候选，必须回到文件 / 业务语义验证。命中条数有上限，扫描不会因普通字符串表满而提前结束。</p><p>扫描范围：81 / 81 字节</p><details><summary>原始结构与完整范围记录</summary><pre>{
+  &quot;columns&quot;: [
+    &quot;字节偏移&quot;,
+    &quot;编码&quot;,
+    &quot;关键词&quot;,
+    &quot;上下文&quot;
+  ],
+  &quot;rows&quot;: [],
+  &quot;flag_candidates&quot;: [],
+  &quot;scanned_bytes&quot;: 81,
+  &quot;total_bytes&quot;: 81,
+  &quot;partial&quot;: false,
+  &quot;limited&quot;: false,
+  &quot;note&quot;: &quot;flag 形态是候选，必须回到文件 / 业务语义验证。命中条数有上限，扫描不会因普通字符串表满而提前结束。&quot;
+}</pre></details></section><section><h2>内置 YARA 线索规则 <small>已执行</small></h2><div class="table"><table><thead><tr><th>规则</th><th>字符串</th><th>字节偏移</th><th>匹配字节（截取）</th><th>文本预览</th></tr></thead><tbody></tbody></table></div><p>规则命中是线索，不能据此直接判定恶意或确认答案。自定义规则禁用 include。</p><details><summary>原始结构与完整范围记录</summary><pre>{
+  &quot;columns&quot;: [
+    &quot;规则&quot;,
+    &quot;字符串&quot;,
+    &quot;字节偏移&quot;,
+    &quot;匹配字节（截取）&quot;,
+    &quot;文本预览&quot;
+  ],
+  &quot;rows&quot;: [],
+  &quot;kind&quot;: &quot;yara&quot;,
+  &quot;matched_rules&quot;: [],
+  &quot;note&quot;: &quot;规则命中是线索，不能据此直接判定恶意或确认答案。自定义规则禁用 include。&quot;
+}</pre></details></section><section><h2>下一步与原始证据</h2><ul><li>命中仅是候选；请结合路径、对象结构和原始输出确认。未导出、跳过与预算限制均保留在报告中。</li></ul><p>派生文件、CSV 与原始工具日志可在平台结果区另行下载。原件保持只读；命令使用上方标注的宿主系统。</p></section></html>

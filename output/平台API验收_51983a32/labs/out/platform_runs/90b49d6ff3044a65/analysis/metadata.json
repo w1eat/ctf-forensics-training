@@ -1,0 +1,29 @@
+{
+  "command": "& 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\tools\\exiftool\\exiftool.exe' '-charset' 'filename=UTF8' '-@' 'out/platform_runs/90b49d6ff3044a65/analysis/_exif.args'",
+  "exit_code": 0,
+  "preview": "[{\r\n  \"SourceFile\": \"./inputs/_platform_qa_bc170e0df4/自选文档.pdf\",\r\n  \"ExifTool:ExifToolVersion\": 13.59,\r\n  \"System:FileName\": \"自选文档.pdf\",\r\n  \"System:Directory\": \"./inputs/_platform_qa_bc170e0df4\",\r\n  \"System:FileSize\": \"1068 bytes\",\r\n  \"System:FileModifyDate\": \"2026:10:22 10:16:06+08:00\",\r\n  \"System:FileAccessDate\": \"2026:10:22 10:16:24+08:00\",\r\n  \"System:FileCreateDate\": \"2026:10:22 10:16:06+08:00\",\r\n  \"System:FilePermissions\": \"-rw-rw-rw-\",\r\n  \"File:FileType\": \"PDF\",\r\n  \"File:FileTypeExtension\": \"pdf\",\r\n  \"File:MIMEType\": \"application/pdf\",\r\n  \"PDF:PDFVersion\": 1.3,\r\n  \"PDF:Linearized\": \"No\",\r\n  \"PDF:PageCount\": 1,\r\n  \"PDF:Producer\": \"pypdf\",\r\n  \"PDF:Title\": \"Own uploaded PDF\"\r\n}]\r\n",
+  "diagnostics": "",
+  "log": "metadata.txt",
+  "argument_file": "-a\n-u\n-G1\n-j\n./inputs/_platform_qa_bc170e0df4/自选文档.pdf\n",
+  "fields": [
+    {
+      "SourceFile": "./inputs/_platform_qa_bc170e0df4/自选文档.pdf",
+      "ExifTool:ExifToolVersion": 13.59,
+      "System:FileName": "自选文档.pdf",
+      "System:Directory": "./inputs/_platform_qa_bc170e0df4",
+      "System:FileSize": "1068 bytes",
+      "System:FileModifyDate": "2026:10:22 10:16:06+08:00",
+      "System:FileAccessDate": "2026:10:22 10:16:24+08:00",
+      "System:FileCreateDate": "2026:10:22 10:16:06+08:00",
+      "System:FilePermissions": "-rw-rw-rw-",
+      "File:FileType": "PDF",
+      "File:FileTypeExtension": "pdf",
+      "File:MIMEType": "application/pdf",
+      "PDF:PDFVersion": 1.3,
+      "PDF:Linearized": "No",
+      "PDF:PageCount": 1,
+      "PDF:Producer": "pypdf",
+      "PDF:Title": "Own uploaded PDF"
+    }
+  ]
+}

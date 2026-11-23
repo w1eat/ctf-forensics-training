@@ -1,0 +1,19 @@
+{
+  "date": "2026-10-21",
+  "total": 3,
+  "passed": 3,
+  "checks": [
+    {
+      "name": "Basic mode banner is visible",
+      "pass_": true
+    },
+    {
+      "name": "Community actions cannot run in basic mode",
+      "pass_": true
+    },
+    {
+      "name": "Installer guide opens from index.html",
+      "pass_": true
+    }
+  ]
+}

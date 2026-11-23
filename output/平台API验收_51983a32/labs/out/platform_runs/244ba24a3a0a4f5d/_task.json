@@ -1,0 +1,43 @@
+{
+  "id": "244ba24a3a0a4f5d",
+  "action": "sqlite_tables",
+  "title": "SQLite 表与字段",
+  "state": "completed",
+  "command": "& 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\runtime\\python\\python.exe' 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\tools\\analysis_engine.py' 'sqlite' 'E:\\学习培训\\培训\\取证\\output\\平台API验收_51983a32\\labs\\06_sqlite\\case.db' '--out' 'E:\\学习培训\\培训\\取证\\output\\平台API验收_51983a32\\labs\\out\\platform_runs\\244ba24a3a0a4f5d' '--kit' 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64'",
+  "created": "2026-10-22T10:16:13.749631+08:00",
+  "exit_code": 0,
+  "text": "{\"columns\": [\"类型\", \"名称\", \"所属表\", \"SQL\"], \"rows\": [[\"table\", \"artifacts\", \"artifacts\", \"CREATE TABLE artifacts(id INTEGER PRIMARY KEY,name TEXT NOT NULL,deleted INTEGER NOT NULL,note TEXT NOT NULL)\"]], \"kind\": \"sqlite_schema\"}\r\n",
+  "error": "",
+  "duration": 0.16,
+  "files": [
+    {
+      "name": "result.json",
+      "bytes": 320,
+      "path": "out/platform_runs/244ba24a3a0a4f5d/result.json"
+    },
+    {
+      "name": "运行报告.txt",
+      "bytes": 847,
+      "path": "out/platform_runs/244ba24a3a0a4f5d/运行报告.txt"
+    }
+  ],
+  "data": {
+    "columns": [
+      "类型",
+      "名称",
+      "所属表",
+      "SQL"
+    ],
+    "rows": [
+      [
+        "table",
+        "artifacts",
+        "artifacts",
+        "CREATE TABLE artifacts(id INTEGER PRIMARY KEY,name TEXT NOT NULL,deleted INTEGER NOT NULL,note TEXT NOT NULL)"
+      ]
+    ],
+    "kind": "sqlite_schema"
+  },
+  "host": "Windows · PowerShell",
+  "input": "06_sqlite/case.db"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "29e422505bef404c",
+  "action": "png_check",
+  "title": "检查 PNG 完整性",
+  "state": "finding",
+  "command": "& 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\tools\\pngcheck\\pngcheck.exe' '-v' 'E:\\学习培训\\培训\\取证\\output\\平台API验收_51983a32\\labs\\02_png\\broken_width.png'",
+  "created": "2026-10-22T10:16:09.205750+08:00",
+  "exit_code": 2,
+  "text": "File: E:\\学习培训\\培训\\取证\\output\\平台API验收_51983a32\\labs\\02_png\\broken_width.png (733 bytes)\r\n  chunk IHDR at offset 0x0000c, length 13\r\n    1 x 160 image, 24-bit RGB, non-interlaced\r\n  CRC error in chunk IHDR (computed 42379195, expected 6c7b256b)\r\nERRORS DETECTED in E:\\学习培训\\培训\\取证\\output\\平台API验收_51983a32\\labs\\02_png\\broken_width.png\r\n",
+  "error": "",
+  "duration": 0.16,
+  "files": [
+    {
+      "name": "运行报告.txt",
+      "bytes": 730,
+      "path": "out/platform_runs/29e422505bef404c/运行报告.txt"
+    }
+  ],
+  "data": null,
+  "host": "Windows · PowerShell",
+  "input": "02_png/broken_width.png"
+}

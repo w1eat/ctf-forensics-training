@@ -1,0 +1,185 @@
+{
+  "passed": 22,
+  "total": 22,
+  "checks": [
+    {
+      "name": "Raw FAT auto-recognized at sector zero",
+      "pass_": true,
+      "details": ""
+    },
+    {
+      "name": "Deleted entry exported with inode and source path",
+      "pass_": true,
+      "details": ""
+    },
+    {
+      "name": "Both real partition offsets are followed",
+      "pass_": true,
+      "details": ""
+    },
+    {
+      "name": "Image workflow recovers LSB candidate",
+      "pass_": true,
+      "details": ""
+    },
+    {
+      "name": "Bitplanes and native zsteg log are saved",
+      "pass_": true,
+      "details": ""
+    },
+    {
+      "name": "Metadata values feed strict Base64 decoding",
+      "pass_": true,
+      "details": ""
+    },
+    {
+      "name": "PNG trailer object has a verified ZIP boundary",
+      "pass_": true,
+      "details": ""
+    },
+    {
+      "name": "Nested archive children are actually analysed",
+      "pass_": true,
+      "details": ""
+    },
+    {
+      "name": "Depth zero does not claim child analysis",
+      "pass_": true,
+      "details": ""
+    },
+    {
+      "name": "Encrypted archive is listed without guessing passwords",
+      "pass_": true,
+      "details": ""
+    },
+    {
+      "name": "Known archive password enables child analysis",
+      "pass_": true,
+      "details": ""
+    },
+    {
+      "name": "Recursive workflow preserves extraction path checks",
+      "pass_": true,
+      "details": ""
+    },
+    {
+      "name": "Database workflow discovers arbitrary quoted table",
+      "pass_": true,
+      "details": ""
+    },
+    {
+      "name": "UTF16 log is decoded and payload is analysed",
+      "pass_": true,
+      "details": ""
+    },
+    {
+      "name": "Log correlation retains source rows and timezone",
+      "pass_": true,
+      "details": ""
+    },
+    {
+      "name": "PDF attachment is exported and searched",
+      "pass_": true,
+      "details": ""
+    },
+    {
+      "name": "OOXML document flows through its real XML children",
+      "pass_": true,
+      "details": ""
+    },
+    {
+      "name": "Embedded ZIP is validated before child analysis",
+      "pass_": true,
+      "details": ""
+    },
+    {
+      "name": "An interior ZIP local header is not a complete carved archive",
+      "pass_": true,
+      "details": ""
+    },
+    {
+      "name": "Targeted scan ignores printable-row caps and 64MiB samples",
+      "pass_": true,
+      "details": ""
+    },
+    {
+      "name": "Declared archive expansion respects shared 128MiB budget",
+      "pass_": true,
+      "details": ""
+    },
+    {
+      "name": "Vol3 JSON tree flattening preserves actual PIDs",
+      "pass_": true,
+      "details": ""
+    }
+  ],
+  "cases": [
+    {
+      "name": "raw_fat",
+      "folder": "output\\workflow_checks_f321ce4470\\raw_fat"
+    },
+    {
+      "name": "multiple_partitions",
+      "folder": "output\\workflow_checks_f321ce4470\\multiple_partitions"
+    },
+    {
+      "name": "lsb_image",
+      "folder": "output\\workflow_checks_f321ce4470\\lsb_image"
+    },
+    {
+      "name": "metadata_base64",
+      "folder": "output\\workflow_checks_f321ce4470\\metadata_base64"
+    },
+    {
+      "name": "png_tail",
+      "folder": "output\\workflow_checks_f321ce4470\\png_tail"
+    },
+    {
+      "name": "nested_archive",
+      "folder": "output\\workflow_checks_f321ce4470\\nested_archive"
+    },
+    {
+      "name": "depth_zero",
+      "folder": "output\\workflow_checks_f321ce4470\\depth_zero"
+    },
+    {
+      "name": "encrypted_list_only",
+      "folder": "output\\workflow_checks_f321ce4470\\encrypted_list_only"
+    },
+    {
+      "name": "encrypted_known_password",
+      "folder": "output\\workflow_checks_f321ce4470\\encrypted_known_password"
+    },
+    {
+      "name": "traversal_blocked",
+      "folder": "output\\workflow_checks_f321ce4470\\traversal_blocked"
+    },
+    {
+      "name": "database_search",
+      "folder": "output\\workflow_checks_f321ce4470\\database_search"
+    },
+    {
+      "name": "encoded_log",
+      "folder": "output\\workflow_checks_f321ce4470\\encoded_log"
+    },
+    {
+      "name": "pdf_attachment",
+      "folder": "output\\workflow_checks_f321ce4470\\pdf_attachment"
+    },
+    {
+      "name": "office_document",
+      "folder": "output\\workflow_checks_f321ce4470\\office_document"
+    },
+    {
+      "name": "embedded_objects",
+      "folder": "output\\workflow_checks_f321ce4470\\embedded_objects"
+    },
+    {
+      "name": "archive_budget",
+      "folder": "output\\workflow_checks_f321ce4470\\archive_budget"
+    }
+  ],
+  "validation_folder": "output\\workflow_checks_f321ce4470",
+  "real_ram_parsed": false,
+  "kali_executed": false
+}

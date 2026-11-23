@@ -1,0 +1,114 @@
+{
+  "date": "2026-10-23",
+  "challenge": "[cylabacademy] Timeline 0",
+  "source": "练习材料/inputs/2f1f1039a9d6438c916314b7/partition4.img",
+  "source_sha256": "8d2fab6ebd3ac75c3065903b05363941eaa4767410397c5a67ed84c6ad85f7ff",
+  "source_unchanged": true,
+  "ui_solved": true,
+  "original_ui_capability_gap": "缺少全盘 MACB 时间线汇总；本次补齐后从 UI 运行",
+  "filesystem": "Ext4",
+  "sector": 0,
+  "outlier_path": "/bin/bcab",
+  "inode": 4945,
+  "bytes": 41,
+  "utc": "1985-01-01T17:00:00Z",
+  "export_sha256": "baa4296ea5aca02592759e5d988fd9402644d410657ad211a61e5dabe538b704",
+  "base64": "NzFtMzExbjNfMHU3MTEzcl9oM3JfNDNhMmU3YWYK",
+  "decoded": "71m311n3_0u7113r_h3r_43a2e7af\n",
+  "flag": "academy{71m311n3_0u7113r_h3r_43a2e7af}",
+  "online_submission": false,
+  "jobs": [
+    {
+      "id": "c50574adf44f43dc",
+      "action": "disk_inventory",
+      "state": "completed",
+      "created": "2026-10-23T09:29:36.651933+08:00",
+      "input": "inputs/2f1f1039a9d6438c916314b7/partition4.img",
+      "command": "& 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\runtime\\python\\python.exe' 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\tools\\casework.py' 'inventory' '--args' 'E:\\学习培训\\培训\\取证\\练习材料\\out\\platform_runs\\c50574adf44f43dc\\_case_args.json' '--out' 'E:\\学习培训\\培训\\取证\\练习材料\\out\\platform_runs\\c50574adf44f43dc\\evidence' '--kit' 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64' '--labs' 'E:\\学习培训\\培训\\取证\\练习材料'"
+    },
+    {
+      "id": "b95adbb404034a49",
+      "action": "disk_recover",
+      "state": "completed",
+      "created": "2026-10-23T09:29:57.683146+08:00",
+      "input": "inputs/2f1f1039a9d6438c916314b7/partition4.img",
+      "command": "& 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\runtime\\python\\python.exe' 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\tools\\finspect.py' 'savebin' 'E:\\学习培训\\培训\\取证\\练习材料\\out\\platform_runs\\b95adbb404034a49\\recovered.bin' '--' 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\tools\\sleuthkit\\bin\\icat.exe' '-r' '-b' '512' '-o' '0' 'E:\\学习培训\\培训\\取证\\练习材料\\inputs\\2f1f1039a9d6438c916314b7\\partition4.img' '4944'"
+    },
+    {
+      "id": "89d2ff091cca4a02",
+      "action": "text_preview",
+      "state": "completed",
+      "created": "2026-10-23T09:30:16.703142+08:00",
+      "input": "out/platform_runs/b95adbb404034a49/recovered.bin",
+      "command": "& 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\runtime\\python\\python.exe' 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\tools\\analysis_engine.py' 'text' 'E:\\学习培训\\培训\\取证\\练习材料\\out\\platform_runs\\b95adbb404034a49\\recovered.bin' '--out' 'E:\\学习培训\\培训\\取证\\练习材料\\out\\platform_runs\\89d2ff091cca4a02' '--kit' 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64' '--encoding' 'utf-8-sig' '--rows' '200'"
+    },
+    {
+      "id": "20fb11d0a586404f",
+      "action": "keyword_search",
+      "state": "completed",
+      "created": "2026-10-23T09:31:31.565870+08:00",
+      "input": "inputs/2f1f1039a9d6438c916314b7/partition4.img",
+      "command": "& 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\runtime\\python\\python.exe' 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\tools\\analysis_engine.py' 'search' 'E:\\学习培训\\培训\\取证\\练习材料\\inputs\\2f1f1039a9d6438c916314b7\\partition4.img' '--out' 'E:\\学习培训\\培训\\取证\\练习材料\\out\\platform_runs\\20fb11d0a586404f' '--kit' 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64' '--keywords' 'academy,cylab,timeline,flag.txt,flag{,picoCTF{'"
+    },
+    {
+      "id": "a3054cf624714d15",
+      "action": "disk_timeline",
+      "state": "completed",
+      "created": "2026-10-23T09:35:48.824593+08:00",
+      "input": "inputs/2f1f1039a9d6438c916314b7/partition4.img",
+      "command": "& 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\runtime\\python\\python.exe' 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\tools\\casework.py' 'timeline' '--args' 'E:\\学习培训\\培训\\取证\\练习材料\\out\\platform_runs\\a3054cf624714d15\\_case_args.json' '--out' 'E:\\学习培训\\培训\\取证\\练习材料\\out\\platform_runs\\a3054cf624714d15\\evidence' '--kit' 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64' '--labs' 'E:\\学习培训\\培训\\取证\\练习材料'"
+    },
+    {
+      "id": "30f46e8f05594add",
+      "action": "disk_timeline",
+      "state": "completed",
+      "created": "2026-10-23T09:36:32.041078+08:00",
+      "input": "inputs/2f1f1039a9d6438c916314b7/partition4.img",
+      "command": "& 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\runtime\\python\\python.exe' 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\tools\\casework.py' 'timeline' '--args' 'E:\\学习培训\\培训\\取证\\练习材料\\out\\platform_runs\\30f46e8f05594add\\_case_args.json' '--out' 'E:\\学习培训\\培训\\取证\\练习材料\\out\\platform_runs\\30f46e8f05594add\\evidence' '--kit' 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64' '--labs' 'E:\\学习培训\\培训\\取证\\练习材料'"
+    },
+    {
+      "id": "abe166a7f25d4a57",
+      "action": "disk_istat",
+      "state": "completed",
+      "created": "2026-10-23T09:36:43.920168+08:00",
+      "input": "inputs/2f1f1039a9d6438c916314b7/partition4.img",
+      "command": "& 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\tools\\sleuthkit\\bin\\istat.exe' '-o' '0' 'E:\\学习培训\\培训\\取证\\练习材料\\inputs\\2f1f1039a9d6438c916314b7\\partition4.img' '4945'"
+    },
+    {
+      "id": "44975dad661441ab",
+      "action": "disk_recover",
+      "state": "completed",
+      "created": "2026-10-23T09:36:57.030996+08:00",
+      "input": "inputs/2f1f1039a9d6438c916314b7/partition4.img",
+      "command": "& 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\runtime\\python\\python.exe' 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\tools\\finspect.py' 'savebin' 'E:\\学习培训\\培训\\取证\\练习材料\\out\\platform_runs\\44975dad661441ab\\recovered.bin' '--' 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\tools\\sleuthkit\\bin\\icat.exe' '-r' '-b' '512' '-o' '0' 'E:\\学习培训\\培训\\取证\\练习材料\\inputs\\2f1f1039a9d6438c916314b7\\partition4.img' '4945'"
+    },
+    {
+      "id": "5c4e0158c41846f5",
+      "action": "text_preview",
+      "state": "completed",
+      "created": "2026-10-23T09:37:07.870308+08:00",
+      "input": "out/platform_runs/44975dad661441ab/recovered.bin",
+      "command": "& 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\runtime\\python\\python.exe' 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\tools\\analysis_engine.py' 'text' 'E:\\学习培训\\培训\\取证\\练习材料\\out\\platform_runs\\44975dad661441ab\\recovered.bin' '--out' 'E:\\学习培训\\培训\\取证\\练习材料\\out\\platform_runs\\5c4e0158c41846f5' '--kit' 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64' '--encoding' 'utf-8-sig' '--rows' '200'"
+    },
+    {
+      "id": "d3ce7d1e6c0b419c",
+      "action": "base64",
+      "state": "completed",
+      "created": "2026-10-23T09:37:20.648673+08:00",
+      "input": "",
+      "command": "& 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\runtime\\python\\python.exe' 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\tools\\tool_tasks.py' 'base64' 'NzFtMzExbjNfMHU3MTEzcl9oM3JfNDNhMmU3YWYK'"
+    },
+    {
+      "id": "257a56ac0f834abc",
+      "action": "disk_timeline",
+      "state": "completed",
+      "created": "2026-10-23T09:42:09.464025+08:00",
+      "input": "inputs/2f1f1039a9d6438c916314b7/partition4.img",
+      "command": "& 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\runtime\\python\\python.exe' 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\tools\\casework.py' 'timeline' '--args' 'E:\\学习培训\\培训\\取证\\练习材料\\out\\platform_runs\\257a56ac0f834abc\\_case_args.json' '--out' 'E:\\学习培训\\培训\\取证\\练习材料\\out\\platform_runs\\257a56ac0f834abc\\evidence' '--kit' 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64' '--labs' 'E:\\学习培训\\培训\\取证\\练习材料'"
+    }
+  ],
+  "screenshots": [
+    "output/playwright/Timeline0_时间线异常.png",
+    "output/playwright/Timeline0_工作台解码结果.png"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "c75a8e684c884e59",
+  "action": "base64",
+  "title": "Base64 解码",
+  "state": "completed",
+  "command": "& 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\runtime\\python\\python.exe' 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\tools\\tool_tasks.py' 'base64' 'ZmxhZ3ttZXRhZGF0YV90aGVuX2Jhc2U2NH0='",
+  "created": "2026-10-22T10:16:08.708891+08:00",
+  "exit_code": 0,
+  "text": "{\"kind\": \"base64\", \"text\": \"flag{metadata_then_base64}\", \"hex\": \"66 6c 61 67 7b 6d 65 74 61 64 61 74 61 5f 74 68 65 6e 5f 62 61 73 65 36 34 7d\", \"bytes\": 26}\r\n",
+  "error": "",
+  "duration": 0.16,
+  "files": [
+    {
+      "name": "运行报告.txt",
+      "bytes": 529,
+      "path": "out/platform_runs/c75a8e684c884e59/运行报告.txt"
+    }
+  ],
+  "data": {
+    "kind": "base64",
+    "text": "flag{metadata_then_base64}",
+    "hex": "66 6c 61 67 7b 6d 65 74 61 64 61 74 61 5f 74 68 65 6e 5f 62 61 73 65 36 34 7d",
+    "bytes": 26
+  },
+  "host": "Windows · PowerShell",
+  "input": ""
+}

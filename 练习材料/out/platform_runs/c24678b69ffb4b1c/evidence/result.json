@@ -1,0 +1,60 @@
+{
+  "kind": "casework",
+  "operation": "separate",
+  "title": "自动文件分离",
+  "columns": [
+    "导出文件",
+    "源字节偏移",
+    "字节数",
+    "格式",
+    "边界验证"
+  ],
+  "rows": [
+    [
+      "0001_000000000000.png",
+      "0x0",
+      471,
+      "png",
+      "块边界到 IEND；CRC 全部一致"
+    ],
+    [
+      "0002_0000000001d7.zip",
+      "0x1d7",
+      201,
+      "zip",
+      "EOCD / 中央目录通过；加密或较大条目未验证内容 CRC"
+    ]
+  ],
+  "exports": [
+    {
+      "file": "0001_000000000000.png",
+      "source": "E:\\学习培训\\培训\\取证\\练习材料\\inputs\\d58289c7315e46c0bbcde2d0\\QR_code.png",
+      "parent": null,
+      "offset": 0,
+      "offset_hex": "0x0",
+      "length": 471,
+      "format": "png",
+      "sha256": "b93364548806b9370c1a0fccdd36e1cdc0f6dda146906260ca370e4aa612c10d",
+      "validation": "块边界到 IEND；CRC 全部一致",
+      "depth": 0
+    },
+    {
+      "file": "0002_0000000001d7.zip",
+      "source": "E:\\学习培训\\培训\\取证\\练习材料\\inputs\\d58289c7315e46c0bbcde2d0\\QR_code.png",
+      "parent": null,
+      "offset": 471,
+      "offset_hex": "0x1d7",
+      "length": 201,
+      "format": "zip",
+      "sha256": "a386d9a1660175a7ae008af533d4b5346d1b0520bbb72b896d2d3fe5cc42ffda",
+      "validation": "EOCD / 中央目录通过；加密或较大条目未验证内容 CRC",
+      "depth": 0
+    }
+  ],
+  "candidates": 4,
+  "exported_bytes": 672,
+  "warnings": [],
+  "scan_mib": 0,
+  "total_input_bytes": 672,
+  "note": "偏移属于该行 source 文件；签名命中不等于完整文件。已记录边界与验证方式，不能恢复所有碎片文件。"
+}

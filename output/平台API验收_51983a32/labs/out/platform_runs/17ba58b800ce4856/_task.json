@@ -1,0 +1,356 @@
+{
+  "id": "17ba58b800ce4856",
+  "action": "auto_analyze",
+  "title": "自动分析上传文件",
+  "state": "completed",
+  "command": "& 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\runtime\\python\\python.exe' 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\tools\\analysis_engine.py' 'auto' 'E:\\学习培训\\培训\\取证\\output\\平台API验收_51983a32\\labs\\inputs\\_platform_qa_bc170e0df4\\自选数据库.db' '--out' 'E:\\学习培训\\培训\\取证\\output\\平台API验收_51983a32\\labs\\out\\platform_runs\\17ba58b800ce4856\\analysis' '--kit' 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64' '--profile' 'standard' '--workflow' 'auto' '--keywords' 'flag,picoCTF,ctf,secret,password,credential,密码' '--max-files' '32' '--depth' '2' '--password' ''",
+  "created": "2026-10-22T10:16:21.236660+08:00",
+  "exit_code": 0,
+  "text": "{\"kind\": \"analysis\", \"source\": \"自选数据库.db\", \"selected_workflow\": \"database\", \"stages\": [{\"title\": \"识别文件结构与类型\", \"status\": \"completed\"}, {\"title\": \"全文件摘要与字节熵\", \"status\": \"completed\"}, {\"title\": \"通用字符串与嵌入签名\", \"status\": \"completed\"}, {\"title\": \"SQLite 数据库\", \"status\": \"completed\"}, {\"title\": \"全文件关键词与 flag 形态检索\", \"status\": \"completed\"}, {\"title\": \"内置 YARA 线索规则\", \"status\": \"completed\"}], \"flag_candidates\": 0, \"report\": \"E:\\\\学习培训\\\\培训\\\\取证\\\\output\\\\平台API验收_51983a32\\\\labs\\\\out\\\\platform_runs\\\\17ba58b800ce4856\\\\analysis\\\\analysis.html\"}\r\n",
+  "error": "",
+  "duration": 0.16,
+  "files": [
+    {
+      "name": "analysis/analysis.html",
+      "bytes": 10044,
+      "path": "out/platform_runs/17ba58b800ce4856/analysis/analysis.html"
+    },
+    {
+      "name": "analysis/analysis.json",
+      "bytes": 6978,
+      "path": "out/platform_runs/17ba58b800ce4856/analysis/analysis.json"
+    },
+    {
+      "name": "analysis/analysis.txt",
+      "bytes": 6978,
+      "path": "out/platform_runs/17ba58b800ce4856/analysis/analysis.txt"
+    },
+    {
+      "name": "analysis/clues.json",
+      "bytes": 1209,
+      "path": "out/platform_runs/17ba58b800ce4856/analysis/clues.json"
+    },
+    {
+      "name": "analysis/fingerprint.json",
+      "bytes": 507,
+      "path": "out/platform_runs/17ba58b800ce4856/analysis/fingerprint.json"
+    },
+    {
+      "name": "analysis/identify.json",
+      "bytes": 371,
+      "path": "out/platform_runs/17ba58b800ce4856/analysis/identify.json"
+    },
+    {
+      "name": "analysis/result.json",
+      "bytes": 6978,
+      "path": "out/platform_runs/17ba58b800ce4856/analysis/result.json"
+    },
+    {
+      "name": "analysis/targeted_search.json",
+      "bytes": 387,
+      "path": "out/platform_runs/17ba58b800ce4856/analysis/targeted_search.json"
+    },
+    {
+      "name": "analysis/workflow_database.json",
+      "bytes": 1177,
+      "path": "out/platform_runs/17ba58b800ce4856/analysis/workflow_database.json"
+    },
+    {
+      "name": "analysis/yara.json",
+      "bytes": 309,
+      "path": "out/platform_runs/17ba58b800ce4856/analysis/yara.json"
+    },
+    {
+      "name": "运行报告.txt",
+      "bytes": 1470,
+      "path": "out/platform_runs/17ba58b800ce4856/运行报告.txt"
+    }
+  ],
+  "data": {
+    "kind": "analysis",
+    "source": "自选数据库.db",
+    "created": "2026-10-22T10:16:21.303116+08:00",
+    "host": "Windows PowerShell",
+    "profile": "standard",
+    "workflow": "auto",
+    "sections": [
+      {
+        "id": "identify",
+        "title": "识别文件结构与类型",
+        "status": "completed",
+        "seconds": 0.0,
+        "data": {
+          "kind": "sqlite",
+          "label": "SQLite",
+          "evidence": "文件头 53 51 4c 69 74 65 20 66 6f 72 6d 61 74 20 33 00",
+          "extension": ".db",
+          "bytes": 8192,
+          "header": "53 51 4c 69 74 65 20 66 6f 72 6d 61 74 20 33 00 10 00 01 01 00 40 20 20 00 00 00 02 00 00 00 02 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 04 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00"
+        }
+      },
+      {
+        "id": "fingerprint",
+        "title": "全文件摘要与字节熵",
+        "status": "completed",
+        "seconds": 0.001,
+        "data": {
+          "kind": "hash",
+          "name": "自选数据库.db",
+          "bytes": 8192,
+          "md5": "81e74abb57fcb87dc777241c1fe18d5a",
+          "sha1": "04ef9723a95a5763919f7d58f1848f752b302807",
+          "sha256": "00f71ab49ab1edb007f1ca1ca9cd0ea6693db6708e4476e235895c0c0c48c72f",
+          "entropy": 0.25,
+          "entropy_windows": [
+            {
+              "offset": 0,
+              "bytes": 8192,
+              "entropy": 0.25
+            }
+          ],
+          "note": "MD5 / SHA1 仅用于已知摘要对照；证据一致性优先记录 SHA256。熵高不等于一定加密。"
+        }
+      },
+      {
+        "id": "clues",
+        "title": "通用字符串与嵌入签名",
+        "status": "completed",
+        "seconds": 0.0,
+        "data": {
+          "kind": "scan",
+          "strings": {
+            "columns": [
+              "字节偏移",
+              "编码",
+              "可读内容（最多 1024 字节）",
+              "匹配字节数"
+            ],
+            "rows": [
+              [
+                "0x0",
+                "ASCII",
+                "SQLite format 3",
+                15
+              ],
+              [
+                "0xfb1",
+                "ASCII",
+                "tableordersorders",
+                17
+              ],
+              [
+                "0xfc3",
+                "ASCII",
+                "CREATE TABLE orders(order_no TEXT, amount INTEGER, note TEXT)",
+                61
+              ],
+              [
+                "0x1fe4",
+                "ASCII",
+                "5A-2026*",
+                8
+              ],
+              [
+                "0x1ff2",
+                "ASCII",
+                " artifacts ",
+                11
+              ]
+            ]
+          },
+          "signatures": {
+            "columns": [
+              "字节偏移",
+              "签名",
+              "含义"
+            ],
+            "rows": [
+              [
+                "0x0",
+                "SQLite",
+                "候选；需验证结构和边界"
+              ]
+            ]
+          },
+          "scanned_bytes": 8192,
+          "total_bytes": 8192,
+          "partial": false,
+          "string_rows_limited": false,
+          "signature_rows_limited": false,
+          "note": "仅提取 ASCII 可打印字符及其 UTF-16LE 表示；不覆盖所有语言。跨块长串可能分段显示。"
+        }
+      },
+      {
+        "id": "workflow_database",
+        "title": "SQLite 数据库",
+        "status": "completed",
+        "seconds": 0.005,
+        "data": {
+          "kind": "workflow_database",
+          "tables": [
+            {
+              "title": "SQLite 表结构",
+              "columns": [
+                "类型",
+                "名称",
+                "所属表",
+                "SQL"
+              ],
+              "rows": [
+                [
+                  "table",
+                  "orders",
+                  "orders",
+                  "CREATE TABLE orders(order_no TEXT, amount INTEGER, note TEXT)"
+                ]
+              ]
+            },
+            {
+              "title": "预览表：orders",
+              "columns": [
+                "order_no",
+                "amount",
+                "note"
+              ],
+              "rows": [
+                [
+                  "A-2026",
+                  42,
+                  "不是 artifacts 表"
+                ]
+              ]
+            },
+            {
+              "title": "逐表检索命中",
+              "columns": [
+                "表",
+                "查询结果行号",
+                "字段",
+                "值"
+              ],
+              "rows": []
+            }
+          ],
+          "scanned_tables": [
+            {
+              "table": "orders",
+              "rows": 1,
+              "limited": false
+            }
+          ],
+          "table_limit": 20,
+          "row_limit_per_table": 1000,
+          "companions": [],
+          "note": "结果行号是本次 SELECT 的位置，不保证是 rowid；最多 20 表、每表 1000 行。业务软删除与物理删除恢复不同。"
+        }
+      },
+      {
+        "id": "targeted_search",
+        "title": "全文件关键词与 flag 形态检索",
+        "status": "completed",
+        "seconds": 0.0,
+        "data": {
+          "columns": [
+            "字节偏移",
+            "编码",
+            "关键词",
+            "上下文"
+          ],
+          "rows": [],
+          "flag_candidates": [],
+          "scanned_bytes": 8192,
+          "total_bytes": 8192,
+          "partial": false,
+          "limited": false,
+          "note": "flag 形态是候选，必须回到文件 / 业务语义验证。命中条数有上限，扫描不会因普通字符串表满而提前结束。"
+        }
+      },
+      {
+        "id": "yara",
+        "title": "内置 YARA 线索规则",
+        "status": "completed",
+        "seconds": 0.001,
+        "data": {
+          "columns": [
+            "规则",
+            "字符串",
+            "字节偏移",
+            "匹配字节（截取）",
+            "文本预览"
+          ],
+          "rows": [],
+          "kind": "yara",
+          "matched_rules": [],
+          "note": "规则命中是线索，不能据此直接判定恶意或确认答案。自定义规则禁用 include。"
+        }
+      }
+    ],
+    "recommendations": [
+      "命中仅是候选；请结合路径、对象结构和原始输出确认。未导出、跳过与预算限制均保留在报告中。"
+    ],
+    "identification": {
+      "kind": "sqlite",
+      "label": "SQLite",
+      "evidence": "文件头 53 51 4c 69 74 65 20 66 6f 72 6d 61 74 20 33 00",
+      "extension": ".db",
+      "bytes": 8192,
+      "header": "53 51 4c 69 74 65 20 66 6f 72 6d 61 74 20 33 00 10 00 01 01 00 40 20 20 00 00 00 02 00 00 00 02 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 04 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00"
+    },
+    "selected_workflow": "database",
+    "findings": [],
+    "children": [],
+    "next_actions": [],
+    "limits": {
+      "max_exported_files": 32,
+      "exported_files": 0,
+      "max_exported_bytes": 134217728,
+      "accounted_bytes": 0,
+      "child_depth": 2
+    }
+  },
+  "host": "Windows · PowerShell",
+  "input": "inputs/_platform_qa_bc170e0df4/自选数据库.db",
+  "progress": {
+    "stage": "报告已生成",
+    "state": "completed",
+    "completed": 6,
+    "stages": [
+      {
+        "id": "identify",
+        "title": "识别文件结构与类型",
+        "status": "completed",
+        "seconds": 0.0
+      },
+      {
+        "id": "fingerprint",
+        "title": "全文件摘要与字节熵",
+        "status": "completed",
+        "seconds": 0.001
+      },
+      {
+        "id": "clues",
+        "title": "通用字符串与嵌入签名",
+        "status": "completed",
+        "seconds": 0.0
+      },
+      {
+        "id": "workflow_database",
+        "title": "SQLite 数据库",
+        "status": "completed",
+        "seconds": 0.005
+      },
+      {
+        "id": "targeted_search",
+        "title": "全文件关键词与 flag 形态检索",
+        "status": "completed",
+        "seconds": 0.0
+      },
+      {
+        "id": "yara",
+        "title": "内置 YARA 线索规则",
+        "status": "completed",
+        "seconds": 0.001
+      }
+    ]
+  }
+}

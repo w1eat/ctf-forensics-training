@@ -1,0 +1,20 @@
+Volatility 3 Framework 2.28.2
+usage: vol.py windows.dumpfiles.DumpFiles [-h] [--pid PID]
+                                          [--virtaddr [VIRTADDR ...]]
+                                          [--physaddr [PHYSADDR ...]]
+                                          [--filter FILTER] [--ignore-case]
+
+Dumps cached file contents from Windows memory samples.
+
+options:
+  -h, --help            show this help message and exit
+  --pid PID             Process ID to include (all other processes are
+                        excluded)
+  --virtaddr [VIRTADDR ...]
+                        Dump the _FILE_OBJECTs at the given virtual
+                        address(es)
+  --physaddr [PHYSADDR ...]
+                        Dump a single _FILE_OBJECTs at the given physical
+                        address(es)
+  --filter FILTER       Dump files matching regular expression FILTER
+  --ignore-case         Ignore case in filter match

@@ -1,0 +1,6 @@
+r/r 3:	README.TXT
+r/r * 4:	_ECRET.TXT
+v/v 260083:	$MBR
+v/v 260084:	$FAT1
+v/v 260085:	$FAT2
+V/V 260086:	$OrphanFiles

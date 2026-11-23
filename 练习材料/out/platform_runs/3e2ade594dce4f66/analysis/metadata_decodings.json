@@ -1,0 +1,14 @@
+{
+  "encoding": "utf-8-sig",
+  "read_bytes": 907,
+  "total_bytes": 907,
+  "limited": false,
+  "columns": [
+    "编码候选",
+    "文本字符位置",
+    "解码预览",
+    "输出"
+  ],
+  "rows": [],
+  "note": "只做一层严格 Base64 / Hex 候选解码，字符位置不是原始文件字节偏移。编码形态不等于加密。"
+}

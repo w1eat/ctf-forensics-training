@@ -1,0 +1,27 @@
+{
+  "id": "d69d21932d6d4bcd",
+  "action": "zip_clear",
+  "title": "修正练习 ZIP 标志",
+  "state": "completed",
+  "command": "& 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\runtime\\python\\python.exe' 'E:\\学习培训\\培训\\取证\\output\\平台API验收_51983a32\\labs\\tools\\zip_flags.py' 'clear' 'E:\\学习培训\\培训\\取证\\output\\平台API验收_51983a32\\labs\\04_archive\\flagged.zip' 'E:\\学习培训\\培训\\取证\\output\\平台API验收_51983a32\\labs\\out\\platform_runs\\d69d21932d6d4bcd\\flags_fixed.zip'",
+  "created": "2026-10-22T10:16:12.479235+08:00",
+  "exit_code": 0,
+  "text": "note.txt local_flags= 0x1 central_flags= 0x1\r\nFirst bad CRC entry: None\r\n",
+  "error": "",
+  "duration": 0.16,
+  "files": [
+    {
+      "name": "flags_fixed.zip",
+      "bytes": 185,
+      "path": "out/platform_runs/d69d21932d6d4bcd/flags_fixed.zip"
+    },
+    {
+      "name": "运行报告.txt",
+      "bytes": 636,
+      "path": "out/platform_runs/d69d21932d6d4bcd/运行报告.txt"
+    }
+  ],
+  "data": null,
+  "host": "Windows · PowerShell",
+  "input": "04_archive/flagged.zip"
+}

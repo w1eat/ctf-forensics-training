@@ -1,0 +1,168 @@
+{
+  "date": "2026-10-21",
+  "passed": 31,
+  "total": 31,
+  "checks": [
+    {
+      "name": "System Python is absent from the test PATH",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "First run with clean PATH",
+      "pass_": true,
+      "detail": "0 个文件。\n[环境配置] 已校验 3000 个文件。\n[环境配置] 已校验 3500 个文件。\n[环境配置] 已校验 4000 个文件。\n[环境配置] 已校验 4500 个文件。\n[环境配置] 已校验 5000 个文件。\n[环境配置] 已校验 5500 个文件。\n[环境配置] 已校验 6000 个文件。\n[环境配置] 已校验 6500 个文件。\n[环境配置] 已校验 7000 个文件。\n[环境配置] 已校验 7500 个文件。\n[环境配置] 已校验 8000 个文件。\n[环境配置] 已校验 8500 个文件。\n[环境配置] 已校验 9000 个文件。\n[环境配置] 已校验 9500 个文件。\n[环境配置] 正在用包内运行时检查 Python、Ruby、文件工具与内存扩展。无需系统 Python。\n[环境配置] 运行环境已就绪。\n[环境配置] 检查报告：E:\\学习培训\\培训\\取证\\output\\安装验收_836e2593\\无Python (新手!)\\学员工具包_Windows64\\labs\\out\\setup_runs\\20261021_124302_b13bc2\\环境检查.html\n"
+    },
+    {
+      "name": "First run with clean PATH produces a structured report",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "All bundled runtime checks pass",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "Bootstrap does not install software or alter protection on a ready system",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "Subsequent launch reuses valid checks",
+      "pass_": true,
+      "detail": "[环境配置] 工具目录：E:\\学习培训\\培训\\取证\\output\\安装验收_836e2593\\无Python (新手!)\\学员工具包_Windows64\n[环境配置] 正在校验关键运行文件。\n[环境配置] 复用 24 小时内的环境检查；关键文件校验通过。\n[环境配置] 运行环境已就绪。\n[环境配置] 检查报告：E:\\学习培训\\培训\\取证\\output\\安装验收_836e2593\\无Python (新手!)\\学员工具包_Windows64\\labs\\out\\setup_runs\\20261021_124313_7a96bf\\环境检查.html\n"
+    },
+    {
+      "name": "Subsequent launch reuses valid checks produces a structured report",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "Cache is used after critical file verification",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "Missing community files allow basic operation",
+      "pass_": true,
+      "detail": "\n[环境配置] 已校验 6500 个文件。\n[环境配置] 已校验 7000 个文件。\n[环境配置] 已校验 7500 个文件。\n[环境配置] 已校验 8000 个文件。\n[环境配置] 已校验 8500 个文件。\n[环境配置] 已校验 9000 个文件。\n[环境配置] 已校验 9500 个文件。\n[环境配置] 发现 2 个文件缺失或无法读取；可能是未完整解压、权限问题或防护软件隔离。\n[环境配置] 正在用包内运行时检查 Python、Ruby、文件工具与内存扩展。无需系统 Python。\n[环境配置] 部分组件未就绪，先以基础模式启动；社区扩展暂停使用，报告中列出待处理项。\n[环境配置] 脚本不会添加防病毒排除项、关闭实时防护或恢复隔离文件。可使用基础模式，或把报告交给授课人员核对。\n[环境配置] 基础环境已就绪，社区扩展已暂停。\n[环境配置] 检查报告：E:\\学习培训\\培训\\取证\\output\\安装验收_836e2593\\无Python (新手!)\\学员工具包_Windows64\\labs\\out\\setup_runs\\20261021_124314_cc0301\\环境检查.html\n"
+    },
+    {
+      "name": "Missing community files allow basic operation produces a structured report",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "Missing extensions are named and not automatically restored",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "Explicit basic mode needs no community plugins",
+      "pass_": true,
+      "detail": "[环境配置] 工具目录：E:\\学习培训\\培训\\取证\\output\\安装验收_836e2593\\无Python (新手!)\\学员工具包_Windows64\n[环境配置] 正在校验关键运行文件。\n[环境配置] 发现 2 个文件缺失或无法读取；可能是未完整解压、权限问题或防护软件隔离。\n[环境配置] 正在用包内运行时检查 Python、Ruby、文件工具与内存扩展。无需系统 Python。\n[环境配置] 脚本不会添加防病毒排除项、关闭实时防护或恢复隔离文件。可使用基础模式，或把报告交给授课人员核对。\n[环境配置] 基础环境已就绪，社区扩展已暂停。\n[环境配置] 检查报告：E:\\学习培训\\培训\\取证\\output\\安装验收_836e2593\\无Python (新手!)\\学员工具包_Windows64\\labs\\out\\setup_runs\\20261021_124324_d2381d\\环境检查.html\n"
+    },
+    {
+      "name": "Explicit basic mode needs no community plugins produces a structured report",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "Basic probe skips community imports",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "Basic launcher starts without a system Python",
+      "pass_": true,
+      "detail": "\\学习培训\\培训\\取证\\output\\安装验收_836e2593\\无Python (新手!)\\学员工具包_Windows64\n[环境配置] 正在校验关键运行文件。\n[环境配置] 发现 2 个文件缺失或无法读取；可能是未完整解压、权限问题或防护软件隔离。\n[环境配置] 正在用包内运行时检查 Python、Ruby、文件工具与内存扩展。无需系统 Python。\n[环境配置] 脚本不会添加防病毒排除项、关闭实时防护或恢复隔离文件。可使用基础模式，或把报告交给授课人员核对。\n[环境配置] 基础环境已就绪，社区扩展已暂停。\n[环境配置] 检查报告：E:\\学习培训\\培训\\取证\\output\\安装验收_836e2593\\无Python (新手!)\\学员工具包_Windows64\\labs\\out\\setup_runs\\20261021_124330_12e1d7\\环境检查.html\n[环境配置] 即将打开学习平台；请保留此窗口，关闭窗口会停止本地工具服务。\nForensics Classroom / local tools\nURL: http://127.0.0.1:52754/index.html#token=IxmxQxGjm1aVXmMXrxFpAclZI34wsXjstpDCP48KoP4\nKeep this window open. Ctrl+C stops the service.\n"
+    },
+    {
+      "name": "Basic mode is exposed by the local API",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "Actual file analysis works while community files are absent",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "Community execution is blocked in basic mode",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "Missing portable Python is diagnosed",
+      "pass_": true,
+      "detail": "件。\n[环境配置] 已校验 5500 个文件。\n[环境配置] 已校验 6000 个文件。\n[环境配置] 已校验 6500 个文件。\n[环境配置] 已校验 7000 个文件。\n[环境配置] 已校验 7500 个文件。\n[环境配置] 已校验 8000 个文件。\n[环境配置] 已校验 8500 个文件。\n[环境配置] 已校验 9000 个文件。\n[环境配置] 已校验 9500 个文件。\n[环境配置] 发现 3 个文件缺失或无法读取；可能是未完整解压、权限问题或防护软件隔离。\n[环境配置] 基础运行文件缺失：E:\\学习培训\\培训\\取证\\output\\安装验收_836e2593\\无Python (新手!)\\学员工具包_Windows64\\runtime\\python\\python.exe。请核对解压与拦截记录；本脚本不会自动恢复隔离文件。\n[环境配置] 检查报告：E:\\学习培训\\培训\\取证\\output\\安装验收_836e2593\\无Python (新手!)\\学员工具包_Windows64\\labs\\out\\setup_runs\\20261021_124336_a3979d\\环境检查.html\n"
+    },
+    {
+      "name": "Missing portable Python is diagnosed produces a structured report",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "Missing Python report explains the portable runtime requirement",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "Hash mismatch stops before running the modified helper",
+      "pass_": true,
+      "detail": "验 2000 个文件。\n[环境配置] 已校验 2500 个文件。\n[环境配置] 已校验 3000 个文件。\n[环境配置] 已校验 3500 个文件。\n[环境配置] 已校验 4000 个文件。\n[环境配置] 已校验 4500 个文件。\n[环境配置] 已校验 5000 个文件。\n[环境配置] 已校验 5500 个文件。\n[环境配置] 已校验 6000 个文件。\n[环境配置] 已校验 6500 个文件。\n[环境配置] 已校验 7000 个文件。\n[环境配置] 已校验 7500 个文件。\n[环境配置] 已校验 8000 个文件。\n[环境配置] 已校验 8500 个文件。\n[环境配置] 已校验 9000 个文件。\n[环境配置] 已校验 9500 个文件。\n[环境配置] 有 1 个文件与正式校验值不同，未继续执行；请核对来源与是否自行修改。\n[环境配置] 检查报告：E:\\学习培训\\培训\\取证\\output\\安装验收_836e2593\\无Python (新手!)\\学员工具包_Windows64\\labs\\out\\setup_runs\\20261021_124339_132dde\\环境检查.html\n"
+    },
+    {
+      "name": "Hash mismatch stops before running the modified helper produces a structured report",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "Modified helper is recorded",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "Restored official files pass again",
+      "pass_": true,
+      "detail": "0 个文件。\n[环境配置] 已校验 3000 个文件。\n[环境配置] 已校验 3500 个文件。\n[环境配置] 已校验 4000 个文件。\n[环境配置] 已校验 4500 个文件。\n[环境配置] 已校验 5000 个文件。\n[环境配置] 已校验 5500 个文件。\n[环境配置] 已校验 6000 个文件。\n[环境配置] 已校验 6500 个文件。\n[环境配置] 已校验 7000 个文件。\n[环境配置] 已校验 7500 个文件。\n[环境配置] 已校验 8000 个文件。\n[环境配置] 已校验 8500 个文件。\n[环境配置] 已校验 9000 个文件。\n[环境配置] 已校验 9500 个文件。\n[环境配置] 正在用包内运行时检查 Python、Ruby、文件工具与内存扩展。无需系统 Python。\n[环境配置] 运行环境已就绪。\n[环境配置] 检查报告：E:\\学习培训\\培训\\取证\\output\\安装验收_836e2593\\无Python (新手!)\\学员工具包_Windows64\\labs\\out\\setup_runs\\20261021_124343_397fe4\\环境检查.html\n"
+    },
+    {
+      "name": "Restored official files pass again produces a structured report",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "Legacy launcher starts without a system Python",
+      "pass_": true,
+      "detail": "[环境配置] 工具目录：E:\\学习培训\\培训\\取证\\output\\安装验收_836e2593\\无Python (新手!)\\学员工具包_Windows64\n[环境配置] 正在校验关键运行文件。\n[环境配置] 复用 24 小时内的环境检查；关键文件校验通过。\n[环境配置] 运行环境已就绪。\n[环境配置] 检查报告：E:\\学习培训\\培训\\取证\\output\\安装验收_836e2593\\无Python (新手!)\\学员工具包_Windows64\\labs\\out\\setup_runs\\20261021_124353_9030be\\环境检查.html\nForensics Classroom / local tools\nURL: http://127.0.0.1:33763/index.html#token=OyawU47hicZHHPC-XTA_u1Bf6V45HNr04U9l6q3diJM\nKeep this window open. Ctrl+C stops the service.\n"
+    },
+    {
+      "name": "Original launcher still starts full mode",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "Bundled C++ installer has a valid Microsoft signature",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "Installer contains no protection-disable or quarantine-restore command",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "Original helper bytes remain unchanged",
+      "pass_": true,
+      "detail": ""
+    }
+  ],
+  "validation_folder": "E:\\学习培训\\培训\\取证\\output\\安装验收_836e2593",
+  "system_python_on_path": false,
+  "clean_vm_tested": false,
+  "vc_system_install_executed": false,
+  "defender_settings_changed": false,
+  "kali_executed": false
+}

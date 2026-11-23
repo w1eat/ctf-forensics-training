@@ -1,0 +1,22 @@
+{
+  "id": "d9462f6dea6449e5",
+  "action": "binary_patch",
+  "title": "在副本中修改指定字节",
+  "state": "failed",
+  "command": "& 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\runtime\\python\\python.exe' 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\tools\\casework.py' 'patch' '--args' 'E:\\学习培训\\培训\\取证\\output\\工作台验收_d3656ec2\\labs\\out\\platform_runs\\d9462f6dea6449e5\\_case_args.json' '--out' 'E:\\学习培训\\培训\\取证\\output\\工作台验收_d3656ec2\\labs\\out\\platform_runs\\d9462f6dea6449e5\\evidence' '--kit' 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64' '--labs' 'E:\\学习培训\\培训\\取证\\output\\工作台验收_d3656ec2\\labs'",
+  "created": "2026-10-23T09:41:33.880407+08:00",
+  "exit_code": 2,
+  "text": "\n\n[stderr / 诊断信息]\n原字节与预期不一致，已停止；请重新定位。\r\n",
+  "error": "",
+  "duration": 0.16,
+  "files": [
+    {
+      "name": "运行报告.txt",
+      "bytes": 1090,
+      "path": "out/platform_runs/d9462f6dea6449e5/运行报告.txt"
+    }
+  ],
+  "data": null,
+  "host": "Windows · PowerShell",
+  "input": "02_png/broken_header.png"
+}

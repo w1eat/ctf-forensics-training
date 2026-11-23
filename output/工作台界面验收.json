@@ -1,0 +1,100 @@
+{
+  "date": "2026-10-21",
+  "total": 22,
+  "passed": 22,
+  "checks": [
+    {
+      "name": "Hex bytes have actual numeric inspector",
+      "pass_": true
+    },
+    {
+      "name": "Hex pagination updates real byte offset",
+      "pass_": true
+    },
+    {
+      "name": "HEX search displays the actual ZIP offset",
+      "pass_": true
+    },
+    {
+      "name": "Search result jumps to matching hex page",
+      "pass_": true
+    },
+    {
+      "name": "Structural separation creates downloadable ZIP with provenance",
+      "pass_": true
+    },
+    {
+      "name": "A carved output becomes next input",
+      "pass_": true
+    },
+    {
+      "name": "Guided disk route restores a real deleted file",
+      "pass_": true
+    },
+    {
+      "name": "Recovered file advances to validation step",
+      "pass_": true
+    },
+    {
+      "name": "Codec UI returns actual decoded bytes",
+      "pass_": true
+    },
+    {
+      "name": "Conditional source fields switch without requiring hidden input",
+      "pass_": true
+    },
+    {
+      "name": "AES UI matches NIST known plaintext",
+      "pass_": true
+    },
+    {
+      "name": "Memory route retains the image and confirmed Vol2 profile",
+      "pass_": true
+    },
+    {
+      "name": "Memory route switches to its matching Vol3 operation",
+      "pass_": true
+    },
+    {
+      "name": "Switching back retains confirmed Vol2 profile",
+      "pass_": true
+    },
+    {
+      "name": "Keyboard tool switch retains page and sidebar position",
+      "pass_": true
+    },
+    {
+      "name": "Mouse tool switch retains page and sidebar position",
+      "pass_": true
+    },
+    {
+      "name": "TrueCrypt preparation selects 1.25.9 mode and redacts password",
+      "pass_": true
+    },
+    {
+      "name": "Changing evidence resets profile and restores only its own context",
+      "pass_": true
+    },
+    {
+      "name": "Tool file selector also clears previous RAM parameters",
+      "pass_": true
+    },
+    {
+      "name": "An independent uploaded file automatically analyses through UI",
+      "pass_": true
+    },
+    {
+      "name": "390px screen has no page overflow and can run a real tool",
+      "pass_": true
+    },
+    {
+      "name": "Batch upload queue remains collapsed and both files complete",
+      "pass_": true
+    }
+  ],
+  "desktop_css_width": 1365,
+  "mobile_css_width": 390,
+  "system_mount_executed": false,
+  "driver_install_executed": false,
+  "kali_executed": false
+}

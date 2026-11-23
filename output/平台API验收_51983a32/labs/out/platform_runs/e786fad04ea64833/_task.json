@@ -1,0 +1,101 @@
+{
+  "id": "e786fad04ea64833",
+  "action": "png_map",
+  "title": "可视化 PNG 块与 CRC",
+  "state": "completed",
+  "command": "& 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\runtime\\python\\python.exe' 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\tools\\analysis_engine.py' 'png' 'E:\\学习培训\\培训\\取证\\output\\平台API验收_51983a32\\labs\\02_png\\broken_width.png' '--out' 'E:\\学习培训\\培训\\取证\\output\\平台API验收_51983a32\\labs\\out\\platform_runs\\e786fad04ea64833' '--kit' 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64'",
+  "created": "2026-10-22T10:16:09.465171+08:00",
+  "exit_code": 0,
+  "text": "{\"columns\": [\"偏移\", \"块\", \"数据长度\", \"保存 CRC\", \"计算 CRC\", \"校验\"], \"rows\": [[\"0x8\", \"IHDR\", 13, \"6c7b256b\", \"42379195\", \"BAD\"], [\"0x21\", \"tEXt\", 39, \"9ba0e40d\", \"9ba0e40d\", \"OK\"], [\"0x54\", \"IDAT\", 625, \"0701fc55\", \"0701fc55\", \"OK\"], [\"0x2d1\", \"IEND\", 0, \"ae426082\", \"ae426082\", \"OK\"]], \"kind\": \"pngmap\", \"chunks\": [{\"offset\": 8, \"type\": \"IHDR\", \"length\": 13, \"valid\": false}, {\"offset\": 33, \"type\": \"tEXt\", \"length\": 39, \"valid\": true}, {\"offset\": 84, \"type\": \"IDAT\", \"length\": 625, \"valid\": true}, {\"offset\": 721, \"type\": \"IEND\", \"length\": 0, \"valid\": true}], \"iend\": true, \"trailing\": 0, \"error\": \"\", \"limited\": false}\r\n",
+  "error": "",
+  "duration": 0.16,
+  "files": [
+    {
+      "name": "result.json",
+      "bytes": 1086,
+      "path": "out/platform_runs/e786fad04ea64833/result.json"
+    },
+    {
+      "name": "运行报告.txt",
+      "bytes": 1255,
+      "path": "out/platform_runs/e786fad04ea64833/运行报告.txt"
+    }
+  ],
+  "data": {
+    "columns": [
+      "偏移",
+      "块",
+      "数据长度",
+      "保存 CRC",
+      "计算 CRC",
+      "校验"
+    ],
+    "rows": [
+      [
+        "0x8",
+        "IHDR",
+        13,
+        "6c7b256b",
+        "42379195",
+        "BAD"
+      ],
+      [
+        "0x21",
+        "tEXt",
+        39,
+        "9ba0e40d",
+        "9ba0e40d",
+        "OK"
+      ],
+      [
+        "0x54",
+        "IDAT",
+        625,
+        "0701fc55",
+        "0701fc55",
+        "OK"
+      ],
+      [
+        "0x2d1",
+        "IEND",
+        0,
+        "ae426082",
+        "ae426082",
+        "OK"
+      ]
+    ],
+    "kind": "pngmap",
+    "chunks": [
+      {
+        "offset": 8,
+        "type": "IHDR",
+        "length": 13,
+        "valid": false
+      },
+      {
+        "offset": 33,
+        "type": "tEXt",
+        "length": 39,
+        "valid": true
+      },
+      {
+        "offset": 84,
+        "type": "IDAT",
+        "length": 625,
+        "valid": true
+      },
+      {
+        "offset": 721,
+        "type": "IEND",
+        "length": 0,
+        "valid": true
+      }
+    ],
+    "iend": true,
+    "trailing": 0,
+    "error": "",
+    "limited": false
+  },
+  "host": "Windows · PowerShell",
+  "input": "02_png/broken_width.png"
+}

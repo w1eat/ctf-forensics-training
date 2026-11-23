@@ -1,0 +1,47 @@
+{
+  "id": "5a83e60ce6f24b84",
+  "action": "image_planes",
+  "title": "导出选定位平面",
+  "state": "completed",
+  "command": "& 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\runtime\\python\\python.exe' 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\tools\\analysis_engine.py' 'planes' 'E:\\学习培训\\培训\\取证\\output\\平台API验收_51983a32\\labs\\03_lsb\\quiet.png' '--out' 'E:\\学习培训\\培训\\取证\\output\\平台API验收_51983a32\\labs\\out\\platform_runs\\5a83e60ce6f24b84\\planes' '--kit' 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64' '--channels' 'rgb' '--bit' '0'",
+  "created": "2026-10-22T10:16:16.811968+08:00",
+  "exit_code": 0,
+  "text": "{\"channels\": \"rgb\", \"bit\": 0, \"width\": 96, \"height\": 64}\r\n",
+  "error": "",
+  "duration": 0.16,
+  "files": [
+    {
+      "name": "planes/b_bit0.png",
+      "bytes": 1501,
+      "path": "out/platform_runs/5a83e60ce6f24b84/planes/b_bit0.png"
+    },
+    {
+      "name": "planes/g_bit0.png",
+      "bytes": 1560,
+      "path": "out/platform_runs/5a83e60ce6f24b84/planes/g_bit0.png"
+    },
+    {
+      "name": "planes/r_bit0.png",
+      "bytes": 151,
+      "path": "out/platform_runs/5a83e60ce6f24b84/planes/r_bit0.png"
+    },
+    {
+      "name": "planes/result.json",
+      "bytes": 71,
+      "path": "out/platform_runs/5a83e60ce6f24b84/planes/result.json"
+    },
+    {
+      "name": "运行报告.txt",
+      "bytes": 704,
+      "path": "out/platform_runs/5a83e60ce6f24b84/运行报告.txt"
+    }
+  ],
+  "data": {
+    "channels": "rgb",
+    "bit": 0,
+    "width": 96,
+    "height": 64
+  },
+  "host": "Windows · PowerShell",
+  "input": "03_lsb/quiet.png"
+}

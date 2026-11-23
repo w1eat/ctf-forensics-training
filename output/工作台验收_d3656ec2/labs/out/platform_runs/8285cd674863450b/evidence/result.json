@@ -1,0 +1,166 @@
+{
+  "kind": "casework",
+  "operation": "disk_inventory",
+  "title": "镜像目录与删除项",
+  "columns": [
+    "分区扇区",
+    "元数据编号",
+    "已删除",
+    "类型",
+    "原路径"
+  ],
+  "rows": [
+    [
+      2048,
+      "3",
+      "否",
+      "r/r",
+      "README.TXT"
+    ],
+    [
+      2048,
+      "4",
+      "是",
+      "r/r",
+      "_ECRET.TXT"
+    ],
+    [
+      2048,
+      "260083",
+      "否",
+      "v/v",
+      "$MBR"
+    ],
+    [
+      2048,
+      "260084",
+      "否",
+      "v/v",
+      "$FAT1"
+    ],
+    [
+      2048,
+      "260085",
+      "否",
+      "v/v",
+      "$FAT2"
+    ],
+    [
+      2048,
+      "260086",
+      "否",
+      "V/V",
+      "$OrphanFiles"
+    ]
+  ],
+  "entries": [
+    {
+      "type": "r/r",
+      "deleted": false,
+      "inode": "3",
+      "path": "README.TXT",
+      "sector": 2048,
+      "sector_size": 512
+    },
+    {
+      "type": "r/r",
+      "deleted": true,
+      "inode": "4",
+      "path": "_ECRET.TXT",
+      "sector": 2048,
+      "sector_size": 512
+    },
+    {
+      "type": "v/v",
+      "deleted": false,
+      "inode": "260083",
+      "path": "$MBR",
+      "sector": 2048,
+      "sector_size": 512
+    },
+    {
+      "type": "v/v",
+      "deleted": false,
+      "inode": "260084",
+      "path": "$FAT1",
+      "sector": 2048,
+      "sector_size": 512
+    },
+    {
+      "type": "v/v",
+      "deleted": false,
+      "inode": "260085",
+      "path": "$FAT2",
+      "sector": 2048,
+      "sector_size": 512
+    },
+    {
+      "type": "V/V",
+      "deleted": false,
+      "inode": "260086",
+      "path": "$OrphanFiles",
+      "sector": 2048,
+      "sector_size": 512
+    }
+  ],
+  "total_entries": 6,
+  "limited": false,
+  "volumes": [
+    {
+      "sector": 2048,
+      "sector_size": 512,
+      "length": 16384,
+      "description": "DOS FAT16 (0x06)",
+      "filesystem": "FAT16"
+    }
+  ],
+  "commands": [
+    {
+      "argv": [
+        "E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\tools\\sleuthkit\\bin\\mmls.exe",
+        "E:\\学习培训\\培训\\取证\\output\\工作台验收_d3656ec2\\labs\\inputs\\casework_samples\\disk-flat.vmdk"
+      ],
+      "exit_code": 0,
+      "report": "partitions.txt",
+      "diagnostics": "partitions.diagnostics.txt"
+    },
+    {
+      "argv": [
+        "E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\tools\\sleuthkit\\bin\\img_stat.exe",
+        "E:\\学习培训\\培训\\取证\\output\\工作台验收_d3656ec2\\labs\\inputs\\casework_samples\\disk-flat.vmdk"
+      ],
+      "exit_code": 0,
+      "report": "image_structure.txt",
+      "diagnostics": "image_structure.diagnostics.txt"
+    },
+    {
+      "argv": [
+        "E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\tools\\sleuthkit\\bin\\fsstat.exe",
+        "-b",
+        "512",
+        "-o",
+        "2048",
+        "E:\\学习培训\\培训\\取证\\output\\工作台验收_d3656ec2\\labs\\inputs\\casework_samples\\disk-flat.vmdk"
+      ],
+      "exit_code": 0,
+      "report": "fs_2048.txt",
+      "diagnostics": "fs_2048.diagnostics.txt"
+    },
+    {
+      "argv": [
+        "E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\tools\\sleuthkit\\bin\\fls.exe",
+        "-r",
+        "-p",
+        "-b",
+        "512",
+        "-o",
+        "2048",
+        "E:\\学习培训\\培训\\取证\\output\\工作台验收_d3656ec2\\labs\\inputs\\casework_samples\\disk-flat.vmdk"
+      ],
+      "exit_code": 0,
+      "report": "files_2048.txt",
+      "diagnostics": "files_2048.diagnostics.txt"
+    }
+  ],
+  "note": "目录与删除标记不保证数据仍完整。可按本次元数据编号导出；CSV 保存全部匹配条目。支持当前 TSK 识别的 RAW / E01 / VMDK / VHD。"
+}

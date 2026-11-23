@@ -1,0 +1,43 @@
+{
+  "stage": "报告已生成",
+  "state": "completed",
+  "completed": 6,
+  "stages": [
+    {
+      "id": "identify",
+      "title": "识别文件结构与类型",
+      "status": "completed",
+      "seconds": 0.0
+    },
+    {
+      "id": "fingerprint",
+      "title": "全文件摘要与字节熵",
+      "status": "completed",
+      "seconds": 0.179
+    },
+    {
+      "id": "clues",
+      "title": "通用字符串与嵌入签名",
+      "status": "completed",
+      "seconds": 0.078
+    },
+    {
+      "id": "disk_files_1",
+      "title": "文件系统 2048：递归目录与删除项",
+      "status": "completed",
+      "seconds": 0.085
+    },
+    {
+      "id": "workflow_disk",
+      "title": "磁盘 / 分区镜像",
+      "status": "completed",
+      "seconds": 0.499
+    },
+    {
+      "id": "targeted_search",
+      "title": "全文件关键词与 flag 形态检索",
+      "status": "completed",
+      "seconds": 0.213
+    }
+  ]
+}

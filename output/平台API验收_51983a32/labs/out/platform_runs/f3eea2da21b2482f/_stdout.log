@@ -1,0 +1,5 @@
+imagedata           .. text: "ZOdc|wkPqe"
+b1,r,lsb,xy         .. text: "flag{one_bit_one_clue}"
+b1,r,msb,xy         .. b1,g,lsb,xy         .. b1,g,msb,xy         .. b1,b,lsb,xy         .. b1,b,msb,xy         .. b1,rgb,lsb,xy       .. b1,rgb,msb,xy       .. b1,bgr,lsb,xy       .. b1,bgr,msb,xy       .. b2,r,lsb,xy         .. b2,r,msb,xy         .. text: "PUPUADUUD"
+b2,g,lsb,xy         .. b2,g,msb,xy         .. b2,b,lsb,xy         .. b2,b,msb,xy         .. b2,rgb,lsb,xy       .. b2,rgb,msb,xy       .. b2,bgr,lsb,xy       .. b2,bgr,msb,xy       .. b3,r,lsb,xy         .. b3,r,msb,xy         .. b3,g,lsb,xy         .. b3,g,msb,xy         .. b3,b,lsb,xy         .. b3,b,msb,xy         .. b3,rgb,lsb,xy       .. b3,rgb,msb,xy       .. b3,bgr,lsb,xy       .. b3,bgr,msb,xy       .. b4,r,lsb,xy         .. b4,r,msb,xy         .. text: "'Ru`#b`GvA"
+b4,g,lsb,xy         .. b4,g,msb,xy         .. b4,b,lsb,xy         .. b4,b,msb,xy         .. b4,rgb,lsb,xy       .. b4,rgb,msb,xy       .. b4,bgr,lsb,xy       .. b4,bgr,msb,xy       ..                     

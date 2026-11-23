@@ -1,0 +1,22 @@
+{
+  "id": "53f967daa68b4218",
+  "action": "vol_help",
+  "title": "查看 Vol3 插件帮助",
+  "state": "completed",
+  "command": "& 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\runtime\\python\\python.exe' 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\tools\\volatility3\\vol.py' '-p' 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\tools\\volatility3_extra' 'windows.dumpfiles' '-h'",
+  "created": "2026-10-22T10:16:14.508675+08:00",
+  "exit_code": 0,
+  "text": "Volatility 3 Framework 2.28.2\r\nusage: vol.py windows.dumpfiles.DumpFiles [-h] [--pid PID]\r\n                                          [--virtaddr [VIRTADDR ...]]\r\n                                          [--physaddr [PHYSADDR ...]]\r\n                                          [--filter FILTER] [--ignore-case]\r\n\r\nDumps cached file contents from Windows memory samples.\r\n\r\noptions:\r\n  -h, --help            show this help message and exit\r\n  --pid PID             Process ID to include (all other processes are\r\n                        excluded)\r\n  --virtaddr [VIRTADDR ...]\r\n                        Dump the _FILE_OBJECTs at the given virtual\r\n                        address(es)\r\n  --physaddr [PHYSADDR ...]\r\n                        Dump a single _FILE_OBJECTs at the given physical\r\n                        address(es)\r\n  --filter FILTER       Dump files matching regular expression FILTER\r\n  --ignore-case         Ignore case in filter match\r\n",
+  "error": "",
+  "duration": 0.61,
+  "files": [
+    {
+      "name": "运行报告.txt",
+      "bytes": 1414,
+      "path": "out/platform_runs/53f967daa68b4218/运行报告.txt"
+    }
+  ],
+  "data": null,
+  "host": "Windows · PowerShell",
+  "input": ""
+}

@@ -1,0 +1,27 @@
+{
+  "id": "d5c728ac602f4806",
+  "action": "carve",
+  "title": "按偏移雕刻文件",
+  "state": "completed",
+  "command": "& 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\runtime\\python\\python.exe' 'E:\\学习培训\\培训\\取证\\output\\平台API验收_51983a32\\labs\\tools\\carve.py' 'E:\\学习培训\\培训\\取证\\output\\平台API验收_51983a32\\labs\\04_archive\\carrier.bin' 'E:\\学习培训\\培训\\取证\\output\\平台API验收_51983a32\\labs\\out\\platform_runs\\d5c728ac602f4806\\carved.zip' '--offset' '512'",
+  "created": "2026-10-22T10:16:11.653268+08:00",
+  "exit_code": 0,
+  "text": "Saved bytes: 298\r\n",
+  "error": "",
+  "duration": 0.16,
+  "files": [
+    {
+      "name": "carved.zip",
+      "bytes": 298,
+      "path": "out/platform_runs/d5c728ac602f4806/carved.zip"
+    },
+    {
+      "name": "运行报告.txt",
+      "bytes": 578,
+      "path": "out/platform_runs/d5c728ac602f4806/运行报告.txt"
+    }
+  ],
+  "data": null,
+  "host": "Windows · PowerShell",
+  "input": "04_archive/carrier.bin"
+}

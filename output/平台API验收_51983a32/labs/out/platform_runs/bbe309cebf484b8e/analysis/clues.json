@@ -1,0 +1,99 @@
+{
+  "kind": "scan",
+  "strings": {
+    "columns": [
+      "字节偏移",
+      "编码",
+      "可读内容（最多 1024 字节）",
+      "匹配字节数"
+    ],
+    "rows": [
+      [
+        "0xc",
+        "ASCII",
+        "IHDR",
+        4
+      ],
+      [
+        "0x1d",
+        "ASCII",
+        "l{%k",
+        4
+      ],
+      [
+        "0x24",
+        "ASCII",
+        "$tEXtTitle",
+        10
+      ],
+      [
+        "0x2f",
+        "ASCII",
+        "CTF Foundation - File Identity",
+        30
+      ],
+      [
+        "0x54",
+        "ASCII",
+        "4tEXtComment",
+        12
+      ],
+      [
+        "0x61",
+        "ASCII",
+        "ZmxhZ3tmaWxlX3R5cGVfYmVmb3JlX2V4dGVuc2lvbn0=C",
+        45
+      ],
+      [
+        "0x94",
+        "ASCII",
+        "qIDATx",
+        6
+      ],
+      [
+        "0xb1",
+        "ASCII",
+        "g@\"&",
+        4
+      ],
+      [
+        "0xc2",
+        "ASCII",
+        "HwvoU",
+        5
+      ],
+      [
+        "0x312",
+        "ASCII",
+        "IEND",
+        4
+      ],
+      [
+        "0x1d2",
+        "UTF-16LE",
+        "JHHHHHH",
+        14
+      ]
+    ]
+  },
+  "signatures": {
+    "columns": [
+      "字节偏移",
+      "签名",
+      "含义"
+    ],
+    "rows": [
+      [
+        "0x0",
+        "PNG",
+        "候选；需验证结构和边界"
+      ]
+    ]
+  },
+  "scanned_bytes": 794,
+  "total_bytes": 794,
+  "partial": false,
+  "string_rows_limited": false,
+  "signature_rows_limited": false,
+  "note": "仅提取 ASCII 可打印字符及其 UTF-16LE 表示；不覆盖所有语言。跨块长串可能分段显示。"
+}

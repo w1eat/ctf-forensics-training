@@ -1,0 +1,7 @@
+﻿inode,type,deleted,path
+3,r/r,False,README.TXT
+4,r/r,True,_ECRET.TXT
+260083,v/v,False,$MBR
+260084,v/v,False,$FAT1
+260085,v/v,False,$FAT2
+260086,V/V,False,$OrphanFiles

@@ -1,0 +1,9 @@
+{
+  "kind": "casework",
+  "title": "摘要候选验证",
+  "found": true,
+  "candidate": "admin",
+  "checked": 2,
+  "algorithm": "md5",
+  "note": "候选计算出的摘要相同；这是候选验证，不是哈希逆运算。"
+}

@@ -1,0 +1,156 @@
+{
+  "kind": "analysis",
+  "source": "empty.bin",
+  "created": "2026-10-22T10:16:28.458884+08:00",
+  "host": "Windows PowerShell",
+  "profile": "standard",
+  "workflow": "auto",
+  "sections": [
+    {
+      "id": "identify",
+      "title": "识别文件结构与类型",
+      "status": "completed",
+      "seconds": 0.0,
+      "data": {
+        "kind": "empty",
+        "label": "空文件",
+        "evidence": "0 bytes",
+        "extension": ".bin",
+        "bytes": 0,
+        "header": ""
+      }
+    },
+    {
+      "id": "fingerprint",
+      "title": "全文件摘要与字节熵",
+      "status": "completed",
+      "seconds": 0.0,
+      "data": {
+        "kind": "hash",
+        "name": "empty.bin",
+        "bytes": 0,
+        "md5": "d41d8cd98f00b204e9800998ecf8427e",
+        "sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "entropy": 0,
+        "entropy_windows": [],
+        "note": "MD5 / SHA1 仅用于已知摘要对照；证据一致性优先记录 SHA256。熵高不等于一定加密。"
+      }
+    },
+    {
+      "id": "clues",
+      "title": "通用字符串与嵌入签名",
+      "status": "completed",
+      "seconds": 0.0,
+      "data": {
+        "kind": "scan",
+        "strings": {
+          "columns": [
+            "字节偏移",
+            "编码",
+            "可读内容（最多 1024 字节）",
+            "匹配字节数"
+          ],
+          "rows": []
+        },
+        "signatures": {
+          "columns": [
+            "字节偏移",
+            "签名",
+            "含义"
+          ],
+          "rows": []
+        },
+        "scanned_bytes": 0,
+        "total_bytes": 0,
+        "partial": false,
+        "string_rows_limited": false,
+        "signature_rows_limited": false,
+        "note": "仅提取 ASCII 可打印字符及其 UTF-16LE 表示；不覆盖所有语言。跨块长串可能分段显示。"
+      }
+    },
+    {
+      "id": "workflow_embedded",
+      "title": "嵌入对象与雕刻",
+      "status": "completed",
+      "seconds": 0.0,
+      "data": {
+        "columns": [
+          "起始字节",
+          "字节数",
+          "格式",
+          "验证",
+          "边界依据",
+          "输出",
+          "诊断"
+        ],
+        "rows": [],
+        "scanned_bytes": 0,
+        "total_bytes": 0,
+        "note": "自动雕刻仅支持可验证边界的 PNG / 经典 ZIP / PDF，单对象最多 16 MiB；其他签名继续用字节范围雕刻。"
+      }
+    },
+    {
+      "id": "targeted_search",
+      "title": "全文件关键词与 flag 形态检索",
+      "status": "completed",
+      "seconds": 0.0,
+      "data": {
+        "columns": [
+          "字节偏移",
+          "编码",
+          "关键词",
+          "上下文"
+        ],
+        "rows": [],
+        "flag_candidates": [],
+        "scanned_bytes": 0,
+        "total_bytes": 0,
+        "partial": false,
+        "limited": false,
+        "note": "flag 形态是候选，必须回到文件 / 业务语义验证。命中条数有上限，扫描不会因普通字符串表满而提前结束。"
+      }
+    },
+    {
+      "id": "yara",
+      "title": "内置 YARA 线索规则",
+      "status": "completed",
+      "seconds": 0.001,
+      "data": {
+        "columns": [
+          "规则",
+          "字符串",
+          "字节偏移",
+          "匹配字节（截取）",
+          "文本预览"
+        ],
+        "rows": [],
+        "kind": "yara",
+        "matched_rules": [],
+        "note": "规则命中是线索，不能据此直接判定恶意或确认答案。自定义规则禁用 include。"
+      }
+    }
+  ],
+  "recommendations": [
+    "命中仅是候选；请结合路径、对象结构和原始输出确认。未导出、跳过与预算限制均保留在报告中。"
+  ],
+  "identification": {
+    "kind": "empty",
+    "label": "空文件",
+    "evidence": "0 bytes",
+    "extension": ".bin",
+    "bytes": 0,
+    "header": ""
+  },
+  "selected_workflow": "embedded",
+  "findings": [],
+  "children": [],
+  "next_actions": [],
+  "limits": {
+    "max_exported_files": 32,
+    "exported_files": 0,
+    "max_exported_bytes": 134217728,
+    "accounted_bytes": 0,
+    "child_depth": 2
+  }
+}

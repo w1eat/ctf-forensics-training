@@ -1,0 +1,15 @@
+{
+  "multi_file_drag_drop": "pass",
+  "file_picker_multiple": "pass",
+  "auto_png_sqlite_pdf": "pass",
+  "history_reopens_original_input": "pass",
+  "custom_sql_through_ui": "pass",
+  "html_report_download": "pass",
+  "output_reused_for_auto_analysis": "pass",
+  "unicode_paths": "pass",
+  "desktop_and_mobile_layout": "pass",
+  "browser_console_errors": 0,
+  "real_ram_parsed": false,
+  "kali_executed": false,
+  "notes": "Browser checks exercised actual HTTP jobs and independent fixtures, not mocked output."
+}

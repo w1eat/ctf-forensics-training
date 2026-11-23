@@ -1,0 +1,32 @@
+{
+  "kind": "pdf",
+  "encrypted": false,
+  "pages": 1,
+  "extracted_pages": 1,
+  "metadata": {
+    "/Producer": "pypdf",
+    "/Title": "Own uploaded PDF"
+  },
+  "attachments": [
+    "memo.txt"
+  ],
+  "preview": "\n--- PAGE 1 ---\nIndependent PDF example 42",
+  "note": "最多 100 页 / 约 2 MiB 文本；扫描图片型 PDF 需要 OCR，本工具不把无文本解释为无内容。",
+  "text_decodings": {
+    "encoding": "utf-8-sig",
+    "read_bytes": 44,
+    "total_bytes": 44,
+    "limited": false,
+    "columns": [
+      "编码候选",
+      "文本字符位置",
+      "解码预览",
+      "输出"
+    ],
+    "rows": [],
+    "note": "只做一层严格 Base64 / Hex 候选解码，字符位置不是原始文件字节偏移。编码形态不等于加密。"
+  },
+  "extracted_attachments": [
+    "workflow/1_memo.txt"
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "id": "4e44d810e069422f",
+  "action": "text_preview",
+  "title": "预览文本与结构化日志",
+  "state": "completed",
+  "command": "& 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\runtime\\python\\python.exe' 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\tools\\analysis_engine.py' 'text' 'E:\\学习培训\\培训\\取证\\output\\平台API验收_51983a32\\labs\\07_logs\\audit.jsonl' '--out' 'E:\\学习培训\\培训\\取证\\output\\平台API验收_51983a32\\labs\\out\\platform_runs\\4e44d810e069422f' '--kit' 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64' '--encoding' 'utf-8-sig' '--rows' '200'",
+  "created": "2026-10-22T10:16:15.393065+08:00",
+  "exit_code": 0,
+  "text": "{\"columns\": [\"行号\", \"JSON / 原始内容\"], \"rows\": [[1, \"{\\\"timestamp\\\": \\\"2026-10-18T01:16:10Z\\\", \\\"event\\\": \\\"login_success\\\", \\\"user\\\": \\\"trainee\\\", \\\"client_ip\\\": \\\"192.0.2.44\\\", \\\"session_id\\\": \\\"TRAIN-7\\\", \\\"request_id\\\": \\\"r-101\\\"}\"], [2, \"{\\\"timestamp\\\": \\\"2026-10-18T01:17:05Z\\\", \\\"event\\\": \\\"dashboard_view\\\", \\\"user\\\": \\\"trainee\\\", \\\"client_ip\\\": \\\"192.0.2.44\\\", \\\"session_id\\\": \\\"TRAIN-7\\\", \\\"request_id\\\": \\\"r-104\\\"}\"], [3, \"{\\\"timestamp\\\": \\\"2026-10-18T01:18:30Z\\\", \\\"event\\\": \\\"export_started\\\", \\\"user\\\": \\\"trainee\\\", \\\"client_ip\\\": \\\"192.0.2.44\\\", \\\"session_id\\\": \\\"TRAIN-7\\\", \\\"request_id\\\": \\\"r-102\\\", \\\"object_id\\\": 42, \\\"file_name\\\": \\\"case_notes.zip\\\"}\"], [4, \"{\\\"timestamp\\\": \\\"2026-10-18T01:18:31Z\\\", \\\"event\\\": \\\"download_completed\\\", \\\"user\\\": \\\"trainee\\\", \\\"client_ip\\\": \\\"192.0.2.44\\\", \\\"session_id\\\": \\\"TRAIN-7\\\", \\\"request_id\\\": \\\"r-103\\\", \\\"object_id\\\": 42, \\\"file_name\\\": \\\"case_notes.zip\\\", \\\"bytes_sent\\\": 2048}\"]], \"kind\": \"text\", \"errors\": [], \"limited\": false, \"encoding\": \"utf-8-sig\"}\r\n",
+  "error": "",
+  "duration": 0.16,
+  "files": [
+    {
+      "name": "result.json",
+      "bytes": 1171,
+      "path": "out/platform_runs/4e44d810e069422f/result.json"
+    },
+    {
+      "name": "运行报告.txt",
+      "bytes": 1686,
+      "path": "out/platform_runs/4e44d810e069422f/运行报告.txt"
+    }
+  ],
+  "data": {
+    "columns": [
+      "行号",
+      "JSON / 原始内容"
+    ],
+    "rows": [
+      [
+        1,
+        "{\"timestamp\": \"2026-10-18T01:16:10Z\", \"event\": \"login_success\", \"user\": \"trainee\", \"client_ip\": \"192.0.2.44\", \"session_id\": \"TRAIN-7\", \"request_id\": \"r-101\"}"
+      ],
+      [
+        2,
+        "{\"timestamp\": \"2026-10-18T01:17:05Z\", \"event\": \"dashboard_view\", \"user\": \"trainee\", \"client_ip\": \"192.0.2.44\", \"session_id\": \"TRAIN-7\", \"request_id\": \"r-104\"}"
+      ],
+      [
+        3,
+        "{\"timestamp\": \"2026-10-18T01:18:30Z\", \"event\": \"export_started\", \"user\": \"trainee\", \"client_ip\": \"192.0.2.44\", \"session_id\": \"TRAIN-7\", \"request_id\": \"r-102\", \"object_id\": 42, \"file_name\": \"case_notes.zip\"}"
+      ],
+      [
+        4,
+        "{\"timestamp\": \"2026-10-18T01:18:31Z\", \"event\": \"download_completed\", \"user\": \"trainee\", \"client_ip\": \"192.0.2.44\", \"session_id\": \"TRAIN-7\", \"request_id\": \"r-103\", \"object_id\": 42, \"file_name\": \"case_notes.zip\", \"bytes_sent\": 2048}"
+      ]
+    ],
+    "kind": "text",
+    "errors": [],
+    "limited": false,
+    "encoding": "utf-8-sig"
+  },
+  "host": "Windows · PowerShell",
+  "input": "07_logs/audit.jsonl"
+}

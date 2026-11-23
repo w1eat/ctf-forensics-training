@@ -1,0 +1,22 @@
+{
+  "id": "c1e7ad0cef204d17",
+  "action": "disk_istat",
+  "title": "查看元数据项详情",
+  "state": "completed",
+  "command": "& 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\tools\\sleuthkit\\bin\\istat.exe' '-o' '2048' 'E:\\学习培训\\培训\\取证\\output\\平台API验收_51983a32\\labs\\05_disk\\tiny_fat16.dd' '4'",
+  "created": "2026-10-22T10:16:18.017353+08:00",
+  "exit_code": 0,
+  "text": "Directory Entry: 4\r\nNot Allocated\r\nFile Attributes: File, Archive\r\nSize: 31\r\nName: _ECRET.TXT\r\n\r\nDirectory Entry Times:\r\nWritten:\t2026-10-18 09:00:00 (Accessed:\t0000-00-00 00:00:00 (UTC)\r\nCreated:\t0000-00-00 00:00:00 (UTC)\r\n\r\nSectors:\r\n162 \r\n",
+  "error": "",
+  "duration": 0.21,
+  "files": [
+    {
+      "name": "运行报告.txt",
+      "bytes": 619,
+      "path": "out/platform_runs/c1e7ad0cef204d17/运行报告.txt"
+    }
+  ],
+  "data": null,
+  "host": "Windows · PowerShell",
+  "input": "05_disk/tiny_fat16.dd"
+}

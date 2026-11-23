@@ -1,0 +1,164 @@
+{
+  "date": "2026-10-22",
+  "passed": 37,
+  "total": 37,
+  "checks": [
+    {
+      "name": "附件搜索",
+      "pass": true
+    },
+    {
+      "name": "删除前列出选中附件",
+      "pass": true
+    },
+    {
+      "name": "取消删除保留附件",
+      "pass": true
+    },
+    {
+      "name": "确认删除附件",
+      "pass": true
+    },
+    {
+      "name": "附件删除后已有报告保留",
+      "pass": true
+    },
+    {
+      "name": "原输入删除后报告仍可阅读",
+      "pass": true
+    },
+    {
+      "name": "历史删除说明输出影响",
+      "pass": true
+    },
+    {
+      "name": "删除历史并清空当前结果",
+      "pass": true
+    },
+    {
+      "name": "真实多文件上传完成",
+      "pass": true
+    },
+    {
+      "name": "上传文件可直接切回分析",
+      "pass": true
+    },
+    {
+      "name": "连续运行两次实际文件分析",
+      "pass": true
+    },
+    {
+      "name": "历史支持按附件名搜索",
+      "pass": true
+    },
+    {
+      "name": "多选包含所有已结束记录",
+      "pass": true
+    },
+    {
+      "name": "批量历史确认列出两条记录",
+      "pass": true
+    },
+    {
+      "name": "批量历史删除完成",
+      "pass": true
+    },
+    {
+      "name": "删除历史保留原始附件",
+      "pass": true
+    },
+    {
+      "name": "批量删除导入副本",
+      "pass": true
+    },
+    {
+      "name": "删除后选中现有练习附件",
+      "pass": true
+    },
+    {
+      "name": "分析画布不含上传和历史列表",
+      "pass": true
+    },
+    {
+      "name": "附件列表分页",
+      "pass": true
+    },
+    {
+      "name": "第二页显示剩余附件",
+      "pass": true
+    },
+    {
+      "name": "跨页保留选择",
+      "pass": true
+    },
+    {
+      "name": "大批量确认对象数量",
+      "pass": true
+    },
+    {
+      "name": "跨页批量删除",
+      "pass": true
+    },
+    {
+      "name": "侧栏展开并恢复布局宽度",
+      "pass": true
+    },
+    {
+      "name": "收起侧栏释放宽度",
+      "pass": true
+    },
+    {
+      "name": "刷新保留收起状态",
+      "pass": true
+    },
+    {
+      "name": "深链接恢复工具台页面",
+      "pass": true
+    },
+    {
+      "name": "手机无横向溢出",
+      "pass": true
+    },
+    {
+      "name": "手机侧栏有遮罩",
+      "pass": true
+    },
+    {
+      "name": "手机侧栏可关闭",
+      "pass": true
+    },
+    {
+      "name": "手机附件独立页面",
+      "pass": true
+    },
+    {
+      "name": "手机历史独立页面",
+      "pass": true
+    },
+    {
+      "name": "手机分析独立页面",
+      "pass": true
+    },
+    {
+      "name": "管理页切换保留工具参数与附件",
+      "pass": true
+    },
+    {
+      "name": "切换工具保留列表滚动及DOM",
+      "pass": true
+    },
+    {
+      "name": "桌面分析画布适配可用高度",
+      "pass": true
+    }
+  ],
+  "desktop_and_mobile": true,
+  "original_upload_sources_preserved": true,
+  "screenshots": [
+    "output/playwright/工具台_独立分析画布.png",
+    "output/playwright/附件管理_桌面.png",
+    "output/playwright/分析历史_桌面.png",
+    "output/playwright/工具台_手机.png",
+    "output/playwright/附件管理_手机.png"
+  ]
+}

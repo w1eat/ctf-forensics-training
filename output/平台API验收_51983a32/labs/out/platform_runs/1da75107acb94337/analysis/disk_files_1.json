@@ -1,0 +1,8 @@
+{
+  "command": "& 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\tools\\sleuthkit\\bin\\fls.exe' '-r' '-p' '-b' '512' '-o' '2048' 'E:\\学习培训\\培训\\取证\\output\\平台API验收_51983a32\\labs\\05_disk\\tiny_fat16.dd'",
+  "exit_code": 0,
+  "preview": "r/r 3:\tREADME.TXT\r\nr/r * 4:\t_ECRET.TXT\r\nv/v 260083:\t$MBR\r\nv/v 260084:\t$FAT1\r\nv/v 260085:\t$FAT2\r\nV/V 260086:\t$OrphanFiles\r\n",
+  "diagnostics": "",
+  "log": "fls.txt",
+  "argument_file": null
+}

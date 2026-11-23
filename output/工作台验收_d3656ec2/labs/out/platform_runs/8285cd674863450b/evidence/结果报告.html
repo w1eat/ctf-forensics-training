@@ -1,0 +1,166 @@
+<!doctype html><meta charset="utf-8"><title>取证分析结果</title><style>body{font:15px/1.8 Microsoft YaHei;background:#f7f8f2;color:#193c33;padding:32px}pre{white-space:pre-wrap;overflow-wrap:anywhere}</style><h1>镜像目录与删除项</h1><pre>{
+  &quot;kind&quot;: &quot;casework&quot;,
+  &quot;operation&quot;: &quot;disk_inventory&quot;,
+  &quot;title&quot;: &quot;镜像目录与删除项&quot;,
+  &quot;columns&quot;: [
+    &quot;分区扇区&quot;,
+    &quot;元数据编号&quot;,
+    &quot;已删除&quot;,
+    &quot;类型&quot;,
+    &quot;原路径&quot;
+  ],
+  &quot;rows&quot;: [
+    [
+      2048,
+      &quot;3&quot;,
+      &quot;否&quot;,
+      &quot;r/r&quot;,
+      &quot;README.TXT&quot;
+    ],
+    [
+      2048,
+      &quot;4&quot;,
+      &quot;是&quot;,
+      &quot;r/r&quot;,
+      &quot;_ECRET.TXT&quot;
+    ],
+    [
+      2048,
+      &quot;260083&quot;,
+      &quot;否&quot;,
+      &quot;v/v&quot;,
+      &quot;$MBR&quot;
+    ],
+    [
+      2048,
+      &quot;260084&quot;,
+      &quot;否&quot;,
+      &quot;v/v&quot;,
+      &quot;$FAT1&quot;
+    ],
+    [
+      2048,
+      &quot;260085&quot;,
+      &quot;否&quot;,
+      &quot;v/v&quot;,
+      &quot;$FAT2&quot;
+    ],
+    [
+      2048,
+      &quot;260086&quot;,
+      &quot;否&quot;,
+      &quot;V/V&quot;,
+      &quot;$OrphanFiles&quot;
+    ]
+  ],
+  &quot;entries&quot;: [
+    {
+      &quot;type&quot;: &quot;r/r&quot;,
+      &quot;deleted&quot;: false,
+      &quot;inode&quot;: &quot;3&quot;,
+      &quot;path&quot;: &quot;README.TXT&quot;,
+      &quot;sector&quot;: 2048,
+      &quot;sector_size&quot;: 512
+    },
+    {
+      &quot;type&quot;: &quot;r/r&quot;,
+      &quot;deleted&quot;: true,
+      &quot;inode&quot;: &quot;4&quot;,
+      &quot;path&quot;: &quot;_ECRET.TXT&quot;,
+      &quot;sector&quot;: 2048,
+      &quot;sector_size&quot;: 512
+    },
+    {
+      &quot;type&quot;: &quot;v/v&quot;,
+      &quot;deleted&quot;: false,
+      &quot;inode&quot;: &quot;260083&quot;,
+      &quot;path&quot;: &quot;$MBR&quot;,
+      &quot;sector&quot;: 2048,
+      &quot;sector_size&quot;: 512
+    },
+    {
+      &quot;type&quot;: &quot;v/v&quot;,
+      &quot;deleted&quot;: false,
+      &quot;inode&quot;: &quot;260084&quot;,
+      &quot;path&quot;: &quot;$FAT1&quot;,
+      &quot;sector&quot;: 2048,
+      &quot;sector_size&quot;: 512
+    },
+    {
+      &quot;type&quot;: &quot;v/v&quot;,
+      &quot;deleted&quot;: false,
+      &quot;inode&quot;: &quot;260085&quot;,
+      &quot;path&quot;: &quot;$FAT2&quot;,
+      &quot;sector&quot;: 2048,
+      &quot;sector_size&quot;: 512
+    },
+    {
+      &quot;type&quot;: &quot;V/V&quot;,
+      &quot;deleted&quot;: false,
+      &quot;inode&quot;: &quot;260086&quot;,
+      &quot;path&quot;: &quot;$OrphanFiles&quot;,
+      &quot;sector&quot;: 2048,
+      &quot;sector_size&quot;: 512
+    }
+  ],
+  &quot;total_entries&quot;: 6,
+  &quot;limited&quot;: false,
+  &quot;volumes&quot;: [
+    {
+      &quot;sector&quot;: 2048,
+      &quot;sector_size&quot;: 512,
+      &quot;length&quot;: 16384,
+      &quot;description&quot;: &quot;DOS FAT16 (0x06)&quot;,
+      &quot;filesystem&quot;: &quot;FAT16&quot;
+    }
+  ],
+  &quot;commands&quot;: [
+    {
+      &quot;argv&quot;: [
+        &quot;E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\tools\\sleuthkit\\bin\\mmls.exe&quot;,
+        &quot;E:\\学习培训\\培训\\取证\\output\\工作台验收_d3656ec2\\labs\\inputs\\casework_samples\\disk-flat.vmdk&quot;
+      ],
+      &quot;exit_code&quot;: 0,
+      &quot;report&quot;: &quot;partitions.txt&quot;,
+      &quot;diagnostics&quot;: &quot;partitions.diagnostics.txt&quot;
+    },
+    {
+      &quot;argv&quot;: [
+        &quot;E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\tools\\sleuthkit\\bin\\img_stat.exe&quot;,
+        &quot;E:\\学习培训\\培训\\取证\\output\\工作台验收_d3656ec2\\labs\\inputs\\casework_samples\\disk-flat.vmdk&quot;
+      ],
+      &quot;exit_code&quot;: 0,
+      &quot;report&quot;: &quot;image_structure.txt&quot;,
+      &quot;diagnostics&quot;: &quot;image_structure.diagnostics.txt&quot;
+    },
+    {
+      &quot;argv&quot;: [
+        &quot;E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\tools\\sleuthkit\\bin\\fsstat.exe&quot;,
+        &quot;-b&quot;,
+        &quot;512&quot;,
+        &quot;-o&quot;,
+        &quot;2048&quot;,
+        &quot;E:\\学习培训\\培训\\取证\\output\\工作台验收_d3656ec2\\labs\\inputs\\casework_samples\\disk-flat.vmdk&quot;
+      ],
+      &quot;exit_code&quot;: 0,
+      &quot;report&quot;: &quot;fs_2048.txt&quot;,
+      &quot;diagnostics&quot;: &quot;fs_2048.diagnostics.txt&quot;
+    },
+    {
+      &quot;argv&quot;: [
+        &quot;E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\tools\\sleuthkit\\bin\\fls.exe&quot;,
+        &quot;-r&quot;,
+        &quot;-p&quot;,
+        &quot;-b&quot;,
+        &quot;512&quot;,
+        &quot;-o&quot;,
+        &quot;2048&quot;,
+        &quot;E:\\学习培训\\培训\\取证\\output\\工作台验收_d3656ec2\\labs\\inputs\\casework_samples\\disk-flat.vmdk&quot;
+      ],
+      &quot;exit_code&quot;: 0,
+      &quot;report&quot;: &quot;files_2048.txt&quot;,
+      &quot;diagnostics&quot;: &quot;files_2048.diagnostics.txt&quot;
+    }
+  ],
+  &quot;note&quot;: &quot;目录与删除标记不保证数据仍完整。可按本次元数据编号导出；CSV 保存全部匹配条目。支持当前 TSK 识别的 RAW / E01 / VMDK / VHD。&quot;
+}</pre>

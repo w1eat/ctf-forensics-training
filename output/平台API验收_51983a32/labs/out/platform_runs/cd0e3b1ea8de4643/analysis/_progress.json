@@ -1,0 +1,73 @@
+{
+  "stage": "报告已生成",
+  "state": "completed",
+  "completed": 11,
+  "stages": [
+    {
+      "id": "identify",
+      "title": "识别文件结构与类型",
+      "status": "completed",
+      "seconds": 0.0
+    },
+    {
+      "id": "fingerprint",
+      "title": "全文件摘要与字节熵",
+      "status": "completed",
+      "seconds": 0.001
+    },
+    {
+      "id": "clues",
+      "title": "通用字符串与嵌入签名",
+      "status": "completed",
+      "seconds": 0.0
+    },
+    {
+      "id": "metadata",
+      "title": "ExifTool 元数据",
+      "status": "completed",
+      "seconds": 0.166
+    },
+    {
+      "id": "metadata_decodings",
+      "title": "元数据中的编码候选",
+      "status": "completed",
+      "seconds": 0.001
+    },
+    {
+      "id": "image_info_1",
+      "title": "图片尺寸、模式与缩略图",
+      "status": "completed",
+      "seconds": 0.048
+    },
+    {
+      "id": "png_crc_2",
+      "title": "PNG 块、CRC 与尾随数据",
+      "status": "completed",
+      "seconds": 0.0
+    },
+    {
+      "id": "zsteg_3",
+      "title": "zsteg 枚举常见图片位流",
+      "status": "completed",
+      "seconds": 0.325
+    },
+    {
+      "id": "workflow_image",
+      "title": "图片与隐写",
+      "status": "completed",
+      "seconds": 0.38
+    },
+    {
+      "id": "targeted_search",
+      "title": "全文件关键词与 flag 形态检索",
+      "status": "completed",
+      "seconds": 0.0
+    },
+    {
+      "id": "yara",
+      "title": "内置 YARA 线索规则",
+      "status": "completed",
+      "seconds": 0.001
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "kind": "scan",
+  "strings": {
+    "columns": [
+      "字节偏移",
+      "编码",
+      "可读内容（最多 1024 字节）",
+      "匹配字节数"
+    ],
+    "rows": [
+      [
+        "0xb",
+        "ASCII",
+        "P/HF4L",
+        6
+      ],
+      [
+        "0x1e",
+        "ASCII",
+        "4number.txtn",
+        12
+      ],
+      [
+        "0x33",
+        "ASCII",
+        "Qjxu",
+        4
+      ],
+      [
+        "0x63",
+        "ASCII",
+        "P/HF4L",
+        6
+      ],
+      [
+        "0x84",
+        "ASCII",
+        "4number.txt",
+        11
+      ],
+      [
+        "0xa3",
+        "ASCII",
+        "ezhd",
+        4
+      ],
+      [
+        "0xab",
+        "ASCII",
+        "ezhd",
+        4
+      ]
+    ]
+  },
+  "signatures": {
+    "columns": [
+      "字节偏移",
+      "签名",
+      "含义"
+    ],
+    "rows": [
+      [
+        "0x0",
+        "ZIP local",
+        "候选；需验证结构和边界"
+      ],
+      [
+        "0x56",
+        "ZIP central",
+        "候选；需验证结构和边界"
+      ],
+      [
+        "0xb3",
+        "ZIP end",
+        "候选；需验证结构和边界"
+      ]
+    ]
+  },
+  "scanned_bytes": 201,
+  "total_bytes": 201,
+  "partial": false,
+  "string_rows_limited": false,
+  "signature_rows_limited": false,
+  "note": "仅提取 ASCII 可打印字符及其 UTF-16LE 表示；不覆盖所有语言。跨块长串可能分段显示。"
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "hash",
+  "name": "自选图像 17x11.png",
+  "bytes": 81,
+  "md5": "4a630a24f84f3f3941baecf9d6c8754c",
+  "sha1": "28c387aa47bd430ae04fd840611fa66def3a5ad7",
+  "sha256": "a141a555c276d9aa5a8e6cba206af872d39b1df1776dbfe534e3cfb175777c74",
+  "entropy": 4.87438,
+  "entropy_windows": [
+    {
+      "offset": 0,
+      "bytes": 81,
+      "entropy": 4.87438
+    }
+  ],
+  "note": "MD5 / SHA1 仅用于已知摘要对照；证据一致性优先记录 SHA256。熵高不等于一定加密。"
+}

@@ -1,0 +1,128 @@
+{
+  "id": "99ad1b74a4584807",
+  "action": "pe_read",
+  "title": "PE 静态结构",
+  "state": "completed",
+  "command": "& 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\runtime\\python\\python.exe' 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\tools\\analysis_engine.py' 'pe' 'E:\\学习培训\\培训\\取证\\output\\平台API验收_51983a32\\labs\\inputs\\_platform_qa_bc170e0df4\\python-copy.exe' '--out' 'E:\\学习培训\\培训\\取证\\output\\平台API验收_51983a32\\labs\\out\\platform_runs\\99ad1b74a4584807' '--kit' 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64'",
+  "created": "2026-10-22T10:16:16.014066+08:00",
+  "exit_code": 0,
+  "text": "{\"kind\": \"pe\", \"machine\": \"0x8664\", \"timestamp\": 1790796147, \"entry_point\": \"0x12a0\", \"image_base\": \"0x140000000\", \"sections\": {\"columns\": [\"节\", \"原始偏移\", \"原始大小\", \"RVA\", \"熵\"], \"rows\": [[\".text\", \"0x400\", 4096, \"0x1000\", 5.557], [\".rdata\", \"0x1400\", 4096, \"0x2000\", 4.1409], [\".data\", \"0x2400\", 512, \"0x3000\", 0.5325], [\".pdata\", \"0x2600\", 512, \"0x4000\", 2.8024], [\".rsrc\", \"0x2800\", 80896, \"0x5000\", 6.1653], [\".reloc\", \"0x16400\", 512, \"0x19000\", 0.7123]]}, \"imports\": {\"columns\": [\"DLL\", \"导入函数（截取）\"], \"rows\": [[\"python313.dll\", \"Py_Main\"], [\"VCRUNTIME140.dll\", \"__C_specific_handler, __current_exception, __current_exception_context, memset, memcpy\"], [\"api-ms-win-crt-runtime-l1-1-0.dll\", \"_initialize_onexit_table, _register_onexit_function, _crt_atexit, terminate, _get_initial_wide_environment, _register_thread_local_exe_atexit_callback, _initialize_wide_environment, _configure_wide_argv, _initterm, _set_app_type, _seh_filter_exe, _c_exit, _cexit, __p___wargv, __p___argc, _initterm_e, _exit, exit\"], [\"api-ms-win-crt-math-l1-1-0.dll\", \"__setusermatherr\"], [\"api-ms-win-crt-stdio-l1-1-0.dll\", \"__p__commode, _set_fmode\"], [\"api-ms-win-crt-locale-l1-1-0.dll\", \"_configthreadlocale\"], [\"api-ms-win-crt-heap-l1-1-0.dll\", \"_set_new_mode\"], [\"KERNEL32.dll\", \"GetCurrentThreadId, GetCurrentProcessId, QueryPerformanceCounter, IsProcessorFeaturePresent, TerminateProcess, GetCurrentProcess, SetUnhandledExceptionFilter, UnhandledExceptionFilter, RtlVirtualUnwind, RtlLookupFunctionEntry, RtlCaptureContext, InitializeSListHead, IsDebuggerPresent, GetSystemTimeAsFileTime, GetModuleHandleW\"]]}, \"overlay_offset\": \"0x16600\", \"note\": \"静态解析，未运行样本；时间戳、节名和导入信息均可能被修改。\"}\r\n",
+  "error": "",
+  "duration": 0.16,
+  "files": [
+    {
+      "name": "result.json",
+      "bytes": 2531,
+      "path": "out/platform_runs/99ad1b74a4584807/result.json"
+    },
+    {
+      "name": "运行报告.txt",
+      "bytes": 2386,
+      "path": "out/platform_runs/99ad1b74a4584807/运行报告.txt"
+    }
+  ],
+  "data": {
+    "kind": "pe",
+    "machine": "0x8664",
+    "timestamp": 1790796147,
+    "entry_point": "0x12a0",
+    "image_base": "0x140000000",
+    "sections": {
+      "columns": [
+        "节",
+        "原始偏移",
+        "原始大小",
+        "RVA",
+        "熵"
+      ],
+      "rows": [
+        [
+          ".text",
+          "0x400",
+          4096,
+          "0x1000",
+          5.557
+        ],
+        [
+          ".rdata",
+          "0x1400",
+          4096,
+          "0x2000",
+          4.1409
+        ],
+        [
+          ".data",
+          "0x2400",
+          512,
+          "0x3000",
+          0.5325
+        ],
+        [
+          ".pdata",
+          "0x2600",
+          512,
+          "0x4000",
+          2.8024
+        ],
+        [
+          ".rsrc",
+          "0x2800",
+          80896,
+          "0x5000",
+          6.1653
+        ],
+        [
+          ".reloc",
+          "0x16400",
+          512,
+          "0x19000",
+          0.7123
+        ]
+      ]
+    },
+    "imports": {
+      "columns": [
+        "DLL",
+        "导入函数（截取）"
+      ],
+      "rows": [
+        [
+          "python313.dll",
+          "Py_Main"
+        ],
+        [
+          "VCRUNTIME140.dll",
+          "__C_specific_handler, __current_exception, __current_exception_context, memset, memcpy"
+        ],
+        [
+          "api-ms-win-crt-runtime-l1-1-0.dll",
+          "_initialize_onexit_table, _register_onexit_function, _crt_atexit, terminate, _get_initial_wide_environment, _register_thread_local_exe_atexit_callback, _initialize_wide_environment, _configure_wide_argv, _initterm, _set_app_type, _seh_filter_exe, _c_exit, _cexit, __p___wargv, __p___argc, _initterm_e, _exit, exit"
+        ],
+        [
+          "api-ms-win-crt-math-l1-1-0.dll",
+          "__setusermatherr"
+        ],
+        [
+          "api-ms-win-crt-stdio-l1-1-0.dll",
+          "__p__commode, _set_fmode"
+        ],
+        [
+          "api-ms-win-crt-locale-l1-1-0.dll",
+          "_configthreadlocale"
+        ],
+        [
+          "api-ms-win-crt-heap-l1-1-0.dll",
+          "_set_new_mode"
+        ],
+        [
+          "KERNEL32.dll",
+          "GetCurrentThreadId, GetCurrentProcessId, QueryPerformanceCounter, IsProcessorFeaturePresent, TerminateProcess, GetCurrentProcess, SetUnhandledExceptionFilter, UnhandledExceptionFilter, RtlVirtualUnwind, RtlLookupFunctionEntry, RtlCaptureContext, InitializeSListHead, IsDebuggerPresent, GetSystemTimeAsFileTime, GetModuleHandleW"
+        ]
+      ]
+    },
+    "overlay_offset": "0x16600",
+    "note": "静态解析，未运行样本；时间戳、节名和导入信息均可能被修改。"
+  },
+  "host": "Windows · PowerShell",
+  "input": "inputs/_platform_qa_bc170e0df4/python-copy.exe"
+}

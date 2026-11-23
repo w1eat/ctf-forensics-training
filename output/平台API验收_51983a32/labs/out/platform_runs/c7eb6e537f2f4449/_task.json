@@ -1,0 +1,37 @@
+{
+  "id": "c7eb6e537f2f4449",
+  "action": "carve_range",
+  "title": "通用字节范围雕刻",
+  "state": "completed",
+  "command": "& 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\runtime\\python\\python.exe' 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\tools\\analysis_engine.py' 'carve' 'E:\\学习培训\\培训\\取证\\output\\平台API验收_51983a32\\labs\\04_archive\\carrier.bin' '--out' 'E:\\学习培训\\培训\\取证\\output\\平台API验收_51983a32\\labs\\out\\platform_runs\\c7eb6e537f2f4449\\carved' '--kit' 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64' '--offset' '0'",
+  "created": "2026-10-22T10:16:17.475401+08:00",
+  "exit_code": 0,
+  "text": "{\"offset\": \"0x0\", \"bytes\": 810, \"output\": \"carved.bin\", \"note\": \"只复制选定字节，边界须由格式结构验证。\"}\r\n",
+  "error": "",
+  "duration": 0.16,
+  "files": [
+    {
+      "name": "carved/carved.bin",
+      "bytes": 810,
+      "path": "out/platform_runs/c7eb6e537f2f4449/carved/carved.bin"
+    },
+    {
+      "name": "carved/result.json",
+      "bytes": 139,
+      "path": "out/platform_runs/c7eb6e537f2f4449/carved/result.json"
+    },
+    {
+      "name": "运行报告.txt",
+      "bytes": 764,
+      "path": "out/platform_runs/c7eb6e537f2f4449/运行报告.txt"
+    }
+  ],
+  "data": {
+    "offset": "0x0",
+    "bytes": 810,
+    "output": "carved.bin",
+    "note": "只复制选定字节，边界须由格式结构验证。"
+  },
+  "host": "Windows · PowerShell",
+  "input": "04_archive/carrier.bin"
+}

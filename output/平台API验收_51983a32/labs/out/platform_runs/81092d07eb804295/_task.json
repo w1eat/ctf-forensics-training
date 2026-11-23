@@ -1,0 +1,135 @@
+{
+  "id": "81092d07eb804295",
+  "action": "metadata",
+  "title": "读取元数据",
+  "state": "completed",
+  "command": "& 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\tools\\exiftool\\exiftool.exe' '-charset' 'filename=UTF8' '-@' 'out/platform_runs/81092d07eb804295/_exiftool.args'",
+  "created": "2026-10-22T10:16:20.100233+08:00",
+  "exit_code": 0,
+  "text": "[ExifTool]      ExifTool Version Number         : 13.59\r\n[System]        File Name                       : 中文 附件.png\r\n[System]        Directory                       : ./inputs/_platform_qa_bc170e0df4\r\n[System]        File Size                       : 733 bytes\r\n[System]        File Modification Date/Time     : 2026:10:22 10:16:20+08:00\r\n[System]        File Access Date/Time           : 2026:10:22 10:16:20+08:00\r\n[System]        File Creation Date/Time         : 2026:10:22 10:16:20+08:00\r\n[System]        File Permissions                : -rw-rw-rw-\r\n[File]          File Type                       : PNG\r\n[File]          File Type Extension             : png\r\n[File]          MIME Type                       : image/png\r\n[PNG]           Image Width                     : 256\r\n[PNG]           Image Height                    : 160\r\n[PNG]           Bit Depth                       : 8\r\n[PNG]           Color Type                      : RGB\r\n[PNG]           Compression                     : Deflate/Inflate\r\n[PNG]           Filter                          : Adaptive\r\n[PNG]           Interlace                       : Noninterlaced\r\n[PNG]           Comment                         : flag{crc_checks_the_hypothesis}\r\n[Composite]     Image Size                      : 256x160\r\n[Composite]     Megapixels                      : 0.041\r\n",
+  "error": "",
+  "duration": 0.16,
+  "files": [
+    {
+      "name": "运行报告.txt",
+      "bytes": 1794,
+      "path": "out/platform_runs/81092d07eb804295/运行报告.txt"
+    }
+  ],
+  "data": {
+    "columns": [
+      "字段组",
+      "标签",
+      "值"
+    ],
+    "rows": [
+      [
+        "ExifTool",
+        "ExifTool Version Number",
+        "13.59"
+      ],
+      [
+        "System",
+        "File Name",
+        "中文 附件.png"
+      ],
+      [
+        "System",
+        "Directory",
+        "./inputs/_platform_qa_bc170e0df4"
+      ],
+      [
+        "System",
+        "File Size",
+        "733 bytes"
+      ],
+      [
+        "System",
+        "File Modification Date/Time",
+        "2026:10:22 10:16:20+08:00"
+      ],
+      [
+        "System",
+        "File Access Date/Time",
+        "2026:10:22 10:16:20+08:00"
+      ],
+      [
+        "System",
+        "File Creation Date/Time",
+        "2026:10:22 10:16:20+08:00"
+      ],
+      [
+        "System",
+        "File Permissions",
+        "-rw-rw-rw-"
+      ],
+      [
+        "File",
+        "File Type",
+        "PNG"
+      ],
+      [
+        "File",
+        "File Type Extension",
+        "png"
+      ],
+      [
+        "File",
+        "MIME Type",
+        "image/png"
+      ],
+      [
+        "PNG",
+        "Image Width",
+        "256"
+      ],
+      [
+        "PNG",
+        "Image Height",
+        "160"
+      ],
+      [
+        "PNG",
+        "Bit Depth",
+        "8"
+      ],
+      [
+        "PNG",
+        "Color Type",
+        "RGB"
+      ],
+      [
+        "PNG",
+        "Compression",
+        "Deflate/Inflate"
+      ],
+      [
+        "PNG",
+        "Filter",
+        "Adaptive"
+      ],
+      [
+        "PNG",
+        "Interlace",
+        "Noninterlaced"
+      ],
+      [
+        "PNG",
+        "Comment",
+        "flag{crc_checks_the_hypothesis}"
+      ],
+      [
+        "Composite",
+        "Image Size",
+        "256x160"
+      ],
+      [
+        "Composite",
+        "Megapixels",
+        "0.041"
+      ]
+    ]
+  },
+  "host": "Windows · PowerShell",
+  "input": "inputs/_platform_qa_bc170e0df4/中文 附件.png"
+}

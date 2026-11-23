@@ -1,0 +1,43 @@
+{
+  "verified_date": "2026-10-20",
+  "windows_manifest_files_verified": 6376,
+  "temporary_inputs_distributed": false,
+  "releases": [
+    {
+      "archive": "学员工具与练习_Windows64.zip",
+      "cases": 15,
+      "inline_reasoning_tables": 15,
+      "memory_cases": 3,
+      "vol2_reasoning": true
+    },
+    {
+      "archive": "CTF取证基础_学员讲义与练习.zip",
+      "cases": 15,
+      "inline_reasoning_tables": 15,
+      "memory_cases": 3,
+      "vol2_reasoning": true
+    },
+    {
+      "archive": "CTF取证基础_Kali学习资料.zip",
+      "cases": 15,
+      "inline_reasoning_tables": 15,
+      "memory_cases": 3,
+      "vol2_reasoning": true
+    },
+    {
+      "archive": "讲师课件与逐题题解.zip",
+      "cases": 15,
+      "inline_reasoning_tables": 15,
+      "memory_cases": 3,
+      "vol2_reasoning": true
+    },
+    {
+      "archive": "CTF取证基础_完整培训包.zip",
+      "cases": 15,
+      "inline_reasoning_tables": 15,
+      "memory_cases": 3,
+      "vol2_reasoning": true
+    }
+  ],
+  "windows_archive_sha256": "49522b62e4a16dea14988776949a4005cc274bd513921f4dcbca7bd411d32bbf"
+}

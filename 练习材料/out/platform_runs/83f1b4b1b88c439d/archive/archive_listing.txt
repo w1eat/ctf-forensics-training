@@ -1,0 +1,18 @@
+Path = 4number.txt
+Folder = -
+Size = 15
+Packed Size = 29
+Modified = 2016-01-15 10:04:23.9648128
+Created = 2016-01-12 12:40:41.5787621
+Accessed = 2016-01-12 12:40:41.5787621
+Attributes = A
+Encrypted = +
+Comment = 
+CRC = AE4C3446
+Method = ZipCrypto Deflate
+Characteristics = NTFS : Encrypt Descriptor
+Host OS = FAT
+Version = 20
+Volume Index = 0
+Offset = 0
+

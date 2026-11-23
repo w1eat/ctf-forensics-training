@@ -1,0 +1,3 @@
+PID,Process,Args
+2460,notepad.exe,notepad.exe C:\Users\CTF\Desktop\memo.txt
+3180,python.exe,python.exe C:\Users\CTF\Desktop\show_note.py --note ZmxhZ3tyZWFkX3RoZV9jb21tYW5kX2xpbmV9

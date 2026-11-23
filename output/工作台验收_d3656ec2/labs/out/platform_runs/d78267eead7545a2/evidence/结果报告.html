@@ -1,0 +1,27 @@
+<!doctype html><meta charset="utf-8"><title>取证分析结果</title><style>body{font:15px/1.8 Microsoft YaHei;background:#f7f8f2;color:#193c33;padding:32px}pre{white-space:pre-wrap;overflow-wrap:anywhere}</style><h1>浏览器历史与时间</h1><pre>{
+  &quot;kind&quot;: &quot;casework&quot;,
+  &quot;operation&quot;: &quot;browser_history&quot;,
+  &quot;title&quot;: &quot;浏览器历史与时间&quot;,
+  &quot;tables&quot;: [
+    {
+      &quot;title&quot;: &quot;Firefox 访问历史&quot;,
+      &quot;columns&quot;: [
+        &quot;url&quot;,
+        &quot;title&quot;,
+        &quot;raw_time&quot;,
+        &quot;utc&quot;
+      ],
+      &quot;rows&quot;: [
+        [
+          &quot;https://example.test/case&quot;,
+          &quot;Training&quot;,
+          1700000000000000,
+          &quot;2023-11-14 22:13:20&quot;
+        ]
+      ],
+      &quot;sql&quot;: &quot;SELECT p.url,p.title,v.visit_date AS raw_time,datetime(v.visit_date/1000000,&#x27;unixepoch&#x27;) AS utc FROM moz_places p JOIN moz_historyvisits v ON p.id=v.place_id ORDER BY v.visit_date DESC LIMIT 500&quot;
+    }
+  ],
+  &quot;snapshot&quot;: true,
+  &quot;note&quot;: &quot;在工作副本中查询，保留同目录 WAL / SHM。UTC 为按已知 Firefox / Chromium 时间单位换算；访问记录不单独证明现实人物操作，字段随应用版本变化。&quot;
+}</pre>

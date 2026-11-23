@@ -1,0 +1,27 @@
+{
+  "id": "7deb3c8a8c024baa",
+  "action": "png_header",
+  "title": "修复已知 PNG 文件头",
+  "state": "completed",
+  "command": "& 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\runtime\\python\\python.exe' 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\tools\\finspect.py' 'patch-png-header' 'E:\\学习培训\\培训\\取证\\output\\平台API验收_51983a32\\labs\\02_png\\broken_header.png' 'E:\\学习培训\\培训\\取证\\output\\平台API验收_51983a32\\labs\\out\\platform_runs\\7deb3c8a8c024baa\\fixed_header.png'",
+  "created": "2026-10-22T10:16:09.984377+08:00",
+  "exit_code": 0,
+  "text": "Only bytes 0..7 restored; verify every chunk and image data next\r\n",
+  "error": "",
+  "duration": 0.16,
+  "files": [
+    {
+      "name": "fixed_header.png",
+      "bytes": 733,
+      "path": "out/platform_runs/7deb3c8a8c024baa/fixed_header.png"
+    },
+    {
+      "name": "运行报告.txt",
+      "bytes": 633,
+      "path": "out/platform_runs/7deb3c8a8c024baa/运行报告.txt"
+    }
+  ],
+  "data": null,
+  "host": "Windows · PowerShell",
+  "input": "02_png/broken_header.png"
+}

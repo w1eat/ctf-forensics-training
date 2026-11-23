@@ -1,0 +1,157 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>文件分析报告</title><style>body{font:14px/1.85 system-ui,sans-serif;max-width:1140px;margin:36px auto;padding:0 24px;color:#254a36;background:#f5f7ed}section{border:1px solid #ccdabb;background:#fffef8;margin:22px 0;padding:22px;border-radius:8px}h1{font-size:29px}h2{font-size:20px}h3{font-size:14px;margin-top:22px}small,.label{font-size:11px;font-weight:normal;color:#7a895f}.table{overflow:auto;max-height:540px}table{border-collapse:collapse;width:100%;font-size:11px}th,td{text-align:left;vertical-align:top;padding:8px 10px;border-bottom:1px solid #dce4d0;max-width:450px;overflow-wrap:anywhere}th{background:#e5edd9;position:sticky;top:0}pre{white-space:pre-wrap;overflow-wrap:anywhere;font:11px/1.85 Consolas,monospace;background:#edf2e5;padding:14px;border-radius:4px;max-height:480px;overflow:auto}details{margin-top:16px}summary{cursor:pointer;color:#66844f;font-size:12px}.error{background:#f6e4d7;padding:12px;border-radius:4px}@media(max-width:650px){body{padding:0 13px;margin:20px auto}section{padding:15px}h1{font-size:24px}}</style><h1>文件自动分析报告</h1><h2>JSON / JSONL 候选</h2><p>自选事件.jsonl</p><p>2026-10-22T10:16:24.812752+08:00 · Windows PowerShell</p><p>流程：text · 模式：standard · 子文件深度：2 · 导出 / 分析文件：0 / 32</p><p>本次未检出已支持的 flag 形态；这不等于没有隐藏内容。请继续查看格式结果与覆盖范围。</p><section><h2>识别文件结构与类型 <small>已执行</small></h2><details><summary>原始结构与完整范围记录</summary><pre>{
+  &quot;kind&quot;: &quot;text&quot;,
+  &quot;label&quot;: &quot;JSON / JSONL 候选&quot;,
+  &quot;evidence&quot;: &quot;utf-8-sig 抽样可读率 100.0%&quot;,
+  &quot;extension&quot;: &quot;.jsonl&quot;,
+  &quot;bytes&quot;: 62,
+  &quot;header&quot;: &quot;7b 22 65 76 65 6e 74 22 3a 22 75 70 6c 6f 61 64 22 2c 22 74 69 63 6b 65 74 22 3a 37 7d 0d 0a 7b 22 65 76 65 6e 74 22 3a 22 72 65 76 69 65 77 22 2c 22 74 69 63 6b 65 74 22 3a 37 7d 0d 0a&quot;
+}</pre></details></section><section><h2>全文件摘要与字节熵 <small>已执行</small></h2><pre>SHA256 b33f475959d73a6dc5fd354d7a32eb31c2db22592aa61b84e8bb729b7c25bfed
+字节数 62 · 熵 4.05034</pre><p>MD5 / SHA1 仅用于已知摘要对照；证据一致性优先记录 SHA256。熵高不等于一定加密。</p><details><summary>原始结构与完整范围记录</summary><pre>{
+  &quot;kind&quot;: &quot;hash&quot;,
+  &quot;name&quot;: &quot;自选事件.jsonl&quot;,
+  &quot;bytes&quot;: 62,
+  &quot;md5&quot;: &quot;deca03ca28db98f85d8aba1da96bc384&quot;,
+  &quot;sha1&quot;: &quot;3d81912b61fbc7fc13b0ed491f87a364a2f4d423&quot;,
+  &quot;sha256&quot;: &quot;b33f475959d73a6dc5fd354d7a32eb31c2db22592aa61b84e8bb729b7c25bfed&quot;,
+  &quot;entropy&quot;: 4.05034,
+  &quot;entropy_windows&quot;: [
+    {
+      &quot;offset&quot;: 0,
+      &quot;bytes&quot;: 62,
+      &quot;entropy&quot;: 4.05034
+    }
+  ],
+  &quot;note&quot;: &quot;MD5 / SHA1 仅用于已知摘要对照；证据一致性优先记录 SHA256。熵高不等于一定加密。&quot;
+}</pre></details></section><section><h2>通用字符串与嵌入签名 <small>已执行</small></h2><p>仅提取 ASCII 可打印字符及其 UTF-16LE 表示；不覆盖所有语言。跨块长串可能分段显示。</p><p>扫描范围：62 / 62 字节</p><details><summary>原始结构与完整范围记录</summary><pre>{
+  &quot;kind&quot;: &quot;scan&quot;,
+  &quot;strings&quot;: {
+    &quot;columns&quot;: [
+      &quot;字节偏移&quot;,
+      &quot;编码&quot;,
+      &quot;可读内容（最多 1024 字节）&quot;,
+      &quot;匹配字节数&quot;
+    ],
+    &quot;rows&quot;: [
+      [
+        &quot;0x0&quot;,
+        &quot;ASCII&quot;,
+        &quot;{\&quot;event\&quot;:\&quot;upload\&quot;,\&quot;ticket\&quot;:7}&quot;,
+        29
+      ],
+      [
+        &quot;0x1f&quot;,
+        &quot;ASCII&quot;,
+        &quot;{\&quot;event\&quot;:\&quot;review\&quot;,\&quot;ticket\&quot;:7}&quot;,
+        29
+      ]
+    ]
+  },
+  &quot;signatures&quot;: {
+    &quot;columns&quot;: [
+      &quot;字节偏移&quot;,
+      &quot;签名&quot;,
+      &quot;含义&quot;
+    ],
+    &quot;rows&quot;: []
+  },
+  &quot;scanned_bytes&quot;: 62,
+  &quot;total_bytes&quot;: 62,
+  &quot;partial&quot;: false,
+  &quot;string_rows_limited&quot;: false,
+  &quot;signature_rows_limited&quot;: false,
+  &quot;note&quot;: &quot;仅提取 ASCII 可打印字符及其 UTF-16LE 表示；不覆盖所有语言。跨块长串可能分段显示。&quot;
+}</pre></details></section><section><h2>文本、日志与编码 <small>已执行</small></h2><h3>结构预览</h3><div class="table"><table><thead><tr><th>行号</th><th>JSON / 原始内容</th></tr></thead><tbody><tr><td>1</td><td>{&quot;event&quot;: &quot;upload&quot;, &quot;ticket&quot;: 7}</td></tr><tr><td>2</td><td>{&quot;event&quot;: &quot;review&quot;, &quot;ticket&quot;: 7}</td></tr></tbody></table></div><h3>编码候选</h3><div class="table"><table><thead><tr><th>编码候选</th><th>文本字符位置</th><th>解码预览</th><th>输出</th></tr></thead><tbody></tbody></table></div><h3>实际字段与关联值（统计前 20000 行）</h3><div class="table"><table><thead><tr><th>字段</th><th>值</th><th>出现次数</th></tr></thead><tbody><tr><td>event</td><td>upload</td><td>1</td></tr><tr><td>event</td><td>review</td><td>1</td></tr></tbody></table></div><details><summary>原始结构与完整范围记录</summary><pre>{
+  &quot;kind&quot;: &quot;workflow_text&quot;,
+  &quot;tables&quot;: [
+    {
+      &quot;title&quot;: &quot;结构预览&quot;,
+      &quot;columns&quot;: [
+        &quot;行号&quot;,
+        &quot;JSON / 原始内容&quot;
+      ],
+      &quot;rows&quot;: [
+        [
+          1,
+          &quot;{\&quot;event\&quot;: \&quot;upload\&quot;, \&quot;ticket\&quot;: 7}&quot;
+        ],
+        [
+          2,
+          &quot;{\&quot;event\&quot;: \&quot;review\&quot;, \&quot;ticket\&quot;: 7}&quot;
+        ]
+      ]
+    },
+    {
+      &quot;title&quot;: &quot;编码候选&quot;,
+      &quot;columns&quot;: [
+        &quot;编码候选&quot;,
+        &quot;文本字符位置&quot;,
+        &quot;解码预览&quot;,
+        &quot;输出&quot;
+      ],
+      &quot;rows&quot;: []
+    },
+    {
+      &quot;title&quot;: &quot;实际字段与关联值（统计前 20000 行）&quot;,
+      &quot;columns&quot;: [
+        &quot;字段&quot;,
+        &quot;值&quot;,
+        &quot;出现次数&quot;
+      ],
+      &quot;rows&quot;: [
+        [
+          &quot;event&quot;,
+          &quot;upload&quot;,
+          1
+        ],
+        [
+          &quot;event&quot;,
+          &quot;review&quot;,
+          1
+        ]
+      ]
+    }
+  ],
+  &quot;encoding&quot;: &quot;utf-8-sig&quot;,
+  &quot;read_bytes&quot;: 62,
+  &quot;limited&quot;: false,
+  &quot;decodings&quot;: {
+    &quot;encoding&quot;: &quot;utf-8-sig&quot;,
+    &quot;read_bytes&quot;: 62,
+    &quot;total_bytes&quot;: 62,
+    &quot;limited&quot;: false,
+    &quot;columns&quot;: [
+      &quot;编码候选&quot;,
+      &quot;文本字符位置&quot;,
+      &quot;解码预览&quot;,
+      &quot;输出&quot;
+    ],
+    &quot;rows&quot;: [],
+    &quot;note&quot;: &quot;只做一层严格 Base64 / Hex 候选解码，字符位置不是原始文件字节偏移。编码形态不等于加密。&quot;
+  }
+}</pre></details></section><section><h2>全文件关键词与 flag 形态检索 <small>已执行</small></h2><div class="table"><table><thead><tr><th>字节偏移</th><th>编码</th><th>关键词</th><th>上下文</th></tr></thead><tbody></tbody></table></div><p>flag 形态是候选，必须回到文件 / 业务语义验证。命中条数有上限，扫描不会因普通字符串表满而提前结束。</p><p>扫描范围：62 / 62 字节</p><details><summary>原始结构与完整范围记录</summary><pre>{
+  &quot;columns&quot;: [
+    &quot;字节偏移&quot;,
+    &quot;编码&quot;,
+    &quot;关键词&quot;,
+    &quot;上下文&quot;
+  ],
+  &quot;rows&quot;: [],
+  &quot;flag_candidates&quot;: [],
+  &quot;scanned_bytes&quot;: 62,
+  &quot;total_bytes&quot;: 62,
+  &quot;partial&quot;: false,
+  &quot;limited&quot;: false,
+  &quot;note&quot;: &quot;flag 形态是候选，必须回到文件 / 业务语义验证。命中条数有上限，扫描不会因普通字符串表满而提前结束。&quot;
+}</pre></details></section><section><h2>内置 YARA 线索规则 <small>已执行</small></h2><div class="table"><table><thead><tr><th>规则</th><th>字符串</th><th>字节偏移</th><th>匹配字节（截取）</th><th>文本预览</th></tr></thead><tbody></tbody></table></div><p>规则命中是线索，不能据此直接判定恶意或确认答案。自定义规则禁用 include。</p><details><summary>原始结构与完整范围记录</summary><pre>{
+  &quot;columns&quot;: [
+    &quot;规则&quot;,
+    &quot;字符串&quot;,
+    &quot;字节偏移&quot;,
+    &quot;匹配字节（截取）&quot;,
+    &quot;文本预览&quot;
+  ],
+  &quot;rows&quot;: [],
+  &quot;kind&quot;: &quot;yara&quot;,
+  &quot;matched_rules&quot;: [],
+  &quot;note&quot;: &quot;规则命中是线索，不能据此直接判定恶意或确认答案。自定义规则禁用 include。&quot;
+}</pre></details></section><section><h2>下一步与原始证据</h2><ul><li>命中仅是候选；请结合路径、对象结构和原始输出确认。未导出、跳过与预算限制均保留在报告中。</li></ul><p>派生文件、CSV 与原始工具日志可在平台结果区另行下载。原件保持只读；命令使用上方标注的宿主系统。</p></section></html>

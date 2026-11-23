@@ -1,0 +1,63 @@
+{
+  "kind": "scan",
+  "strings": {
+    "columns": [
+      "字节偏移",
+      "编码",
+      "可读内容（最多 1024 字节）",
+      "匹配字节数"
+    ],
+    "rows": [
+      [
+        "0x100003",
+        "ASCII",
+        "CTFDEMO ",
+        8
+      ],
+      [
+        "0x10002b",
+        "ASCII",
+        "CTFTRAININGFAT16   ",
+        19
+      ],
+      [
+        "0x110200",
+        "ASCII",
+        "README  TXT ",
+        12
+      ],
+      [
+        "0x110221",
+        "ASCII",
+        "ECRET  TXT ",
+        11
+      ],
+      [
+        "0x114200",
+        "ASCII",
+        "Training FAT16 image. Look for a deleted root directory entry.",
+        62
+      ],
+      [
+        "0x114400",
+        "ASCII",
+        "flag{deleted_entry_is_a_clue}",
+        29
+      ]
+    ]
+  },
+  "signatures": {
+    "columns": [
+      "字节偏移",
+      "签名",
+      "含义"
+    ],
+    "rows": []
+  },
+  "scanned_bytes": 4194304,
+  "total_bytes": 9437184,
+  "partial": true,
+  "string_rows_limited": false,
+  "signature_rows_limited": false,
+  "note": "仅提取 ASCII 可打印字符及其 UTF-16LE 表示；不覆盖所有语言。跨块长串可能分段显示。"
+}

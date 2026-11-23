@@ -1,0 +1,13 @@
+操作：zsteg 扫描 LSB
+运行环境：Windows PowerShell
+创建时间：2026-10-22T10:16:10.252519+08:00
+状态：completed
+退出码：0
+命令：& 'E:\学习培训\培训\取证\学员工具包_Windows64\runtime\ruby\bin\ruby.exe' 'E:\学习培训\培训\取证\学员工具包_Windows64\runtime\ruby\bin\zsteg' '--no-file' 'E:\学习培训\培训\取证\output\平台API验收_51983a32\labs\03_lsb\quiet.png'
+
+
+imagedata           .. text: "ZOdc|wkPqe"
+b1,r,lsb,xy         .. text: "flag{one_bit_one_clue}"
+b1,r,msb,xy         .. b1,g,lsb,xy         .. b1,g,msb,xy         .. b1,b,lsb,xy         .. b1,b,msb,xy         .. b1,rgb,lsb,xy       .. b1,rgb,msb,xy       .. b1,bgr,lsb,xy       .. b1,bgr,msb,xy       .. b2,r,lsb,xy         .. b2,r,msb,xy         .. text: "PUPUADUUD"
+b2,g,lsb,xy         .. b2,g,msb,xy         .. b2,b,lsb,xy         .. b2,b,msb,xy         .. b2,rgb,lsb,xy       .. b2,rgb,msb,xy       .. b2,bgr,lsb,xy       .. b2,bgr,msb,xy       .. b3,r,lsb,xy         .. b3,r,msb,xy         .. b3,g,lsb,xy         .. b3,g,msb,xy         .. b3,b,lsb,xy         .. b3,b,msb,xy         .. b3,rgb,lsb,xy       .. b3,rgb,msb,xy       .. b3,bgr,lsb,xy       .. b3,bgr,msb,xy       .. b4,r,lsb,xy         .. b4,r,msb,xy         .. text: "'Ru`#b`GvA"
+b4,g,lsb,xy         .. b4,g,msb,xy         .. b4,b,lsb,xy         .. b4,b,msb,xy         .. b4,rgb,lsb,xy       .. b4,rgb,msb,xy       .. b4,bgr,lsb,xy       .. b4,bgr,msb,xy       ..                     

@@ -1,0 +1,1 @@
+{"title": "浏览器历史与时间", "result": "result.json", "note": "在工作副本中查询，保留同目录 WAL / SHM。UTC 为按已知 Firefox / Chromium 时间单位换算；访问记录不单独证明现实人物操作，字段随应用版本变化。"}

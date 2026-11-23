@@ -1,0 +1,161 @@
+{
+  "kind": "analysis",
+  "source": "preview_only.raw",
+  "created": "2026-10-22T10:16:29.825221+08:00",
+  "host": "Windows PowerShell",
+  "profile": "quick",
+  "workflow": "windows_memory",
+  "sections": [
+    {
+      "id": "identify",
+      "title": "识别文件结构与类型",
+      "status": "completed",
+      "seconds": 0.0,
+      "data": {
+        "kind": "unknown",
+        "label": "未知二进制",
+        "evidence": "未匹配内置文件头；请结合签名、字符串和题意判断。 扩展名提示可能是内存或镜像，需用 Vol3 / TSK 验证，不能只凭后缀认定。",
+        "extension": ".raw",
+        "bytes": 512,
+        "header": "00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+      }
+    },
+    {
+      "id": "fingerprint",
+      "title": "全文件摘要与字节熵",
+      "status": "completed",
+      "seconds": 0.001,
+      "data": {
+        "kind": "hash",
+        "name": "preview_only.raw",
+        "bytes": 512,
+        "md5": "bf619eac0cdf3f68d496ea9344137e8b",
+        "sha1": "5c3eb80066420002bc3dcc7ca4ab6efad7ed4ae5",
+        "sha256": "076a27c79e5ace2a3d47f9dd2e83e4ff6ea8872b3c2218f66c92b89b55f36560",
+        "entropy": -0.0,
+        "entropy_windows": [
+          {
+            "offset": 0,
+            "bytes": 512,
+            "entropy": -0.0
+          }
+        ],
+        "note": "MD5 / SHA1 仅用于已知摘要对照；证据一致性优先记录 SHA256。熵高不等于一定加密。"
+      }
+    },
+    {
+      "id": "clues",
+      "title": "通用字符串与嵌入签名",
+      "status": "completed",
+      "seconds": 0.0,
+      "data": {
+        "kind": "scan",
+        "strings": {
+          "columns": [
+            "字节偏移",
+            "编码",
+            "可读内容（最多 1024 字节）",
+            "匹配字节数"
+          ],
+          "rows": []
+        },
+        "signatures": {
+          "columns": [
+            "字节偏移",
+            "签名",
+            "含义"
+          ],
+          "rows": []
+        },
+        "scanned_bytes": 512,
+        "total_bytes": 512,
+        "partial": false,
+        "string_rows_limited": false,
+        "signature_rows_limited": false,
+        "note": "仅提取 ASCII 可打印字符及其 UTF-16LE 表示；不覆盖所有语言。跨块长串可能分段显示。"
+      }
+    },
+    {
+      "id": "vol_info",
+      "title": "Vol3：验证系统、层与符号（离线）",
+      "status": "failed",
+      "seconds": 0.489,
+      "data": {
+        "command": "& 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\runtime\\python\\python.exe' 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\tools\\volatility3\\vol.py' '--offline' '-r' 'json' '-f' 'E:\\学习培训\\培训\\取证\\output\\平台API验收_51983a32\\labs\\inputs\\_platform_qa_bc170e0df4\\preview_only.raw' 'windows.info'",
+        "exit_code": 1,
+        "preview": "\r\nUnsatisfied requirement plugins.Info.kernel.layer_name: \r\nUnsatisfied requirement plugins.Info.kernel.symbol_table_name: \r\n\r\nA translation layer requirement was not fulfilled.  Please verify that:\r\n\tA file was provided to create this layer (by -f, --single-location or by config)\r\n\tThe file exists and is readable\r\n\tThe file is a valid memory image and was acquired cleanly\r\n\r\nA symbol table requirement was not fulfilled.  Please verify that:\r\n\tThe associated translation layer requirement was fulfilled\r\n\tYou have the correct symbol file for the requirement\r\n\tThe symbol file is under the correct directory or zip file\r\n\tThe symbol file is named appropriately or contains the correct banner\r\n\r\n",
+        "diagnostics": "Volatility 3 Framework 2.28.2\r\n\rProgress:  100.00\t\tStacking attempts finished\r\rProgress:  100.00\t\tPDB scanning finished     \rUnable to validate the plugin requirements: ['plugins.Info.kernel.layer_name', 'plugins.Info.kernel.symbol_table_name']\r\n",
+        "log": "vol_info.txt",
+        "argument_file": null
+      }
+    },
+    {
+      "id": "workflow_windows_memory",
+      "title": "Windows 内存（Vol3）",
+      "status": "failed",
+      "seconds": 0.489,
+      "data": {
+        "error": "windows.info 未成功，未运行后续插件；先检查真实 RAM 与匹配符号。",
+        "info": {
+          "command": "& 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\runtime\\python\\python.exe' 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\tools\\volatility3\\vol.py' '--offline' '-r' 'json' '-f' 'E:\\学习培训\\培训\\取证\\output\\平台API验收_51983a32\\labs\\inputs\\_platform_qa_bc170e0df4\\preview_only.raw' 'windows.info'",
+          "exit_code": 1,
+          "preview": "\r\nUnsatisfied requirement plugins.Info.kernel.layer_name: \r\nUnsatisfied requirement plugins.Info.kernel.symbol_table_name: \r\n\r\nA translation layer requirement was not fulfilled.  Please verify that:\r\n\tA file was provided to create this layer (by -f, --single-location or by config)\r\n\tThe file exists and is readable\r\n\tThe file is a valid memory image and was acquired cleanly\r\n\r\nA symbol table requirement was not fulfilled.  Please verify that:\r\n\tThe associated translation layer requirement was fulfilled\r\n\tYou have the correct symbol file for the requirement\r\n\tThe symbol file is under the correct directory or zip file\r\n\tThe symbol file is named appropriately or contains the correct banner\r\n\r\n",
+          "diagnostics": "Volatility 3 Framework 2.28.2\r\n\rProgress:  100.00\t\tStacking attempts finished\r\rProgress:  100.00\t\tPDB scanning finished     \rUnable to validate the plugin requirements: ['plugins.Info.kernel.layer_name', 'plugins.Info.kernel.symbol_table_name']\r\n",
+          "log": "vol_info.txt",
+          "argument_file": null
+        }
+      }
+    },
+    {
+      "id": "targeted_search",
+      "title": "关键词与 flag 形态检索（前 4 MiB）",
+      "status": "completed",
+      "seconds": 0.0,
+      "data": {
+        "columns": [
+          "字节偏移",
+          "编码",
+          "关键词",
+          "上下文"
+        ],
+        "rows": [],
+        "flag_candidates": [],
+        "scanned_bytes": 512,
+        "total_bytes": 512,
+        "partial": false,
+        "limited": false,
+        "note": "flag 形态是候选，必须回到文件 / 业务语义验证。命中条数有上限，扫描不会因普通字符串表满而提前结束。"
+      }
+    }
+  ],
+  "recommendations": [
+    "命中仅是候选；请结合路径、对象结构和原始输出确认。未导出、跳过与预算限制均保留在报告中。"
+  ],
+  "identification": {
+    "kind": "unknown",
+    "label": "未知二进制",
+    "evidence": "未匹配内置文件头；请结合签名、字符串和题意判断。 扩展名提示可能是内存或镜像，需用 Vol3 / TSK 验证，不能只凭后缀认定。",
+    "extension": ".raw",
+    "bytes": 512,
+    "header": "00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+  },
+  "selected_workflow": "windows_memory",
+  "findings": [],
+  "children": [],
+  "next_actions": [
+    {
+      "title": "旧系统控制台不兼容时：用 Vol2 识别 profile",
+      "action": "vol2_identify",
+      "params": {
+        "file": "inputs/_platform_qa_bc170e0df4/preview_only.raw"
+      }
+    }
+  ],
+  "limits": {
+    "max_exported_files": 32,
+    "exported_files": 0,
+    "max_exported_bytes": 134217728,
+    "accounted_bytes": 0,
+    "child_depth": 2
+  }
+}

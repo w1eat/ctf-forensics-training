@@ -1,0 +1,471 @@
+{
+  "kind": "scan",
+  "strings": {
+    "columns": [
+      "字节偏移",
+      "编码",
+      "可读内容（最多 1024 字节）",
+      "匹配字节数"
+    ],
+    "rows": [
+      [
+        "0x0",
+        "ASCII",
+        "%PDF-1.3",
+        8
+      ],
+      [
+        "0xf",
+        "ASCII",
+        "1 0 obj",
+        7
+      ],
+      [
+        "0x1a",
+        "ASCII",
+        "/Producer (pypdf)",
+        17
+      ],
+      [
+        "0x2c",
+        "ASCII",
+        "/Title (Own uploaded PDF)",
+        25
+      ],
+      [
+        "0x49",
+        "ASCII",
+        "endobj",
+        6
+      ],
+      [
+        "0x50",
+        "ASCII",
+        "2 0 obj",
+        7
+      ],
+      [
+        "0x5b",
+        "ASCII",
+        "/Type /Pages",
+        12
+      ],
+      [
+        "0x68",
+        "ASCII",
+        "/Count 1",
+        8
+      ],
+      [
+        "0x71",
+        "ASCII",
+        "/Kids [ 4 0 R ]",
+        15
+      ],
+      [
+        "0x84",
+        "ASCII",
+        "endobj",
+        6
+      ],
+      [
+        "0x8b",
+        "ASCII",
+        "3 0 obj",
+        7
+      ],
+      [
+        "0x96",
+        "ASCII",
+        "/Type /Catalog",
+        14
+      ],
+      [
+        "0xa5",
+        "ASCII",
+        "/Pages 2 0 R",
+        12
+      ],
+      [
+        "0xb2",
+        "ASCII",
+        "/Names 9 0 R",
+        12
+      ],
+      [
+        "0xc2",
+        "ASCII",
+        "endobj",
+        6
+      ],
+      [
+        "0xc9",
+        "ASCII",
+        "4 0 obj",
+        7
+      ],
+      [
+        "0xd4",
+        "ASCII",
+        "/Type /Page",
+        11
+      ],
+      [
+        "0xe0",
+        "ASCII",
+        "/Resources <<",
+        13
+      ],
+      [
+        "0xee",
+        "ASCII",
+        "/Font <<",
+        8
+      ],
+      [
+        "0xf7",
+        "ASCII",
+        "/F1 5 0 R",
+        9
+      ],
+      [
+        "0x107",
+        "ASCII",
+        "/MediaBox [ 0.0 0.0 200 150 ]",
+        29
+      ],
+      [
+        "0x125",
+        "ASCII",
+        "/Parent 2 0 R",
+        13
+      ],
+      [
+        "0x133",
+        "ASCII",
+        "/Contents 6 0 R",
+        15
+      ],
+      [
+        "0x146",
+        "ASCII",
+        "endobj",
+        6
+      ],
+      [
+        "0x14d",
+        "ASCII",
+        "5 0 obj",
+        7
+      ],
+      [
+        "0x158",
+        "ASCII",
+        "/Type /Font",
+        11
+      ],
+      [
+        "0x164",
+        "ASCII",
+        "/Subtype /Type1",
+        15
+      ],
+      [
+        "0x174",
+        "ASCII",
+        "/BaseFont /Helvetica",
+        20
+      ],
+      [
+        "0x18c",
+        "ASCII",
+        "endobj",
+        6
+      ],
+      [
+        "0x193",
+        "ASCII",
+        "6 0 obj",
+        7
+      ],
+      [
+        "0x19e",
+        "ASCII",
+        "/Length 57",
+        10
+      ],
+      [
+        "0x1ac",
+        "ASCII",
+        "stream",
+        6
+      ],
+      [
+        "0x1b3",
+        "ASCII",
+        "BT /F1 12 Tf 10 100 Td (Independent PDF example 42) Tj ET",
+        57
+      ],
+      [
+        "0x1ed",
+        "ASCII",
+        "endstream",
+        9
+      ],
+      [
+        "0x1f7",
+        "ASCII",
+        "endobj",
+        6
+      ],
+      [
+        "0x1fe",
+        "ASCII",
+        "7 0 obj",
+        7
+      ],
+      [
+        "0x209",
+        "ASCII",
+        "/Type /EmbeddedFile",
+        19
+      ],
+      [
+        "0x21d",
+        "ASCII",
+        "/Length 22",
+        10
+      ],
+      [
+        "0x22b",
+        "ASCII",
+        "stream",
+        6
+      ],
+      [
+        "0x232",
+        "ASCII",
+        "Independent attachment",
+        22
+      ],
+      [
+        "0x249",
+        "ASCII",
+        "endstream",
+        9
+      ],
+      [
+        "0x253",
+        "ASCII",
+        "endobj",
+        6
+      ],
+      [
+        "0x25a",
+        "ASCII",
+        "8 0 obj",
+        7
+      ],
+      [
+        "0x265",
+        "ASCII",
+        "/Type /Filespec",
+        15
+      ],
+      [
+        "0x275",
+        "ASCII",
+        "/F (memo\\056txt)",
+        16
+      ],
+      [
+        "0x286",
+        "ASCII",
+        "/EF <<",
+        6
+      ],
+      [
+        "0x28d",
+        "ASCII",
+        "/F 7 0 R",
+        8
+      ],
+      [
+        "0x29c",
+        "ASCII",
+        "endobj",
+        6
+      ],
+      [
+        "0x2a3",
+        "ASCII",
+        "9 0 obj",
+        7
+      ],
+      [
+        "0x2ae",
+        "ASCII",
+        "/EmbeddedFiles 10 0 R",
+        21
+      ],
+      [
+        "0x2c7",
+        "ASCII",
+        "endobj",
+        6
+      ],
+      [
+        "0x2ce",
+        "ASCII",
+        "10 0 obj",
+        8
+      ],
+      [
+        "0x2da",
+        "ASCII",
+        "/Names [ (memo\\056txt) 8 0 R ]",
+        30
+      ],
+      [
+        "0x2fc",
+        "ASCII",
+        "endobj",
+        6
+      ],
+      [
+        "0x303",
+        "ASCII",
+        "xref",
+        4
+      ],
+      [
+        "0x308",
+        "ASCII",
+        "0 11",
+        4
+      ],
+      [
+        "0x30d",
+        "ASCII",
+        "0000000000 65535 f ",
+        19
+      ],
+      [
+        "0x321",
+        "ASCII",
+        "0000000015 00000 n ",
+        19
+      ],
+      [
+        "0x335",
+        "ASCII",
+        "0000000080 00000 n ",
+        19
+      ],
+      [
+        "0x349",
+        "ASCII",
+        "0000000139 00000 n ",
+        19
+      ],
+      [
+        "0x35d",
+        "ASCII",
+        "0000000201 00000 n ",
+        19
+      ],
+      [
+        "0x371",
+        "ASCII",
+        "0000000333 00000 n ",
+        19
+      ],
+      [
+        "0x385",
+        "ASCII",
+        "0000000403 00000 n ",
+        19
+      ],
+      [
+        "0x399",
+        "ASCII",
+        "0000000510 00000 n ",
+        19
+      ],
+      [
+        "0x3ad",
+        "ASCII",
+        "0000000602 00000 n ",
+        19
+      ],
+      [
+        "0x3c1",
+        "ASCII",
+        "0000000675 00000 n ",
+        19
+      ],
+      [
+        "0x3d5",
+        "ASCII",
+        "0000000718 00000 n ",
+        19
+      ],
+      [
+        "0x3e9",
+        "ASCII",
+        "trailer",
+        7
+      ],
+      [
+        "0x3f4",
+        "ASCII",
+        "/Size 11",
+        8
+      ],
+      [
+        "0x3fd",
+        "ASCII",
+        "/Root 3 0 R",
+        11
+      ],
+      [
+        "0x409",
+        "ASCII",
+        "/Info 1 0 R",
+        11
+      ],
+      [
+        "0x418",
+        "ASCII",
+        "startxref",
+        9
+      ],
+      [
+        "0x426",
+        "ASCII",
+        "%%EOF",
+        5
+      ]
+    ]
+  },
+  "signatures": {
+    "columns": [
+      "字节偏移",
+      "签名",
+      "含义"
+    ],
+    "rows": [
+      [
+        "0x0",
+        "PDF",
+        "候选；需验证结构和边界"
+      ]
+    ]
+  },
+  "scanned_bytes": 1068,
+  "total_bytes": 1068,
+  "partial": false,
+  "string_rows_limited": false,
+  "signature_rows_limited": false,
+  "note": "仅提取 ASCII 可打印字符及其 UTF-16LE 表示；不覆盖所有语言。跨块长串可能分段显示。"
+}

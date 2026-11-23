@@ -1,0 +1,9 @@
+操作：自动分析上传文件
+运行环境：Windows PowerShell
+创建时间：2026-10-22T10:16:29.749111+08:00
+状态：finding
+退出码：0
+命令：& 'E:\学习培训\培训\取证\学员工具包_Windows64\runtime\python\python.exe' 'E:\学习培训\培训\取证\学员工具包_Windows64\tools\analysis_engine.py' 'auto' 'E:\学习培训\培训\取证\output\平台API验收_51983a32\labs\inputs\_platform_qa_bc170e0df4\preview_only.raw' '--out' 'E:\学习培训\培训\取证\output\平台API验收_51983a32\labs\out\platform_runs\c0fc1b4cc2f34ac6\analysis' '--kit' 'E:\学习培训\培训\取证\学员工具包_Windows64' '--profile' 'quick' '--workflow' 'windows_memory' '--keywords' 'flag,picoCTF,ctf,secret,password,credential,密码' '--max-files' '32' '--depth' '2' '--password' ''
+
+报告已生成，其中 2 项未成功；请查看对应诊断与覆盖范围。
+{"kind": "analysis", "source": "preview_only.raw", "selected_workflow": "windows_memory", "stages": [{"title": "识别文件结构与类型", "status": "completed"}, {"title": "全文件摘要与字节熵", "status": "completed"}, {"title": "通用字符串与嵌入签名", "status": "completed"}, {"title": "Vol3：验证系统、层与符号（离线）", "status": "failed"}, {"title": "Windows 内存（Vol3）", "status": "failed"}, {"title": "关键词与 flag 形态检索（前 4 MiB）", "status": "completed"}], "flag_candidates": 0, "report": "E:\\学习培训\\培训\\取证\\output\\平台API验收_51983a32\\labs\\out\\platform_runs\\c0fc1b4cc2f34ac6\\analysis\\analysis.html"}

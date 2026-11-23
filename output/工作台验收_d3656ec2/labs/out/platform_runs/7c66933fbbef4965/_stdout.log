@@ -1,0 +1,1 @@
+{"title": "镜像目录与删除项", "result": "result.json", "note": "目录与删除标记不保证数据仍完整。可按本次元数据编号导出；CSV 保存全部匹配条目。支持当前 TSK 识别的 RAW / E01 / VMDK / VHD。"}

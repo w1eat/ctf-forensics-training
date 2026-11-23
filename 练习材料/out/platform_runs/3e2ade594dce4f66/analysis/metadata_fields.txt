@@ -1,0 +1,24 @@
+[
+  {
+    "SourceFile": "./inputs/bc2a8904e00f45f4805c98c6/0002_0000000001d7.zip",
+    "ExifTool:ExifToolVersion": 13.59,
+    "System:FileName": "0002_0000000001d7.zip",
+    "System:Directory": "./inputs/bc2a8904e00f45f4805c98c6",
+    "System:FileSize": "201 bytes",
+    "System:FileModifyDate": "2026:10:23 09:58:06+08:00",
+    "System:FileAccessDate": "2026:10:23 09:58:07+08:00",
+    "System:FileCreateDate": "2026:10:23 09:58:06+08:00",
+    "System:FilePermissions": "-rw-rw-rw-",
+    "File:FileType": "ZIP",
+    "File:FileTypeExtension": "zip",
+    "File:MIMEType": "application/zip",
+    "ZIP:ZipRequiredVersion": 20,
+    "ZIP:ZipBitFlag": "0x0009",
+    "ZIP:ZipCompression": "Deflated",
+    "ZIP:ZipModifyDate": "2016:01:15 10:04:22",
+    "ZIP:ZipCRC": "0xae4c3446",
+    "ZIP:ZipCompressedSize": 29,
+    "ZIP:ZipUncompressedSize": 15,
+    "ZIP:ZipFileName": "4number.txt"
+  }
+]

@@ -1,0 +1,13 @@
+{
+  "stage": "全文件摘要与字节熵",
+  "state": "running",
+  "completed": 1,
+  "stages": [
+    {
+      "id": "identify",
+      "title": "识别文件结构与类型",
+      "status": "completed",
+      "seconds": 0.001
+    }
+  ]
+}

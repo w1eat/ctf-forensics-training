@@ -1,0 +1,22 @@
+{
+  "id": "e350faedbf624a74",
+  "action": "yara_scan",
+  "title": "YARA 规则扫描",
+  "state": "failed",
+  "command": "& 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\runtime\\python\\python.exe' 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\tools\\analysis_engine.py' 'yara' 'E:\\学习培训\\培训\\取证\\output\\平台API验收_51983a32\\labs\\inputs\\_platform_qa_bc170e0df4\\自选文档.pdf' '--out' 'E:\\学习培训\\培训\\取证\\output\\平台API验收_51983a32\\labs\\out\\platform_runs\\e350faedbf624a74' '--kit' 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64' '--rules' 'E:\\学习培训\\培训\\取证\\output\\平台API验收_51983a32\\labs\\out\\platform_runs\\e350faedbf624a74\\_rules.yar'",
+  "created": "2026-10-22T10:16:25.500075+08:00",
+  "exit_code": 2,
+  "text": "\n\n[stderr / 诊断信息]\nline 1: includes are disabled\r\n",
+  "error": "",
+  "duration": 0.16,
+  "files": [
+    {
+      "name": "运行报告.txt",
+      "bytes": 896,
+      "path": "out/platform_runs/e350faedbf624a74/运行报告.txt"
+    }
+  ],
+  "data": null,
+  "host": "Windows · PowerShell",
+  "input": "inputs/_platform_qa_bc170e0df4/自选文档.pdf"
+}

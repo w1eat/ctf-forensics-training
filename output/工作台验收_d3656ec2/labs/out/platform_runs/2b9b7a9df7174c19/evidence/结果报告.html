@@ -1,0 +1,109 @@
+<!doctype html><meta charset="utf-8"><title>取证分析结果</title><style>body{font:15px/1.8 Microsoft YaHei;background:#f7f8f2;color:#193c33;padding:32px}pre{white-space:pre-wrap;overflow-wrap:anywhere}</style><h1>自动文件分离</h1><pre>{
+  &quot;kind&quot;: &quot;casework&quot;,
+  &quot;operation&quot;: &quot;separate&quot;,
+  &quot;title&quot;: &quot;自动文件分离&quot;,
+  &quot;columns&quot;: [
+    &quot;导出文件&quot;,
+    &quot;源字节偏移&quot;,
+    &quot;字节数&quot;,
+    &quot;格式&quot;,
+    &quot;边界验证&quot;
+  ],
+  &quot;rows&quot;: [
+    [
+      &quot;0001_00000000000d.png&quot;,
+      &quot;0xd&quot;,
+      794,
+      &quot;png&quot;,
+      &quot;块边界到 IEND；CRC 全部一致&quot;
+    ],
+    [
+      &quot;0002_00000000032a.zip&quot;,
+      &quot;0x32a&quot;,
+      298,
+      &quot;zip&quot;,
+      &quot;EOCD / 中央目录 / 各条目 CRC 通过&quot;
+    ],
+    [
+      &quot;0003_000000000457.gz&quot;,
+      &quot;0x457&quot;,
+      39,
+      &quot;gz&quot;,
+      &quot;gz 流结束；已验证展开 19 字节&quot;
+    ],
+    [
+      &quot;0004_00000000047e.bz2&quot;,
+      &quot;0x47e&quot;,
+      58,
+      &quot;bz2&quot;,
+      &quot;bz2 流结束；已验证展开 19 字节&quot;
+    ]
+  ],
+  &quot;exports&quot;: [
+    {
+      &quot;file&quot;: &quot;0001_00000000000d.png&quot;,
+      &quot;source&quot;: &quot;E:\\学习培训\\培训\\取证\\output\\工作台验收_d3656ec2\\labs\\inputs\\casework_samples\\含 空格_载体.bin&quot;,
+      &quot;parent&quot;: null,
+      &quot;offset&quot;: 13,
+      &quot;offset_hex&quot;: &quot;0xd&quot;,
+      &quot;length&quot;: 794,
+      &quot;format&quot;: &quot;png&quot;,
+      &quot;sha256&quot;: &quot;2200c35fc95416c9e301c62313145e183890f30cc3aaa1456f9996e6ca980380&quot;,
+      &quot;validation&quot;: &quot;块边界到 IEND；CRC 全部一致&quot;,
+      &quot;depth&quot;: 0
+    },
+    {
+      &quot;file&quot;: &quot;0002_00000000032a.zip&quot;,
+      &quot;source&quot;: &quot;E:\\学习培训\\培训\\取证\\output\\工作台验收_d3656ec2\\labs\\inputs\\casework_samples\\含 空格_载体.bin&quot;,
+      &quot;parent&quot;: null,
+      &quot;offset&quot;: 810,
+      &quot;offset_hex&quot;: &quot;0x32a&quot;,
+      &quot;length&quot;: 298,
+      &quot;format&quot;: &quot;zip&quot;,
+      &quot;sha256&quot;: &quot;5ffd6a9e79cbccdac0ad90ede8e7c473b604bb100481cd7db128b50b81442a3e&quot;,
+      &quot;validation&quot;: &quot;EOCD / 中央目录 / 各条目 CRC 通过&quot;,
+      &quot;depth&quot;: 0
+    },
+    {
+      &quot;file&quot;: &quot;0003_000000000457.gz&quot;,
+      &quot;source&quot;: &quot;E:\\学习培训\\培训\\取证\\output\\工作台验收_d3656ec2\\labs\\inputs\\casework_samples\\含 空格_载体.bin&quot;,
+      &quot;parent&quot;: null,
+      &quot;offset&quot;: 1111,
+      &quot;offset_hex&quot;: &quot;0x457&quot;,
+      &quot;length&quot;: 39,
+      &quot;format&quot;: &quot;gz&quot;,
+      &quot;sha256&quot;: &quot;754c17388a691e57d5441c63c7c74bb70aba06d017b91141cbd4c4afc0ddad89&quot;,
+      &quot;validation&quot;: &quot;gz 流结束；已验证展开 19 字节&quot;,
+      &quot;depth&quot;: 0
+    },
+    {
+      &quot;file&quot;: &quot;0004_00000000047e.bz2&quot;,
+      &quot;source&quot;: &quot;E:\\学习培训\\培训\\取证\\output\\工作台验收_d3656ec2\\labs\\inputs\\casework_samples\\含 空格_载体.bin&quot;,
+      &quot;parent&quot;: null,
+      &quot;offset&quot;: 1150,
+      &quot;offset_hex&quot;: &quot;0x47e&quot;,
+      &quot;length&quot;: 58,
+      &quot;format&quot;: &quot;bz2&quot;,
+      &quot;sha256&quot;: &quot;d8e8f9a1ddfef7fd505c9e5180f25b32bea1c76a7e09193957dad11e73951073&quot;,
+      &quot;validation&quot;: &quot;bz2 流结束；已验证展开 19 字节&quot;,
+      &quot;depth&quot;: 0
+    }
+  ],
+  &quot;candidates&quot;: 10,
+  &quot;exported_bytes&quot;: 1189,
+  &quot;warnings&quot;: [
+    {
+      &quot;offset&quot;: &quot;0x37e&quot;,
+      &quot;format&quot;: &quot;zip&quot;,
+      &quot;reason&quot;: &quot;未找到匹配的完整 ZIP 中央目录；ZIP64 交给 PhotoRec / 7-Zip&quot;
+    },
+    {
+      &quot;offset&quot;: &quot;0x54&quot;,
+      &quot;format&quot;: &quot;zip&quot;,
+      &quot;reason&quot;: &quot;未找到匹配的完整 ZIP 中央目录；ZIP64 交给 PhotoRec / 7-Zip&quot;
+    }
+  ],
+  &quot;scan_mib&quot;: 0,
+  &quot;total_input_bytes&quot;: 1208,
+  &quot;note&quot;: &quot;偏移属于该行 source 文件；签名命中不等于完整文件。已记录边界与验证方式，不能恢复所有碎片文件。&quot;
+}</pre>

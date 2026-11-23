@@ -1,0 +1,141 @@
+{
+  "kind": "disk",
+  "mode": "partition_table",
+  "volumes": [
+    {
+      "sector": 2048,
+      "sector_size": 512,
+      "length": 16384,
+      "description": "DOS FAT16 (0x06)",
+      "filesystem": "FAT16",
+      "summary": "FILE SYSTEM INFORMATION\r\n--------------------------------------------\r\nFile System Type: FAT16\r\n\r\nOEM Name: CTFDEMO \r\nVolume ID: 0xc7f02610\r\nVolume Label (Boot Sector): CTFTRAINING\r\nVolume Label (Root Directory):\r\nFile System Type Label: FAT16   \r\n\r\nSectors before file system: 2048\r\n\r\nFile System Layout (in sectors)\r\nTotal Range: 0 - 16383\r\n* Reserved: 0 - 0\r\n** Boot Sector: 0\r\n* FAT 0: 1 - 64\r\n* FAT 1: 65 - 128\r\n* Data Area: 129 - 16383\r\n** Root Directory: 129 - 160\r\n** Cluster Area: 161 - 16383\r\n\r\nMETADATA INFORMATION\r\n--------------------------------------------\r\nRange: 2 - 260086\r\nRoot Directory: 2\r\n\r\nCONTENT INFORMATION\r\n--------------------------------------------\r\nSector Size: 512\r\nCluster Size: 512\r\nTotal Cluster Range: 2 - 16224\r\n\r\nFAT CONTENTS (in sectors)\r\n--------------------------------------------\r\n161-161 (1) -> EOF\r\n",
+      "command": "& 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\tools\\sleuthkit\\bin\\fsstat.exe' '-b' '512' '-o' '2048' 'E:\\学习培训\\培训\\取证\\output\\平台API验收_51983a32\\labs\\05_disk\\tiny_fat16.dd'",
+      "entries": 6,
+      "deleted_entries": 1,
+      "candidate_count": 2,
+      "exported": 2,
+      "inventory": "workflow/fs_2048/file_inventory.csv",
+      "budget_limited": false
+    }
+  ],
+  "probe": {
+    "command": "& 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\tools\\sleuthkit\\bin\\mmls.exe' 'E:\\学习培训\\培训\\取证\\output\\平台API验收_51983a32\\labs\\05_disk\\tiny_fat16.dd'",
+    "exit_code": 0,
+    "preview": "DOS Partition Table\r\nOffset Sector: 0\r\nUnits are in 512-byte sectors\r\n\r\n      Slot      Start        End          Length       Description\r\n000:  Meta      0000000000   0000000000   0000000001   Primary Table (#0)\r\n001:  -------   0000000000   0000002047   0000002048   Unallocated\r\n002:  000:000   0000002048   0000018431   0000016384   DOS FAT16 (0x06)\r\n",
+    "diagnostics": "",
+    "log": "mmls.txt",
+    "argument_file": null
+  },
+  "attempts": [
+    {
+      "sector": 2048,
+      "exit_code": 0,
+      "command": "& 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\tools\\sleuthkit\\bin\\fsstat.exe' '-b' '512' '-o' '2048' 'E:\\学习培训\\培训\\取证\\output\\平台API验收_51983a32\\labs\\05_disk\\tiny_fat16.dd'",
+      "diagnostics": ""
+    }
+  ],
+  "partition_limit": 8,
+  "partitions_limited": false,
+  "tables": [
+    {
+      "title": "已验证的文件系统",
+      "columns": [
+        "起始扇区",
+        "扇区字节",
+        "文件系统",
+        "说明"
+      ],
+      "rows": [
+        [
+          2048,
+          512,
+          "FAT16",
+          "DOS FAT16 (0x06)"
+        ]
+      ]
+    },
+    {
+      "title": "起点 2048：文件 / 删除项（前 500，完整目录见 CSV）",
+      "columns": [
+        "元数据编号",
+        "类型",
+        "删除标记",
+        "路径",
+        "优先分"
+      ],
+      "rows": [
+        [
+          "3",
+          "r/r",
+          false,
+          "README.TXT",
+          10
+        ],
+        [
+          "4",
+          "r/r",
+          true,
+          "_ECRET.TXT",
+          35
+        ],
+        [
+          "260083",
+          "v/v",
+          false,
+          "$MBR",
+          -1
+        ],
+        [
+          "260084",
+          "v/v",
+          false,
+          "$FAT1",
+          -1
+        ],
+        [
+          "260085",
+          "v/v",
+          false,
+          "$FAT2",
+          -1
+        ],
+        [
+          "260086",
+          "V/V",
+          false,
+          "$OrphanFiles",
+          -1
+        ]
+      ]
+    },
+    {
+      "title": "起点 2048：候选文件导出",
+      "columns": [
+        "编号",
+        "原路径",
+        "状态",
+        "字节",
+        "关键词命中",
+        "输出"
+      ],
+      "rows": [
+        [
+          "4",
+          "_ECRET.TXT",
+          "exported",
+          31,
+          1,
+          "workflow/fs_2048/recovered/001__ECRET.TXT"
+        ],
+        [
+          "3",
+          "README.TXT",
+          "exported",
+          64,
+          0,
+          "workflow/fs_2048/recovered/002_README.TXT"
+        ]
+      ]
+    }
+  ]
+}

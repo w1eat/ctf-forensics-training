@@ -1,0 +1,3 @@
+﻿file,source,parent,offset,offset_hex,length,format,sha256,validation,depth
+0001_000000000000.png,E:\学习培训\培训\取证\练习材料\inputs\d58289c7315e46c0bbcde2d0\QR_code.png,,0,0x0,471,png,b93364548806b9370c1a0fccdd36e1cdc0f6dda146906260ca370e4aa612c10d,块边界到 IEND；CRC 全部一致,0
+0002_0000000001d7.zip,E:\学习培训\培训\取证\练习材料\inputs\d58289c7315e46c0bbcde2d0\QR_code.png,,471,0x1d7,201,zip,a386d9a1660175a7ae008af533d4b5346d1b0520bbb72b896d2d3fe5cc42ffda,EOCD / 中央目录通过；加密或较大条目未验证内容 CRC,0

@@ -1,0 +1,147 @@
+{
+  "date": "2026-10-22",
+  "passed": 34,
+  "total": 34,
+  "checks": [
+    {
+      "name": "File deletion requires authentication",
+      "pass_": true
+    },
+    {
+      "name": "History deletion requires authentication",
+      "pass_": true
+    },
+    {
+      "name": "Cross-origin deletion is rejected",
+      "pass_": true
+    },
+    {
+      "name": "GET cannot perform deletion",
+      "pass_": true
+    },
+    {
+      "name": "Management capabilities are advertised",
+      "pass_": true
+    },
+    {
+      "name": "Original exercises are read-only",
+      "pass_": true
+    },
+    {
+      "name": "Invalid file selection []",
+      "pass_": true
+    },
+    {
+      "name": "Invalid file selection ['inputs/../01_file/unknown.dat']",
+      "pass_": true
+    },
+    {
+      "name": "Invalid file selection ['inputs//file']",
+      "pass_": true
+    },
+    {
+      "name": "Invalid file selection ['E:/other/file']",
+      "pass_": true
+    },
+    {
+      "name": "Invalid file selection ['inputs/x/a', 'inputs/x/a', 'inputs/x/a', 'i",
+      "pass_": true
+    },
+    {
+      "name": "Invalid file selection [None]",
+      "pass_": true
+    },
+    {
+      "name": "Mixed invalid selection deletes nothing",
+      "pass_": true
+    },
+    {
+      "name": "Active primary input cannot be removed",
+      "pass_": true
+    },
+    {
+      "name": "Active companion from same upload batch is protected",
+      "pass_": true
+    },
+    {
+      "name": "File list marks imported and occupied files",
+      "pass_": true
+    },
+    {
+      "name": "Active history cannot be removed",
+      "pass_": true
+    },
+    {
+      "name": "Unrelated upload can be removed during another task",
+      "pass_": true
+    },
+    {
+      "name": "File being uploaded cannot be deleted",
+      "pass_": true
+    },
+    {
+      "name": "History includes source attachment",
+      "pass_": true
+    },
+    {
+      "name": "Invalid history ID is rejected",
+      "pass_": true
+    },
+    {
+      "name": "Mixed invalid history selection changes nothing",
+      "pass_": true
+    },
+    {
+      "name": "Locked output leaves a readable history record",
+      "pass_": true
+    },
+    {
+      "name": "Partially deleted record can be restored after a restart",
+      "pass_": true
+    },
+    {
+      "name": "Artifact used by another task protects parent history",
+      "pass_": true
+    },
+    {
+      "name": "Deleting history removes its own outputs",
+      "pass_": true
+    },
+    {
+      "name": "Deleting history preserves uploaded input",
+      "pass_": true
+    },
+    {
+      "name": "Deleted history cannot be reopened or resurrected",
+      "pass_": true
+    },
+    {
+      "name": "Batch upload deletion removes exactly selected files",
+      "pass_": true
+    },
+    {
+      "name": "Empty upload batch folder is removed",
+      "pass_": true
+    },
+    {
+      "name": "Upload junction cannot redirect deletion",
+      "pass_": true
+    },
+    {
+      "name": "History containing a junction is not traversed or deleted",
+      "pass_": true
+    },
+    {
+      "name": "Original exercise bytes remain unchanged",
+      "pass_": true
+    },
+    {
+      "name": "Isolated browser fixtures are available",
+      "pass_": true
+    }
+  ],
+  "qa_root": "E:\\学习培训\\培训\\取证\\output\\管理功能验收_a73ead9b",
+  "course": "E:\\学习培训\\培训\\取证\\output\\管理功能验收_a73ead9b\\中文 资料",
+  "system_settings_changed": false,
+  "course_originals_deleted": false
+}

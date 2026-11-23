@@ -1,0 +1,210 @@
+{
+  "date": "2026-10-21",
+  "records": [
+    {
+      "file": "vol2_mimikatz.py",
+      "url": "https://raw.githubusercontent.com/dfirfpi/hotoloti/fb55ab3edc9414ae8dcc895955f48243606bd002/volatility/mimikatz.py",
+      "sha256": "75e2e6d3b09daffad83211ba0215ed3f204623b8c37c2a2950665b88a3d2ce86"
+    },
+    {
+      "file": "vol2_bitlocker.py",
+      "url": "https://raw.githubusercontent.com/elceef/bitlocker/d1c1790045ea935678bafb5f2f933a884120429f/bitlocker.py",
+      "sha256": "6373a37b1e3e89795bc4ab797f2ba6845b06d66fee332505cd812630d1793fb9"
+    },
+    {
+      "file": "vol2_bitlocker_README.md",
+      "url": "https://raw.githubusercontent.com/elceef/bitlocker/d1c1790045ea935678bafb5f2f933a884120429f/README.md",
+      "sha256": "cd446e2022881f3cd93798b4d84d202a4c3b4bd29437fd877c6160a2a5ab7d74"
+    },
+    {
+      "file": "vol2_editbox.py",
+      "url": "https://raw.githubusercontent.com/bridgeythegeek/editbox/0baed53c37eb6d3822dd50fc29078c908a20054e/editbox.py",
+      "sha256": "8bb08999a7f400bfd276d5c4667093119eaf8122b700ec334906221c579117b0"
+    },
+    {
+      "file": "vol2_editbox_README.md",
+      "url": "https://raw.githubusercontent.com/bridgeythegeek/editbox/0baed53c37eb6d3822dd50fc29078c908a20054e/README.md",
+      "sha256": "4236ab7ebf846bc416ea3a4b265381ab024d75c52b8bae67d6aac26deeb242a9"
+    },
+    {
+      "file": "vol3_vol_pypykatz.py",
+      "url": "https://raw.githubusercontent.com/skelsec/pypykatz-volatility3/1b722f00f7095e8e13648ce6bd355af52c12b21c/vol_pypykatz.py",
+      "sha256": "197a4c3856e48b38fe0f9f6fb31729707d7ba0147a120988cb2c1befc7163df8"
+    },
+    {
+      "file": "vol3_pypykatz_LICENSE",
+      "url": "https://raw.githubusercontent.com/skelsec/pypykatz-volatility3/1b722f00f7095e8e13648ce6bd355af52c12b21c/LICENSE",
+      "sha256": "dba465433e55dc74fd8a0f30a184977ed5905d4e69d1807b1ca0c476b72b8455"
+    },
+    {
+      "file": "vol3_pypykatz_README.md",
+      "url": "https://raw.githubusercontent.com/skelsec/pypykatz-volatility3/1b722f00f7095e8e13648ce6bd355af52c12b21c/README.md",
+      "sha256": "0ba2de5c69bb3349068bc57f13a67a2e401e0e0ab8918d2281a598eead1b697c"
+    },
+    {
+      "file": "vol3_bitlocker.py",
+      "url": "https://raw.githubusercontent.com/lorelyai/volatility3-bitlocker/d2afab51fea4878db8a79cef835176360d19b901/bitlocker.py",
+      "sha256": "1cda3c680e665898051dba1f9a638c42a4a711b65da74c8539995ad543a7ffb7"
+    },
+    {
+      "file": "vol3_bitlocker_LICENSE",
+      "url": "https://raw.githubusercontent.com/lorelyai/volatility3-bitlocker/d2afab51fea4878db8a79cef835176360d19b901/LICENSE",
+      "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
+    },
+    {
+      "file": "vol3_bitlocker_README.md",
+      "url": "https://raw.githubusercontent.com/lorelyai/volatility3-bitlocker/d2afab51fea4878db8a79cef835176360d19b901/README.md",
+      "sha256": "9099d4b03836df2127c6286371a52bc89cf8f3785f823b6c132e49a6d8ab9590"
+    },
+    {
+      "file": "construct-2.8.22.tar.gz",
+      "url": "https://files.pythonhosted.org/packages/e5/c6/3e3aeef38bb0c27364af3d21493d9690c7c3925f298559bca3c48b7c9419/construct-2.8.22.tar.gz",
+      "sha256": "8977b75fc396eaf9e3ba269db0d46d13944bd8fd7e2b5539a4c4d990b6d6dded"
+    },
+    {
+      "file": "pycryptodomex-3.9.9-cp27-cp27m-win32.whl",
+      "url": "https://pypi.org/project/pycryptodomex/3.9.9/",
+      "sha256": "d2d1388595cb5d27d9220d5cbaff4f37c6ec696a25882eb06d224d241e6e93fb"
+    },
+    {
+      "file": "pycryptodomex-3.9.9-cp27-cp27m-win_amd64.whl",
+      "url": "https://pypi.org/project/pycryptodomex/3.9.9/",
+      "sha256": "a1d38a96da57e6103423a446079ead600b450cf0f8ebf56a231895abf77e7ffc"
+    },
+    {
+      "file": "pycryptodomex-3.9.9-cp27-cp27mu-manylinux1_x86_64.whl",
+      "url": "https://pypi.org/project/pycryptodomex/3.9.9/",
+      "sha256": "3642252d7bfc4403a42050e18ba748bedebd5a998a8cba89665a4f42aea4c380"
+    },
+    {
+      "file": "py27_ctypes_util.py",
+      "url": "https://github.com/python/cpython/tree/v2.7.18",
+      "sha256": "53cf0c626ef3bd2c89ce5c6258fbcd1cd77121060858ff8aecb015d0f6f6dda6"
+    },
+    {
+      "file": "py27_LICENSE",
+      "url": "https://github.com/python/cpython/tree/v2.7.18",
+      "sha256": "de4d1f2d2ad5ad0cfd1657a106476b31cb5db5ef9d1ff842b237c0c81f0c8a23"
+    },
+    {
+      "file": "pypykatz_wheels/aesedb-0.1.8-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/13/2e/b802e59d54a14e9cf8bda8a4fc4b5ed32568323cce7c1475bb01fdd7ab1c/aesedb-0.1.8-py3-none-any.whl",
+      "sha256": "e6a3bc77ab9187d79cfeca27620ae21e331ebb66f5ea9254a136e3e29dd8b23a"
+    },
+    {
+      "file": "pypykatz_wheels/aiosmb-0.4.14-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/70/20/cf6e04f9615d73537a1129155870ba064af8e9005709e519ddd67301d05a/aiosmb-0.4.14-py3-none-any.whl",
+      "sha256": "613e6ffc4f2c1d56e48e69943064946403a5c12d43198d9d556e4b04912c0f60"
+    },
+    {
+      "file": "pypykatz_wheels/aiowinreg-0.0.13-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/42/37/22118ef661a287ca99d46b43e6206bca95cc7c268fa820b4334b2b66d7b7/aiowinreg-0.0.13-py3-none-any.whl",
+      "sha256": "2e0809f05d62337cb2218d11dcf7ee08eb8c319382dd564293425f03cd332c9b"
+    },
+    {
+      "file": "pypykatz_wheels/asn1crypto-1.5.1-py2.py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/c9/7f/09065fd9e27da0eda08b4d6897f1c13535066174cc023af248fc2a8d5e5a/asn1crypto-1.5.1-py2.py3-none-any.whl",
+      "sha256": "db4e40728b728508912cbb3d44f19ce188f218e9eba635821bb4b68564f8fd67"
+    },
+    {
+      "file": "pypykatz_wheels/asyauth-0.0.23-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/26/ca/6d909a8bfff38ad3c1477d502c7ebf61288ac790d16eeb8bfbe2dcfcb4f0/asyauth-0.0.23-py3-none-any.whl",
+      "sha256": "bbca62d10c4b0d2585103791d7451adda325c3d654114253638456fe84d39b0e"
+    },
+    {
+      "file": "pypykatz_wheels/asysocks-0.2.18-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/71/b5/abf85f5444b264bf9f943eb1f6f577ebf3af34c8c4f66c1629d1f063eaa0/asysocks-0.2.18-py3-none-any.whl",
+      "sha256": "a881536456d922a9fde44031aba262bc34ee39a9d14749ded1e8a4820602a37d"
+    },
+    {
+      "file": "pypykatz_wheels/cffi-2.1.1-cp313-cp313-win_amd64.whl",
+      "url": "https://files.pythonhosted.org/packages/60/a6/8b149b2c3f2e11aaa1618ef64500b45f50f22c57a977a4dff1aff1f91042/cffi-2.1.1-cp313-cp313-win_amd64.whl",
+      "sha256": "1aa5645c30469b09530c4ebca77ebf8f17618293c58f8549cb1a543a50236e7d"
+    },
+    {
+      "file": "pypykatz_wheels/colorama-0.4.6-py2.py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/d1/d6/3965ed04c63042e047cb6a3e6ed1a63a35087b6a609aa3a15ed8ac56c221/colorama-0.4.6-py2.py3-none-any.whl",
+      "sha256": "4f1d9991f5acc0ca119f9d443620b77f9d6b33703e51011c16baf57afb285fc6"
+    },
+    {
+      "file": "pypykatz_wheels/cryptography-50.0.2-cp311-abi3-win_amd64.whl",
+      "url": "https://files.pythonhosted.org/packages/9a/4f/adfc442765721292fff86d314ce385d3249d22db42295c0dd057727b60f3/cryptography-50.0.2-cp311-abi3-win_amd64.whl",
+      "sha256": "7afa5a6602a9f29af1f3a2965f831bae7c9d5d597b7cbb716d41ab3b7d89879c"
+    },
+    {
+      "file": "pypykatz_wheels/h11-0.16.0-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/04/4b/29cac41a4d98d144bf5f6d33995617b185d14b22401f75ca86f384e87ff1/h11-0.16.0-py3-none-any.whl",
+      "sha256": "63cf8bbe7522de3bf65932fda1d9c2772064ffb3dae62d55932da54b31cb6c86"
+    },
+    {
+      "file": "pypykatz_wheels/minidump-0.0.24-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/da/8b/3a148750e6d65f4fe6e249f6d0d6c497eeadd867a63ed69cee3fa17e7c83/minidump-0.0.24-py3-none-any.whl",
+      "sha256": "9c016e35c8fe37c82a01b0a266f5416a0b0138934d92affb436ac2e72372bec6"
+    },
+    {
+      "file": "pypykatz_wheels/minikerberos-0.4.9-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/90/24/ebe89493824e99be641faddb355594782b634af093866f2b19f398c60ecc/minikerberos-0.4.9-py3-none-any.whl",
+      "sha256": "3c3a422541bc66719bd495f89cb6f9e149fba8f1499b9f550aa88cd9aa532ffa"
+    },
+    {
+      "file": "pypykatz_wheels/msldap-0.5.15-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/78/de/1b22d94542bb9e6145aa7ed1a8bb2bd24137140645749bbf38f3634d8da4/msldap-0.5.15-py3-none-any.whl",
+      "sha256": "ee4224cf3964c386a52424a4b6d763a866b4d7ae6d5597a0af58611588668531"
+    },
+    {
+      "file": "pypykatz_wheels/oscrypto-1.3.0-py2.py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/01/7c/fa07d3da2b6253eb8474be16eab2eadf670460e364ccc895ca7ff388ee30/oscrypto-1.3.0-py2.py3-none-any.whl",
+      "sha256": "2b2f1d2d42ec152ca90ccb5682f3e051fb55986e1b170ebde472b133713e7085"
+    },
+    {
+      "file": "pypykatz_wheels/prompt_toolkit-3.0.53-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/54/6f/84908cad2d6aa5144abcf7b42709fe4fdb459bc640ec7ac5786e7693dabc/prompt_toolkit-3.0.53-py3-none-any.whl",
+      "sha256": "01c0891d7f9237d5e339f7d3e42cdae80b7534abb1c7c0e3352efba6231492f2"
+    },
+    {
+      "file": "pypykatz_wheels/pycparser-3.11-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/90/11/0e6f11117525ff0eec40ebac3d313376f102df93ca44ad9e893ee85e4f89/pycparser-3.11-py3-none-any.whl",
+      "sha256": "51d5a8ba2be0bbe440b99d2112604c95bbbc3c2748a64260186c541e1729cd80"
+    },
+    {
+      "file": "pypykatz_wheels/pycryptodomex-3.24.1-cp37-abi3-win_amd64.whl",
+      "url": "https://files.pythonhosted.org/packages/13/4c/2c1963e4154da534a3b3a4d6ee9549f5cac4ecffe986d3b470d08b9c4df6/pycryptodomex-3.24.1-cp37-abi3-win_amd64.whl",
+      "sha256": "82eb0dd8a95be97f03527b108ee49f9b86a7c534fa47fa7a510be3eab8ea9acd"
+    },
+    {
+      "file": "pypykatz_wheels/pypykatz-0.6.13-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/99/e1/d56d0f65a572b2cdce100207aa0dc07f68f3a8897fa9941cd69b51d476f6/pypykatz-0.6.13-py3-none-any.whl",
+      "sha256": "c715fc22af49b893dc15e4e376ff167107ad602e1f91a5a2320c3aa7a7e41e3c"
+    },
+    {
+      "file": "pypykatz_wheels/six-1.17.0-py2.py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/b7/ce/149a00dd41f10bc29e5921b496af8b574d8413afcd5e30dfa0ed46c2cc5e/six-1.17.0-py2.py3-none-any.whl",
+      "sha256": "4721f391ed90541fddacab5acf947aa0d3dc7d27b2e1e8eda2be8970586c3274"
+    },
+    {
+      "file": "pypykatz_wheels/tabulate-0.10.0-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/99/55/db07de81b5c630da5cbf5c7df646580ca26dfaefa593667fc6f2fe016d2e/tabulate-0.10.0-py3-none-any.whl",
+      "sha256": "f0b0622e567335c8fabaaa659f1b33bcb6ddfe2e496071b743aa113f8774f2d3"
+    },
+    {
+      "file": "pypykatz_wheels/tqdm-4.70.1-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/a7/03/921a3d3c75785aca9ebfbfcabfbc3a1be12e2ab5265deb026d55a5a3f83e/tqdm-4.70.1-py3-none-any.whl",
+      "sha256": "c293e525e6fef9c20e8728fd4612df02a0aa31bb5fe91ecd93e123b1b7bffa73"
+    },
+    {
+      "file": "pypykatz_wheels/unicrypto-0.0.12-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/f4/1c/9964cd41f3240cfcc33076f49565d583033a5628f1804bf3de7ea3d2f6bc/unicrypto-0.0.12-py3-none-any.whl",
+      "sha256": "6fb7e9bbaa60c49128ad6584201290ead99b703ae834c28911c82ddca38a0d6f"
+    },
+    {
+      "file": "pypykatz_wheels/wcwidth-0.9.3-cp310-abi3-win_amd64.whl",
+      "url": "https://files.pythonhosted.org/packages/5b/6e/46363d972b2b9f002fbfc3bf8e9ab0ff89f139c935a5f21d22016e7a2018/wcwidth-0.9.3-cp310-abi3-win_amd64.whl",
+      "sha256": "569a0cdb826d3097b6dbacfaa45aa0002d72a2ba6fa8a63251ea43ac4dd7b6a4"
+    },
+    {
+      "file": "pypykatz_wheels/winacl-0.1.9-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/64/82/9be45ef89488ad87870da83271cb734f410373ca86dde76d6907d74cf0e0/winacl-0.1.9-py3-none-any.whl",
+      "sha256": "31ba781a35f3b1bd3c2ece994816c0a5fe113c73018689ab6118010ac0d15099"
+    }
+  ]
+}

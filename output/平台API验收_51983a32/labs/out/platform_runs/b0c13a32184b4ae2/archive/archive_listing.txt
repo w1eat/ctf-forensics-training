@@ -1,0 +1,18 @@
+Path = ..\outside.txt
+Folder = -
+Size = 3
+Packed Size = 3
+Modified = 2026-10-22 10:16:20
+Created = 
+Accessed = 
+Attributes =  01800000
+Encrypted = -
+Comment = 
+CRC = 822B39FB
+Method = Store
+Characteristics = 
+Host OS = FAT
+Version = 20
+Volume Index = 0
+Offset = 0
+

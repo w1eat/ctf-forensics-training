@@ -1,0 +1,210 @@
+{
+  "kind": "workflow_image",
+  "image": {
+    "format": "PNG",
+    "mode": "RGB",
+    "width": 256,
+    "height": 160,
+    "frames": 1,
+    "preview": "preview.jpg"
+  },
+  "tables": [
+    {
+      "title": "LSB 候选 r",
+      "columns": [
+        "位序",
+        "导出字节",
+        "flag 形态",
+        "命中条数"
+      ],
+      "rows": [
+        [
+          "bit0 / xy / msb",
+          5120,
+          "",
+          0
+        ]
+      ]
+    },
+    {
+      "title": "LSB 候选 g",
+      "columns": [
+        "位序",
+        "导出字节",
+        "flag 形态",
+        "命中条数"
+      ],
+      "rows": [
+        [
+          "bit0 / xy / msb",
+          5120,
+          "",
+          0
+        ]
+      ]
+    },
+    {
+      "title": "LSB 候选 b",
+      "columns": [
+        "位序",
+        "导出字节",
+        "flag 形态",
+        "命中条数"
+      ],
+      "rows": [
+        [
+          "bit0 / xy / msb",
+          5120,
+          "",
+          0
+        ]
+      ]
+    },
+    {
+      "title": "LSB 候选 rgb",
+      "columns": [
+        "位序",
+        "导出字节",
+        "flag 形态",
+        "命中条数"
+      ],
+      "rows": [
+        [
+          "bit0 / xy / msb",
+          15360,
+          "",
+          0
+        ]
+      ]
+    },
+    {
+      "title": "LSB 候选 bgr",
+      "columns": [
+        "位序",
+        "导出字节",
+        "flag 形态",
+        "命中条数"
+      ],
+      "rows": [
+        [
+          "bit0 / xy / msb",
+          15360,
+          "",
+          0
+        ]
+      ]
+    }
+  ],
+  "png": {
+    "columns": [
+      "偏移",
+      "块",
+      "数据长度",
+      "保存 CRC",
+      "计算 CRC",
+      "校验"
+    ],
+    "rows": [
+      [
+        "0x8",
+        "IHDR",
+        13,
+        "6c7b256b",
+        "6c7b256b",
+        "OK"
+      ],
+      [
+        "0x21",
+        "tEXt",
+        36,
+        "94a081c8",
+        "94a081c8",
+        "OK"
+      ],
+      [
+        "0x51",
+        "tEXt",
+        52,
+        "43ce0509",
+        "43ce0509",
+        "OK"
+      ],
+      [
+        "0x91",
+        "IDAT",
+        625,
+        "0701fc55",
+        "0701fc55",
+        "OK"
+      ],
+      [
+        "0x30e",
+        "IEND",
+        0,
+        "ae426082",
+        "ae426082",
+        "OK"
+      ]
+    ],
+    "kind": "pngmap",
+    "chunks": [
+      {
+        "offset": 8,
+        "type": "IHDR",
+        "length": 13,
+        "valid": true
+      },
+      {
+        "offset": 33,
+        "type": "tEXt",
+        "length": 36,
+        "valid": true
+      },
+      {
+        "offset": 81,
+        "type": "tEXt",
+        "length": 52,
+        "valid": true
+      },
+      {
+        "offset": 145,
+        "type": "IDAT",
+        "length": 625,
+        "valid": true
+      },
+      {
+        "offset": 782,
+        "type": "IEND",
+        "length": 0,
+        "valid": true
+      }
+    ],
+    "iend": true,
+    "trailing": 0,
+    "error": "",
+    "limited": false
+  },
+  "zsteg": {
+    "command": "& 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\runtime\\ruby\\bin\\ruby.exe' 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\runtime\\ruby\\bin\\zsteg' '--no-file' 'E:\\学习培训\\培训\\取证\\output\\平台API验收_51983a32\\labs\\01_file\\unknown.dat'",
+    "exit_code": 0,
+    "preview": "\rmeta Title          .. text: \"CTF Foundation - File Identity\"\r\n\rmeta Comment        .. text: \"ZmxhZ3tmaWxlX3R5cGVfYmVmb3JlX2V4dGVuc2lvbn0=\"\r\n\rb1,r,lsb,xy         .. \rb1,r,msb,xy         .. \rb1,g,lsb,xy         .. \rb1,g,msb,xy         .. \rb1,b,lsb,xy         .. \rb1,b,msb,xy         .. \rb1,rgb,lsb,xy       .. \rb1,rgb,msb,xy       .. \rb1,bgr,lsb,xy       .. \rb1,bgr,msb,xy       .. \rb2,r,lsb,xy         .. \rb2,r,msb,xy         .. \rb2,g,lsb,xy         .. text: [\"U\" repeated 64 times]\r\n\rb2,g,msb,xy         .. \rb2,b,lsb,xy         .. \rb2,b,msb,xy         .. \rb2,rgb,lsb,xy       .. \rb2,rgb,msb,xy       .. \rb2,bgr,lsb,xy       .. \rb2,bgr,msb,xy       .. \rb3,r,lsb,xy         .. \rb3,r,msb,xy         .. \rb3,g,lsb,xy         .. \rb3,g,msb,xy         .. \rb3,b,lsb,xy         .. \rb3,b,msb,xy         .. \rb3,rgb,lsb,xy       .. \rb3,rgb,msb,xy       .. \rb3,bgr,lsb,xy       .. \rb3,bgr,msb,xy       .. \rb4,r,lsb,xy         .. \rb4,r,msb,xy         .. \rb4,g,lsb,xy         .. text: \"UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUS3333333S3333333S3333333S3333333S3333333S3333333S3333333S3333333S3333333S3333333S3333333S3333333S3333333S3333333S3333333S3333333\"\r\n\rb4,g,msb,xy         .. \rb4,b,lsb,xy         .. \rb4,b,msb,xy         .. \rb4,rgb,lsb,xy       .. \rb4,rgb,msb,xy       .. \rb4,bgr,lsb,xy       .. \rb4,bgr,msb,xy       .. \r                    \r",
+    "diagnostics": "",
+    "log": "zsteg.txt",
+    "argument_file": null
+  },
+  "embedded": {
+    "columns": [
+      "起始字节",
+      "字节数",
+      "格式",
+      "验证",
+      "边界依据",
+      "输出",
+      "诊断"
+    ],
+    "rows": [],
+    "scanned_bytes": 794,
+    "total_bytes": 794,
+    "note": "自动雕刻仅支持可验证边界的 PNG / 经典 ZIP / PDF，单对象最多 16 MiB；其他签名继续用字节范围雕刻。"
+  }
+}

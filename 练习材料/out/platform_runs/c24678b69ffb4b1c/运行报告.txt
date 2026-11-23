@@ -1,0 +1,13 @@
+操作：自动分离嵌入文件
+运行环境：Windows PowerShell
+创建时间：2026-10-23T09:55:36.834132+08:00
+状态：completed
+退出码：0
+命令：& 'E:\学习培训\培训\取证\学员工具包_Windows64\runtime\python\python.exe' 'E:\学习培训\培训\取证\学员工具包_Windows64\tools\casework.py' 'separate' '--args' 'E:\学习培训\培训\取证\练习材料\out\platform_runs\c24678b69ffb4b1c\_case_args.json' '--out' 'E:\学习培训\培训\取证\练习材料\out\platform_runs\c24678b69ffb4b1c\evidence' '--kit' 'E:\学习培训\培训\取证\学员工具包_Windows64' '--labs' 'E:\学习培训\培训\取证\练习材料'
+
+
+{"title": "自动文件分离", "result": "result.json", "note": "偏移属于该行 source 文件；签名命中不等于完整文件。已记录边界与验证方式，不能恢复所有碎片文件。"}
+
+
+UTF-8 参数文件内容：
+{"file": "inputs/d58289c7315e46c0bbcde2d0/QR_code.png", "scan_mib": "0", "max_files": "64", "budget_mib": "128", "depth": "1", "_file": "E:\\学习培训\\培训\\取证\\练习材料\\inputs\\d58289c7315e46c0bbcde2d0\\QR_code.png"}

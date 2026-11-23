@@ -1,0 +1,23 @@
+{
+  "columns": [
+    "规则",
+    "字符串",
+    "字节偏移",
+    "匹配字节（截取）",
+    "文本预览"
+  ],
+  "rows": [
+    [
+      "Training_Flag_Candidate",
+      "$a",
+      "0x2095",
+      "666c61677b737472696e67735f7365655f6d6f72655f7468616e5f706978656c737d",
+      "flag{strings_see_more_than_pixels}"
+    ]
+  ],
+  "kind": "yara",
+  "matched_rules": [
+    "Training_Flag_Candidate"
+  ],
+  "note": "规则命中是线索，不能据此直接判定恶意或确认答案。自定义规则禁用 include。"
+}

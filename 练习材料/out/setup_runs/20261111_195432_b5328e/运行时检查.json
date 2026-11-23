@@ -1,0 +1,158 @@
+{
+  "schema": 1,
+  "platform": "Windows 10/11 x64",
+  "python": "E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\runtime\\python\\python.exe",
+  "base_ready": true,
+  "full_ready": true,
+  "basic_requested": false,
+  "needs_cpp_runtime": false,
+  "checks": [
+    {
+      "id": "python",
+      "title": "Python 3 与标准库",
+      "group": "core",
+      "status": "pass",
+      "detail": "3.13.16 / 64 位；来自包内 E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\runtime\\python\\python.exe",
+      "seconds": 0.09
+    },
+    {
+      "id": "server",
+      "title": "学习平台与文件分析入口",
+      "group": "core",
+      "status": "pass",
+      "detail": "启动与关键输出正常",
+      "seconds": 0.13
+    },
+    {
+      "id": "python_modules",
+      "title": "图片、PDF、PE、YARA、AES 依赖",
+      "group": "tools",
+      "status": "pass",
+      "detail": "['PIL', 'pypdf', 'pefile', 'yara', 'capstone', 'Crypto']",
+      "seconds": 0.72
+    },
+    {
+      "id": "7zip",
+      "title": "7-Zip 解压",
+      "group": "tools",
+      "status": "pass",
+      "detail": "启动与关键输出正常",
+      "seconds": 0.13
+    },
+    {
+      "id": "exiftool",
+      "title": "ExifTool / 自带 Perl",
+      "group": "tools",
+      "status": "pass",
+      "detail": "启动与关键输出正常",
+      "seconds": 0.24
+    },
+    {
+      "id": "sqlite",
+      "title": "SQLite 命令工具",
+      "group": "tools",
+      "status": "pass",
+      "detail": "启动与关键输出正常",
+      "seconds": 0.15
+    },
+    {
+      "id": "tsk",
+      "title": "磁盘目录与恢复工具",
+      "group": "tools",
+      "status": "pass",
+      "detail": "启动与关键输出正常",
+      "seconds": 0.1
+    },
+    {
+      "id": "busybox",
+      "title": "strings / xxd / dd",
+      "group": "tools",
+      "status": "pass",
+      "detail": "启动与关键输出正常",
+      "seconds": 0.08
+    },
+    {
+      "id": "photorec",
+      "title": "PhotoRec 文件恢复",
+      "group": "tools",
+      "status": "pass",
+      "detail": "启动与关键输出正常",
+      "seconds": 0.17
+    },
+    {
+      "id": "ruby",
+      "title": "Ruby 运行时",
+      "group": "tools",
+      "status": "pass",
+      "detail": "启动与关键输出正常",
+      "seconds": 0.15
+    },
+    {
+      "id": "zsteg",
+      "title": "zsteg 图片隐写",
+      "group": "tools",
+      "status": "pass",
+      "detail": "启动与关键输出正常",
+      "seconds": 0.41
+    },
+    {
+      "id": "pngcheck",
+      "title": "PNG 结构校验",
+      "group": "tools",
+      "status": "pass",
+      "detail": "启动与关键输出正常",
+      "seconds": 0.08
+    },
+    {
+      "id": "vol3",
+      "title": "Volatility 3 / 自带 Python 3",
+      "group": "tools",
+      "status": "pass",
+      "detail": "启动与关键输出正常",
+      "seconds": 0.53
+    },
+    {
+      "id": "vol2",
+      "title": "Volatility 2 / 自带 Python 2，无需另装",
+      "group": "tools",
+      "status": "pass",
+      "detail": "启动与关键输出正常",
+      "seconds": 1.73
+    },
+    {
+      "id": "mount_files",
+      "title": "可选挂载程序",
+      "group": "optional",
+      "status": "pass",
+      "detail": "程序已备齐；此检查未安装驱动或挂载磁盘",
+      "seconds": 0.0
+    },
+    {
+      "id": "pypykatz",
+      "title": "pypykatz 依赖与 Vol3 插件",
+      "group": "community",
+      "status": "pass",
+      "detail": "启动与关键输出正常",
+      "seconds": 0.53
+    },
+    {
+      "id": "mimikatz",
+      "title": "Vol2 mimikatz 隔离依赖",
+      "group": "community",
+      "status": "pass",
+      "detail": "启动与关键输出正常",
+      "seconds": 1.89
+    },
+    {
+      "id": "bitlocker3",
+      "title": "Vol3 BitLocker 插件",
+      "group": "community",
+      "status": "pass",
+      "detail": "启动与关键输出正常",
+      "seconds": 0.43
+    }
+  ],
+  "failed_components": [],
+  "host_lsass_accessed": false,
+  "system_settings_changed": false
+}

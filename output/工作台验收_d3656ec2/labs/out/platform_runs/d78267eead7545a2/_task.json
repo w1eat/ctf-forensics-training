@@ -1,0 +1,73 @@
+{
+  "id": "d78267eead7545a2",
+  "action": "browser_history",
+  "title": "Firefox / Chromium 浏览历史",
+  "state": "completed",
+  "command": "& 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\runtime\\python\\python.exe' 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\tools\\casework.py' 'browser' '--args' 'E:\\学习培训\\培训\\取证\\output\\工作台验收_d3656ec2\\labs\\out\\platform_runs\\d78267eead7545a2\\_case_args.json' '--out' 'E:\\学习培训\\培训\\取证\\output\\工作台验收_d3656ec2\\labs\\out\\platform_runs\\d78267eead7545a2\\evidence' '--kit' 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64' '--labs' 'E:\\学习培训\\培训\\取证\\output\\工作台验收_d3656ec2\\labs'",
+  "created": "2026-10-23T09:41:34.713474+08:00",
+  "exit_code": 0,
+  "text": "{\"title\": \"浏览器历史与时间\", \"result\": \"result.json\", \"note\": \"在工作副本中查询，保留同目录 WAL / SHM。UTC 为按已知 Firefox / Chromium 时间单位换算；访问记录不单独证明现实人物操作，字段随应用版本变化。\"}\r\n",
+  "error": "",
+  "duration": 0.16,
+  "files": [
+    {
+      "name": "evidence/browser_snapshot/history.db",
+      "bytes": 4096,
+      "path": "out/platform_runs/d78267eead7545a2/evidence/browser_snapshot/history.db"
+    },
+    {
+      "name": "evidence/browser_snapshot/history.db-shm",
+      "bytes": 32768,
+      "path": "out/platform_runs/d78267eead7545a2/evidence/browser_snapshot/history.db-shm"
+    },
+    {
+      "name": "evidence/browser_snapshot/history.db-wal",
+      "bytes": 24752,
+      "path": "out/platform_runs/d78267eead7545a2/evidence/browser_snapshot/history.db-wal"
+    },
+    {
+      "name": "evidence/result.json",
+      "bytes": 887,
+      "path": "out/platform_runs/d78267eead7545a2/evidence/result.json"
+    },
+    {
+      "name": "evidence/结果报告.html",
+      "bytes": 1385,
+      "path": "out/platform_runs/d78267eead7545a2/evidence/结果报告.html"
+    },
+    {
+      "name": "运行报告.txt",
+      "bytes": 1231,
+      "path": "out/platform_runs/d78267eead7545a2/运行报告.txt"
+    }
+  ],
+  "data": {
+    "kind": "casework",
+    "operation": "browser_history",
+    "title": "浏览器历史与时间",
+    "tables": [
+      {
+        "title": "Firefox 访问历史",
+        "columns": [
+          "url",
+          "title",
+          "raw_time",
+          "utc"
+        ],
+        "rows": [
+          [
+            "https://example.test/case",
+            "Training",
+            1700000000000000,
+            "2023-11-14 22:13:20"
+          ]
+        ],
+        "sql": "SELECT p.url,p.title,v.visit_date AS raw_time,datetime(v.visit_date/1000000,'unixepoch') AS utc FROM moz_places p JOIN moz_historyvisits v ON p.id=v.place_id ORDER BY v.visit_date DESC LIMIT 500"
+      }
+    ],
+    "snapshot": true,
+    "note": "在工作副本中查询，保留同目录 WAL / SHM。UTC 为按已知 Firefox / Chromium 时间单位换算；访问记录不单独证明现实人物操作，字段随应用版本变化。"
+  },
+  "host": "Windows · PowerShell",
+  "input": "inputs/casework_samples/places.sqlite"
+}

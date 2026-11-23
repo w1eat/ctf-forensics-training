@@ -1,0 +1,56 @@
+{
+  "id": "382974b6c97e4a15",
+  "action": "yara_scan",
+  "title": "YARA 规则扫描",
+  "state": "completed",
+  "command": "& 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\runtime\\python\\python.exe' 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\tools\\analysis_engine.py' 'yara' 'E:\\学习培训\\培训\\取证\\output\\平台API验收_51983a32\\labs\\inputs\\_platform_qa_bc170e0df4\\自选文档.pdf' '--out' 'E:\\学习培训\\培训\\取证\\output\\平台API验收_51983a32\\labs\\out\\platform_runs\\382974b6c97e4a15' '--kit' 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64' '--rules' 'E:\\学习培训\\培训\\取证\\output\\平台API验收_51983a32\\labs\\out\\platform_runs\\382974b6c97e4a15\\_rules.yar'",
+  "created": "2026-10-22T10:16:25.252925+08:00",
+  "exit_code": 0,
+  "text": "{\"columns\": [\"规则\", \"字符串\", \"字节偏移\", \"匹配字节（截取）\", \"文本预览\"], \"rows\": [[\"OwnRule\", \"$a\", \"0x1cb\", \"496e646570656e64656e74\", \"Independent\"], [\"OwnRule\", \"$a\", \"0x232\", \"496e646570656e64656e74\", \"Independent\"]], \"kind\": \"yara\", \"matched_rules\": [\"OwnRule\"], \"note\": \"规则命中是线索，不能据此直接判定恶意或确认答案。自定义规则禁用 include。\"}\r\n",
+  "error": "",
+  "duration": 0.16,
+  "files": [
+    {
+      "name": "result.json",
+      "bytes": 563,
+      "path": "out/platform_runs/382974b6c97e4a15/result.json"
+    },
+    {
+      "name": "运行报告.txt",
+      "bytes": 1257,
+      "path": "out/platform_runs/382974b6c97e4a15/运行报告.txt"
+    }
+  ],
+  "data": {
+    "columns": [
+      "规则",
+      "字符串",
+      "字节偏移",
+      "匹配字节（截取）",
+      "文本预览"
+    ],
+    "rows": [
+      [
+        "OwnRule",
+        "$a",
+        "0x1cb",
+        "496e646570656e64656e74",
+        "Independent"
+      ],
+      [
+        "OwnRule",
+        "$a",
+        "0x232",
+        "496e646570656e64656e74",
+        "Independent"
+      ]
+    ],
+    "kind": "yara",
+    "matched_rules": [
+      "OwnRule"
+    ],
+    "note": "规则命中是线索，不能据此直接判定恶意或确认答案。自定义规则禁用 include。"
+  },
+  "host": "Windows · PowerShell",
+  "input": "inputs/_platform_qa_bc170e0df4/自选文档.pdf"
+}

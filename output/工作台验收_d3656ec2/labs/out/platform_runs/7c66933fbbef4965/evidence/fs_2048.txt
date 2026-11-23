@@ -1,0 +1,36 @@
+FILE SYSTEM INFORMATION
+--------------------------------------------
+File System Type: FAT16
+
+OEM Name: CTFDEMO 
+Volume ID: 0xc7f02610
+Volume Label (Boot Sector): CTFTRAINING
+Volume Label (Root Directory):
+File System Type Label: FAT16   
+
+Sectors before file system: 2048
+
+File System Layout (in sectors)
+Total Range: 0 - 16383
+* Reserved: 0 - 0
+** Boot Sector: 0
+* FAT 0: 1 - 64
+* FAT 1: 65 - 128
+* Data Area: 129 - 16383
+** Root Directory: 129 - 160
+** Cluster Area: 161 - 16383
+
+METADATA INFORMATION
+--------------------------------------------
+Range: 2 - 260086
+Root Directory: 2
+
+CONTENT INFORMATION
+--------------------------------------------
+Sector Size: 512
+Cluster Size: 512
+Total Cluster Range: 2 - 16224
+
+FAT CONTENTS (in sectors)
+--------------------------------------------
+161-161 (1) -> EOF

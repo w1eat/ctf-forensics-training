@@ -1,0 +1,19 @@
+Path = folder\memo.txt
+Folder = -
+Size = 20
+Packed Size = 512
+Modified = 1970-01-01 08:00:00
+Created = 
+Accessed = 
+Mode = -rw-r--r--
+User = 
+Group = 
+User ID = 0
+Group ID = 0
+Symbolic Link = 
+Hard Link = 
+Characteristics = 0 POSIX ASCII
+Comment = 
+Device Major = 
+Device Minor = 
+

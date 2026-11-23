@@ -1,0 +1,27 @@
+{
+  "id": "74c4cba940924825",
+  "action": "lsb_extract",
+  "title": "提取红通道最低位",
+  "state": "completed",
+  "command": "& 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\runtime\\python\\python.exe' 'E:\\学习培训\\培训\\取证\\output\\平台API验收_51983a32\\labs\\tools\\extract_lsb.py' 'E:\\学习培训\\培训\\取证\\output\\平台API验收_51983a32\\labs\\03_lsb\\quiet.png' 'E:\\学习培训\\培训\\取证\\output\\平台API验收_51983a32\\labs\\out\\platform_runs\\74c4cba940924825\\lsb.bin'",
+  "created": "2026-10-22T10:16:10.622805+08:00",
+  "exit_code": 0,
+  "text": "flag{one_bit_one_clue}\r\n",
+  "error": "",
+  "duration": 0.16,
+  "files": [
+    {
+      "name": "lsb.bin",
+      "bytes": 768,
+      "path": "out/platform_runs/74c4cba940924825/lsb.bin"
+    },
+    {
+      "name": "运行报告.txt",
+      "bytes": 567,
+      "path": "out/platform_runs/74c4cba940924825/运行报告.txt"
+    }
+  ],
+  "data": null,
+  "host": "Windows · PowerShell",
+  "input": "03_lsb/quiet.png"
+}

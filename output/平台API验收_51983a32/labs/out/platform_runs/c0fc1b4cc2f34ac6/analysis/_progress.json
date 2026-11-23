@@ -1,0 +1,43 @@
+{
+  "stage": "报告已生成",
+  "state": "completed",
+  "completed": 6,
+  "stages": [
+    {
+      "id": "identify",
+      "title": "识别文件结构与类型",
+      "status": "completed",
+      "seconds": 0.0
+    },
+    {
+      "id": "fingerprint",
+      "title": "全文件摘要与字节熵",
+      "status": "completed",
+      "seconds": 0.001
+    },
+    {
+      "id": "clues",
+      "title": "通用字符串与嵌入签名",
+      "status": "completed",
+      "seconds": 0.0
+    },
+    {
+      "id": "vol_info",
+      "title": "Vol3：验证系统、层与符号（离线）",
+      "status": "failed",
+      "seconds": 0.489
+    },
+    {
+      "id": "workflow_windows_memory",
+      "title": "Windows 内存（Vol3）",
+      "status": "failed",
+      "seconds": 0.489
+    },
+    {
+      "id": "targeted_search",
+      "title": "关键词与 flag 形态检索（前 4 MiB）",
+      "status": "completed",
+      "seconds": 0.0
+    }
+  ]
+}

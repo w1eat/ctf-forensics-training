@@ -1,0 +1,19 @@
+{
+  "date": "2026-10-20",
+  "files_verified": 6376,
+  "tools": 16,
+  "archive_sha256": "5542ee4c8e560ee430c30c369667c2acfdf941cd12c03495e4f8f66c6cabbaa3",
+  "extracted": "E:\\学习培训\\培训\\取证\\output\\vol2_release_24e5b2d1ef\\中文 空格\\学员工具包_Windows64",
+  "linux_executable_mode_preserved": true,
+  "user_inputs_distributed": false,
+  "relocated_launcher": "pass",
+  "relocated_vol2_help": "pass",
+  "relocated_auto_analysis": "pass",
+  "terminal_artifacts_ready": "pass",
+  "api_checks": 109,
+  "api_passed": 109,
+  "vol2_checks": 36,
+  "vol2_passed": 36,
+  "source_hash_unchanged_after_gui": true,
+  "validated_profile": "Win7SP1x86"
+}

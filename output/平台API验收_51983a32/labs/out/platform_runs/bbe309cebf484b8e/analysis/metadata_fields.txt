@@ -1,0 +1,27 @@
+[
+  {
+    "SourceFile": "./01_file/unknown.dat",
+    "ExifTool:ExifToolVersion": 13.59,
+    "System:FileName": "unknown.dat",
+    "System:Directory": "./01_file",
+    "System:FileSize": "794 bytes",
+    "System:FileModifyDate": "2026:10:22 10:16:06+08:00",
+    "System:FileAccessDate": "2026:10:22 10:16:06+08:00",
+    "System:FileCreateDate": "2026:10:22 10:16:06+08:00",
+    "System:FilePermissions": "-rw-rw-rw-",
+    "File:FileType": "PNG",
+    "File:FileTypeExtension": "png",
+    "File:MIMEType": "image/png",
+    "PNG:ImageWidth": 256,
+    "PNG:ImageHeight": 160,
+    "PNG:BitDepth": 8,
+    "PNG:ColorType": "RGB",
+    "PNG:Compression": "Deflate/Inflate",
+    "PNG:Filter": "Adaptive",
+    "PNG:Interlace": "Noninterlaced",
+    "PNG:Title": "CTF Foundation - File Identity",
+    "PNG:Comment": "ZmxhZ3tmaWxlX3R5cGVfYmVmb3JlX2V4dGVuc2lvbn0=",
+    "Composite:ImageSize": "256x160",
+    "Composite:Megapixels": 0.041
+  }
+]

@@ -1,0 +1,22 @@
+{
+  "id": "a5383528c00546b1",
+  "action": "disk_fsstat",
+  "title": "查看文件系统结构",
+  "state": "completed",
+  "command": "& 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\tools\\sleuthkit\\bin\\fsstat.exe' '-o' '2048' 'E:\\学习培训\\培训\\取证\\output\\平台API验收_51983a32\\labs\\05_disk\\tiny_fat16.dd'",
+  "created": "2026-10-22T10:16:17.770316+08:00",
+  "exit_code": 0,
+  "text": "FILE SYSTEM INFORMATION\r\n--------------------------------------------\r\nFile System Type: FAT16\r\n\r\nOEM Name: CTFDEMO \r\nVolume ID: 0xc7f02610\r\nVolume Label (Boot Sector): CTFTRAINING\r\nVolume Label (Root Directory):\r\nFile System Type Label: FAT16   \r\n\r\nSectors before file system: 2048\r\n\r\nFile System Layout (in sectors)\r\nTotal Range: 0 - 16383\r\n* Reserved: 0 - 0\r\n** Boot Sector: 0\r\n* FAT 0: 1 - 64\r\n* FAT 1: 65 - 128\r\n* Data Area: 129 - 16383\r\n** Root Directory: 129 - 160\r\n** Cluster Area: 161 - 16383\r\n\r\nMETADATA INFORMATION\r\n--------------------------------------------\r\nRange: 2 - 260086\r\nRoot Directory: 2\r\n\r\nCONTENT INFORMATION\r\n--------------------------------------------\r\nSector Size: 512\r\nCluster Size: 512\r\nTotal Cluster Range: 2 - 16224\r\n\r\nFAT CONTENTS (in sectors)\r\n--------------------------------------------\r\n161-161 (1) -> EOF\r\n",
+  "error": "",
+  "duration": 0.21,
+  "files": [
+    {
+      "name": "运行报告.txt",
+      "bytes": 1242,
+      "path": "out/platform_runs/a5383528c00546b1/运行报告.txt"
+    }
+  ],
+  "data": null,
+  "host": "Windows · PowerShell",
+  "input": "05_disk/tiny_fat16.dd"
+}

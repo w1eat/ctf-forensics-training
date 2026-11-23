@@ -1,0 +1,5 @@
+﻿file,source,parent,offset,offset_hex,length,format,sha256,validation,depth
+0001_00000000000d.png,E:\学习培训\培训\取证\output\工作台验收_d3656ec2\labs\inputs\casework_samples\含 空格_载体.bin,,13,0xd,794,png,2200c35fc95416c9e301c62313145e183890f30cc3aaa1456f9996e6ca980380,块边界到 IEND；CRC 全部一致,0
+0002_00000000032a.zip,E:\学习培训\培训\取证\output\工作台验收_d3656ec2\labs\inputs\casework_samples\含 空格_载体.bin,,810,0x32a,298,zip,5ffd6a9e79cbccdac0ad90ede8e7c473b604bb100481cd7db128b50b81442a3e,EOCD / 中央目录 / 各条目 CRC 通过,0
+0003_000000000457.gz,E:\学习培训\培训\取证\output\工作台验收_d3656ec2\labs\inputs\casework_samples\含 空格_载体.bin,,1111,0x457,39,gz,754c17388a691e57d5441c63c7c74bb70aba06d017b91141cbd4c4afc0ddad89,gz 流结束；已验证展开 19 字节,0
+0004_00000000047e.bz2,E:\学习培训\培训\取证\output\工作台验收_d3656ec2\labs\inputs\casework_samples\含 空格_载体.bin,,1150,0x47e,58,bz2,d8e8f9a1ddfef7fd505c9e5180f25b32bea1c76a7e09193957dad11e73951073,bz2 流结束；已验证展开 19 字节,0

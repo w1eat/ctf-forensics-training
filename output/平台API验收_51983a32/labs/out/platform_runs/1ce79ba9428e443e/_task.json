@@ -1,0 +1,22 @@
+{
+  "id": "1ce79ba9428e443e",
+  "action": "zip_list",
+  "title": "查看压缩包目录",
+  "state": "completed",
+  "command": "& 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\tools\\7zip\\7z.exe' 'l' 'E:\\学习培训\\培训\\取证\\output\\平台API验收_51983a32\\labs\\out\\platform_runs\\d5c728ac602f4806\\carved.zip'",
+  "created": "2026-10-22T10:16:11.920856+08:00",
+  "exit_code": 0,
+  "text": "\r\n7-Zip 26.04 (x64) : Copyright (c) 1999-2026 Igor Pavlov : 2026-10-05\r\n\r\nScanning the drive for archives:\r\n1 file, 298 bytes (1 KiB)\r\n\r\nListing archive: E:\\学习培训\\培训\\取证\\output\\平台API验收_51983a32\\labs\\out\\platform_runs\\d5c728ac602f4806\\carved.zip\r\n\r\n--\r\nPath = E:\\学习培训\\培训\\取证\\output\\平台API验收_51983a32\\labs\\out\\platform_runs\\d5c728ac602f4806\\carved.zip\r\nType = zip\r\nPhysical Size = 298\r\n\r\n   Date      Time    Attr         Size   Compressed  Name\r\n------------------- ----- ------------ ------------  ------------------------\r\n2026-10-18 09:00:00 .....           42           44  README.txt\r\n2026-10-18 09:00:00 .....           38           40  answer.txt\r\n------------------- ----- ------------ ------------  ------------------------\r\n2026-10-18 09:00:00                 80           84  2 files\r\n",
+  "error": "",
+  "duration": 0.16,
+  "files": [
+    {
+      "name": "运行报告.txt",
+      "bytes": 1220,
+      "path": "out/platform_runs/1ce79ba9428e443e/运行报告.txt"
+    }
+  ],
+  "data": null,
+  "host": "Windows · PowerShell",
+  "input": "out/platform_runs/d5c728ac602f4806/carved.zip"
+}

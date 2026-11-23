@@ -1,0 +1,22 @@
+{
+  "id": "a92aef7e281d43a0",
+  "action": "timeline",
+  "title": "按 UTC+8 关联审计事件",
+  "state": "completed",
+  "command": "& 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\runtime\\python\\python.exe' 'E:\\学习培训\\培训\\取证\\output\\平台API验收_51983a32\\labs\\tools\\timeline.py' 'E:\\学习培训\\培训\\取证\\output\\平台API验收_51983a32\\labs\\07_logs\\audit.jsonl'",
+  "created": "2026-10-22T10:16:14.244559+08:00",
+  "exit_code": 0,
+  "text": "1 2026-10-18T09:16:10+08:00 login_success r-101 trainee 192.0.2.44\r\n2 2026-10-18T09:17:05+08:00 dashboard_view r-104 trainee 192.0.2.44\r\n3 2026-10-18T09:18:30+08:00 export_started r-102 trainee 192.0.2.44\r\n4 2026-10-18T09:18:31+08:00 download_completed r-103 trainee 192.0.2.44\r\n",
+  "error": "",
+  "duration": 0.16,
+  "files": [
+    {
+      "name": "运行报告.txt",
+      "bytes": 717,
+      "path": "out/platform_runs/a92aef7e281d43a0/运行报告.txt"
+    }
+  ],
+  "data": null,
+  "host": "Windows · PowerShell",
+  "input": "07_logs/audit.jsonl"
+}

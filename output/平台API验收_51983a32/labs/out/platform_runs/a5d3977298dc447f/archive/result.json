@@ -1,0 +1,38 @@
+{
+  "columns": [
+    "路径",
+    "展开字节",
+    "压缩字节",
+    "加密",
+    "CRC"
+  ],
+  "rows": [
+    [
+      "folder\\memo.txt",
+      "20",
+      "512",
+      "",
+      ""
+    ]
+  ],
+  "kind": "archive",
+  "listing": {
+    "command": "& 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\tools\\7zip\\7z.exe' 'l' '-slt' '-ba' '-sccUTF-8' '-p__no_password_supplied__' '--' 'E:\\学习培训\\培训\\取证\\output\\平台API验收_51983a32\\labs\\inputs\\_platform_qa_bc170e0df4\\自选压缩包.tar'",
+    "exit_code": 0,
+    "preview": "Path = folder\\memo.txt\r\nFolder = -\r\nSize = 20\r\nPacked Size = 512\r\nModified = 1970-01-01 08:00:00\r\nCreated = \r\nAccessed = \r\nMode = -rw-r--r--\r\nUser = \r\nGroup = \r\nUser ID = 0\r\nGroup ID = 0\r\nSymbolic Link = \r\nHard Link = \r\nCharacteristics = 0 POSIX ASCII\r\nComment = \r\nDevice Major = \r\nDevice Minor = \r\n\r\n",
+    "diagnostics": "",
+    "log": "archive_listing.txt",
+    "argument_file": null
+  },
+  "entries": 1,
+  "mode": "extract",
+  "exit_code": 0,
+  "extract": {
+    "command": "& 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\tools\\7zip\\7z.exe' 'x' '-y' '-sccUTF-8' '-p__no_password_supplied__' '-oE:\\学习培训\\培训\\取证\\output\\平台API验收_51983a32\\labs\\out\\platform_runs\\a5d3977298dc447f\\archive\\extracted' '--' 'E:\\学习培训\\培训\\取证\\output\\平台API验收_51983a32\\labs\\inputs\\_platform_qa_bc170e0df4\\自选压缩包.tar'",
+    "exit_code": 0,
+    "preview": "\r\n7-Zip 26.04 (x64) : Copyright (c) 1999-2026 Igor Pavlov : 2026-10-05\r\n\r\nScanning the drive for archives:\r\n1 file, 10240 bytes (10 KiB)\r\n\r\nExtracting archive: E:\\学习培训\\培训\\取证\\output\\平台API验收_51983a32\\labs\\inputs\\_platform_qa_bc170e0df4\\自选压缩包.tar\r\n--\r\nPath = E:\\学习培训\\培训\\取证\\output\\平台API验收_51983a32\\labs\\inputs\\_platform_qa_bc170e0df4\\自选压缩包.tar\r\nType = tar\r\nPhysical Size = 10240\r\nHeaders Size = 9728\r\nCode Page = UTF-8\r\nCharacteristics = POSIX ASCII\r\n\r\nEverything is Ok\r\n\r\nSize:       20\r\nCompressed: 10240\r\n",
+    "diagnostics": "",
+    "log": "archive_extract.txt",
+    "argument_file": null
+  }
+}

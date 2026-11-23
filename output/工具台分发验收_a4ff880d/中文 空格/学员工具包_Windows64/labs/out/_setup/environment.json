@@ -1,0 +1,157 @@
+﻿{
+    "full_ready":  true,
+    "checks":  [
+                   {
+                       "id":  "python",
+                       "title":  "Python 3 与标准库",
+                       "group":  "core",
+                       "status":  "pass",
+                       "detail":  "3.13.16 / 64 位；来自包内 E:\\学习培训\\培训\\取证\\output\\工具台分发验收_a4ff880d\\中文 空格\\学员工具包_Windows64\\runtime\\python\\python.exe",
+                       "seconds":  0.02
+                   },
+                   {
+                       "id":  "server",
+                       "title":  "学习平台与文件分析入口",
+                       "group":  "core",
+                       "status":  "pass",
+                       "detail":  "启动与关键输出正常",
+                       "seconds":  0.11
+                   },
+                   {
+                       "id":  "python_modules",
+                       "title":  "图片、PDF、PE、YARA、AES 依赖",
+                       "group":  "tools",
+                       "status":  "pass",
+                       "detail":  "[\u0027PIL\u0027, \u0027pypdf\u0027, \u0027pefile\u0027, \u0027yara\u0027, \u0027capstone\u0027, \u0027Crypto\u0027]",
+                       "seconds":  0.3
+                   },
+                   {
+                       "id":  "7zip",
+                       "title":  "7-Zip 解压",
+                       "group":  "tools",
+                       "status":  "pass",
+                       "detail":  "启动与关键输出正常",
+                       "seconds":  0.03
+                   },
+                   {
+                       "id":  "exiftool",
+                       "title":  "ExifTool / 自带 Perl",
+                       "group":  "tools",
+                       "status":  "pass",
+                       "detail":  "启动与关键输出正常",
+                       "seconds":  0.11
+                   },
+                   {
+                       "id":  "sqlite",
+                       "title":  "SQLite 命令工具",
+                       "group":  "tools",
+                       "status":  "pass",
+                       "detail":  "启动与关键输出正常",
+                       "seconds":  0.02
+                   },
+                   {
+                       "id":  "tsk",
+                       "title":  "磁盘目录与恢复工具",
+                       "group":  "tools",
+                       "status":  "pass",
+                       "detail":  "启动与关键输出正常",
+                       "seconds":  0.08
+                   },
+                   {
+                       "id":  "busybox",
+                       "title":  "strings / xxd / dd",
+                       "group":  "tools",
+                       "status":  "pass",
+                       "detail":  "启动与关键输出正常",
+                       "seconds":  0.02
+                   },
+                   {
+                       "id":  "photorec",
+                       "title":  "PhotoRec 文件恢复",
+                       "group":  "tools",
+                       "status":  "pass",
+                       "detail":  "启动与关键输出正常",
+                       "seconds":  0.03
+                   },
+                   {
+                       "id":  "ruby",
+                       "title":  "Ruby 运行时",
+                       "group":  "tools",
+                       "status":  "pass",
+                       "detail":  "启动与关键输出正常",
+                       "seconds":  0.03
+                   },
+                   {
+                       "id":  "zsteg",
+                       "title":  "zsteg 图片隐写",
+                       "group":  "tools",
+                       "status":  "pass",
+                       "detail":  "启动与关键输出正常",
+                       "seconds":  0.29
+                   },
+                   {
+                       "id":  "pngcheck",
+                       "title":  "PNG 结构校验",
+                       "group":  "tools",
+                       "status":  "pass",
+                       "detail":  "启动与关键输出正常",
+                       "seconds":  0.02
+                   },
+                   {
+                       "id":  "vol3",
+                       "title":  "Volatility 3 / 自带 Python 3",
+                       "group":  "tools",
+                       "status":  "pass",
+                       "detail":  "启动与关键输出正常",
+                       "seconds":  0.63
+                   },
+                   {
+                       "id":  "vol2",
+                       "title":  "Volatility 2 / 自带 Python 2，无需另装",
+                       "group":  "tools",
+                       "status":  "pass",
+                       "detail":  "启动与关键输出正常",
+                       "seconds":  1.28
+                   },
+                   {
+                       "id":  "mount_files",
+                       "title":  "可选挂载程序",
+                       "group":  "optional",
+                       "status":  "pass",
+                       "detail":  "程序已备齐；此检查未安装驱动或挂载磁盘",
+                       "seconds":  0.0
+                   },
+                   {
+                       "id":  "pypykatz",
+                       "title":  "pypykatz 依赖与 Vol3 插件",
+                       "group":  "community",
+                       "status":  "pass",
+                       "detail":  "启动与关键输出正常",
+                       "seconds":  0.87
+                   },
+                   {
+                       "id":  "mimikatz",
+                       "title":  "Vol2 mimikatz 隔离依赖",
+                       "group":  "community",
+                       "status":  "pass",
+                       "detail":  "启动与关键输出正常",
+                       "seconds":  1.46
+                   },
+                   {
+                       "id":  "bitlocker3",
+                       "title":  "Vol3 BitLocker 插件",
+                       "group":  "community",
+                       "status":  "pass",
+                       "detail":  "启动与关键输出正常",
+                       "seconds":  0.83
+                   }
+               ],
+    "last_report":  "E:\\学习培训\\培训\\取证\\output\\工具台分发验收_a4ff880d\\中文 空格\\学员工具包_Windows64\\labs\\out\\setup_runs\\20261022_103823_3fab37",
+    "created_utc":  "2026-10-22T02:38:33.6784714Z",
+    "basic_mode":  false,
+    "fingerprint":  "runtime/python/python.exe|105696|639282333688073652\r\nruntime/python/python313.dll|6142176|639282333688416046\r\nruntime/python/python313.zip|3837053|639282333688435991\r\ntools/setup_probe.py|6930|639282333719884612\r\ntools/bootstrap.ps1|17892|639282333713584299\r\ntools/learning_server.py|72142|639282333719823837\r\ntools/volatility3/vol.py|74|639282333739519049\r\ntools/volatility2/windows/volatility_2.6_win64_standalone.exe|15794079|639282333739489969\r\ntools/volatility2/extra_plugins/mimikatz.py|25383|639282333738644944\r\ntools/volatility3_extra/vol_pypykatz.py|2076|639282333739530952\r\nruntime/python/Lib/site-packages/pypykatz/pypykatz.py|14053|639282333684697283\r\ntools/7zip/7z.exe|577536|639282333712978328\r\ntools/exiftool/exiftool.exe|58368|639282333715017693\r\ntools/sleuthkit/bin/fls.exe|777216|639282333720444986\r\nruntime/ruby/bin/ruby.exe|34816|639282333688770947",
+    "schema":  1,
+    "base_ready":  true,
+    "kit":  "E:\\学习培训\\培训\\取证\\output\\工具台分发验收_a4ff880d\\中文 空格\\学员工具包_Windows64",
+    "manifest_hash":  "fbe54a64c813d7275e2efdf56efb8b290b2702a3f2560eae3dba6839eed799b8"
+}

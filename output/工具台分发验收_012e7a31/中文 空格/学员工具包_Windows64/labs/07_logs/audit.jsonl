@@ -1,0 +1,4 @@
+{"timestamp": "2026-10-18T01:16:10Z", "event": "login_success", "user": "trainee", "client_ip": "192.0.2.44", "session_id": "TRAIN-7", "request_id": "r-101"}
+{"timestamp": "2026-10-18T01:17:05Z", "event": "dashboard_view", "user": "trainee", "client_ip": "192.0.2.44", "session_id": "TRAIN-7", "request_id": "r-104"}
+{"timestamp": "2026-10-18T01:18:30Z", "event": "export_started", "user": "trainee", "client_ip": "192.0.2.44", "session_id": "TRAIN-7", "request_id": "r-102", "object_id": 42, "file_name": "case_notes.zip"}
+{"timestamp": "2026-10-18T01:18:31Z", "event": "download_completed", "user": "trainee", "client_ip": "192.0.2.44", "session_id": "TRAIN-7", "request_id": "r-103", "object_id": 42, "file_name": "case_notes.zip", "bytes_sent": 2048}

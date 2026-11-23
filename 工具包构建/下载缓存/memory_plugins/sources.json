@@ -1,0 +1,62 @@
+[
+  {
+    "file": "vol2_mimikatz.py",
+    "url": "https://raw.githubusercontent.com/dfirfpi/hotoloti/fb55ab3edc9414ae8dcc895955f48243606bd002/volatility/mimikatz.py",
+    "sha256": "75e2e6d3b09daffad83211ba0215ed3f204623b8c37c2a2950665b88a3d2ce86"
+  },
+  {
+    "file": "vol2_bitlocker.py",
+    "url": "https://raw.githubusercontent.com/elceef/bitlocker/d1c1790045ea935678bafb5f2f933a884120429f/bitlocker.py",
+    "sha256": "6373a37b1e3e89795bc4ab797f2ba6845b06d66fee332505cd812630d1793fb9"
+  },
+  {
+    "file": "vol2_bitlocker_README.md",
+    "url": "https://raw.githubusercontent.com/elceef/bitlocker/d1c1790045ea935678bafb5f2f933a884120429f/README.md",
+    "sha256": "cd446e2022881f3cd93798b4d84d202a4c3b4bd29437fd877c6160a2a5ab7d74"
+  },
+  {
+    "file": "vol2_editbox.py",
+    "url": "https://raw.githubusercontent.com/bridgeythegeek/editbox/0baed53c37eb6d3822dd50fc29078c908a20054e/editbox.py",
+    "sha256": "8bb08999a7f400bfd276d5c4667093119eaf8122b700ec334906221c579117b0"
+  },
+  {
+    "file": "vol2_editbox_README.md",
+    "url": "https://raw.githubusercontent.com/bridgeythegeek/editbox/0baed53c37eb6d3822dd50fc29078c908a20054e/README.md",
+    "sha256": "4236ab7ebf846bc416ea3a4b265381ab024d75c52b8bae67d6aac26deeb242a9"
+  },
+  {
+    "file": "vol3_vol_pypykatz.py",
+    "url": "https://raw.githubusercontent.com/skelsec/pypykatz-volatility3/1b722f00f7095e8e13648ce6bd355af52c12b21c/vol_pypykatz.py",
+    "sha256": "197a4c3856e48b38fe0f9f6fb31729707d7ba0147a120988cb2c1befc7163df8"
+  },
+  {
+    "file": "vol3_pypykatz_LICENSE",
+    "url": "https://raw.githubusercontent.com/skelsec/pypykatz-volatility3/1b722f00f7095e8e13648ce6bd355af52c12b21c/LICENSE",
+    "sha256": "dba465433e55dc74fd8a0f30a184977ed5905d4e69d1807b1ca0c476b72b8455"
+  },
+  {
+    "file": "vol3_pypykatz_README.md",
+    "url": "https://raw.githubusercontent.com/skelsec/pypykatz-volatility3/1b722f00f7095e8e13648ce6bd355af52c12b21c/README.md",
+    "sha256": "0ba2de5c69bb3349068bc57f13a67a2e401e0e0ab8918d2281a598eead1b697c"
+  },
+  {
+    "file": "vol3_bitlocker.py",
+    "url": "https://raw.githubusercontent.com/lorelyai/volatility3-bitlocker/d2afab51fea4878db8a79cef835176360d19b901/bitlocker.py",
+    "sha256": "1cda3c680e665898051dba1f9a638c42a4a711b65da74c8539995ad543a7ffb7"
+  },
+  {
+    "file": "vol3_bitlocker_LICENSE",
+    "url": "https://raw.githubusercontent.com/lorelyai/volatility3-bitlocker/d2afab51fea4878db8a79cef835176360d19b901/LICENSE",
+    "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
+  },
+  {
+    "file": "vol3_bitlocker_README.md",
+    "url": "https://raw.githubusercontent.com/lorelyai/volatility3-bitlocker/d2afab51fea4878db8a79cef835176360d19b901/README.md",
+    "sha256": "9099d4b03836df2127c6286371a52bc89cf8f3785f823b6c132e49a6d8ab9590"
+  },
+  {
+    "file": "construct-2.8.22.tar.gz",
+    "url": "https://files.pythonhosted.org/packages/e5/c6/3e3aeef38bb0c27364af3d21493d9690c7c3925f298559bca3c48b7c9419/construct-2.8.22.tar.gz",
+    "sha256": "8977b75fc396eaf9e3ba269db0d46d13944bd8fd7e2b5539a4c4d990b6d6dded"
+  }
+]

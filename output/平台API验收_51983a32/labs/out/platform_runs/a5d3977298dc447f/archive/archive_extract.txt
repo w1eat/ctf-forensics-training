@@ -1,0 +1,19 @@
+
+7-Zip 26.04 (x64) : Copyright (c) 1999-2026 Igor Pavlov : 2026-10-05
+
+Scanning the drive for archives:
+1 file, 10240 bytes (10 KiB)
+
+Extracting archive: E:\学习培训\培训\取证\output\平台API验收_51983a32\labs\inputs\_platform_qa_bc170e0df4\自选压缩包.tar
+--
+Path = E:\学习培训\培训\取证\output\平台API验收_51983a32\labs\inputs\_platform_qa_bc170e0df4\自选压缩包.tar
+Type = tar
+Physical Size = 10240
+Headers Size = 9728
+Code Page = UTF-8
+Characteristics = POSIX ASCII
+
+Everything is Ok
+
+Size:       20
+Compressed: 10240

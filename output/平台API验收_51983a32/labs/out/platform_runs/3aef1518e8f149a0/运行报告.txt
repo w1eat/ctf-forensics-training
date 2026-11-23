@@ -1,0 +1,8 @@
+操作：自动分析上传文件
+运行环境：Windows PowerShell
+创建时间：2026-10-22T10:16:30.409084+08:00
+状态：cancelled
+退出码：1
+命令：& 'E:\学习培训\培训\取证\学员工具包_Windows64\runtime\python\python.exe' 'E:\学习培训\培训\取证\学员工具包_Windows64\tools\analysis_engine.py' 'auto' 'E:\学习培训\培训\取证\output\平台API验收_51983a32\labs\inputs\_platform_qa_bc170e0df4\large_stream.bin' '--out' 'E:\学习培训\培训\取证\output\平台API验收_51983a32\labs\out\platform_runs\3aef1518e8f149a0\analysis' '--kit' 'E:\学习培训\培训\取证\学员工具包_Windows64' '--profile' 'full' '--workflow' 'auto' '--keywords' 'flag,picoCTF,ctf,secret,password,credential,密码' '--max-files' '32' '--depth' '2' '--password' ''
+
+

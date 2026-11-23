@@ -1,0 +1,643 @@
+{
+  "kind": "analysis",
+  "source": "unknown.dat",
+  "created": "2026-10-22T10:16:06.261166+08:00",
+  "host": "Windows PowerShell",
+  "profile": "standard",
+  "workflow": "auto",
+  "sections": [
+    {
+      "id": "identify",
+      "title": "识别文件结构与类型",
+      "status": "completed",
+      "seconds": 0.0,
+      "data": {
+        "kind": "png",
+        "label": "PNG",
+        "evidence": "文件头 89 50 4e 47 0d 0a 1a 0a",
+        "extension": ".dat",
+        "bytes": 794,
+        "header": "89 50 4e 47 0d 0a 1a 0a 00 00 00 0d 49 48 44 52 00 00 01 00 00 00 00 a0 08 02 00 00 00 6c 7b 25 6b 00 00 00 24 74 45 58 74 54 69 74 6c 65 00 43 54 46 20 46 6f 75 6e 64 61 74 69 6f 6e 20 2d 20"
+      }
+    },
+    {
+      "id": "fingerprint",
+      "title": "全文件摘要与字节熵",
+      "status": "completed",
+      "seconds": 0.001,
+      "data": {
+        "kind": "hash",
+        "name": "unknown.dat",
+        "bytes": 794,
+        "md5": "95841974e94b4c421ed957b0ac63cfc2",
+        "sha1": "4dafa8cc6852763083326fa94b73dcdb8ee475ba",
+        "sha256": "2200c35fc95416c9e301c62313145e183890f30cc3aaa1456f9996e6ca980380",
+        "entropy": 5.89388,
+        "entropy_windows": [
+          {
+            "offset": 0,
+            "bytes": 794,
+            "entropy": 5.89388
+          }
+        ],
+        "note": "MD5 / SHA1 仅用于已知摘要对照；证据一致性优先记录 SHA256。熵高不等于一定加密。"
+      }
+    },
+    {
+      "id": "clues",
+      "title": "通用字符串与嵌入签名",
+      "status": "completed",
+      "seconds": 0.0,
+      "data": {
+        "kind": "scan",
+        "strings": {
+          "columns": [
+            "字节偏移",
+            "编码",
+            "可读内容（最多 1024 字节）",
+            "匹配字节数"
+          ],
+          "rows": [
+            [
+              "0xc",
+              "ASCII",
+              "IHDR",
+              4
+            ],
+            [
+              "0x1d",
+              "ASCII",
+              "l{%k",
+              4
+            ],
+            [
+              "0x24",
+              "ASCII",
+              "$tEXtTitle",
+              10
+            ],
+            [
+              "0x2f",
+              "ASCII",
+              "CTF Foundation - File Identity",
+              30
+            ],
+            [
+              "0x54",
+              "ASCII",
+              "4tEXtComment",
+              12
+            ],
+            [
+              "0x61",
+              "ASCII",
+              "ZmxhZ3tmaWxlX3R5cGVfYmVmb3JlX2V4dGVuc2lvbn0=C",
+              45
+            ],
+            [
+              "0x94",
+              "ASCII",
+              "qIDATx",
+              6
+            ],
+            [
+              "0xb1",
+              "ASCII",
+              "g@\"&",
+              4
+            ],
+            [
+              "0xc2",
+              "ASCII",
+              "HwvoU",
+              5
+            ],
+            [
+              "0x312",
+              "ASCII",
+              "IEND",
+              4
+            ],
+            [
+              "0x1d2",
+              "UTF-16LE",
+              "JHHHHHH",
+              14
+            ]
+          ]
+        },
+        "signatures": {
+          "columns": [
+            "字节偏移",
+            "签名",
+            "含义"
+          ],
+          "rows": [
+            [
+              "0x0",
+              "PNG",
+              "候选；需验证结构和边界"
+            ]
+          ]
+        },
+        "scanned_bytes": 794,
+        "total_bytes": 794,
+        "partial": false,
+        "string_rows_limited": false,
+        "signature_rows_limited": false,
+        "note": "仅提取 ASCII 可打印字符及其 UTF-16LE 表示；不覆盖所有语言。跨块长串可能分段显示。"
+      }
+    },
+    {
+      "id": "metadata",
+      "title": "ExifTool 元数据",
+      "status": "completed",
+      "seconds": 0.165,
+      "data": {
+        "command": "& 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\tools\\exiftool\\exiftool.exe' '-charset' 'filename=UTF8' '-@' 'out/platform_runs/bbe309cebf484b8e/analysis/_exif.args'",
+        "exit_code": 0,
+        "preview": "[{\r\n  \"SourceFile\": \"./01_file/unknown.dat\",\r\n  \"ExifTool:ExifToolVersion\": 13.59,\r\n  \"System:FileName\": \"unknown.dat\",\r\n  \"System:Directory\": \"./01_file\",\r\n  \"System:FileSize\": \"794 bytes\",\r\n  \"System:FileModifyDate\": \"2026:10:22 10:16:06+08:00\",\r\n  \"System:FileAccessDate\": \"2026:10:22 10:16:06+08:00\",\r\n  \"System:FileCreateDate\": \"2026:10:22 10:16:06+08:00\",\r\n  \"System:FilePermissions\": \"-rw-rw-rw-\",\r\n  \"File:FileType\": \"PNG\",\r\n  \"File:FileTypeExtension\": \"png\",\r\n  \"File:MIMEType\": \"image/png\",\r\n  \"PNG:ImageWidth\": 256,\r\n  \"PNG:ImageHeight\": 160,\r\n  \"PNG:BitDepth\": 8,\r\n  \"PNG:ColorType\": \"RGB\",\r\n  \"PNG:Compression\": \"Deflate/Inflate\",\r\n  \"PNG:Filter\": \"Adaptive\",\r\n  \"PNG:Interlace\": \"Noninterlaced\",\r\n  \"PNG:Title\": \"CTF Foundation - File Identity\",\r\n  \"PNG:Comment\": \"ZmxhZ3tmaWxlX3R5cGVfYmVmb3JlX2V4dGVuc2lvbn0=\",\r\n  \"Composite:ImageSize\": \"256x160\",\r\n  \"Composite:Megapixels\": 0.041\r\n}]\r\n",
+        "diagnostics": "",
+        "log": "metadata.txt",
+        "argument_file": "-a\n-u\n-G1\n-j\n./01_file/unknown.dat\n",
+        "fields": [
+          {
+            "SourceFile": "./01_file/unknown.dat",
+            "ExifTool:ExifToolVersion": 13.59,
+            "System:FileName": "unknown.dat",
+            "System:Directory": "./01_file",
+            "System:FileSize": "794 bytes",
+            "System:FileModifyDate": "2026:10:22 10:16:06+08:00",
+            "System:FileAccessDate": "2026:10:22 10:16:06+08:00",
+            "System:FileCreateDate": "2026:10:22 10:16:06+08:00",
+            "System:FilePermissions": "-rw-rw-rw-",
+            "File:FileType": "PNG",
+            "File:FileTypeExtension": "png",
+            "File:MIMEType": "image/png",
+            "PNG:ImageWidth": 256,
+            "PNG:ImageHeight": 160,
+            "PNG:BitDepth": 8,
+            "PNG:ColorType": "RGB",
+            "PNG:Compression": "Deflate/Inflate",
+            "PNG:Filter": "Adaptive",
+            "PNG:Interlace": "Noninterlaced",
+            "PNG:Title": "CTF Foundation - File Identity",
+            "PNG:Comment": "ZmxhZ3tmaWxlX3R5cGVfYmVmb3JlX2V4dGVuc2lvbn0=",
+            "Composite:ImageSize": "256x160",
+            "Composite:Megapixels": 0.041
+          }
+        ]
+      }
+    },
+    {
+      "id": "metadata_decodings",
+      "title": "元数据中的编码候选",
+      "status": "completed",
+      "seconds": 0.003,
+      "data": {
+        "encoding": "utf-8-sig",
+        "read_bytes": 953,
+        "total_bytes": 953,
+        "limited": false,
+        "columns": [
+          "编码候选",
+          "文本字符位置",
+          "解码预览",
+          "输出"
+        ],
+        "rows": [
+          [
+            "Base64",
+            825,
+            "flag{file_type_before_extension}",
+            "decoded_1.bin"
+          ]
+        ],
+        "note": "只做一层严格 Base64 / Hex 候选解码，字符位置不是原始文件字节偏移。编码形态不等于加密。"
+      }
+    },
+    {
+      "id": "image_info_1",
+      "title": "图片尺寸、模式与缩略图",
+      "status": "completed",
+      "seconds": 0.047,
+      "data": {
+        "format": "PNG",
+        "mode": "RGB",
+        "width": 256,
+        "height": 160,
+        "frames": 1,
+        "preview": "preview.jpg"
+      }
+    },
+    {
+      "id": "png_crc_2",
+      "title": "PNG 块、CRC 与尾随数据",
+      "status": "completed",
+      "seconds": 0.0,
+      "data": {
+        "columns": [
+          "偏移",
+          "块",
+          "数据长度",
+          "保存 CRC",
+          "计算 CRC",
+          "校验"
+        ],
+        "rows": [
+          [
+            "0x8",
+            "IHDR",
+            13,
+            "6c7b256b",
+            "6c7b256b",
+            "OK"
+          ],
+          [
+            "0x21",
+            "tEXt",
+            36,
+            "94a081c8",
+            "94a081c8",
+            "OK"
+          ],
+          [
+            "0x51",
+            "tEXt",
+            52,
+            "43ce0509",
+            "43ce0509",
+            "OK"
+          ],
+          [
+            "0x91",
+            "IDAT",
+            625,
+            "0701fc55",
+            "0701fc55",
+            "OK"
+          ],
+          [
+            "0x30e",
+            "IEND",
+            0,
+            "ae426082",
+            "ae426082",
+            "OK"
+          ]
+        ],
+        "kind": "pngmap",
+        "chunks": [
+          {
+            "offset": 8,
+            "type": "IHDR",
+            "length": 13,
+            "valid": true
+          },
+          {
+            "offset": 33,
+            "type": "tEXt",
+            "length": 36,
+            "valid": true
+          },
+          {
+            "offset": 81,
+            "type": "tEXt",
+            "length": 52,
+            "valid": true
+          },
+          {
+            "offset": 145,
+            "type": "IDAT",
+            "length": 625,
+            "valid": true
+          },
+          {
+            "offset": 782,
+            "type": "IEND",
+            "length": 0,
+            "valid": true
+          }
+        ],
+        "iend": true,
+        "trailing": 0,
+        "error": "",
+        "limited": false
+      }
+    },
+    {
+      "id": "zsteg_3",
+      "title": "zsteg 枚举常见图片位流",
+      "status": "completed",
+      "seconds": 0.406,
+      "data": {
+        "command": "& 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\runtime\\ruby\\bin\\ruby.exe' 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\runtime\\ruby\\bin\\zsteg' '--no-file' 'E:\\学习培训\\培训\\取证\\output\\平台API验收_51983a32\\labs\\01_file\\unknown.dat'",
+        "exit_code": 0,
+        "preview": "\rmeta Title          .. text: \"CTF Foundation - File Identity\"\r\n\rmeta Comment        .. text: \"ZmxhZ3tmaWxlX3R5cGVfYmVmb3JlX2V4dGVuc2lvbn0=\"\r\n\rb1,r,lsb,xy         .. \rb1,r,msb,xy         .. \rb1,g,lsb,xy         .. \rb1,g,msb,xy         .. \rb1,b,lsb,xy         .. \rb1,b,msb,xy         .. \rb1,rgb,lsb,xy       .. \rb1,rgb,msb,xy       .. \rb1,bgr,lsb,xy       .. \rb1,bgr,msb,xy       .. \rb2,r,lsb,xy         .. \rb2,r,msb,xy         .. \rb2,g,lsb,xy         .. text: [\"U\" repeated 64 times]\r\n\rb2,g,msb,xy         .. \rb2,b,lsb,xy         .. \rb2,b,msb,xy         .. \rb2,rgb,lsb,xy       .. \rb2,rgb,msb,xy       .. \rb2,bgr,lsb,xy       .. \rb2,bgr,msb,xy       .. \rb3,r,lsb,xy         .. \rb3,r,msb,xy         .. \rb3,g,lsb,xy         .. \rb3,g,msb,xy         .. \rb3,b,lsb,xy         .. \rb3,b,msb,xy         .. \rb3,rgb,lsb,xy       .. \rb3,rgb,msb,xy       .. \rb3,bgr,lsb,xy       .. \rb3,bgr,msb,xy       .. \rb4,r,lsb,xy         .. \rb4,r,msb,xy         .. \rb4,g,lsb,xy         .. text: \"UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUS3333333S3333333S3333333S3333333S3333333S3333333S3333333S3333333S3333333S3333333S3333333S3333333S3333333S3333333S3333333S3333333\"\r\n\rb4,g,msb,xy         .. \rb4,b,lsb,xy         .. \rb4,b,msb,xy         .. \rb4,rgb,lsb,xy       .. \rb4,rgb,msb,xy       .. \rb4,bgr,lsb,xy       .. \rb4,bgr,msb,xy       .. \r                    \r",
+        "diagnostics": "",
+        "log": "zsteg.txt",
+        "argument_file": null
+      }
+    },
+    {
+      "id": "workflow_image",
+      "title": "图片与隐写",
+      "status": "completed",
+      "seconds": 0.505,
+      "data": {
+        "kind": "workflow_image",
+        "image": {
+          "format": "PNG",
+          "mode": "RGB",
+          "width": 256,
+          "height": 160,
+          "frames": 1,
+          "preview": "preview.jpg"
+        },
+        "tables": [
+          {
+            "title": "LSB 候选 r",
+            "columns": [
+              "位序",
+              "导出字节",
+              "flag 形态",
+              "命中条数"
+            ],
+            "rows": [
+              [
+                "bit0 / xy / msb",
+                5120,
+                "",
+                0
+              ]
+            ]
+          },
+          {
+            "title": "LSB 候选 g",
+            "columns": [
+              "位序",
+              "导出字节",
+              "flag 形态",
+              "命中条数"
+            ],
+            "rows": [
+              [
+                "bit0 / xy / msb",
+                5120,
+                "",
+                0
+              ]
+            ]
+          },
+          {
+            "title": "LSB 候选 b",
+            "columns": [
+              "位序",
+              "导出字节",
+              "flag 形态",
+              "命中条数"
+            ],
+            "rows": [
+              [
+                "bit0 / xy / msb",
+                5120,
+                "",
+                0
+              ]
+            ]
+          },
+          {
+            "title": "LSB 候选 rgb",
+            "columns": [
+              "位序",
+              "导出字节",
+              "flag 形态",
+              "命中条数"
+            ],
+            "rows": [
+              [
+                "bit0 / xy / msb",
+                15360,
+                "",
+                0
+              ]
+            ]
+          },
+          {
+            "title": "LSB 候选 bgr",
+            "columns": [
+              "位序",
+              "导出字节",
+              "flag 形态",
+              "命中条数"
+            ],
+            "rows": [
+              [
+                "bit0 / xy / msb",
+                15360,
+                "",
+                0
+              ]
+            ]
+          }
+        ],
+        "png": {
+          "columns": [
+            "偏移",
+            "块",
+            "数据长度",
+            "保存 CRC",
+            "计算 CRC",
+            "校验"
+          ],
+          "rows": [
+            [
+              "0x8",
+              "IHDR",
+              13,
+              "6c7b256b",
+              "6c7b256b",
+              "OK"
+            ],
+            [
+              "0x21",
+              "tEXt",
+              36,
+              "94a081c8",
+              "94a081c8",
+              "OK"
+            ],
+            [
+              "0x51",
+              "tEXt",
+              52,
+              "43ce0509",
+              "43ce0509",
+              "OK"
+            ],
+            [
+              "0x91",
+              "IDAT",
+              625,
+              "0701fc55",
+              "0701fc55",
+              "OK"
+            ],
+            [
+              "0x30e",
+              "IEND",
+              0,
+              "ae426082",
+              "ae426082",
+              "OK"
+            ]
+          ],
+          "kind": "pngmap",
+          "chunks": [
+            {
+              "offset": 8,
+              "type": "IHDR",
+              "length": 13,
+              "valid": true
+            },
+            {
+              "offset": 33,
+              "type": "tEXt",
+              "length": 36,
+              "valid": true
+            },
+            {
+              "offset": 81,
+              "type": "tEXt",
+              "length": 52,
+              "valid": true
+            },
+            {
+              "offset": 145,
+              "type": "IDAT",
+              "length": 625,
+              "valid": true
+            },
+            {
+              "offset": 782,
+              "type": "IEND",
+              "length": 0,
+              "valid": true
+            }
+          ],
+          "iend": true,
+          "trailing": 0,
+          "error": "",
+          "limited": false
+        },
+        "zsteg": {
+          "command": "& 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\runtime\\ruby\\bin\\ruby.exe' 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\runtime\\ruby\\bin\\zsteg' '--no-file' 'E:\\学习培训\\培训\\取证\\output\\平台API验收_51983a32\\labs\\01_file\\unknown.dat'",
+          "exit_code": 0,
+          "preview": "\rmeta Title          .. text: \"CTF Foundation - File Identity\"\r\n\rmeta Comment        .. text: \"ZmxhZ3tmaWxlX3R5cGVfYmVmb3JlX2V4dGVuc2lvbn0=\"\r\n\rb1,r,lsb,xy         .. \rb1,r,msb,xy         .. \rb1,g,lsb,xy         .. \rb1,g,msb,xy         .. \rb1,b,lsb,xy         .. \rb1,b,msb,xy         .. \rb1,rgb,lsb,xy       .. \rb1,rgb,msb,xy       .. \rb1,bgr,lsb,xy       .. \rb1,bgr,msb,xy       .. \rb2,r,lsb,xy         .. \rb2,r,msb,xy         .. \rb2,g,lsb,xy         .. text: [\"U\" repeated 64 times]\r\n\rb2,g,msb,xy         .. \rb2,b,lsb,xy         .. \rb2,b,msb,xy         .. \rb2,rgb,lsb,xy       .. \rb2,rgb,msb,xy       .. \rb2,bgr,lsb,xy       .. \rb2,bgr,msb,xy       .. \rb3,r,lsb,xy         .. \rb3,r,msb,xy         .. \rb3,g,lsb,xy         .. \rb3,g,msb,xy         .. \rb3,b,lsb,xy         .. \rb3,b,msb,xy         .. \rb3,rgb,lsb,xy       .. \rb3,rgb,msb,xy       .. \rb3,bgr,lsb,xy       .. \rb3,bgr,msb,xy       .. \rb4,r,lsb,xy         .. \rb4,r,msb,xy         .. \rb4,g,lsb,xy         .. text: \"UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUS3333333S3333333S3333333S3333333S3333333S3333333S3333333S3333333S3333333S3333333S3333333S3333333S3333333S3333333S3333333S3333333\"\r\n\rb4,g,msb,xy         .. \rb4,b,lsb,xy         .. \rb4,b,msb,xy         .. \rb4,rgb,lsb,xy       .. \rb4,rgb,msb,xy       .. \rb4,bgr,lsb,xy       .. \rb4,bgr,msb,xy       .. \r                    \r",
+          "diagnostics": "",
+          "log": "zsteg.txt",
+          "argument_file": null
+        },
+        "embedded": {
+          "columns": [
+            "起始字节",
+            "字节数",
+            "格式",
+            "验证",
+            "边界依据",
+            "输出",
+            "诊断"
+          ],
+          "rows": [],
+          "scanned_bytes": 794,
+          "total_bytes": 794,
+          "note": "自动雕刻仅支持可验证边界的 PNG / 经典 ZIP / PDF，单对象最多 16 MiB；其他签名继续用字节范围雕刻。"
+        }
+      }
+    },
+    {
+      "id": "targeted_search",
+      "title": "全文件关键词与 flag 形态检索",
+      "status": "completed",
+      "seconds": 0.0,
+      "data": {
+        "columns": [
+          "字节偏移",
+          "编码",
+          "关键词",
+          "上下文"
+        ],
+        "rows": [
+          [
+            "0x2f",
+            "utf-8",
+            "ctf",
+            "�PNG\r\n\u001a\n···\rIHDR··\u0001····�\b\u0002···l{%k···$tEXtTitle·CTF Foundation - File Identity����···4tEXtComment·ZmxhZ3tmaWxlX3R5cGVfYmVmb3JlX2V4dGVuc2lvbn0=C�\u0005\t··\u0002qI"
+          ]
+        ],
+        "flag_candidates": [],
+        "scanned_bytes": 794,
+        "total_bytes": 794,
+        "partial": false,
+        "limited": false,
+        "note": "flag 形态是候选，必须回到文件 / 业务语义验证。命中条数有上限，扫描不会因普通字符串表满而提前结束。"
+      }
+    },
+    {
+      "id": "yara",
+      "title": "内置 YARA 线索规则",
+      "status": "completed",
+      "seconds": 0.003,
+      "data": {
+        "columns": [
+          "规则",
+          "字符串",
+          "字节偏移",
+          "匹配字节（截取）",
+          "文本预览"
+        ],
+        "rows": [],
+        "kind": "yara",
+        "matched_rules": [],
+        "note": "规则命中是线索，不能据此直接判定恶意或确认答案。自定义规则禁用 include。"
+      }
+    }
+  ],
+  "recommendations": [
+    "命中仅是候选；请结合路径、对象结构和原始输出确认。未导出、跳过与预算限制均保留在报告中。"
+  ],
+  "identification": {
+    "kind": "png",
+    "label": "PNG",
+    "evidence": "文件头 89 50 4e 47 0d 0a 1a 0a",
+    "extension": ".dat",
+    "bytes": 794,
+    "header": "89 50 4e 47 0d 0a 1a 0a 00 00 00 0d 49 48 44 52 00 00 01 00 00 00 00 a0 08 02 00 00 00 6c 7b 25 6b 00 00 00 24 74 45 58 74 54 69 74 6c 65 00 43 54 46 20 46 6f 75 6e 64 61 74 69 6f 6e 20 2d 20"
+  },
+  "selected_workflow": "image",
+  "findings": [
+    {
+      "source": "metadata_fields.txt → Base64",
+      "offset": "0x0",
+      "encoding": "ascii",
+      "value": "flag{file_type_before_extension}"
+    }
+  ],
+  "children": [],
+  "next_actions": [
+    {
+      "title": "调整位、通道、扫描与组字节顺序",
+      "action": "lsb_custom",
+      "params": {
+        "file": "01_file/unknown.dat"
+      }
+    }
+  ],
+  "limits": {
+    "max_exported_files": 32,
+    "exported_files": 0,
+    "max_exported_bytes": 134217728,
+    "accounted_bytes": 0,
+    "child_depth": 2
+  }
+}

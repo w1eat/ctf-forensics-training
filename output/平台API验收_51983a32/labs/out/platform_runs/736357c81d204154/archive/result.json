@@ -1,0 +1,30 @@
+{
+  "columns": [
+    "路径",
+    "展开字节",
+    "压缩字节",
+    "加密",
+    "CRC"
+  ],
+  "rows": [
+    [
+      "note.txt",
+      "48",
+      "60",
+      "+",
+      "B6F751AE"
+    ]
+  ],
+  "kind": "archive",
+  "listing": {
+    "command": "& 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\tools\\7zip\\7z.exe' 'l' '-slt' '-ba' '-sccUTF-8' '-p__no_password_supplied__' '--' 'E:\\学习培训\\培训\\取证\\output\\平台API验收_51983a32\\labs\\04_archive\\locked.zip'",
+    "exit_code": 0,
+    "preview": "Path = note.txt\r\nFolder = -\r\nSize = 48\r\nPacked Size = 60\r\nModified = 2026-10-18 00:00:00\r\nCreated = \r\nAccessed = \r\nAttributes = \r\nEncrypted = +\r\nComment = \r\nCRC = B6F751AE\r\nMethod = ZipCrypto Store\r\nCharacteristics = Encrypt\r\nHost OS = FAT\r\nVersion = 20\r\nVolume Index = 0\r\nOffset = 0\r\n\r\n",
+    "diagnostics": "",
+    "log": "archive_listing.txt",
+    "argument_file": null
+  },
+  "entries": 1,
+  "mode": "list",
+  "exit_code": 0
+}

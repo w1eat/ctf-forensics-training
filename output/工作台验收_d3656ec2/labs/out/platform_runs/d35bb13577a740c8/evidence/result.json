@@ -1,0 +1,14 @@
+{
+  "kind": "casework",
+  "operation": "transform",
+  "title": "字节转换结果",
+  "bytes": 20,
+  "sha256": "d72571f5a9bd94d5b76bde8f8ec96178b1b7afb9db7b8ecaf001d3ea7e22c284",
+  "text": "flag{platform_codec}",
+  "hex": "666c61677b706c6174666f726d5f636f6465637d",
+  "base64": "ZmxhZ3twbGF0Zm9ybV9jb2RlY30=",
+  "preview_limited": false,
+  "output": "转换结果.bin",
+  "note": "下载 .bin 保留完整字节。UTF-8、HEX 与 Base64 为预览，原始二进制不会经过文本重编码。",
+  "text_roundtrip": true
+}

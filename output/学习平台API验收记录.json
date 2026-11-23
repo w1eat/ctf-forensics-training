@@ -1,0 +1,661 @@
+{
+  "checks": [
+    {
+      "name": "API authentication required",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "Cross-origin requests rejected",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "Host header checked",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "Path traversal rejected",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "Unknown operations rejected",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "Nested parameter types rejected",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "Catalog includes all operations",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "Run auto_analyze",
+      "pass_": true,
+      "detail": "}, {\"title\": \"图片与隐写\", \"status\": \"completed\"}, {\"title\": \"全文件关键词与 flag 形态检索\", \"status\": \"completed\"}, {\"title\": \"内置 YARA 线索规则\", \"status\": \"completed\"}], \"flag_candidates\": 1, \"report\": \"E:\\\\学习培训\\\\培训\\\\取证\\\\output\\\\平台API验收_51983a32\\\\labs\\\\out\\\\platform_runs\\\\bbe309cebf484b8e\\\\analysis\\\\analysis.html\"}\r\n"
+    },
+    {
+      "name": "Run file_type",
+      "pass_": true,
+      "detail": "\"label\": \"PNG\", \"evidence\": \"文件头 89 50 4e 47 0d 0a 1a 0a\", \"extension\": \".dat\", \"bytes\": 794, \"header\": \"89 50 4e 47 0d 0a 1a 0a 00 00 00 0d 49 48 44 52 00 00 01 00 00 00 00 a0 08 02 00 00 00 6c 7b 25 6b 00 00 00 24 74 45 58 74 54 69 74 6c 65 00 43 54 46 20 46 6f 75 6e 64 61 74 69 6f 6e 20 2d 20\"}\r\n"
+    },
+    {
+      "name": "Run file_hash",
+      "pass_": true,
+      "detail": "{\"kind\": \"hash\", \"name\": \"unknown.dat\", \"bytes\": 794, \"sha256\": \"2200c35fc95416c9e301c62313145e183890f30cc3aaa1456f9996e6ca980380\"}\r\n"
+    },
+    {
+      "name": "Run keyword_search",
+      "pass_": true,
+      "detail": "0x0\", \"utf-8\", \"ctf\", \"CTF CLASSROOM CARRIER\\nEmbedded ZIP begins at offset 0x200.\\n············································\"]], \"flag_candidates\": [], \"scanned_bytes\": 810, \"total_bytes\": 810, \"partial\": false, \"limited\": false, \"note\": \"flag 形态是候选，必须回到文件 / 业务语义验证。命中条数有上限，扫描不会因普通字符串表满而提前结束。\"}\r\n"
+    },
+    {
+      "name": "Run hex",
+      "pass_": true,
+      "detail": "0240: 51 48 aa 2c 49 55 c8 4f 4b 2b 4e 2d 51 30 35 34  QH.,IU.OK+N-Q054\n00000250: d2 e3 02 00 50 4b 03 04 14 00 00 00 08 00 00 48  ....PK.........H\n00000260: 52 5d a0 09 fc 8e 28 00 00 00 26 00 00 00 0a 00  R]....(...&.....\n00000270: 00 00 61 6e 73 77 65 72 2e 74 78 74 4b cb 49 4c  ..answer.txtK.IL\n"
+    },
+    {
+      "name": "Hex view preserves byte offsets",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "Run strings",
+      "pass_": true,
+      "detail": ", [\"0x1a99\", \"ASCII\", \"i^!{\", 4], [\"0x1da2\", \"ASCII\", \"}Ev?\", 4], [\"0x2079\", \"ASCII\", \"Teaching reproduction only. flag{strings_see_more_than_pixels}\", 62]], \"scanned_bytes\": 8376, \"total_bytes\": 8376, \"partial\": false, \"limited\": false, \"note\": \"仅提取 ASCII 可打印字符及其 UTF-16LE 表示；不覆盖所有语言。跨块长串可能分段显示。\"}\r\n"
+    },
+    {
+      "name": "Run metadata",
+      "pass_": true,
+      "detail": "              : 1.01\r\n[JFIF]          Resolution Unit                 : None\r\n[JFIF]          X Resolution                    : 1\r\n[JFIF]          Y Resolution                    : 1\r\n[Composite]     Image Size                      : 320x180\r\n[Composite]     Megapixels                      : 0.058\r\n"
+    },
+    {
+      "name": "Run base64",
+      "pass_": true,
+      "detail": "{\"kind\": \"base64\", \"text\": \"flag{metadata_then_base64}\", \"hex\": \"66 6c 61 67 7b 6d 65 74 61 64 61 74 61 5f 74 68 65 6e 5f 62 61 73 65 36 34 7d\", \"bytes\": 26}\r\n"
+    },
+    {
+      "name": "Base64 structured result",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "Run signatures",
+      "pass_": true,
+      "detail": " [\"0x254\", \"ZIP local\", \"候选；需验证结构和边界\"], [\"0x2a4\", \"ZIP central\", \"候选；需验证结构和边界\"], [\"0x2dc\", \"ZIP central\", \"候选；需验证结构和边界\"], [\"0x314\", \"ZIP end\", \"候选；需验证结构和边界\"]], \"scanned_bytes\": 810, \"total_bytes\": 810, \"partial\": false, \"limited\": false, \"note\": \"仅提取 ASCII 可打印字符及其 UTF-16LE 表示；不覆盖所有语言。跨块长串可能分段显示。\"}\r\n"
+    },
+    {
+      "name": "Run png_check",
+      "pass_": true,
+      "detail": "API验收_51983a32\\labs\\02_png\\broken_width.png (733 bytes)\r\n  chunk IHDR at offset 0x0000c, length 13\r\n    1 x 160 image, 24-bit RGB, non-interlaced\r\n  CRC error in chunk IHDR (computed 42379195, expected 6c7b256b)\r\nERRORS DETECTED in E:\\学习培训\\培训\\取证\\output\\平台API验收_51983a32\\labs\\02_png\\broken_width.png\r\n"
+    },
+    {
+      "name": "Native report paths remain readable",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "Run png_map",
+      "pass_": true,
+      "detail": "t\": 8, \"type\": \"IHDR\", \"length\": 13, \"valid\": false}, {\"offset\": 33, \"type\": \"tEXt\", \"length\": 39, \"valid\": true}, {\"offset\": 84, \"type\": \"IDAT\", \"length\": 625, \"valid\": true}, {\"offset\": 721, \"type\": \"IEND\", \"length\": 0, \"valid\": true}], \"iend\": true, \"trailing\": 0, \"error\": \"\", \"limited\": false}\r\n"
+    },
+    {
+      "name": "PNG CRC is visualized as BAD",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "Run png_width",
+      "pass_": true,
+      "detail": "Candidate widths: [256]\r\nSaved E:\\学习培训\\培训\\取证\\output\\平台API验收_51983a32\\labs\\out\\platform_runs\\713e5020e36d4d07\\fixed_width.png ; verify parsing and image data separately\r\n"
+    },
+    {
+      "name": "Run png_header",
+      "pass_": true,
+      "detail": "Only bytes 0..7 restored; verify every chunk and image data next\r\n"
+    },
+    {
+      "name": "PNG header repair matches reference",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "Run lsb_scan",
+      "pass_": true,
+      "detail": "r,msb,xy       .. \rb4,r,lsb,xy         .. \rb4,r,msb,xy         .. text: \"'Ru`#b`GvA\"\r\n\rb4,g,lsb,xy         .. \rb4,g,msb,xy         .. \rb4,b,lsb,xy         .. \rb4,b,msb,xy         .. \rb4,rgb,lsb,xy       .. \rb4,rgb,msb,xy       .. \rb4,bgr,lsb,xy       .. \rb4,bgr,msb,xy       .. \r                    \r"
+    },
+    {
+      "name": "Run lsb_extract",
+      "pass_": true,
+      "detail": "flag{one_bit_one_clue}\r\n"
+    },
+    {
+      "name": "Run zip_list",
+      "pass_": true,
+      "detail": "ompressed  Name\r\n------------------- ----- ------------ ------------  ------------------------\r\n2026-10-18 00:00:00 .....           48           60  note.txt\r\n------------------- ----- ------------ ------------  ------------------------\r\n2026-10-18 00:00:00                 48           60  1 files\r\n"
+    },
+    {
+      "name": "Run zip_test",
+      "pass_": true,
+      "detail": "e drive for archives:\r\n1 file, 174 bytes (1 KiB)\r\n\r\nTesting archive: E:\\学习培训\\培训\\取证\\output\\平台API验收_51983a32\\labs\\04_archive\\locked.zip\r\n--\r\nPath = E:\\学习培训\\培训\\取证\\output\\平台API验收_51983a32\\labs\\04_archive\\locked.zip\r\nType = zip\r\nPhysical Size = 174\r\n\r\nEverything is Ok\r\n\r\nSize:       48\r\nCompressed: 174\r\n"
+    },
+    {
+      "name": "Run zip_extract",
+      "pass_": true,
+      "detail": "rive for archives:\r\n1 file, 174 bytes (1 KiB)\r\n\r\nExtracting archive: E:\\学习培训\\培训\\取证\\output\\平台API验收_51983a32\\labs\\04_archive\\locked.zip\r\n--\r\nPath = E:\\学习培训\\培训\\取证\\output\\平台API验收_51983a32\\labs\\04_archive\\locked.zip\r\nType = zip\r\nPhysical Size = 174\r\n\r\nEverything is Ok\r\n\r\nSize:       48\r\nCompressed: 174\r\n"
+    },
+    {
+      "name": "Run carve",
+      "pass_": true,
+      "detail": "Saved bytes: 298\r\n"
+    },
+    {
+      "name": "Output can become the next tool input",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "Run zip_flags",
+      "pass_": true,
+      "detail": "note.txt local_flags= 0x1 central_flags= 0x1\r\n"
+    },
+    {
+      "name": "Run zip_clear",
+      "pass_": true,
+      "detail": "note.txt local_flags= 0x1 central_flags= 0x1\r\nFirst bad CRC entry: None\r\n"
+    },
+    {
+      "name": "Run zip_dictionary",
+      "pass_": true,
+      "detail": "Password: training2026 (candidate 3/4, all entries passed CRC)\r\nnote.txt b'Teaching fixture\\nflag{dictionary_from_the_hint}\\n'\r\n"
+    },
+    {
+      "name": "Run disk_partitions",
+      "pass_": true,
+      "detail": "byte sectors\r\n\r\n      Slot      Start        End          Length       Description\r\n000:  Meta      0000000000   0000000000   0000000001   Primary Table (#0)\r\n001:  -------   0000000000   0000002047   0000002048   Unallocated\r\n002:  000:000   0000002048   0000018431   0000016384   DOS FAT16 (0x06)\r\n"
+    },
+    {
+      "name": "Run disk_files",
+      "pass_": true,
+      "detail": "r/r * 4:\t_ECRET.TXT\r\n"
+    },
+    {
+      "name": "Run disk_recover",
+      "pass_": true,
+      "detail": "Saved 31 bytes to E:\\学习培训\\培训\\取证\\output\\平台API验收_51983a32\\labs\\out\\platform_runs\\ab78a91f17cb4722\\recovered.bin\r\n\n[导出内容预览]\nflag{deleted_entry_is_a_clue}\r\n"
+    },
+    {
+      "name": "icat export preserves raw bytes",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "Run sqlite_tables",
+      "pass_": true,
+      "detail": "{\"columns\": [\"类型\", \"名称\", \"所属表\", \"SQL\"], \"rows\": [[\"table\", \"artifacts\", \"artifacts\", \"CREATE TABLE artifacts(id INTEGER PRIMARY KEY,name TEXT NOT NULL,deleted INTEGER NOT NULL,note TEXT NOT NULL)\"]], \"kind\": \"sqlite_schema\"}\r\n"
+    },
+    {
+      "name": "Run sqlite_query",
+      "pass_": true,
+      "detail": "{\"columns\": [\"id\", \"name\", \"note\"], \"rows\": [[2, \"old-note\", \"flag{query_the_schema_first}\"]], \"kind\": \"sqlite_query\", \"limited\": false, \"query\": \"SELECT id,name,note FROM artifacts WHERE deleted=1;\", \"limit\": 200, \"note\": \"只读连接；需完整提取时在副本上使用 SQLite CLI。若存在 WAL，需将匹配的 -wal / -shm 与数据库一起放在同一目录。\"}\r\n"
+    },
+    {
+      "name": "SQLite result is a table",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "Run timeline",
+      "pass_": true,
+      "detail": "1 2026-10-18T09:16:10+08:00 login_success r-101 trainee 192.0.2.44\r\n2 2026-10-18T09:17:05+08:00 dashboard_view r-104 trainee 192.0.2.44\r\n3 2026-10-18T09:18:30+08:00 export_started r-102 trainee 192.0.2.44\r\n4 2026-10-18T09:18:31+08:00 download_completed r-103 trainee 192.0.2.44\r\n"
+    },
+    {
+      "name": "Run vol_help",
+      "pass_": true,
+      "detail": "                      address(es)\r\n  --physaddr [PHYSADDR ...]\r\n                        Dump a single _FILE_OBJECTs at the given physical\r\n                        address(es)\r\n  --filter FILTER       Dump files matching regular expression FILTER\r\n  --ignore-case         Ignore case in filter match\r\n"
+    },
+    {
+      "name": "Run sqlite_preview",
+      "pass_": true,
+      "detail": "[2, \"old-note\", 1, \"flag{query_the_schema_first}\"], [3, \"active-note\", 0, \"Use the schema before guessing column names\"]], \"kind\": \"sqlite_query\", \"limited\": false, \"query\": \"SELECT * FROM \\\"artifacts\\\"\", \"limit\": 200, \"note\": \"只读连接；需完整提取时在副本上使用 SQLite CLI。若存在 WAL，需将匹配的 -wal / -shm 与数据库一起放在同一目录。\"}\r\n"
+    },
+    {
+      "name": "Run text_preview",
+      "pass_": true,
+      "detail": " \\\"event\\\": \\\"download_completed\\\", \\\"user\\\": \\\"trainee\\\", \\\"client_ip\\\": \\\"192.0.2.44\\\", \\\"session_id\\\": \\\"TRAIN-7\\\", \\\"request_id\\\": \\\"r-103\\\", \\\"object_id\\\": 42, \\\"file_name\\\": \\\"case_notes.zip\\\", \\\"bytes_sent\\\": 2048}\"]], \"kind\": \"text\", \"errors\": [], \"limited\": false, \"encoding\": \"utf-8-sig\"}\r\n"
+    },
+    {
+      "name": "Run pdf_read",
+      "pass_": true,
+      "detail": "{\"kind\": \"pdf\", \"encrypted\": false, \"pages\": 1, \"extracted_pages\": 1, \"metadata\": {\"/Producer\": \"pypdf\", \"/Title\": \"Own uploaded PDF\"}, \"attachments\": [\"memo.txt\"], \"preview\": \"\\n--- PAGE 1 ---\\nIndependent PDF example 42\", \"note\": \"最多 100 页 / 约 2 MiB 文本；扫描图片型 PDF 需要 OCR，本工具不把无文本解释为无内容。\"}\r\n"
+    },
+    {
+      "name": "Run pe_read",
+      "pass_": true,
+      "detail": "ocess, GetCurrentProcess, SetUnhandledExceptionFilter, UnhandledExceptionFilter, RtlVirtualUnwind, RtlLookupFunctionEntry, RtlCaptureContext, InitializeSListHead, IsDebuggerPresent, GetSystemTimeAsFileTime, GetModuleHandleW\"]]}, \"overlay_offset\": \"0x16600\", \"note\": \"静态解析，未运行样本；时间戳、节名和导入信息均可能被修改。\"}\r\n"
+    },
+    {
+      "name": "Run yara_scan",
+      "pass_": true,
+      "detail": "匹配字节（截取）\", \"文本预览\"], \"rows\": [[\"Training_Flag_Candidate\", \"$a\", \"0x2095\", \"666c61677b737472696e67735f7365655f6d6f72655f7468616e5f706978656c737d\", \"flag{strings_see_more_than_pixels}\"]], \"kind\": \"yara\", \"matched_rules\": [\"Training_Flag_Candidate\"], \"note\": \"规则命中是线索，不能据此直接判定恶意或确认答案。自定义规则禁用 include。\"}\r\n"
+    },
+    {
+      "name": "Run lsb_custom",
+      "pass_": true,
+      "detail": "u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\", \"note\": \"未遇 NUL 自动停止；提取长度和编码由题目条件决定。\"}\r\n"
+    },
+    {
+      "name": "Run image_planes",
+      "pass_": true,
+      "detail": "{\"channels\": \"rgb\", \"bit\": 0, \"width\": 96, \"height\": 64}\r\n"
+    },
+    {
+      "name": "Run archive_general",
+      "pass_": true,
+      "detail": "Encrypted = +\\r\\nComment = \\r\\nCRC = B6F751AE\\r\\nMethod = ZipCrypto Store\\r\\nCharacteristics = Encrypt\\r\\nHost OS = FAT\\r\\nVersion = 20\\r\\nVolume Index = 0\\r\\nOffset = 0\\r\\n\\r\\n\", \"diagnostics\": \"\", \"log\": \"archive_listing.txt\", \"argument_file\": null}, \"entries\": 1, \"mode\": \"list\", \"exit_code\": 0}\r\n"
+    },
+    {
+      "name": "Run carve_range",
+      "pass_": true,
+      "detail": "{\"offset\": \"0x0\", \"bytes\": 810, \"output\": \"carved.bin\", \"note\": \"只复制选定字节，边界须由格式结构验证。\"}\r\n"
+    },
+    {
+      "name": "Run disk_fsstat",
+      "pass_": true,
+      "detail": "---------------------------\r\nRange: 2 - 260086\r\nRoot Directory: 2\r\n\r\nCONTENT INFORMATION\r\n--------------------------------------------\r\nSector Size: 512\r\nCluster Size: 512\r\nTotal Cluster Range: 2 - 16224\r\n\r\nFAT CONTENTS (in sectors)\r\n--------------------------------------------\r\n161-161 (1) -> EOF\r\n"
+    },
+    {
+      "name": "Run disk_istat",
+      "pass_": true,
+      "detail": "Directory Entry: 4\r\nNot Allocated\r\nFile Attributes: File, Archive\r\nSize: 31\r\nName: _ECRET.TXT\r\n\r\nDirectory Entry Times:\r\nWritten:\t2026-10-18 09:00:00 (Accessed:\t0000-00-00 00:00:00 (UTC)\r\nCreated:\t0000-00-00 00:00:00 (UTC)\r\n\r\nSectors:\r\n162 \r\n"
+    },
+    {
+      "name": "Run vol2_help",
+      "pass_": true,
+      "detail": "CRs\r\nMultiPrefixFinderCheck - Checks for multiple strings per page, finishing at the offset\r\nMultiStringFinderCheck - Checks for multiple strings per page\r\nPoolTagCheck           - This scanner checks for the occurance of a pool tag\r\n\n\n[stderr / 诊断信息]\nVolatility Foundation Volatility Framework 2.6\r\n"
+    },
+    {
+      "name": "ExifTool preserves Unicode filenames",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "ZIP traversal blocked before extraction",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "Plan only vol_info",
+      "pass_": true,
+      "detail": "{'command': \"& 'E:\\\\学习培训\\\\培训\\\\取证\\\\学员工具包_Windows64\\\\runtime\\\\python\\\\python.exe' 'E:\\\\学习培训\\\\培训\\\\取证\\\\学员工具包_Windows64\\\\tools\\\\volatility3\\\\vol.py' '-p' 'E:\\\\学习培训\\\\培训\\\\取证\\\\学员工具包_Windows64\\\\tools\\\\volatility3_extra' '-f' 'E:\\\\学习培训\\\\培训\\\\取证\\\\output\\\\平台API验收_51983a32\\\\labs\\\\inputs\\\\_platform_qa_bc170e0df4\\\\preview_only.raw' 'windows.info'\", 'host': 'Windows · PowerShell'}"
+    },
+    {
+      "name": "Plan only vol_processes",
+      "pass_": true,
+      "detail": "{'command': \"& 'E:\\\\学习培训\\\\培训\\\\取证\\\\学员工具包_Windows64\\\\runtime\\\\python\\\\python.exe' 'E:\\\\学习培训\\\\培训\\\\取证\\\\学员工具包_Windows64\\\\tools\\\\volatility3\\\\vol.py' '-p' 'E:\\\\学习培训\\\\培训\\\\取证\\\\学员工具包_Windows64\\\\tools\\\\volatility3_extra' '-f' 'E:\\\\学习培训\\\\培训\\\\取证\\\\output\\\\平台API验收_51983a32\\\\labs\\\\inputs\\\\_platform_qa_bc170e0df4\\\\preview_only.raw' 'windows.pslist'\", 'host': 'Windows · PowerShell'}"
+    },
+    {
+      "name": "Plan only vol_cmdline",
+      "pass_": true,
+      "detail": "{'command': \"& 'E:\\\\学习培训\\\\培训\\\\取证\\\\学员工具包_Windows64\\\\runtime\\\\python\\\\python.exe' 'E:\\\\学习培训\\\\培训\\\\取证\\\\学员工具包_Windows64\\\\tools\\\\volatility3\\\\vol.py' '-p' 'E:\\\\学习培训\\\\培训\\\\取证\\\\学员工具包_Windows64\\\\tools\\\\volatility3_extra' '-f' 'E:\\\\学习培训\\\\培训\\\\取证\\\\output\\\\平台API验收_51983a32\\\\labs\\\\inputs\\\\_platform_qa_bc170e0df4\\\\preview_only.raw' 'windows.cmdline' '--pid' '2460'\", 'host': 'Windows · PowerShell'}"
+    },
+    {
+      "name": "Plan only vol_history",
+      "pass_": true,
+      "detail": "{'command': \"& 'E:\\\\学习培训\\\\培训\\\\取证\\\\学员工具包_Windows64\\\\runtime\\\\python\\\\python.exe' 'E:\\\\学习培训\\\\培训\\\\取证\\\\学员工具包_Windows64\\\\tools\\\\volatility3\\\\vol.py' '-p' 'E:\\\\学习培训\\\\培训\\\\取证\\\\学员工具包_Windows64\\\\tools\\\\volatility3_extra' '-f' 'E:\\\\学习培训\\\\培训\\\\取证\\\\output\\\\平台API验收_51983a32\\\\labs\\\\inputs\\\\_platform_qa_bc170e0df4\\\\preview_only.raw' 'windows.cmdscan'\", 'host': 'Windows · PowerShell'}"
+    },
+    {
+      "name": "Plan only vol_files",
+      "pass_": true,
+      "detail": "{'command': \"& 'E:\\\\学习培训\\\\培训\\\\取证\\\\学员工具包_Windows64\\\\runtime\\\\python\\\\python.exe' 'E:\\\\学习培训\\\\培训\\\\取证\\\\学员工具包_Windows64\\\\tools\\\\volatility3\\\\vol.py' '-p' 'E:\\\\学习培训\\\\培训\\\\取证\\\\学员工具包_Windows64\\\\tools\\\\volatility3_extra' '-f' 'E:\\\\学习培训\\\\培训\\\\取证\\\\output\\\\平台API验收_51983a32\\\\labs\\\\inputs\\\\_platform_qa_bc170e0df4\\\\preview_only.raw' 'windows.filescan'\", 'host': 'Windows · PowerShell'}"
+    },
+    {
+      "name": "Plan only vol_handles",
+      "pass_": true,
+      "detail": "{'command': \"& 'E:\\\\学习培训\\\\培训\\\\取证\\\\学员工具包_Windows64\\\\runtime\\\\python\\\\python.exe' 'E:\\\\学习培训\\\\培训\\\\取证\\\\学员工具包_Windows64\\\\tools\\\\volatility3\\\\vol.py' '-p' 'E:\\\\学习培训\\\\培训\\\\取证\\\\学员工具包_Windows64\\\\tools\\\\volatility3_extra' '-f' 'E:\\\\学习培训\\\\培训\\\\取证\\\\output\\\\平台API验收_51983a32\\\\labs\\\\inputs\\\\_platform_qa_bc170e0df4\\\\preview_only.raw' 'windows.handles' '--pid' '2460'\", 'host': 'Windows · PowerShell'}"
+    },
+    {
+      "name": "Plan only vol_dumpfiles",
+      "pass_": true,
+      "detail": "{'command': \"& 'E:\\\\学习培训\\\\培训\\\\取证\\\\学员工具包_Windows64\\\\runtime\\\\python\\\\python.exe' 'E:\\\\学习培训\\\\培训\\\\取证\\\\学员工具包_Windows64\\\\tools\\\\volatility3\\\\vol.py' '-p' 'E:\\\\学习培训\\\\培训\\\\取证\\\\学员工具包_Windows64\\\\tools\\\\volatility3_extra' '-f' 'E:\\\\学习培训\\\\培训\\\\取证\\\\output\\\\平台API验收_51983a32\\\\labs\\\\inputs\\\\_platform_qa_bc170e0df4\\\\preview_only.raw' '-o' 'E:\\\\学习培训\\\\培训\\\\取证\\\\output\\\\平台API验收_51983a32\\\\labs\\\\out\\\\platform_runs\\\\<本次任务>\\\\files' 'windows.dumpfiles' '--virtaddr' '0xffffa10200123070'\", 'host': 'Windows · PowerShell'}"
+    },
+    {
+      "name": "Plan only vol_memmap",
+      "pass_": true,
+      "detail": "{'command': \"& 'E:\\\\学习培训\\\\培训\\\\取证\\\\学员工具包_Windows64\\\\runtime\\\\python\\\\python.exe' 'E:\\\\学习培训\\\\培训\\\\取证\\\\学员工具包_Windows64\\\\tools\\\\volatility3\\\\vol.py' '-p' 'E:\\\\学习培训\\\\培训\\\\取证\\\\学员工具包_Windows64\\\\tools\\\\volatility3_extra' '-f' 'E:\\\\学习培训\\\\培训\\\\取证\\\\output\\\\平台API验收_51983a32\\\\labs\\\\inputs\\\\_platform_qa_bc170e0df4\\\\preview_only.raw' '-o' 'E:\\\\学习培训\\\\培训\\\\取证\\\\output\\\\平台API验收_51983a32\\\\labs\\\\out\\\\platform_runs\\\\<本次任务>\\\\process' 'windows.memmap' '--pid' '2460' '--dump'\", 'host': 'Windows · PowerShell'}"
+    },
+    {
+      "name": "Plan only vol2_identify",
+      "pass_": true,
+      "detail": "{'command': \"& 'E:\\\\学习培训\\\\培训\\\\取证\\\\学员工具包_Windows64\\\\tools\\\\volatility2\\\\windows\\\\volatility_2.6_win64_standalone.exe' '--plugins=E:\\\\学习培训\\\\培训\\\\取证\\\\学员工具包_Windows64\\\\tools\\\\volatility2\\\\extra_plugins' '--cache-directory=out\\\\platform_runs\\\\<本次任务>\\\\_vol2_cache' '-f' 'E:\\\\学习培训\\\\培训\\\\取证\\\\output\\\\平台API验收_51983a32\\\\labs\\\\inputs\\\\_platform_qa_bc170e0df4\\\\preview_only.raw' '--profile=Win7SP1x86' 'imageinfo'\", 'host': 'Windows · PowerShell'}"
+    },
+    {
+      "name": "Plan only vol2_processes",
+      "pass_": true,
+      "detail": "{'command': \"& 'E:\\\\学习培训\\\\培训\\\\取证\\\\学员工具包_Windows64\\\\tools\\\\volatility2\\\\windows\\\\volatility_2.6_win64_standalone.exe' '--plugins=E:\\\\学习培训\\\\培训\\\\取证\\\\学员工具包_Windows64\\\\tools\\\\volatility2\\\\extra_plugins' '--cache-directory=out\\\\platform_runs\\\\<本次任务>\\\\_vol2_cache' '-f' 'E:\\\\学习培训\\\\培训\\\\取证\\\\output\\\\平台API验收_51983a32\\\\labs\\\\inputs\\\\_platform_qa_bc170e0df4\\\\preview_only.raw' '--profile=Win7SP1x86' 'pslist' '-p' '2104'\", 'host': 'Windows · PowerShell'}"
+    },
+    {
+      "name": "Plan only vol2_history",
+      "pass_": true,
+      "detail": "{'command': \"& 'E:\\\\学习培训\\\\培训\\\\取证\\\\学员工具包_Windows64\\\\tools\\\\volatility2\\\\windows\\\\volatility_2.6_win64_standalone.exe' '--plugins=E:\\\\学习培训\\\\培训\\\\取证\\\\学员工具包_Windows64\\\\tools\\\\volatility2\\\\extra_plugins' '--cache-directory=out\\\\platform_runs\\\\<本次任务>\\\\_vol2_cache' '-f' 'E:\\\\学习培训\\\\培训\\\\取证\\\\output\\\\平台API验收_51983a32\\\\labs\\\\inputs\\\\_platform_qa_bc170e0df4\\\\preview_only.raw' '--profile=Win7SP1x86' 'cmdscan'\", 'host': 'Windows · PowerShell'}"
+    },
+    {
+      "name": "Plan only vol2_files",
+      "pass_": true,
+      "detail": "{'command': \"& 'E:\\\\学习培训\\\\培训\\\\取证\\\\学员工具包_Windows64\\\\tools\\\\volatility2\\\\windows\\\\volatility_2.6_win64_standalone.exe' '--plugins=E:\\\\学习培训\\\\培训\\\\取证\\\\学员工具包_Windows64\\\\tools\\\\volatility2\\\\extra_plugins' '--cache-directory=out\\\\platform_runs\\\\<本次任务>\\\\_vol2_cache' '-f' 'E:\\\\学习培训\\\\培训\\\\取证\\\\output\\\\平台API验收_51983a32\\\\labs\\\\inputs\\\\_platform_qa_bc170e0df4\\\\preview_only.raw' '--profile=Win7SP1x86' 'filescan'\", 'host': 'Windows · PowerShell'}"
+    },
+    {
+      "name": "Plan only vol2_dumpfiles",
+      "pass_": true,
+      "detail": "{'command': \"& 'E:\\\\学习培训\\\\培训\\\\取证\\\\学员工具包_Windows64\\\\tools\\\\volatility2\\\\windows\\\\volatility_2.6_win64_standalone.exe' '--plugins=E:\\\\学习培训\\\\培训\\\\取证\\\\学员工具包_Windows64\\\\tools\\\\volatility2\\\\extra_plugins' '--cache-directory=out\\\\platform_runs\\\\<本次任务>\\\\_vol2_cache' '-f' 'E:\\\\学习培训\\\\培训\\\\取证\\\\output\\\\平台API验收_51983a32\\\\labs\\\\inputs\\\\_platform_qa_bc170e0df4\\\\preview_only.raw' '--profile=Win7SP1x86' 'dumpfiles' '-Q' '0x1000' '-D' 'E:\\\\学习培训\\\\培训\\\\取证\\\\output\\\\平台API验收_51983a32\\\\labs\\\\out\\\\platform_runs\\\\<本次任务>\\\\files'\", 'host': 'Windows · PowerShell'}"
+    },
+    {
+      "name": "Plan only vol2_memdump",
+      "pass_": true,
+      "detail": "{'command': \"& 'E:\\\\学习培训\\\\培训\\\\取证\\\\学员工具包_Windows64\\\\tools\\\\volatility2\\\\windows\\\\volatility_2.6_win64_standalone.exe' '--plugins=E:\\\\学习培训\\\\培训\\\\取证\\\\学员工具包_Windows64\\\\tools\\\\volatility2\\\\extra_plugins' '--cache-directory=out\\\\platform_runs\\\\<本次任务>\\\\_vol2_cache' '-f' 'E:\\\\学习培训\\\\培训\\\\取证\\\\output\\\\平台API验收_51983a32\\\\labs\\\\inputs\\\\_platform_qa_bc170e0df4\\\\preview_only.raw' '--profile=Win7SP1x86' 'memdump' '-p' '2104' '-D' 'E:\\\\学习培训\\\\培训\\\\取证\\\\output\\\\平台API验收_51983a32\\\\labs\\\\out\\\\platform_runs\\\\<本次任务>\\\\process'\", 'host': 'Windows · PowerShell'}"
+    },
+    {
+      "name": "Plan only vol_artifacts",
+      "pass_": true,
+      "detail": "{'command': \"& 'E:\\\\学习培训\\\\培训\\\\取证\\\\学员工具包_Windows64\\\\runtime\\\\python\\\\python.exe' 'E:\\\\学习培训\\\\培训\\\\取证\\\\学员工具包_Windows64\\\\tools\\\\volatility3\\\\vol.py' '-p' 'E:\\\\学习培训\\\\培训\\\\取证\\\\学员工具包_Windows64\\\\tools\\\\volatility3_extra' '-f' 'E:\\\\学习培训\\\\培训\\\\取证\\\\output\\\\平台API验收_51983a32\\\\labs\\\\inputs\\\\_platform_qa_bc170e0df4\\\\preview_only.raw' 'windows.mftscan.MFTScan'\", 'host': 'Windows · PowerShell'}"
+    },
+    {
+      "name": "Plan only vol_registry",
+      "pass_": true,
+      "detail": "{'command': \"& 'E:\\\\学习培训\\\\培训\\\\取证\\\\学员工具包_Windows64\\\\runtime\\\\python\\\\python.exe' 'E:\\\\学习培训\\\\培训\\\\取证\\\\学员工具包_Windows64\\\\tools\\\\volatility3\\\\vol.py' '-p' 'E:\\\\学习培训\\\\培训\\\\取证\\\\学员工具包_Windows64\\\\tools\\\\volatility3_extra' '-f' 'E:\\\\学习培训\\\\培训\\\\取证\\\\output\\\\平台API验收_51983a32\\\\labs\\\\inputs\\\\_platform_qa_bc170e0df4\\\\preview_only.raw' 'windows.registry.hivelist'\", 'host': 'Windows · PowerShell'}"
+    },
+    {
+      "name": "Plan only vol2_artifacts",
+      "pass_": true,
+      "detail": "{'command': \"& 'E:\\\\学习培训\\\\培训\\\\取证\\\\学员工具包_Windows64\\\\tools\\\\volatility2\\\\windows\\\\volatility_2.6_win64_standalone.exe' '--plugins=E:\\\\学习培训\\\\培训\\\\取证\\\\学员工具包_Windows64\\\\tools\\\\volatility2\\\\extra_plugins' '--cache-directory=out\\\\platform_runs\\\\<本次任务>\\\\_vol2_cache' '-f' 'E:\\\\学习培训\\\\培训\\\\取证\\\\output\\\\平台API验收_51983a32\\\\labs\\\\inputs\\\\_platform_qa_bc170e0df4\\\\preview_only.raw' '--profile=Win7SP1x86' 'clipboard'\", 'host': 'Windows · PowerShell'}"
+    },
+    {
+      "name": "Plan only vol2_registry",
+      "pass_": true,
+      "detail": "{'command': \"& 'E:\\\\学习培训\\\\培训\\\\取证\\\\学员工具包_Windows64\\\\tools\\\\volatility2\\\\windows\\\\volatility_2.6_win64_standalone.exe' '--plugins=E:\\\\学习培训\\\\培训\\\\取证\\\\学员工具包_Windows64\\\\tools\\\\volatility2\\\\extra_plugins' '--cache-directory=out\\\\platform_runs\\\\<本次任务>\\\\_vol2_cache' '-f' 'E:\\\\学习培训\\\\培训\\\\取证\\\\output\\\\平台API验收_51983a32\\\\labs\\\\inputs\\\\_platform_qa_bc170e0df4\\\\preview_only.raw' '--profile=Win7SP1x86' 'hivelist'\", 'host': 'Windows · PowerShell'}"
+    },
+    {
+      "name": "Plan only vol_extra",
+      "pass_": true,
+      "detail": "{'command': \"& 'E:\\\\学习培训\\\\培训\\\\取证\\\\学员工具包_Windows64\\\\runtime\\\\python\\\\python.exe' 'E:\\\\学习培训\\\\培训\\\\取证\\\\学员工具包_Windows64\\\\tools\\\\volatility3\\\\vol.py' '-p' 'E:\\\\学习培训\\\\培训\\\\取证\\\\学员工具包_Windows64\\\\tools\\\\volatility3_extra' '--offline' '-q' '-r' 'json' '-o' 'E:\\\\学习培训\\\\培训\\\\取证\\\\output\\\\平台API验收_51983a32\\\\labs\\\\out\\\\platform_runs\\\\<本次任务>\\\\extensions' '-f' 'E:\\\\学习培训\\\\培训\\\\取证\\\\output\\\\平台API验收_51983a32\\\\labs\\\\inputs\\\\_platform_qa_bc170e0df4\\\\preview_only.raw' 'vol_pypykatz.pypykatz'\", 'host': 'Windows · PowerShell'}"
+    },
+    {
+      "name": "Plan only vol2_extra",
+      "pass_": true,
+      "detail": "{'command': \"& 'E:\\\\学习培训\\\\培训\\\\取证\\\\学员工具包_Windows64\\\\tools\\\\volatility2\\\\windows\\\\volatility_2.6_win64_standalone.exe' '--plugins=E:\\\\学习培训\\\\培训\\\\取证\\\\学员工具包_Windows64\\\\tools\\\\volatility2\\\\extra_plugins' '--cache-directory=out\\\\platform_runs\\\\<本次任务>\\\\_vol2_cache' '-f' 'E:\\\\学习培训\\\\培训\\\\取证\\\\output\\\\平台API验收_51983a32\\\\labs\\\\inputs\\\\_platform_qa_bc170e0df4\\\\preview_only.raw' '--profile=Win7SP1x86' 'mimikatz'\", 'host': 'Windows · PowerShell'}"
+    },
+    {
+      "name": "Synthetic CSV cannot be selected as RAM",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "Upload stays in inputs",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "Independent PNG auto-routed by content",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "Auto reports are downloadable artifacts",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "Independent SQLite table auto-discovered",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "SQLite reads matching WAL through private copies",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "SQLite WAL and SHM evidence remain byte-identical",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "Custom SELECT works on a non-exercise schema",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "Reject non-read-only SQL DELETE FROM orders",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "Reject non-read-only SQL WITH x AS (SELECT 1) DELETE FROM orders",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "Reject non-read-only SQL SELECT load_extension('missing')",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "Reject non-read-only SQL SELECT readfile('index.html')",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "Reject non-read-only SQL ATTACH DATABASE 'other.db' AS other",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "Reject non-read-only SQL .shell whoami",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "Reject non-read-only SQL SELECT 1; DELETE FROM orders",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "SQL attempts leave database unchanged",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "Independent PDF text and attachments detected",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "PE parser processes a real bundled binary statically",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "JSONL analysis does not require exercise fields",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "Parameterized LSB matches known channel order",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "Custom YARA rule returns match offsets",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "YARA includes cannot read arbitrary files",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "Generic archive extraction blocks traversal",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "Non-ZIP archive can be extracted with 7-Zip",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "Archive password failure is not reported as success",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "Generic archive extraction rejects links",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "Streaming strings reach beyond 64 MiB",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "Large-file carving preserves exact range",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "Same-batch companion files share a directory",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "Duplicate upload cannot replace or delete an input",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "Empty uploaded file produces an honest report",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "History includes completed analysis",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "Finished reports can be restored from local history",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "Disk workflow validates and follows actual offsets",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "Invalid RAM stops after info and records diagnostics",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "An owned running task can be cancelled",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "Original evidence unchanged",
+      "pass_": true,
+      "detail": ""
+    }
+  ],
+  "passed": 115,
+  "total": 115,
+  "real_ram_parsed": false,
+  "kali_executed": false,
+  "generated_jobs": [
+    "bbe309cebf484b8e",
+    "d27fab4953da4bca",
+    "5725e35897bd4eb0",
+    "159935126a3148d1",
+    "f71251d8771d480d",
+    "d018e31ea28b4445",
+    "9a566eb60df64c35",
+    "c75a8e684c884e59",
+    "6653982d2b074deb",
+    "29e422505bef404c",
+    "e786fad04ea64833",
+    "713e5020e36d4d07",
+    "7deb3c8a8c024baa",
+    "f3eea2da21b2482f",
+    "74c4cba940924825",
+    "9db61ac545af4964",
+    "691fc5ec9fbc4355",
+    "610c364d855e4b7c",
+    "d5c728ac602f4806",
+    "1ce79ba9428e443e",
+    "8692c7716d964671",
+    "d69d21932d6d4bcd",
+    "b5498cfb6bcc41c5",
+    "e8a105dc075b4610",
+    "cf6af6565eb6424a",
+    "ab78a91f17cb4722",
+    "244ba24a3a0a4f5d",
+    "367330a58aa8436c",
+    "a92aef7e281d43a0",
+    "53f967daa68b4218",
+    "1b2e0789bb3e42f8",
+    "4e44d810e069422f",
+    "17d086cf33074d02",
+    "99ad1b74a4584807",
+    "900b048e5aa3403d",
+    "65ec3085caac4498",
+    "5a83e60ce6f24b84",
+    "736357c81d204154",
+    "c7eb6e537f2f4449",
+    "a5383528c00546b1",
+    "c1e7ad0cef204d17",
+    "58baa7431e0840a9",
+    "81092d07eb804295",
+    "cd0e3b1ea8de4643",
+    "17ba58b800ce4856",
+    "5372eb8f006545ca",
+    "a66cee84978f41fe",
+    "9d243b7d8ad24e42",
+    "727cc991b99c45f7",
+    "6b7602d03d934af5",
+    "cdb467e97c024cb7",
+    "d335d8310d2c4a43",
+    "e21a0dd0fc46465c",
+    "a0931f5c46a94e81",
+    "90b49d6ff3044a65",
+    "3c0c543486e640ec",
+    "275b218ae75a4207",
+    "0aaa24f6e62c4eb5",
+    "382974b6c97e4a15",
+    "e350faedbf624a74",
+    "b0c13a32184b4ae2",
+    "a5d3977298dc447f",
+    "a9ea3a5be46e4af7",
+    "774c056b3c424aef",
+    "a041a2d1a5d947ee",
+    "b8c76a7788504076",
+    "9ff9ec0c23dc4d47",
+    "1da75107acb94337",
+    "c0fc1b4cc2f34ac6",
+    "3aef1518e8f149a0"
+  ],
+  "qa_inputs": "inputs/_platform_qa_bc170e0df4",
+  "uploaded_inputs": [
+    "inputs\\59fd8877a5eb",
+    "inputs\\ddc3261885ea42869c1e6f41",
+    "inputs\\ab1d52f00af6"
+  ]
+}

@@ -1,0 +1,7 @@
+# Disk DescriptorFile
+version=1
+CID=12345678
+parentCID=ffffffff
+createType="monolithicFlat"
+RW 18432 FLAT "disk-flat.vmdk" 0
+ddb.adapterType="ide"

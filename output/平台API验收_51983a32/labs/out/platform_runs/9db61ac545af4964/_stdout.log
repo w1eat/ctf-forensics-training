@@ -1,0 +1,18 @@
+
+7-Zip 26.04 (x64) : Copyright (c) 1999-2026 Igor Pavlov : 2026-10-05
+
+Scanning the drive for archives:
+1 file, 174 bytes (1 KiB)
+
+Listing archive: E:\学习培训\培训\取证\output\平台API验收_51983a32\labs\04_archive\locked.zip
+
+--
+Path = E:\学习培训\培训\取证\output\平台API验收_51983a32\labs\04_archive\locked.zip
+Type = zip
+Physical Size = 174
+
+   Date      Time    Attr         Size   Compressed  Name
+------------------- ----- ------------ ------------  ------------------------
+2026-10-18 00:00:00 .....           48           60  note.txt
+------------------- ----- ------------ ------------  ------------------------
+2026-10-18 00:00:00                 48           60  1 files

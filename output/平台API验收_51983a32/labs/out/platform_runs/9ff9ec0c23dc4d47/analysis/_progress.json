@@ -1,0 +1,43 @@
+{
+  "stage": "报告已生成",
+  "state": "completed",
+  "completed": 6,
+  "stages": [
+    {
+      "id": "identify",
+      "title": "识别文件结构与类型",
+      "status": "completed",
+      "seconds": 0.0
+    },
+    {
+      "id": "fingerprint",
+      "title": "全文件摘要与字节熵",
+      "status": "completed",
+      "seconds": 0.0
+    },
+    {
+      "id": "clues",
+      "title": "通用字符串与嵌入签名",
+      "status": "completed",
+      "seconds": 0.0
+    },
+    {
+      "id": "workflow_embedded",
+      "title": "嵌入对象与雕刻",
+      "status": "completed",
+      "seconds": 0.0
+    },
+    {
+      "id": "targeted_search",
+      "title": "全文件关键词与 flag 形态检索",
+      "status": "completed",
+      "seconds": 0.0
+    },
+    {
+      "id": "yara",
+      "title": "内置 YARA 线索规则",
+      "status": "completed",
+      "seconds": 0.001
+    }
+  ]
+}

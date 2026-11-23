@@ -1,0 +1,60 @@
+<!doctype html><meta charset="utf-8"><title>取证分析结果</title><style>body{font:15px/1.8 Microsoft YaHei;background:#f7f8f2;color:#193c33;padding:32px}pre{white-space:pre-wrap;overflow-wrap:anywhere}</style><h1>自动文件分离</h1><pre>{
+  &quot;kind&quot;: &quot;casework&quot;,
+  &quot;operation&quot;: &quot;separate&quot;,
+  &quot;title&quot;: &quot;自动文件分离&quot;,
+  &quot;columns&quot;: [
+    &quot;导出文件&quot;,
+    &quot;源字节偏移&quot;,
+    &quot;字节数&quot;,
+    &quot;格式&quot;,
+    &quot;边界验证&quot;
+  ],
+  &quot;rows&quot;: [
+    [
+      &quot;0001_000000000000.png&quot;,
+      &quot;0x0&quot;,
+      471,
+      &quot;png&quot;,
+      &quot;块边界到 IEND；CRC 全部一致&quot;
+    ],
+    [
+      &quot;0002_0000000001d7.zip&quot;,
+      &quot;0x1d7&quot;,
+      201,
+      &quot;zip&quot;,
+      &quot;EOCD / 中央目录通过；加密或较大条目未验证内容 CRC&quot;
+    ]
+  ],
+  &quot;exports&quot;: [
+    {
+      &quot;file&quot;: &quot;0001_000000000000.png&quot;,
+      &quot;source&quot;: &quot;E:\\学习培训\\培训\\取证\\练习材料\\inputs\\d58289c7315e46c0bbcde2d0\\QR_code.png&quot;,
+      &quot;parent&quot;: null,
+      &quot;offset&quot;: 0,
+      &quot;offset_hex&quot;: &quot;0x0&quot;,
+      &quot;length&quot;: 471,
+      &quot;format&quot;: &quot;png&quot;,
+      &quot;sha256&quot;: &quot;b93364548806b9370c1a0fccdd36e1cdc0f6dda146906260ca370e4aa612c10d&quot;,
+      &quot;validation&quot;: &quot;块边界到 IEND；CRC 全部一致&quot;,
+      &quot;depth&quot;: 0
+    },
+    {
+      &quot;file&quot;: &quot;0002_0000000001d7.zip&quot;,
+      &quot;source&quot;: &quot;E:\\学习培训\\培训\\取证\\练习材料\\inputs\\d58289c7315e46c0bbcde2d0\\QR_code.png&quot;,
+      &quot;parent&quot;: null,
+      &quot;offset&quot;: 471,
+      &quot;offset_hex&quot;: &quot;0x1d7&quot;,
+      &quot;length&quot;: 201,
+      &quot;format&quot;: &quot;zip&quot;,
+      &quot;sha256&quot;: &quot;a386d9a1660175a7ae008af533d4b5346d1b0520bbb72b896d2d3fe5cc42ffda&quot;,
+      &quot;validation&quot;: &quot;EOCD / 中央目录通过；加密或较大条目未验证内容 CRC&quot;,
+      &quot;depth&quot;: 0
+    }
+  ],
+  &quot;candidates&quot;: 4,
+  &quot;exported_bytes&quot;: 672,
+  &quot;warnings&quot;: [],
+  &quot;scan_mib&quot;: 0,
+  &quot;total_input_bytes&quot;: 672,
+  &quot;note&quot;: &quot;偏移属于该行 source 文件；签名命中不等于完整文件。已记录边界与验证方式，不能恢复所有碎片文件。&quot;
+}</pre>

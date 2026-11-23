@@ -1,0 +1,3 @@
+﻿epoch,utc,event,field,sector,sector_size,inode,path,mode,bytes
+1792285200,2026-10-18T01:00:00Z,M 内容修改,mtime,2048,512,3,/README.TXT,r/rrwxrwxrwx,64
+1792285200,2026-10-18T01:00:00Z,M 内容修改,mtime,2048,512,4,/_ECRET.TXT (deleted),r/rrwxrwxrwx,31

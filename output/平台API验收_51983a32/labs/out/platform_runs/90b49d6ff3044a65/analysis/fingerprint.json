@@ -1,0 +1,17 @@
+{
+  "kind": "hash",
+  "name": "自选文档.pdf",
+  "bytes": 1068,
+  "md5": "31efd74ce7569b008459b12dfe602566",
+  "sha1": "cebcdf695027d0d3165cc85617c269591b836e4b",
+  "sha256": "90ff2b84d6be76149170182db48f483365e9816e78b115b786b8a42835a08bad",
+  "entropy": 4.79322,
+  "entropy_windows": [
+    {
+      "offset": 0,
+      "bytes": 1068,
+      "entropy": 4.79322
+    }
+  ],
+  "note": "MD5 / SHA1 仅用于已知摘要对照；证据一致性优先记录 SHA256。熵高不等于一定加密。"
+}

@@ -1,0 +1,27 @@
+{
+  "id": "c7a06bfc87e9469a",
+  "action": "file_hash",
+  "title": "计算 SHA256",
+  "state": "completed",
+  "command": "& 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\runtime\\python\\python.exe' 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\tools\\tool_tasks.py' 'hash' 'E:\\学习培训\\培训\\取证\\output\\管理功能验收_aca71cce\\中文 资料\\labs\\inputs\\0ec422fb5901\\界面验收_附件.txt'",
+  "created": "2026-10-22T10:30:21.349319+08:00",
+  "exit_code": 0,
+  "text": "{\"kind\": \"hash\", \"name\": \"界面验收_附件.txt\", \"bytes\": 24, \"sha256\": \"c35253e73ca9c55b9e6935619b5507f05cdf311e8a5a2d63685688307e0836b8\"}\r\n",
+  "error": "",
+  "duration": 0.16,
+  "files": [
+    {
+      "name": "运行报告.txt",
+      "bytes": 603,
+      "path": "out/platform_runs/c7a06bfc87e9469a/运行报告.txt"
+    }
+  ],
+  "data": {
+    "kind": "hash",
+    "name": "界面验收_附件.txt",
+    "bytes": 24,
+    "sha256": "c35253e73ca9c55b9e6935619b5507f05cdf311e8a5a2d63685688307e0836b8"
+  },
+  "host": "Windows · PowerShell",
+  "input": "inputs/0ec422fb5901/界面验收_附件.txt"
+}

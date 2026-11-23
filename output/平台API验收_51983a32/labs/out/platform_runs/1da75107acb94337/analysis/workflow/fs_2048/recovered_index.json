@@ -1,0 +1,36 @@
+[
+  {
+    "inode": "4",
+    "path": "_ECRET.TXT",
+    "deleted": true,
+    "status": "exported",
+    "command": "& 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\tools\\sleuthkit\\bin\\icat.exe' '-r' '-b' '512' '-o' '2048' 'E:\\学习培训\\培训\\取证\\output\\平台API验收_51983a32\\labs\\05_disk\\tiny_fat16.dd' '4'",
+    "exit_code": 0,
+    "bytes": 31,
+    "limited": false,
+    "output": "workflow/fs_2048/recovered/001__ECRET.TXT",
+    "sha256": "88e52e92c1550b0936c60b02aebedb3ca0b411ba3d7a71060ab2c0948aef73bc",
+    "keyword_hits": 1,
+    "flag_candidates": [
+      {
+        "offset": "0x0",
+        "encoding": "ascii",
+        "value": "flag{deleted_entry_is_a_clue}"
+      }
+    ]
+  },
+  {
+    "inode": "3",
+    "path": "README.TXT",
+    "deleted": false,
+    "status": "exported",
+    "command": "& 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\tools\\sleuthkit\\bin\\icat.exe' '-r' '-b' '512' '-o' '2048' 'E:\\学习培训\\培训\\取证\\output\\平台API验收_51983a32\\labs\\05_disk\\tiny_fat16.dd' '3'",
+    "exit_code": 0,
+    "bytes": 64,
+    "limited": false,
+    "output": "workflow/fs_2048/recovered/002_README.TXT",
+    "sha256": "90ac66f0a82458c5675055363633a49c14f1f660bd82ed44ffbab0c1575168ac",
+    "keyword_hits": 0,
+    "flag_candidates": []
+  }
+]

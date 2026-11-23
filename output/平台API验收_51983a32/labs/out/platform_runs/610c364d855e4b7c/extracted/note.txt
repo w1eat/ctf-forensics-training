@@ -1,0 +1,2 @@
+Teaching fixture
+flag{dictionary_from_the_hint}

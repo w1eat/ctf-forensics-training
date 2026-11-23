@@ -1,0 +1,17 @@
+{
+  "kind": "casework",
+  "title": "转换为 RAW 工作副本",
+  "columns": [
+    "输出",
+    "字节数",
+    "SHA256"
+  ],
+  "rows": [
+    [
+      "converted.raw",
+      9437184,
+      "4293659eb90411fd57ae90c14745a8c3a2e57db360552e6a2e6dcb6398fd65ed"
+    ]
+  ],
+  "note": "img_cat 通过当前 TSK 镜像后端读取逻辑字节，不修改容器原件。RAW 可继续浏览、恢复或按分区只读挂载。"
+}

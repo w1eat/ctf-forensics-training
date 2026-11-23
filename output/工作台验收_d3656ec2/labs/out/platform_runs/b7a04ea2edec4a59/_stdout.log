@@ -1,0 +1,1 @@
+{"title": "PhotoRec 签名恢复", "result": "result.json", "note": "基于签名雕刻，通常不能还原原文件名和目录。已输出不代表完整；任务达到时间或空间上限时应逐个验证，输出目录保留 PhotoRec XML / 日志。"}

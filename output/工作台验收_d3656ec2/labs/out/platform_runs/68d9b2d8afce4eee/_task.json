@@ -1,0 +1,90 @@
+{
+  "id": "68d9b2d8afce4eee",
+  "action": "disk_mount",
+  "title": "只读挂载 / 卸载镜像",
+  "state": "completed",
+  "command": "& 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\runtime\\python\\python.exe' 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\tools\\casework.py' 'mount' '--args' 'E:\\学习培训\\培训\\取证\\output\\工作台验收_d3656ec2\\labs\\out\\platform_runs\\68d9b2d8afce4eee\\_case_args.json' '--out' 'E:\\学习培训\\培训\\取证\\output\\工作台验收_d3656ec2\\labs\\out\\platform_runs\\68d9b2d8afce4eee\\evidence' '--kit' 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64' '--labs' 'E:\\学习培训\\培训\\取证\\output\\工作台验收_d3656ec2\\labs'",
+  "created": "2026-10-23T09:41:38.676436+08:00",
+  "exit_code": 0,
+  "text": "{\"title\": \"只读挂载准备\", \"result\": \"result.json\", \"note\": \"先确认文件系统与分区起点。挂载只允许只读；卸载只处理本工作区记录的盘符。Windows 的原生文件系统驱动不能浏览 Ext4。\"}\r\n",
+  "error": "",
+  "duration": 0.16,
+  "files": [
+    {
+      "name": "evidence/result.json",
+      "bytes": 1627,
+      "path": "out/platform_runs/68d9b2d8afce4eee/evidence/result.json"
+    },
+    {
+      "name": "evidence/结果报告.html",
+      "bytes": 2559,
+      "path": "out/platform_runs/68d9b2d8afce4eee/evidence/结果报告.html"
+    },
+    {
+      "name": "运行报告.txt",
+      "bytes": 1034,
+      "path": "out/platform_runs/68d9b2d8afce4eee/运行报告.txt"
+    }
+  ],
+  "data": {
+    "kind": "casework",
+    "title": "只读挂载准备",
+    "columns": [
+      "参数",
+      "值"
+    ],
+    "rows": [
+      [
+        "方式",
+        "veracrypt"
+      ],
+      [
+        "字节偏移",
+        0
+      ],
+      [
+        "计划命令",
+        "& 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\tools\\veracrypt\\VeraCrypt.exe' '/volume' 'E:\\学习培训\\培训\\取证\\output\\工作台验收_d3656ec2\\labs\\05_disk\\tiny_fat16.dd' '/letter' 'R' '/mountoption' 'readonly' '/password' '<在界面输入的已知口令>'"
+      ],
+      [
+        "Windows 权限",
+        "系统挂载 / 驱动需要管理员，执行时可能出现 UAC"
+      ],
+      [
+        "普通查看 / 恢复",
+        "使用镜像目录与恢复工具，无需系统挂载"
+      ]
+    ],
+    "note": "先确认文件系统与分区起点。挂载只允许只读；卸载只处理本工作区记录的盘符。Windows 的原生文件系统驱动不能浏览 Ext4。",
+    "next_actions": [
+      {
+        "title": "执行只读挂载",
+        "action": "disk_mount",
+        "params": {
+          "file": "05_disk/tiny_fat16.dd",
+          "mode": "mount",
+          "method": "veracrypt",
+          "drive": "R",
+          "sector": "0",
+          "sector_size": "512",
+          "pim": ""
+        }
+      },
+      {
+        "title": "检查当前挂载和驱动状态",
+        "action": "disk_mount",
+        "params": {
+          "file": "05_disk/tiny_fat16.dd",
+          "mode": "status",
+          "method": "veracrypt",
+          "drive": "R",
+          "sector": "0",
+          "sector_size": "512",
+          "pim": ""
+        }
+      }
+    ]
+  },
+  "host": "Windows · PowerShell",
+  "input": "05_disk/tiny_fat16.dd"
+}

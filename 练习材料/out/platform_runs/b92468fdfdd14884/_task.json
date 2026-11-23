@@ -1,0 +1,42 @@
+{
+  "id": "b92468fdfdd14884",
+  "action": "text_preview",
+  "title": "预览文本与结构化日志",
+  "state": "completed",
+  "command": "& 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\runtime\\python\\python.exe' 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\tools\\analysis_engine.py' 'text' 'E:\\学习培训\\培训\\取证\\练习材料\\out\\platform_runs\\0fd270f885ce47e0\\extracted\\4number.txt' '--out' 'E:\\学习培训\\培训\\取证\\练习材料\\out\\platform_runs\\b92468fdfdd14884' '--kit' 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64' '--encoding' 'utf-8-sig' '--rows' '200'",
+  "created": "2026-10-23T09:58:49.688923+08:00",
+  "exit_code": 0,
+  "text": "{\"columns\": [\"行号\", \"文本\"], \"rows\": [[1, \"CTF{vjpw_wnoei}\"]], \"kind\": \"text\", \"limited\": false, \"errors\": [], \"encoding\": \"utf-8-sig\"}\r\n",
+  "error": "",
+  "duration": 0.16,
+  "files": [
+    {
+      "name": "result.json",
+      "bytes": 207,
+      "path": "out/platform_runs/b92468fdfdd14884/result.json"
+    },
+    {
+      "name": "运行报告.txt",
+      "bytes": 789,
+      "path": "out/platform_runs/b92468fdfdd14884/运行报告.txt"
+    }
+  ],
+  "data": {
+    "columns": [
+      "行号",
+      "文本"
+    ],
+    "rows": [
+      [
+        1,
+        "CTF{vjpw_wnoei}"
+      ]
+    ],
+    "kind": "text",
+    "limited": false,
+    "errors": [],
+    "encoding": "utf-8-sig"
+  },
+  "host": "Windows · PowerShell",
+  "input": "out/platform_runs/0fd270f885ce47e0/extracted/4number.txt"
+}

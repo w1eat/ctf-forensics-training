@@ -1,0 +1,13 @@
+MD5:
+
+c6ff76f3cc08a739302ee372d6a2a62d  volatility_2.6_lin64_standalone.zip
+1de73681ec0e883af852755141eab909  volatility_2.6_mac64_standalone.zip
+07b3292dc814ded7c00322a7525d73db  volatility_2.6_win64_standalone.zip
+1249996d1887578365ee74ec3763cc13  volatility-2.6.zip 
+
+SHA256:
+
+dc375a0f6909cb93ac17a10e28a0963fcd2decfc3c4291aadb7e5e0cbe28874a  volatility_2.6_lin64_standalone.zip
+23bab41b110a1470b9ca71e945450a0a8bcb2edfc8160643b38ab2a8c1d4bd8f  volatility_2.6_mac64_standalone.zip
+bb021f3b569bf8ee4a408b2e07b0662699894ff7eecd4473badf0ef0c58f2fce  volatility_2.6_win64_standalone.zip
+5b73050d72bf94870ffce22843f03d4b0b7764011dec29ef1a0a5b1b46cf9295  volatility-2.6.zip

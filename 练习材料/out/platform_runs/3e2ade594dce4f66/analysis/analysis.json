@@ -1,0 +1,305 @@
+{
+  "kind": "analysis",
+  "source": "0002_0000000001d7.zip",
+  "created": "2026-10-23T09:58:06.510475+08:00",
+  "host": "Windows PowerShell",
+  "profile": "standard",
+  "workflow": "auto",
+  "sections": [
+    {
+      "id": "identify",
+      "title": "识别文件结构与类型",
+      "status": "completed",
+      "seconds": 0.0,
+      "data": {
+        "kind": "zip",
+        "label": "ZIP local",
+        "evidence": "文件头 50 4b 03 04",
+        "extension": ".zip",
+        "bytes": 201,
+        "header": "50 4b 03 04 14 00 09 00 08 00 8b 50 2f 48 46 34 4c ae 1d 00 00 00 0f 00 00 00 0b 00 00 00 34 6e 75 6d 62 65 72 2e 74 78 74 6e 0d da 0b 3f 5a 17 7a 31 0d 51 6a 78 75 c6 03 4a 9d 97 a9 b7 5b fc"
+      }
+    },
+    {
+      "id": "fingerprint",
+      "title": "全文件摘要与字节熵",
+      "status": "completed",
+      "seconds": 0.001,
+      "data": {
+        "kind": "hash",
+        "name": "0002_0000000001d7.zip",
+        "bytes": 201,
+        "md5": "f1e31ecb99309b8d9a829e9b590374cc",
+        "sha1": "6d1e21198d6d7133ddb2bdb4459aba382300239e",
+        "sha256": "a386d9a1660175a7ae008af533d4b5346d1b0520bbb72b896d2d3fe5cc42ffda",
+        "entropy": 4.83465,
+        "entropy_windows": [
+          {
+            "offset": 0,
+            "bytes": 201,
+            "entropy": 4.83465
+          }
+        ],
+        "note": "MD5 / SHA1 仅用于已知摘要对照；证据一致性优先记录 SHA256。熵高不等于一定加密。"
+      }
+    },
+    {
+      "id": "clues",
+      "title": "通用字符串与嵌入签名",
+      "status": "completed",
+      "seconds": 0.0,
+      "data": {
+        "kind": "scan",
+        "strings": {
+          "columns": [
+            "字节偏移",
+            "编码",
+            "可读内容（最多 1024 字节）",
+            "匹配字节数"
+          ],
+          "rows": [
+            [
+              "0xb",
+              "ASCII",
+              "P/HF4L",
+              6
+            ],
+            [
+              "0x1e",
+              "ASCII",
+              "4number.txtn",
+              12
+            ],
+            [
+              "0x33",
+              "ASCII",
+              "Qjxu",
+              4
+            ],
+            [
+              "0x63",
+              "ASCII",
+              "P/HF4L",
+              6
+            ],
+            [
+              "0x84",
+              "ASCII",
+              "4number.txt",
+              11
+            ],
+            [
+              "0xa3",
+              "ASCII",
+              "ezhd",
+              4
+            ],
+            [
+              "0xab",
+              "ASCII",
+              "ezhd",
+              4
+            ]
+          ]
+        },
+        "signatures": {
+          "columns": [
+            "字节偏移",
+            "签名",
+            "含义"
+          ],
+          "rows": [
+            [
+              "0x0",
+              "ZIP local",
+              "候选；需验证结构和边界"
+            ],
+            [
+              "0x56",
+              "ZIP central",
+              "候选；需验证结构和边界"
+            ],
+            [
+              "0xb3",
+              "ZIP end",
+              "候选；需验证结构和边界"
+            ]
+          ]
+        },
+        "scanned_bytes": 201,
+        "total_bytes": 201,
+        "partial": false,
+        "string_rows_limited": false,
+        "signature_rows_limited": false,
+        "note": "仅提取 ASCII 可打印字符及其 UTF-16LE 表示；不覆盖所有语言。跨块长串可能分段显示。"
+      }
+    },
+    {
+      "id": "metadata",
+      "title": "ExifTool 元数据",
+      "status": "completed",
+      "seconds": 0.247,
+      "data": {
+        "command": "& 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\tools\\exiftool\\exiftool.exe' '-charset' 'filename=UTF8' '-@' 'out/platform_runs/3e2ade594dce4f66/analysis/_exif.args'",
+        "exit_code": 0,
+        "preview": "[{\r\n  \"SourceFile\": \"./inputs/bc2a8904e00f45f4805c98c6/0002_0000000001d7.zip\",\r\n  \"ExifTool:ExifToolVersion\": 13.59,\r\n  \"System:FileName\": \"0002_0000000001d7.zip\",\r\n  \"System:Directory\": \"./inputs/bc2a8904e00f45f4805c98c6\",\r\n  \"System:FileSize\": \"201 bytes\",\r\n  \"System:FileModifyDate\": \"2026:10:23 09:58:06+08:00\",\r\n  \"System:FileAccessDate\": \"2026:10:23 09:58:07+08:00\",\r\n  \"System:FileCreateDate\": \"2026:10:23 09:58:06+08:00\",\r\n  \"System:FilePermissions\": \"-rw-rw-rw-\",\r\n  \"File:FileType\": \"ZIP\",\r\n  \"File:FileTypeExtension\": \"zip\",\r\n  \"File:MIMEType\": \"application/zip\",\r\n  \"ZIP:ZipRequiredVersion\": 20,\r\n  \"ZIP:ZipBitFlag\": \"0x0009\",\r\n  \"ZIP:ZipCompression\": \"Deflated\",\r\n  \"ZIP:ZipModifyDate\": \"2016:01:15 10:04:22\",\r\n  \"ZIP:ZipCRC\": \"0xae4c3446\",\r\n  \"ZIP:ZipCompressedSize\": 29,\r\n  \"ZIP:ZipUncompressedSize\": 15,\r\n  \"ZIP:ZipFileName\": \"4number.txt\"\r\n}]\r\n",
+        "diagnostics": "",
+        "log": "metadata.txt",
+        "argument_file": "-a\n-u\n-G1\n-j\n./inputs/bc2a8904e00f45f4805c98c6/0002_0000000001d7.zip\n",
+        "fields": [
+          {
+            "SourceFile": "./inputs/bc2a8904e00f45f4805c98c6/0002_0000000001d7.zip",
+            "ExifTool:ExifToolVersion": 13.59,
+            "System:FileName": "0002_0000000001d7.zip",
+            "System:Directory": "./inputs/bc2a8904e00f45f4805c98c6",
+            "System:FileSize": "201 bytes",
+            "System:FileModifyDate": "2026:10:23 09:58:06+08:00",
+            "System:FileAccessDate": "2026:10:23 09:58:07+08:00",
+            "System:FileCreateDate": "2026:10:23 09:58:06+08:00",
+            "System:FilePermissions": "-rw-rw-rw-",
+            "File:FileType": "ZIP",
+            "File:FileTypeExtension": "zip",
+            "File:MIMEType": "application/zip",
+            "ZIP:ZipRequiredVersion": 20,
+            "ZIP:ZipBitFlag": "0x0009",
+            "ZIP:ZipCompression": "Deflated",
+            "ZIP:ZipModifyDate": "2016:01:15 10:04:22",
+            "ZIP:ZipCRC": "0xae4c3446",
+            "ZIP:ZipCompressedSize": 29,
+            "ZIP:ZipUncompressedSize": 15,
+            "ZIP:ZipFileName": "4number.txt"
+          }
+        ]
+      }
+    },
+    {
+      "id": "metadata_decodings",
+      "title": "元数据中的编码候选",
+      "status": "completed",
+      "seconds": 0.001,
+      "data": {
+        "encoding": "utf-8-sig",
+        "read_bytes": 907,
+        "total_bytes": 907,
+        "limited": false,
+        "columns": [
+          "编码候选",
+          "文本字符位置",
+          "解码预览",
+          "输出"
+        ],
+        "rows": [],
+        "note": "只做一层严格 Base64 / Hex 候选解码，字符位置不是原始文件字节偏移。编码形态不等于加密。"
+      }
+    },
+    {
+      "id": "workflow_archive",
+      "title": "压缩包与嵌套附件",
+      "status": "completed",
+      "seconds": 0.085,
+      "data": {
+        "columns": [
+          "路径",
+          "展开字节",
+          "压缩字节",
+          "加密",
+          "CRC"
+        ],
+        "rows": [
+          [
+            "4number.txt",
+            "15",
+            "29",
+            "+",
+            "AE4C3446"
+          ]
+        ],
+        "kind": "archive",
+        "listing": {
+          "command": "& 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\tools\\7zip\\7z.exe' 'l' '-slt' '-ba' '-sccUTF-8' '-p__no_password_supplied__' '--' 'E:\\学习培训\\培训\\取证\\练习材料\\inputs\\bc2a8904e00f45f4805c98c6\\0002_0000000001d7.zip'",
+          "exit_code": 0,
+          "preview": "Path = 4number.txt\r\nFolder = -\r\nSize = 15\r\nPacked Size = 29\r\nModified = 2016-01-15 10:04:23.9648128\r\nCreated = 2016-01-12 12:40:41.5787621\r\nAccessed = 2016-01-12 12:40:41.5787621\r\nAttributes = A\r\nEncrypted = +\r\nComment = \r\nCRC = AE4C3446\r\nMethod = ZipCrypto Deflate\r\nCharacteristics = NTFS : Encrypt Descriptor\r\nHost OS = FAT\r\nVersion = 20\r\nVolume Index = 0\r\nOffset = 0\r\n\r\n",
+          "diagnostics": "",
+          "log": "archive_listing.txt",
+          "argument_file": null
+        },
+        "entries": 1,
+        "mode": "list",
+        "exit_code": 0,
+        "skipped": "加密压缩包：已列目录，未尝试口令或提取。"
+      }
+    },
+    {
+      "id": "targeted_search",
+      "title": "全文件关键词与 flag 形态检索",
+      "status": "completed",
+      "seconds": 0.0,
+      "data": {
+        "columns": [
+          "字节偏移",
+          "编码",
+          "关键词",
+          "上下文"
+        ],
+        "rows": [],
+        "flag_candidates": [],
+        "scanned_bytes": 201,
+        "total_bytes": 201,
+        "partial": false,
+        "limited": false,
+        "note": "flag 形态是候选，必须回到文件 / 业务语义验证。命中条数有上限，扫描不会因普通字符串表满而提前结束。"
+      }
+    },
+    {
+      "id": "yara",
+      "title": "内置 YARA 线索规则",
+      "status": "completed",
+      "seconds": 0.003,
+      "data": {
+        "columns": [
+          "规则",
+          "字符串",
+          "字节偏移",
+          "匹配字节（截取）",
+          "文本预览"
+        ],
+        "rows": [],
+        "kind": "yara",
+        "matched_rules": [],
+        "note": "规则命中是线索，不能据此直接判定恶意或确认答案。自定义规则禁用 include。"
+      }
+    }
+  ],
+  "recommendations": [
+    "命中仅是候选；请结合路径、对象结构和原始输出确认。未导出、跳过与预算限制均保留在报告中。"
+  ],
+  "identification": {
+    "kind": "zip",
+    "label": "ZIP local",
+    "evidence": "文件头 50 4b 03 04",
+    "extension": ".zip",
+    "bytes": 201,
+    "header": "50 4b 03 04 14 00 09 00 08 00 8b 50 2f 48 46 34 4c ae 1d 00 00 00 0f 00 00 00 0b 00 00 00 34 6e 75 6d 62 65 72 2e 74 78 74 6e 0d da 0b 3f 5a 17 7a 31 0d 51 6a 78 75 c6 03 4a 9d 97 a9 b7 5b fc"
+  },
+  "selected_workflow": "archive",
+  "findings": [],
+  "children": [],
+  "next_actions": [
+    {
+      "title": "输入已知口令后继续",
+      "action": "archive_general",
+      "params": {
+        "file": "inputs/bc2a8904e00f45f4805c98c6/0002_0000000001d7.zip",
+        "mode": "extract",
+        "password": ""
+      }
+    }
+  ],
+  "limits": {
+    "max_exported_files": 32,
+    "exported_files": 0,
+    "max_exported_bytes": 134217728,
+    "accounted_bytes": 0,
+    "child_depth": 2
+  }
+}

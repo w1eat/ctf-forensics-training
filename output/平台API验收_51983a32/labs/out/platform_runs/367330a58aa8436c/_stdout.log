@@ -1,0 +1,1 @@
+{"columns": ["id", "name", "note"], "rows": [[2, "old-note", "flag{query_the_schema_first}"]], "kind": "sqlite_query", "limited": false, "query": "SELECT id,name,note FROM artifacts WHERE deleted=1;", "limit": 200, "note": "只读连接；需完整提取时在副本上使用 SQLite CLI。若存在 WAL，需将匹配的 -wal / -shm 与数据库一起放在同一目录。"}

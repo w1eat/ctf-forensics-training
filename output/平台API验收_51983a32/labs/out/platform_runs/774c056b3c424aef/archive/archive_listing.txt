@@ -1,0 +1,19 @@
+Path = link
+Folder = -
+Size = 10
+Packed Size = 0
+Modified = 1970-01-01 08:00:00
+Created = 
+Accessed = 
+Mode = lrw-r--r--
+User = 
+Group = 
+User ID = 0
+Group ID = 0
+Symbolic Link = ../outside
+Hard Link = 
+Characteristics = 2 POSIX ASCII
+Comment = 
+Device Major = 
+Device Minor = 
+

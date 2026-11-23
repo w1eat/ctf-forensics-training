@@ -1,0 +1,5 @@
+File: E:\学习培训\培训\取证\output\平台API验收_51983a32\labs\02_png\broken_width.png (733 bytes)
+  chunk IHDR at offset 0x0000c, length 13
+    1 x 160 image, 24-bit RGB, non-interlaced
+  CRC error in chunk IHDR (computed 42379195, expected 6c7b256b)
+ERRORS DETECTED in E:\学习培训\培训\取证\output\平台API验收_51983a32\labs\02_png\broken_width.png

@@ -1,0 +1,40 @@
+{
+  "id": "3aef1518e8f149a0",
+  "action": "auto_analyze",
+  "title": "自动分析上传文件",
+  "state": "cancelled",
+  "command": "& 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\runtime\\python\\python.exe' 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\tools\\analysis_engine.py' 'auto' 'E:\\学习培训\\培训\\取证\\output\\平台API验收_51983a32\\labs\\inputs\\_platform_qa_bc170e0df4\\large_stream.bin' '--out' 'E:\\学习培训\\培训\\取证\\output\\平台API验收_51983a32\\labs\\out\\platform_runs\\3aef1518e8f149a0\\analysis' '--kit' 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64' '--profile' 'full' '--workflow' 'auto' '--keywords' 'flag,picoCTF,ctf,secret,password,credential,密码' '--max-files' '32' '--depth' '2' '--password' ''",
+  "created": "2026-10-22T10:16:30.409084+08:00",
+  "exit_code": 1,
+  "text": "",
+  "error": "",
+  "duration": 0.21,
+  "files": [
+    {
+      "name": "analysis/identify.json",
+      "bytes": 401,
+      "path": "out/platform_runs/3aef1518e8f149a0/analysis/identify.json"
+    },
+    {
+      "name": "运行报告.txt",
+      "bytes": 802,
+      "path": "out/platform_runs/3aef1518e8f149a0/运行报告.txt"
+    }
+  ],
+  "data": null,
+  "host": "Windows · PowerShell",
+  "input": "inputs/_platform_qa_bc170e0df4/large_stream.bin",
+  "progress": {
+    "stage": "全文件摘要与字节熵",
+    "state": "running",
+    "completed": 1,
+    "stages": [
+      {
+        "id": "identify",
+        "title": "识别文件结构与类型",
+        "status": "completed",
+        "seconds": 0.001
+      }
+    ]
+  }
+}

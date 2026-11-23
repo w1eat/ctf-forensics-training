@@ -1,0 +1,242 @@
+{
+  "id": "8285cd674863450b",
+  "action": "disk_inventory",
+  "title": "浏览镜像文件与删除项",
+  "state": "completed",
+  "command": "& 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\runtime\\python\\python.exe' 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\tools\\casework.py' 'inventory' '--args' 'E:\\学习培训\\培训\\取证\\output\\工作台验收_d3656ec2\\labs\\out\\platform_runs\\8285cd674863450b\\_case_args.json' '--out' 'E:\\学习培训\\培训\\取证\\output\\工作台验收_d3656ec2\\labs\\out\\platform_runs\\8285cd674863450b\\evidence' '--kit' 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64' '--labs' 'E:\\学习培训\\培训\\取证\\output\\工作台验收_d3656ec2\\labs'",
+  "created": "2026-10-23T09:41:34.924137+08:00",
+  "exit_code": 0,
+  "text": "{\"title\": \"镜像目录与删除项\", \"result\": \"result.json\", \"note\": \"目录与删除标记不保证数据仍完整。可按本次元数据编号导出；CSV 保存全部匹配条目。支持当前 TSK 识别的 RAW / E01 / VMDK / VHD。\"}\r\n",
+  "error": "",
+  "duration": 0.61,
+  "files": [
+    {
+      "name": "evidence/files_2048.diagnostics.txt",
+      "bytes": 0,
+      "path": "out/platform_runs/8285cd674863450b/evidence/files_2048.diagnostics.txt"
+    },
+    {
+      "name": "evidence/files_2048.txt",
+      "bytes": 122,
+      "path": "out/platform_runs/8285cd674863450b/evidence/files_2048.txt"
+    },
+    {
+      "name": "evidence/fs_2048.diagnostics.txt",
+      "bytes": 0,
+      "path": "out/platform_runs/8285cd674863450b/evidence/fs_2048.diagnostics.txt"
+    },
+    {
+      "name": "evidence/fs_2048.txt",
+      "bytes": 844,
+      "path": "out/platform_runs/8285cd674863450b/evidence/fs_2048.txt"
+    },
+    {
+      "name": "evidence/image_structure.diagnostics.txt",
+      "bytes": 0,
+      "path": "out/platform_runs/8285cd674863450b/evidence/image_structure.diagnostics.txt"
+    },
+    {
+      "name": "evidence/image_structure.txt",
+      "bytes": 131,
+      "path": "out/platform_runs/8285cd674863450b/evidence/image_structure.txt"
+    },
+    {
+      "name": "evidence/partitions.diagnostics.txt",
+      "bytes": 0,
+      "path": "out/platform_runs/8285cd674863450b/evidence/partitions.diagnostics.txt"
+    },
+    {
+      "name": "evidence/partitions.txt",
+      "bytes": 356,
+      "path": "out/platform_runs/8285cd674863450b/evidence/partitions.txt"
+    },
+    {
+      "name": "evidence/result.json",
+      "bytes": 3883,
+      "path": "out/platform_runs/8285cd674863450b/evidence/result.json"
+    },
+    {
+      "name": "evidence/文件清单.csv",
+      "bytes": 250,
+      "path": "out/platform_runs/8285cd674863450b/evidence/文件清单.csv"
+    },
+    {
+      "name": "evidence/结果报告.html",
+      "bytes": 5611,
+      "path": "out/platform_runs/8285cd674863450b/evidence/结果报告.html"
+    },
+    {
+      "name": "运行报告.txt",
+      "bytes": 1267,
+      "path": "out/platform_runs/8285cd674863450b/运行报告.txt"
+    }
+  ],
+  "data": {
+    "kind": "casework",
+    "operation": "disk_inventory",
+    "title": "镜像目录与删除项",
+    "columns": [
+      "分区扇区",
+      "元数据编号",
+      "已删除",
+      "类型",
+      "原路径"
+    ],
+    "rows": [
+      [
+        2048,
+        "3",
+        "否",
+        "r/r",
+        "README.TXT"
+      ],
+      [
+        2048,
+        "4",
+        "是",
+        "r/r",
+        "_ECRET.TXT"
+      ],
+      [
+        2048,
+        "260083",
+        "否",
+        "v/v",
+        "$MBR"
+      ],
+      [
+        2048,
+        "260084",
+        "否",
+        "v/v",
+        "$FAT1"
+      ],
+      [
+        2048,
+        "260085",
+        "否",
+        "v/v",
+        "$FAT2"
+      ],
+      [
+        2048,
+        "260086",
+        "否",
+        "V/V",
+        "$OrphanFiles"
+      ]
+    ],
+    "entries": [
+      {
+        "type": "r/r",
+        "deleted": false,
+        "inode": "3",
+        "path": "README.TXT",
+        "sector": 2048,
+        "sector_size": 512
+      },
+      {
+        "type": "r/r",
+        "deleted": true,
+        "inode": "4",
+        "path": "_ECRET.TXT",
+        "sector": 2048,
+        "sector_size": 512
+      },
+      {
+        "type": "v/v",
+        "deleted": false,
+        "inode": "260083",
+        "path": "$MBR",
+        "sector": 2048,
+        "sector_size": 512
+      },
+      {
+        "type": "v/v",
+        "deleted": false,
+        "inode": "260084",
+        "path": "$FAT1",
+        "sector": 2048,
+        "sector_size": 512
+      },
+      {
+        "type": "v/v",
+        "deleted": false,
+        "inode": "260085",
+        "path": "$FAT2",
+        "sector": 2048,
+        "sector_size": 512
+      },
+      {
+        "type": "V/V",
+        "deleted": false,
+        "inode": "260086",
+        "path": "$OrphanFiles",
+        "sector": 2048,
+        "sector_size": 512
+      }
+    ],
+    "total_entries": 6,
+    "limited": false,
+    "volumes": [
+      {
+        "sector": 2048,
+        "sector_size": 512,
+        "length": 16384,
+        "description": "DOS FAT16 (0x06)",
+        "filesystem": "FAT16"
+      }
+    ],
+    "commands": [
+      {
+        "argv": [
+          "E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\tools\\sleuthkit\\bin\\mmls.exe",
+          "E:\\学习培训\\培训\\取证\\output\\工作台验收_d3656ec2\\labs\\inputs\\casework_samples\\disk-flat.vmdk"
+        ],
+        "exit_code": 0,
+        "report": "partitions.txt",
+        "diagnostics": "partitions.diagnostics.txt"
+      },
+      {
+        "argv": [
+          "E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\tools\\sleuthkit\\bin\\img_stat.exe",
+          "E:\\学习培训\\培训\\取证\\output\\工作台验收_d3656ec2\\labs\\inputs\\casework_samples\\disk-flat.vmdk"
+        ],
+        "exit_code": 0,
+        "report": "image_structure.txt",
+        "diagnostics": "image_structure.diagnostics.txt"
+      },
+      {
+        "argv": [
+          "E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\tools\\sleuthkit\\bin\\fsstat.exe",
+          "-b",
+          "512",
+          "-o",
+          "2048",
+          "E:\\学习培训\\培训\\取证\\output\\工作台验收_d3656ec2\\labs\\inputs\\casework_samples\\disk-flat.vmdk"
+        ],
+        "exit_code": 0,
+        "report": "fs_2048.txt",
+        "diagnostics": "fs_2048.diagnostics.txt"
+      },
+      {
+        "argv": [
+          "E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\tools\\sleuthkit\\bin\\fls.exe",
+          "-r",
+          "-p",
+          "-b",
+          "512",
+          "-o",
+          "2048",
+          "E:\\学习培训\\培训\\取证\\output\\工作台验收_d3656ec2\\labs\\inputs\\casework_samples\\disk-flat.vmdk"
+        ],
+        "exit_code": 0,
+        "report": "files_2048.txt",
+        "diagnostics": "files_2048.diagnostics.txt"
+      }
+    ],
+    "note": "目录与删除标记不保证数据仍完整。可按本次元数据编号导出；CSV 保存全部匹配条目。支持当前 TSK 识别的 RAW / E01 / VMDK / VHD。"
+  },
+  "host": "Windows · PowerShell",
+  "input": "inputs/casework_samples/disk.vmdk"
+}

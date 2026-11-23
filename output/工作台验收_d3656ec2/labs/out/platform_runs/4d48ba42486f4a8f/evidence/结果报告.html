@@ -1,0 +1,63 @@
+<!doctype html><meta charset="utf-8"><title>取证分析结果</title><style>body{font:15px/1.8 Microsoft YaHei;background:#f7f8f2;color:#193c33;padding:32px}pre{white-space:pre-wrap;overflow-wrap:anywhere}</style><h1>批量恢复与导出</h1><pre>{
+  &quot;kind&quot;: &quot;casework&quot;,
+  &quot;operation&quot;: &quot;disk_recovery&quot;,
+  &quot;title&quot;: &quot;批量恢复与导出&quot;,
+  &quot;columns&quot;: [
+    &quot;输出文件&quot;,
+    &quot;原路径&quot;,
+    &quot;元数据编号&quot;,
+    &quot;字节数&quot;,
+    &quot;SHA256&quot;
+  ],
+  &quot;rows&quot;: [
+    [
+      &quot;recovered/0001_2048_4.TXT&quot;,
+      &quot;_ECRET.TXT&quot;,
+      &quot;4&quot;,
+      31,
+      &quot;88e52e92c1550b0936c60b02aebedb3ca0b411ba3d7a71060ab2c0948aef73bc&quot;
+    ]
+  ],
+  &quot;exports&quot;: [
+    {
+      &quot;type&quot;: &quot;r/r&quot;,
+      &quot;deleted&quot;: true,
+      &quot;inode&quot;: &quot;4&quot;,
+      &quot;path&quot;: &quot;_ECRET.TXT&quot;,
+      &quot;sector&quot;: 2048,
+      &quot;sector_size&quot;: 512,
+      &quot;argv&quot;: [
+        &quot;E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\tools\\sleuthkit\\bin\\icat.exe&quot;,
+        &quot;-r&quot;,
+        &quot;-b&quot;,
+        &quot;512&quot;,
+        &quot;-o&quot;,
+        &quot;2048&quot;,
+        &quot;E:\\学习培训\\培训\\取证\\output\\工作台验收_d3656ec2\\labs\\05_disk\\tiny_fat16.dd&quot;,
+        &quot;4&quot;
+      ],
+      &quot;exit_code&quot;: 0,
+      &quot;bytes&quot;: 31,
+      &quot;limited&quot;: false,
+      &quot;output&quot;: &quot;recovered/0001_2048_4.TXT&quot;,
+      &quot;sha256&quot;: &quot;88e52e92c1550b0936c60b02aebedb3ca0b411ba3d7a71060ab2c0948aef73bc&quot;
+    }
+  ],
+  &quot;failures&quot;: [],
+  &quot;volumes&quot;: [
+    {
+      &quot;sector&quot;: 2048,
+      &quot;sector_size&quot;: 512,
+      &quot;length&quot;: 16384,
+      &quot;description&quot;: &quot;DOS FAT16 (0x06)&quot;,
+      &quot;filesystem&quot;: &quot;FAT16&quot;
+    }
+  ],
+  &quot;candidate_count&quot;: 1,
+  &quot;exported_bytes&quot;: 31,
+  &quot;limits&quot;: {
+    &quot;max_files&quot;: 64,
+    &quot;budget_bytes&quot;: 268435456
+  },
+  &quot;note&quot;: &quot;仅完整且返回成功的 icat 输出计入恢复列表；失败或达到上限的内容以 .partial 保存。删除后重用、碎片和缺页可能导致无法恢复。&quot;
+}</pre>

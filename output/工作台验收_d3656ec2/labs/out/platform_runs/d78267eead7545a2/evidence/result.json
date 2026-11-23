@@ -1,0 +1,27 @@
+{
+  "kind": "casework",
+  "operation": "browser_history",
+  "title": "浏览器历史与时间",
+  "tables": [
+    {
+      "title": "Firefox 访问历史",
+      "columns": [
+        "url",
+        "title",
+        "raw_time",
+        "utc"
+      ],
+      "rows": [
+        [
+          "https://example.test/case",
+          "Training",
+          1700000000000000,
+          "2023-11-14 22:13:20"
+        ]
+      ],
+      "sql": "SELECT p.url,p.title,v.visit_date AS raw_time,datetime(v.visit_date/1000000,'unixepoch') AS utc FROM moz_places p JOIN moz_historyvisits v ON p.id=v.place_id ORDER BY v.visit_date DESC LIMIT 500"
+    }
+  ],
+  "snapshot": true,
+  "note": "在工作副本中查询，保留同目录 WAL / SHM。UTC 为按已知 Firefox / Chromium 时间单位换算；访问记录不单独证明现实人物操作，字段随应用版本变化。"
+}

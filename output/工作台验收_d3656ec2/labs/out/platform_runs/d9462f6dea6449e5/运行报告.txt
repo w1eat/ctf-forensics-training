@@ -1,0 +1,16 @@
+操作：在副本中修改指定字节
+运行环境：Windows PowerShell
+创建时间：2026-10-23T09:41:33.880407+08:00
+状态：failed
+退出码：2
+命令：& 'E:\学习培训\培训\取证\学员工具包_Windows64\runtime\python\python.exe' 'E:\学习培训\培训\取证\学员工具包_Windows64\tools\casework.py' 'patch' '--args' 'E:\学习培训\培训\取证\output\工作台验收_d3656ec2\labs\out\platform_runs\d9462f6dea6449e5\_case_args.json' '--out' 'E:\学习培训\培训\取证\output\工作台验收_d3656ec2\labs\out\platform_runs\d9462f6dea6449e5\evidence' '--kit' 'E:\学习培训\培训\取证\学员工具包_Windows64' '--labs' 'E:\学习培训\培训\取证\output\工作台验收_d3656ec2\labs'
+
+
+
+
+[stderr / 诊断信息]
+原字节与预期不一致，已停止；请重新定位。
+
+
+UTF-8 参数文件内容：
+{"file": "02_png/broken_header.png", "offset": "0", "expected": "0000000000000000", "replacement": "89504e470d0a1a0a", "_file": "E:\\学习培训\\培训\\取证\\output\\工作台验收_d3656ec2\\labs\\02_png\\broken_header.png"}

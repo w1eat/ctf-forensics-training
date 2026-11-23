@@ -1,0 +1,9 @@
+操作：自动分析上传文件
+运行环境：Windows PowerShell
+创建时间：2026-10-22T10:16:21.236660+08:00
+状态：completed
+退出码：0
+命令：& 'E:\学习培训\培训\取证\学员工具包_Windows64\runtime\python\python.exe' 'E:\学习培训\培训\取证\学员工具包_Windows64\tools\analysis_engine.py' 'auto' 'E:\学习培训\培训\取证\output\平台API验收_51983a32\labs\inputs\_platform_qa_bc170e0df4\自选数据库.db' '--out' 'E:\学习培训\培训\取证\output\平台API验收_51983a32\labs\out\platform_runs\17ba58b800ce4856\analysis' '--kit' 'E:\学习培训\培训\取证\学员工具包_Windows64' '--profile' 'standard' '--workflow' 'auto' '--keywords' 'flag,picoCTF,ctf,secret,password,credential,密码' '--max-files' '32' '--depth' '2' '--password' ''
+
+
+{"kind": "analysis", "source": "自选数据库.db", "selected_workflow": "database", "stages": [{"title": "识别文件结构与类型", "status": "completed"}, {"title": "全文件摘要与字节熵", "status": "completed"}, {"title": "通用字符串与嵌入签名", "status": "completed"}, {"title": "SQLite 数据库", "status": "completed"}, {"title": "全文件关键词与 flag 形态检索", "status": "completed"}, {"title": "内置 YARA 线索规则", "status": "completed"}], "flag_candidates": 0, "report": "E:\\学习培训\\培训\\取证\\output\\平台API验收_51983a32\\labs\\out\\platform_runs\\17ba58b800ce4856\\analysis\\analysis.html"}

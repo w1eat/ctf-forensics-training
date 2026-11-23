@@ -1,0 +1,29 @@
+{
+  "date": "2026-10-23",
+  "packages": [
+    {
+      "file": "学员工具与练习_Windows64.zip",
+      "tool_modules_match": true,
+      "index_links": true,
+      "solution": true,
+      "user_evidence_excluded": true
+    },
+    {
+      "file": "CTF取证基础_Kali学习资料.zip",
+      "tool_modules_match": true,
+      "index_links": true,
+      "solution": true,
+      "user_evidence_excluded": true
+    },
+    {
+      "file": "讲师课件与逐题题解.zip",
+      "tool_modules_match": true,
+      "index_links": true,
+      "solution": true,
+      "user_evidence_excluded": true
+    }
+  ],
+  "regression_passed": 38,
+  "regression_total": 38,
+  "ui_solution_record": "output/Timeline0_partition4_实测记录.json"
+}

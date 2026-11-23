@@ -1,0 +1,58 @@
+{
+  "kind": "workflow_database",
+  "tables": [
+    {
+      "title": "SQLite 表结构",
+      "columns": [
+        "类型",
+        "名称",
+        "所属表",
+        "SQL"
+      ],
+      "rows": [
+        [
+          "table",
+          "orders",
+          "orders",
+          "CREATE TABLE orders(order_no TEXT, amount INTEGER, note TEXT)"
+        ]
+      ]
+    },
+    {
+      "title": "预览表：orders",
+      "columns": [
+        "order_no",
+        "amount",
+        "note"
+      ],
+      "rows": [
+        [
+          "A-2026",
+          42,
+          "不是 artifacts 表"
+        ]
+      ]
+    },
+    {
+      "title": "逐表检索命中",
+      "columns": [
+        "表",
+        "查询结果行号",
+        "字段",
+        "值"
+      ],
+      "rows": []
+    }
+  ],
+  "scanned_tables": [
+    {
+      "table": "orders",
+      "rows": 1,
+      "limited": false
+    }
+  ],
+  "table_limit": 20,
+  "row_limit_per_table": 1000,
+  "companions": [],
+  "note": "结果行号是本次 SELECT 的位置，不保证是 rowid；最多 20 表、每表 1000 行。业务软删除与物理删除恢复不同。"
+}

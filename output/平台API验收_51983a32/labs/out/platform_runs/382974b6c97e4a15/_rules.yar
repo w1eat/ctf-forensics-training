@@ -1,0 +1,1 @@
+rule OwnRule { strings: $a = "Independent" condition: $a }

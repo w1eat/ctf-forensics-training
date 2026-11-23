@@ -1,0 +1,128 @@
+{
+  "date": "2026-10-21",
+  "total": 23,
+  "passed": 23,
+  "checks": [
+    {
+      "name": "Course Vol2 help mimikatz",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "Course Vol2 help bitlocker",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "Course Vol2 help editbox",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "Course Vol3 help vol_pypykatz.pypykatz",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "Course Vol3 help bitlocker.BitlockerFVEKScan",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "Workbench Vol2 mimikatz processes real RAM",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "Workbench Vol3 pypykatz returns a real credential schema",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "Full JSON result is downloadable",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "BitLocker scanner handles a negative teaching sample",
+      "pass_": true,
+      "detail": "No encrypted-volume positive sample supplied; not an unlock validation."
+    },
+    {
+      "name": "Invalid extra-plugin parameters rejected vol_extra",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "Invalid extra-plugin parameters rejected vol_extra",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "Invalid extra-plugin parameters rejected vol2_extra",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "Invalid extra-plugin parameters rejected vol2_extra",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "Local Vol2 help mimikatz",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "Local Vol2 help bitlocker",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "Local Vol2 help editbox",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "Local Vol2 mimikatz actual RAM",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "Local Vol3 help vol_pypykatz.pypykatz",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "Local Vol3 help bitlocker.BitlockerFVEKScan",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "Local Vol3 pypykatz actual RAM",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "Local Vol3 returns structured offline records",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "Original pre-existing Vol2 plugin remains present",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "Original RAM fingerprint unchanged",
+      "pass_": true,
+      "detail": ""
+    }
+  ],
+  "validation_folder": "E:\\学习培训\\培训\\取证\\output\\community_plugins_b3df8410",
+  "real_ram_parsed": true,
+  "local_installations_verified": true,
+  "host_lsass_accessed": false,
+  "bitlocker_positive_volume_tested": false,
+  "kali_executed": false
+}

@@ -1,0 +1,75 @@
+{
+  "columns": [
+    "偏移",
+    "块",
+    "数据长度",
+    "保存 CRC",
+    "计算 CRC",
+    "校验"
+  ],
+  "rows": [
+    [
+      "0x8",
+      "IHDR",
+      13,
+      "6c7b256b",
+      "42379195",
+      "BAD"
+    ],
+    [
+      "0x21",
+      "tEXt",
+      39,
+      "9ba0e40d",
+      "9ba0e40d",
+      "OK"
+    ],
+    [
+      "0x54",
+      "IDAT",
+      625,
+      "0701fc55",
+      "0701fc55",
+      "OK"
+    ],
+    [
+      "0x2d1",
+      "IEND",
+      0,
+      "ae426082",
+      "ae426082",
+      "OK"
+    ]
+  ],
+  "kind": "pngmap",
+  "chunks": [
+    {
+      "offset": 8,
+      "type": "IHDR",
+      "length": 13,
+      "valid": false
+    },
+    {
+      "offset": 33,
+      "type": "tEXt",
+      "length": 39,
+      "valid": true
+    },
+    {
+      "offset": 84,
+      "type": "IDAT",
+      "length": 625,
+      "valid": true
+    },
+    {
+      "offset": 721,
+      "type": "IEND",
+      "length": 0,
+      "valid": true
+    }
+  ],
+  "iend": true,
+  "trailing": 0,
+  "error": "",
+  "limited": false
+}

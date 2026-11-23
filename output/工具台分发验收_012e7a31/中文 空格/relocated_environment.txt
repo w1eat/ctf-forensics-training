@@ -1,0 +1,26 @@
+[PASS] Python 3.13.16
+[PASS] Python dependencies Pillow / pypdf / pefile / yara / capstone / Crypto / SQLite / Vol3
+[PASS] 7-Zip 
+[PASS] ExifTool 13.59
+[PASS] SQLite CLI 3.54.1 2026-10-16 14:45:20 555e07ef33f69a0957d24d8e555b702464a131d6f1607f4c3c1e4551e8e6ca76 (64-bit)
+[PASS] TSK mmls The Sleuth Kit ver 4.14.0
+[PASS] BusyBox [
+[PASS] pngcheck + zlib File: E:\ѧϰ��ѵ\��ѵ\ȡ֤\output\����̨�ַ�����_012e7a31\���� �ո�\ѧԱ���߰�_Windows64\labs\02_png\good.png (733 bytes)
+[PASS] Volatility 3 CLI Volatility 3 Framework 2.28.2
+[PASS] Volatility 2 standalone 
+[PASS] Volatility 2 cmdscan Usage: Volatility - A memory forensics analysis platform.
+[PASS] Vol2 community mimikatz Usage: Volatility - A memory forensics analysis platform.
+[PASS] Vol2 community BitLocker Usage: Volatility - A memory forensics analysis platform.
+[PASS] Vol3 community pypykatz Volatility 3 Framework 2.28.2
+[PASS] Vol3 community BitLocker Volatility 3 Framework 2.28.2
+[PASS] PhotoRec PhotoRec 7.2, Data Recovery Utility, February 2024
+[PASS] Case workbench CLI usage: casework.py [-h] --args ARGS --out OUT --kit KIT --labs LABS task
+[PASS] Read-only mount runtime files mount programs present; no driver installation or system mount performed
+[PASS] Ruby ruby 3.3.12 (2026-07-16 revision 0581089df9) [x64-mingw-ucrt]
+[PASS] zsteg Usage: zsteg [options] filename.png [param_string]
+[PASS] zsteg image scan 
+[PASS] Exercise SHA256 39 exercise files
+
+No real RAM image is bundled. Vol3 image parsing requires matching symbols.
+
+Result: PASS (0 failures)

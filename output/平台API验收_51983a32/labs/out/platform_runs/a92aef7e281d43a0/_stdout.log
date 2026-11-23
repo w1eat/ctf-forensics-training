@@ -1,0 +1,4 @@
+1 2026-10-18T09:16:10+08:00 login_success r-101 trainee 192.0.2.44
+2 2026-10-18T09:17:05+08:00 dashboard_view r-104 trainee 192.0.2.44
+3 2026-10-18T09:18:30+08:00 export_started r-102 trainee 192.0.2.44
+4 2026-10-18T09:18:31+08:00 download_completed r-103 trainee 192.0.2.44

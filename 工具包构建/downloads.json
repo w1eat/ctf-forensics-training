@@ -1,0 +1,89 @@
+[
+  {
+    "file": "python-3.13.16-embed-amd64.zip",
+    "url": "https://www.python.org/ftp/python/3.13.16/python-3.13.16-embed-amd64.zip",
+    "bytes": 11439094,
+    "sha256": "97dae5274cc54867065e8d5a3226e48c35017ed332a0fdb0e27d5b5821961297"
+  },
+  {
+    "file": "7z2604-x64.exe",
+    "url": "https://github.com/ip7z/7zip/releases/download/26.04/7z2604-x64.exe",
+    "error": "curl: (28) Connection timed out after 15014 milliseconds\r\ncurl: (28) Connection timed out after 15011 milliseconds"
+  },
+  {
+    "file": "7z2604-src.7z",
+    "url": "https://github.com/ip7z/7zip/releases/download/26.04/7z2604-src.7z",
+    "error": "curl: (56) Recv failure: Connection was reset"
+  },
+  {
+    "file": "exiftool-13.59_64.zip",
+    "url": "https://sourceforge.net/projects/exiftool/files/exiftool-13.59_64.zip/download",
+    "bytes": 11183675,
+    "sha256": "44b512b25af500724ba579d0a53c8fc5851628b692dd5e5d94ae4a15c2cba9ec"
+  },
+  {
+    "file": "Image-ExifTool-13.59.tar.gz",
+    "url": "https://exiftool.org/Image-ExifTool-13.59.tar.gz",
+    "error": "curl: (22) The requested URL returned error: 404"
+  },
+  {
+    "file": "sqlite-tools-win-x64-3540100.zip",
+    "url": "https://sqlite.org/2026/sqlite-tools-win-x64-3540100.zip",
+    "bytes": 6984432,
+    "sha256": "fb20997ade5583a5fbf1e36db7bc3c82c9416b3f314f16961e1572aa4e49487d"
+  },
+  {
+    "file": "sleuthkit-4.14.0-win32.zip",
+    "url": "https://github.com/sleuthkit/sleuthkit/releases/download/sleuthkit-4.14.0/sleuthkit-4.14.0-win32.zip",
+    "error": "curl: (28) Connection timed out after 15005 milliseconds\r\ncurl: (28) Connection timed out after 15010 milliseconds"
+  },
+  {
+    "file": "sleuthkit-4.14.0.tar.gz",
+    "url": "https://github.com/sleuthkit/sleuthkit/releases/download/sleuthkit-4.14.0/sleuthkit-4.14.0.tar.gz",
+    "error": "curl: (28) Connection timed out after 15009 milliseconds\r\ncurl: (28) Connection timed out after 15004 milliseconds"
+  },
+  {
+    "file": "rubyinstaller-3.3.12-1-x64.7z",
+    "url": "https://github.com/oneclick/rubyinstaller2/releases/download/RubyInstaller-3.3.12-1/rubyinstaller-3.3.12-1-x64.7z",
+    "error": "curl: (28) Connection timed out after 15008 milliseconds\r\ncurl: (56) Recv failure: Connection was reset"
+  },
+  {
+    "file": "pngcheck-v4.0.1.zip",
+    "url": "https://codeload.github.com/pnggroup/pngcheck/zip/refs/tags/v4.0.1",
+    "bytes": 67954,
+    "sha256": "ab978f0224b68140cc577995b56bdda0ce02f3b940df00fb9cea8d6ea6220539"
+  },
+  {
+    "file": "zlib-1.3.1.tar.gz",
+    "url": "https://zlib.net/fossils/zlib-1.3.1.tar.gz",
+    "bytes": 1512791,
+    "sha256": "9a93b2b7dfdac77ceba5a558a580e74667dd6fede4585b91eefb60f03b72df23"
+  },
+  {
+    "file": "busybox64.exe",
+    "url": "https://frippery.org/files/busybox/busybox64.exe",
+    "bytes": 719360,
+    "sha256": "07bb1e5b095b00d68a695481f9240879f33c5724b40aa2308f999d54ed78f075"
+  },
+  {
+    "file": "busybox-home.html",
+    "url": "https://frippery.org/busybox/",
+    "bytes": 9239,
+    "sha256": "a443e462b785cbe491fbdd62d3f6fac2b55e31cb9e47b56dd9c1ad37597af622"
+  },
+  {
+    "file": "john-1.9.0-jumbo-1-win64.7z",
+    "url": "https://www.openwall.com/john/k/john-1.9.0-jumbo-1-win64.7z",
+    "error": "curl: (28) Operation timed out after 600004 milliseconds with 11194084 out of 22217857 bytes received\r\ncurl: (28) Operation timed out after 600015 milliseconds with 5463780 out of 22217857 bytes received"
+  },
+  {
+    "file": "john-1.9.0-jumbo-1.tar.xz",
+    "url": "https://www.openwall.com/john/k/john-1.9.0-jumbo-1.tar.xz",
+    "error": "curl: (28) Connection timed out after 15009 milliseconds\r\ncurl: (28) Operation timed out after 600010 milliseconds with 12185316 out of 33638768 bytes received"
+  },
+  {
+    "file": "autopsy-4.23.1-64bit.msi",
+    "url": "https://github.com/sleuthkit/autopsy/releases/download/autopsy-4.23.1/autopsy-4.23.1-64bit.msi",
+    "error": "curl: (28) Connection timed out after 15009 milliseconds\r\ncurl: (28) Connection timed out after 15004 milliseconds"
+  }
+]

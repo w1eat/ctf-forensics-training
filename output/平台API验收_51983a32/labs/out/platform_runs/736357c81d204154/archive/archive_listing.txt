@@ -1,0 +1,18 @@
+Path = note.txt
+Folder = -
+Size = 48
+Packed Size = 60
+Modified = 2026-10-18 00:00:00
+Created = 
+Accessed = 
+Attributes = 
+Encrypted = +
+Comment = 
+CRC = B6F751AE
+Method = ZipCrypto Store
+Characteristics = Encrypt
+Host OS = FAT
+Version = 20
+Volume Index = 0
+Offset = 0
+

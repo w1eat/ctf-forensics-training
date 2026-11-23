@@ -1,0 +1,1 @@
+{"columns": ["类型", "名称", "所属表", "SQL"], "rows": [["table", "artifacts", "artifacts", "CREATE TABLE artifacts(id INTEGER PRIMARY KEY,name TEXT NOT NULL,deleted INTEGER NOT NULL,note TEXT NOT NULL)"]], "kind": "sqlite_schema"}

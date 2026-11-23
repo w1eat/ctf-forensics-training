@@ -1,0 +1,33 @@
+{
+  "columns": [
+    "id",
+    "name",
+    "deleted",
+    "note"
+  ],
+  "rows": [
+    [
+      1,
+      "readme",
+      0,
+      "Synthetic training database"
+    ],
+    [
+      2,
+      "old-note",
+      1,
+      "flag{query_the_schema_first}"
+    ],
+    [
+      3,
+      "active-note",
+      0,
+      "Use the schema before guessing column names"
+    ]
+  ],
+  "kind": "sqlite_query",
+  "limited": false,
+  "query": "SELECT * FROM \"artifacts\"",
+  "limit": 200,
+  "note": "只读连接；需完整提取时在副本上使用 SQLite CLI。若存在 WAL，需将匹配的 -wal / -shm 与数据库一起放在同一目录。"
+}

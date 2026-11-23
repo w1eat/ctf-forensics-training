@@ -1,0 +1,16 @@
+{
+  "workflow_choices": 10,
+  "workflow_cards": 9,
+  "operations": 48,
+  "real_partition_image_ui": "pass",
+  "actual_partition_sector": 0,
+  "actual_export_budget_4": "pass",
+  "next_action_preserves_input_and_sector": "pass",
+  "image_flow_card_lsb": "pass",
+  "advanced_parameters_reached_subprocess": "pass",
+  "desktop_mobile_overflow": false,
+  "browser_console_errors": 0,
+  "standalone_report_escaping": "pass",
+  "real_ram_parsed": false,
+  "kali_executed": false
+}

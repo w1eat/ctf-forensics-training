@@ -1,0 +1,40 @@
+{
+  "id": "c230d68723f44d57",
+  "action": "hash_tools",
+  "title": "摘要计算与口令候选验证",
+  "state": "completed",
+  "command": "& 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\runtime\\python\\python.exe' 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\tools\\casework.py' 'hash' '--args' 'E:\\学习培训\\培训\\取证\\output\\工作台验收_d3656ec2\\labs\\out\\platform_runs\\c230d68723f44d57\\_case_args.json' '--out' 'E:\\学习培训\\培训\\取证\\output\\工作台验收_d3656ec2\\labs\\out\\platform_runs\\c230d68723f44d57\\evidence' '--kit' 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64' '--labs' 'E:\\学习培训\\培训\\取证\\output\\工作台验收_d3656ec2\\labs'",
+  "created": "2026-10-23T09:41:34.493450+08:00",
+  "exit_code": 0,
+  "text": "{\"title\": \"摘要候选验证\", \"result\": \"result.json\", \"note\": \"候选计算出的摘要相同；这是候选验证，不是哈希逆运算。\"}\r\n",
+  "error": "",
+  "duration": 0.16,
+  "files": [
+    {
+      "name": "evidence/result.json",
+      "bytes": 236,
+      "path": "out/platform_runs/c230d68723f44d57/evidence/result.json"
+    },
+    {
+      "name": "evidence/结果报告.html",
+      "bytes": 608,
+      "path": "out/platform_runs/c230d68723f44d57/evidence/结果报告.html"
+    },
+    {
+      "name": "运行报告.txt",
+      "bytes": 954,
+      "path": "out/platform_runs/c230d68723f44d57/运行报告.txt"
+    }
+  ],
+  "data": {
+    "kind": "casework",
+    "title": "摘要候选验证",
+    "found": true,
+    "candidate": "admin",
+    "checked": 2,
+    "algorithm": "md5",
+    "note": "候选计算出的摘要相同；这是候选验证，不是哈希逆运算。"
+  },
+  "host": "Windows · PowerShell",
+  "input": ""
+}

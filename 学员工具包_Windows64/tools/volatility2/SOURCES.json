@@ -1,0 +1,21 @@
+{
+  "version": "2.6",
+  "license": "GPL-2.0-or-later",
+  "archives": [
+    {
+      "file": "volatility_2.6_win64_standalone.zip",
+      "source": "https://downloads.volatilityfoundation.org/releases/2.6/volatility_2.6_win64_standalone.zip",
+      "sha256": "bb021f3b569bf8ee4a408b2e07b0662699894ff7eecd4473badf0ef0c58f2fce"
+    },
+    {
+      "file": "volatility_2.6_lin64_standalone.zip",
+      "source": "https://downloads.volatilityfoundation.org/releases/2.6/volatility_2.6_lin64_standalone.zip",
+      "sha256": "dc375a0f6909cb93ac17a10e28a0963fcd2decfc3c4291aadb7e5e0cbe28874a"
+    },
+    {
+      "file": "volatility-2.6-source.zip",
+      "source": "https://downloads.volatilityfoundation.org/releases/2.6/volatility-2.6.zip",
+      "sha256": "5b73050d72bf94870ffce22843f03d4b0b7764011dec29ef1a0a5b1b46cf9295"
+    }
+  ]
+}

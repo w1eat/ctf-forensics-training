@@ -1,0 +1,12 @@
+操作：自定义只读 SQL 查询
+运行环境：Windows PowerShell
+创建时间：2026-10-22T10:16:22.862824+08:00
+状态：failed
+退出码：2
+命令：& 'E:\学习培训\培训\取证\学员工具包_Windows64\runtime\python\python.exe' 'E:\学习培训\培训\取证\学员工具包_Windows64\tools\analysis_engine.py' 'sqlite' 'E:\学习培训\培训\取证\output\平台API验收_51983a32\labs\inputs\_platform_qa_bc170e0df4\自选数据库.db' '--out' 'E:\学习培训\培训\取证\output\平台API验收_51983a32\labs\out\platform_runs\cdb467e97c024cb7' '--kit' 'E:\学习培训\培训\取证\学员工具包_Windows64' '--rows' '200' '--query' 'SELECT readfile(''index.html'')'
+
+
+
+
+[stderr / 诊断信息]
+no such function: readfile

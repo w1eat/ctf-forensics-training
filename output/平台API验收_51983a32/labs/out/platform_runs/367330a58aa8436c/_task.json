@@ -1,0 +1,45 @@
+{
+  "id": "367330a58aa8436c",
+  "action": "sqlite_query",
+  "title": "自定义只读 SQL 查询",
+  "state": "completed",
+  "command": "& 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\runtime\\python\\python.exe' 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\tools\\analysis_engine.py' 'sqlite' 'E:\\学习培训\\培训\\取证\\output\\平台API验收_51983a32\\labs\\06_sqlite\\case.db' '--out' 'E:\\学习培训\\培训\\取证\\output\\平台API验收_51983a32\\labs\\out\\platform_runs\\367330a58aa8436c' '--kit' 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64' '--rows' '200' '--query' 'SELECT id,name,note FROM artifacts WHERE deleted=1;'",
+  "created": "2026-10-22T10:16:13.997584+08:00",
+  "exit_code": 0,
+  "text": "{\"columns\": [\"id\", \"name\", \"note\"], \"rows\": [[2, \"old-note\", \"flag{query_the_schema_first}\"]], \"kind\": \"sqlite_query\", \"limited\": false, \"query\": \"SELECT id,name,note FROM artifacts WHERE deleted=1;\", \"limit\": 200, \"note\": \"只读连接；需完整提取时在副本上使用 SQLite CLI。若存在 WAL，需将匹配的 -wal / -shm 与数据库一起放在同一目录。\"}\r\n",
+  "error": "",
+  "duration": 0.16,
+  "files": [
+    {
+      "name": "result.json",
+      "bytes": 456,
+      "path": "out/platform_runs/367330a58aa8436c/result.json"
+    },
+    {
+      "name": "运行报告.txt",
+      "bytes": 1069,
+      "path": "out/platform_runs/367330a58aa8436c/运行报告.txt"
+    }
+  ],
+  "data": {
+    "columns": [
+      "id",
+      "name",
+      "note"
+    ],
+    "rows": [
+      [
+        2,
+        "old-note",
+        "flag{query_the_schema_first}"
+      ]
+    ],
+    "kind": "sqlite_query",
+    "limited": false,
+    "query": "SELECT id,name,note FROM artifacts WHERE deleted=1;",
+    "limit": 200,
+    "note": "只读连接；需完整提取时在副本上使用 SQLite CLI。若存在 WAL，需将匹配的 -wal / -shm 与数据库一起放在同一目录。"
+  },
+  "host": "Windows · PowerShell",
+  "input": "06_sqlite/case.db"
+}

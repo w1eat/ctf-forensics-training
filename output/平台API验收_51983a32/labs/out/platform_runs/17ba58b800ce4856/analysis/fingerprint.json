@@ -1,0 +1,17 @@
+{
+  "kind": "hash",
+  "name": "自选数据库.db",
+  "bytes": 8192,
+  "md5": "81e74abb57fcb87dc777241c1fe18d5a",
+  "sha1": "04ef9723a95a5763919f7d58f1848f752b302807",
+  "sha256": "00f71ab49ab1edb007f1ca1ca9cd0ea6693db6708e4476e235895c0c0c48c72f",
+  "entropy": 0.25,
+  "entropy_windows": [
+    {
+      "offset": 0,
+      "bytes": 8192,
+      "entropy": 0.25
+    }
+  ],
+  "note": "MD5 / SHA1 仅用于已知摘要对照；证据一致性优先记录 SHA256。熵高不等于一定加密。"
+}

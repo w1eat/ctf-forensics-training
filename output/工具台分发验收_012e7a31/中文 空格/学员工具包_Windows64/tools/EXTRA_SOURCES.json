@@ -1,0 +1,68 @@
+[
+  {
+    "file": "testdisk-7.2.win64.zip",
+    "url": "https://www.cgsecurity.org/testdisk-7.2.win64.zip",
+    "sha256": "e97e203ce77b6b1a3a37d01beccf069dc6c4632b579ffbb82ae739cdda229f38",
+    "bytes": 27354549
+  },
+  {
+    "file": "testdisk-7.2.tar.bz2",
+    "url": "https://www.cgsecurity.org/testdisk-7.2.tar.bz2",
+    "sha256": "f8343be20cb4001c5d91a2e3bcd918398f00ae6d8310894a5a9f2feb813c283f",
+    "bytes": 855781
+  },
+  {
+    "file": "imdisk-2.1.2.zip",
+    "url": "https://static.ltr-data.se/files/imdisk.zip",
+    "sha256": "d42059314384992b5e7754a5734e66e7ad0ad7971f69a2b5aa106429b47c4a9c",
+    "bytes": 861512
+  },
+  {
+    "file": "imdisk-2.1.2-inst.exe",
+    "url": "https://static.ltr-data.se/files/imdiskinst.exe",
+    "sha256": "11d3423f3971b4d7a2bbda538e47998be901199546b36455315f22d3fc8b8a04",
+    "bytes": 549224
+  },
+  {
+    "file": "imdisk-source-929dc281b5bd.zip",
+    "url": "https://codeload.github.com/LTRData/ImDisk/zip/929dc281b5bd4432b98260da34ed6d93cdf339ff",
+    "sha256": "5eda0e874ac771f85b1c68c886247e69403cebb2f18451a7fcb042bfefca3851",
+    "bytes": 528837
+  },
+  {
+    "file": "VeraCrypt.Portable.1.26.29.exe",
+    "url": "https://github.com/veracrypt/VeraCrypt/releases/download/VeraCrypt_1.26.29/VeraCrypt.Portable.1.26.29.exe",
+    "sha256": "8772a127f93561d169d4b4082d9ab5e855fd928a361e020905484c388c474a4e",
+    "bytes": 40592280
+  },
+  {
+    "file": "VeraCrypt_1.26.29_Source.zip",
+    "url": "https://github.com/veracrypt/VeraCrypt/releases/download/VeraCrypt_1.26.29/VeraCrypt_1.26.29_Source.zip",
+    "sha256": "aa5d958c550e220ee4ba348ce0b74b8c7af14bcc6f7f3abb83662d5e66458e27",
+    "bytes": 38938779
+  },
+  {
+    "file": "wheels/pycryptodome-4.1.0-cp39-abi3-win_amd64.whl",
+    "url": "https://files.pythonhosted.org/packages/80/18/3f8c882d5f729310c99aa784a51b329d4791efd3c43374ed4ef6f57806a4/pycryptodome-4.1.0-cp39-abi3-win_amd64.whl",
+    "sha256": "f7bb8fcbfd72c840a17b67543b984018ead3247f7054bb729e24a8dda436eb35",
+    "bytes": 1503175
+  },
+  {
+    "file": "VeraCrypt_Setup_x64_1.26.29.msi",
+    "url": "https://github.com/veracrypt/VeraCrypt/releases/download/VeraCrypt_1.26.29/VeraCrypt_Setup_x64_1.26.29.msi",
+    "sha256": "5ba6426983123cfb92bc1f09bd888fdbc0f53f300d0d9c5da52ce3aee8d474f0",
+    "bytes": 52789248
+  },
+  {
+    "file": "VeraCrypt_Setup_x64_1.25.9.msi",
+    "url": "https://github.com/veracrypt/VeraCrypt/releases/download/VeraCrypt_1.25.9/VeraCrypt_Setup_x64_1.25.9.msi",
+    "sha256": "206d31c2ed1a2b0390d4dfa12e74a9b9dae88658d1f9bfa1bb433b23e2b24fd8",
+    "bytes": 30486528
+  },
+  {
+    "file": "VeraCrypt_1.25.9_Source.zip",
+    "url": "https://github.com/veracrypt/VeraCrypt/releases/download/VeraCrypt_1.25.9/VeraCrypt_1.25.9_Source.zip",
+    "sha256": "21644d4c7918f2105928a264d0b95dcdfa5242fe100a21d9872313f74a3ccf7d",
+    "bytes": 26894451
+  }
+]

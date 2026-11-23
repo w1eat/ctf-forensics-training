@@ -1,0 +1,40 @@
+
+Using locale 'C'.
+
+
+Fri Oct 23 09:41:38 2026
+Command line: PhotoRec /log /logname E:\学习培训\培训\取证\output\工作台验收_d3656ec2\labs\out\platform_runs\b7a04ea2edec4a59\evidence\photorec.log /d E:\学习培训\培训\取证\output\工作台验收_d3656ec2\labs\out\platform_runs\b7a04ea2edec4a59\evidence\recup /cmd E:\学习培训\培训\取证\output\工作台验收_d3656ec2\labs\inputs\casework_samples\salvage.img partition_none,fileopt,everything,disable,png,enable,zip,enable,wholespace,search
+
+PhotoRec 7.2, Data Recovery Utility, February 2024
+Christophe GRENIER <grenier@cgsecurity.org>
+https://www.cgsecurity.org
+OS: Windows 8 (9200)
+Compiler: GCC 11.2, Cygwin 3001.4
+ext2fs lib: 1.45.3, ntfs lib: available, ewf lib: 20140608, libjpeg: libjpeg-turbo-1.5.3, curses lib: ncurses 6.1
+Hard disk list
+Disk E:\学习培训\培训\取证\output\工作台验收_d3656ec2\labs\inputs\casework_samples\salvage.img - 65 KB / 64 KiB - , sector size=512
+
+Partition table type defaults to None
+Disk E:\学习培训\培训\取证\output\工作台验收_d3656ec2\labs\inputs\casework_samples\salvage.img - 65 KB / 64 KiB (R
+Partition table type: None
+   P Unknown                  0   0  1     0   2  2        128
+
+Interface File Select
+5 first-level signatures enabled
+
+Analyse
+   P Unknown                  0   0  1     0   2  2        128
+Pass 0 (blocksize=512) STATUS_FIND_OFFSET
+blocksize=4096, offset=0
+Elapsed time 0h00m00s
+Pass 1 (blocksize=4096) STATUS_EXT2_OFF
+E:\学习培训\培训\取证\output\工作台验收_d3656ec2\labs\out\platform_runs\b7a04ea2edec4a59\evidence\recup.1/f0000008.png	 8-15
+E:\学习培训\培训\取证\output\工作台验收_d3656ec2\labs\out\platform_runs\b7a04ea2edec4a59\evidence\recup.1/f0000032_README.zip	 32-39
+Elapsed time 0h00m00s
+Pass 1 +2 files
+png: 1/1 recovered
+zip: 1/1 recovered
+Total: 2 files found
+
+112 sectors contain unknown data, 0 invalid files found and rejected.
+PhotoRec exited normally.

@@ -1,0 +1,21 @@
+{
+  "kind": "synthetic output-reading cases; not a RAM image",
+  "target": "Windows; Volatility 3 workflow",
+  "cases": {
+    "a": {
+      "pid": 3180,
+      "object": "startup arguments"
+    },
+    "b": {
+      "pid": 2460,
+      "file": "memo.txt",
+      "address": "0xffffa10200123070",
+      "address_type": "virtual FILE_OBJECT"
+    },
+    "c": {
+      "pid": 2460,
+      "encoding": "UTF-16LE",
+      "excerpt_only": true
+    }
+  }
+}

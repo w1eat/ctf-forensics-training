@@ -1,0 +1,14 @@
+{
+  "kind": "casework",
+  "title": "本工作区挂载状态",
+  "columns": [
+    "盘符",
+    "方式",
+    "输入镜像",
+    "只读",
+    "创建时间"
+  ],
+  "rows": [],
+  "driver_installed": false,
+  "note": "仅列本工作区创建的记录，不列举或卸载其他磁盘。ImDisk 驱动状态：未检测到"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "cf6af6565eb6424a",
+  "action": "disk_files",
+  "title": "列文件与删除项",
+  "state": "completed",
+  "command": "& 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\tools\\sleuthkit\\bin\\fls.exe' '-r' '-d' '-o' '2048' 'E:\\学习培训\\培训\\取证\\output\\平台API验收_51983a32\\labs\\05_disk\\tiny_fat16.dd'",
+  "created": "2026-10-22T10:16:13.238351+08:00",
+  "exit_code": 0,
+  "text": "r/r * 4:\t_ECRET.TXT\r\n",
+  "error": "",
+  "duration": 0.16,
+  "files": [
+    {
+      "name": "运行报告.txt",
+      "bytes": 388,
+      "path": "out/platform_runs/cf6af6565eb6424a/运行报告.txt"
+    }
+  ],
+  "data": null,
+  "host": "Windows · PowerShell",
+  "input": "05_disk/tiny_fat16.dd"
+}

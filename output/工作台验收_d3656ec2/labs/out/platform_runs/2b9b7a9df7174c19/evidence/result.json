@@ -1,0 +1,109 @@
+{
+  "kind": "casework",
+  "operation": "separate",
+  "title": "自动文件分离",
+  "columns": [
+    "导出文件",
+    "源字节偏移",
+    "字节数",
+    "格式",
+    "边界验证"
+  ],
+  "rows": [
+    [
+      "0001_00000000000d.png",
+      "0xd",
+      794,
+      "png",
+      "块边界到 IEND；CRC 全部一致"
+    ],
+    [
+      "0002_00000000032a.zip",
+      "0x32a",
+      298,
+      "zip",
+      "EOCD / 中央目录 / 各条目 CRC 通过"
+    ],
+    [
+      "0003_000000000457.gz",
+      "0x457",
+      39,
+      "gz",
+      "gz 流结束；已验证展开 19 字节"
+    ],
+    [
+      "0004_00000000047e.bz2",
+      "0x47e",
+      58,
+      "bz2",
+      "bz2 流结束；已验证展开 19 字节"
+    ]
+  ],
+  "exports": [
+    {
+      "file": "0001_00000000000d.png",
+      "source": "E:\\学习培训\\培训\\取证\\output\\工作台验收_d3656ec2\\labs\\inputs\\casework_samples\\含 空格_载体.bin",
+      "parent": null,
+      "offset": 13,
+      "offset_hex": "0xd",
+      "length": 794,
+      "format": "png",
+      "sha256": "2200c35fc95416c9e301c62313145e183890f30cc3aaa1456f9996e6ca980380",
+      "validation": "块边界到 IEND；CRC 全部一致",
+      "depth": 0
+    },
+    {
+      "file": "0002_00000000032a.zip",
+      "source": "E:\\学习培训\\培训\\取证\\output\\工作台验收_d3656ec2\\labs\\inputs\\casework_samples\\含 空格_载体.bin",
+      "parent": null,
+      "offset": 810,
+      "offset_hex": "0x32a",
+      "length": 298,
+      "format": "zip",
+      "sha256": "5ffd6a9e79cbccdac0ad90ede8e7c473b604bb100481cd7db128b50b81442a3e",
+      "validation": "EOCD / 中央目录 / 各条目 CRC 通过",
+      "depth": 0
+    },
+    {
+      "file": "0003_000000000457.gz",
+      "source": "E:\\学习培训\\培训\\取证\\output\\工作台验收_d3656ec2\\labs\\inputs\\casework_samples\\含 空格_载体.bin",
+      "parent": null,
+      "offset": 1111,
+      "offset_hex": "0x457",
+      "length": 39,
+      "format": "gz",
+      "sha256": "754c17388a691e57d5441c63c7c74bb70aba06d017b91141cbd4c4afc0ddad89",
+      "validation": "gz 流结束；已验证展开 19 字节",
+      "depth": 0
+    },
+    {
+      "file": "0004_00000000047e.bz2",
+      "source": "E:\\学习培训\\培训\\取证\\output\\工作台验收_d3656ec2\\labs\\inputs\\casework_samples\\含 空格_载体.bin",
+      "parent": null,
+      "offset": 1150,
+      "offset_hex": "0x47e",
+      "length": 58,
+      "format": "bz2",
+      "sha256": "d8e8f9a1ddfef7fd505c9e5180f25b32bea1c76a7e09193957dad11e73951073",
+      "validation": "bz2 流结束；已验证展开 19 字节",
+      "depth": 0
+    }
+  ],
+  "candidates": 10,
+  "exported_bytes": 1189,
+  "warnings": [
+    {
+      "offset": "0x37e",
+      "format": "zip",
+      "reason": "未找到匹配的完整 ZIP 中央目录；ZIP64 交给 PhotoRec / 7-Zip"
+    },
+    {
+      "offset": "0x54",
+      "format": "zip",
+      "reason": "未找到匹配的完整 ZIP 中央目录；ZIP64 交给 PhotoRec / 7-Zip"
+    }
+  ],
+  "scan_mib": 0,
+  "total_input_bytes": 1208,
+  "note": "偏移属于该行 source 文件；签名命中不等于完整文件。已记录边界与验证方式，不能恢复所有碎片文件。"
+}

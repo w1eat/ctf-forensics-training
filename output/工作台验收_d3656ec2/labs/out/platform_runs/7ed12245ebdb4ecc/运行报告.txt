@@ -1,0 +1,16 @@
+操作：文件时间线 / MACB
+运行环境：Windows PowerShell
+创建时间：2026-10-23T09:41:31.741462+08:00
+状态：failed
+退出码：2
+命令：& 'E:\学习培训\培训\取证\学员工具包_Windows64\runtime\python\python.exe' 'E:\学习培训\培训\取证\学员工具包_Windows64\tools\casework.py' 'timeline' '--args' 'E:\学习培训\培训\取证\output\工作台验收_d3656ec2\labs\out\platform_runs\7ed12245ebdb4ecc\_case_args.json' '--out' 'E:\学习培训\培训\取证\output\工作台验收_d3656ec2\labs\out\platform_runs\7ed12245ebdb4ecc\evidence' '--kit' 'E:\学习培训\培训\取证\学员工具包_Windows64' '--labs' 'E:\学习培训\培训\取证\output\工作台验收_d3656ec2\labs'
+
+
+
+
+[stderr / 诊断信息]
+开始时间必须早于结束时间。
+
+
+UTF-8 参数文件内容：
+{"file": "05_disk/tiny_fat16.dd", "sector": "", "sector_size": "512", "filter": "", "time_field": "all", "start": "2030-01-01", "end": "2020-01-01", "sort": "newest", "rows": "1000", "_file": "E:\\学习培训\\培训\\取证\\output\\工作台验收_d3656ec2\\labs\\05_disk\\tiny_fat16.dd"}

@@ -1,0 +1,130 @@
+{
+  "student_cases": 15,
+  "decision_points": 60,
+  "all_existing_handout_blocks_unchanged": 111,
+  "portal_inline_cases": 15,
+  "memory_cases": 3,
+  "windows_kali_labels_preserved": true,
+  "details": [
+    {
+      "case": 1,
+      "reasoning": true,
+      "decision_points": 4,
+      "unexpected_results": true,
+      "transfer": true,
+      "windows_kali": true
+    },
+    {
+      "case": 2,
+      "reasoning": true,
+      "decision_points": 4,
+      "unexpected_results": true,
+      "transfer": true,
+      "windows_kali": true
+    },
+    {
+      "case": 3,
+      "reasoning": true,
+      "decision_points": 4,
+      "unexpected_results": true,
+      "transfer": true,
+      "windows_kali": true
+    },
+    {
+      "case": 4,
+      "reasoning": true,
+      "decision_points": 4,
+      "unexpected_results": true,
+      "transfer": true,
+      "windows_kali": true
+    },
+    {
+      "case": 5,
+      "reasoning": true,
+      "decision_points": 4,
+      "unexpected_results": true,
+      "transfer": true,
+      "windows_kali": true
+    },
+    {
+      "case": 6,
+      "reasoning": true,
+      "decision_points": 4,
+      "unexpected_results": true,
+      "transfer": true,
+      "windows_kali": true
+    },
+    {
+      "case": 7,
+      "reasoning": true,
+      "decision_points": 4,
+      "unexpected_results": true,
+      "transfer": true,
+      "windows_kali": true
+    },
+    {
+      "case": 8,
+      "reasoning": true,
+      "decision_points": 4,
+      "unexpected_results": true,
+      "transfer": true,
+      "windows_kali": true
+    },
+    {
+      "case": 9,
+      "reasoning": true,
+      "decision_points": 4,
+      "unexpected_results": true,
+      "transfer": true,
+      "windows_kali": true
+    },
+    {
+      "case": 10,
+      "reasoning": true,
+      "decision_points": 4,
+      "unexpected_results": true,
+      "transfer": true,
+      "windows_kali": true
+    },
+    {
+      "case": 11,
+      "reasoning": true,
+      "decision_points": 4,
+      "unexpected_results": true,
+      "transfer": true,
+      "windows_kali": true
+    },
+    {
+      "case": 12,
+      "reasoning": true,
+      "decision_points": 4,
+      "unexpected_results": true,
+      "transfer": true,
+      "windows_kali": true
+    },
+    {
+      "case": 13,
+      "reasoning": true,
+      "decision_points": 4,
+      "unexpected_results": true,
+      "transfer": true,
+      "windows_kali": true
+    },
+    {
+      "case": 14,
+      "reasoning": true,
+      "decision_points": 4,
+      "unexpected_results": true,
+      "transfer": true,
+      "windows_kali": true
+    },
+    {
+      "case": 15,
+      "reasoning": true,
+      "decision_points": 4,
+      "unexpected_results": true,
+      "transfer": true,
+      "windows_kali": true
+    }
+  ]
+}

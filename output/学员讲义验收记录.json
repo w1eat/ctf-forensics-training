@@ -1,0 +1,17 @@
+{
+  "student_cases": 15,
+  "handout_code_blocks": 113,
+  "languages": {
+    "powershell": 44,
+    "cmd": 1,
+    "bash": 49,
+    "text": 18,
+    "sql": 1
+  },
+  "slide_code_blocks": 73,
+  "kali_bash_syntax": "pass",
+  "kali_actual_execution": false,
+  "windows_powershell_syntax": "pass",
+  "real_ram_provided": false,
+  "windows_powershell_blocks": 44
+}

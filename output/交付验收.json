@@ -1,0 +1,24 @@
+{
+  "date": "2026-10-22",
+  "formal_bootstrap_passed": true,
+  "runtime_probes_passed": 18,
+  "system_python_on_path": false,
+  "system_settings_changed": false,
+  "archive_hashes_verified": [
+    "学员工具与练习_Windows64.zip",
+    "CTF取证基础_Kali学习资料.zip",
+    "讲师课件与逐题题解.zip",
+    "Volatility3_Windows离线符号.zip",
+    "CTF取证基础_学员练习.zip",
+    "Volatility3_例题与命令.zip"
+  ],
+  "archive_sha256": "3b2141427d16e6331157419d36cfad6ef3eb1c62595cd41f6e4250840c28026f",
+  "file_integrity_checks": 8,
+  "kali_runtime_tested": false,
+  "clean_vm_tested": false,
+  "ui": 37,
+  "management_api": 34,
+  "existing_api": 115,
+  "indexed_distributions": 4,
+  "all_distributions_have_management": true
+}

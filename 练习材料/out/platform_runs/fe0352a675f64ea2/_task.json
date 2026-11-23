@@ -1,0 +1,22 @@
+{
+  "id": "fe0352a675f64ea2",
+  "action": "zip_dictionary",
+  "title": "小字典恢复 ZIP 口令",
+  "state": "failed",
+  "command": "& 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\runtime\\python\\python.exe' 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\tools\\finspect.py' 'tryzip' 'E:\\学习培训\\培训\\取证\\练习材料\\inputs\\bc2a8904e00f45f4805c98c6\\0002_0000000001d7.zip' 'E:\\学习培训\\培训\\取证\\练习材料\\04_archive\\words.txt' '--limit' '1000'",
+  "created": "2026-10-23T09:59:10.736559+08:00",
+  "exit_code": 1,
+  "text": "\n\n[stderr / 诊断信息]\nNo candidate succeeded; no data was decrypted successfully\r\n",
+  "error": "",
+  "duration": 0.16,
+  "files": [
+    {
+      "name": "运行报告.txt",
+      "bytes": 610,
+      "path": "out/platform_runs/fe0352a675f64ea2/运行报告.txt"
+    }
+  ],
+  "data": null,
+  "host": "Windows · PowerShell",
+  "input": "inputs/bc2a8904e00f45f4805c98c6/0002_0000000001d7.zip"
+}

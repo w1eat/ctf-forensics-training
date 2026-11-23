@@ -1,0 +1,22 @@
+{
+  "id": "691fc5ec9fbc4355",
+  "action": "zip_test",
+  "title": "验证 ZIP 与 CRC",
+  "state": "completed",
+  "command": "& 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\tools\\7zip\\7z.exe' 't' 'E:\\学习培训\\培训\\取证\\output\\平台API验收_51983a32\\labs\\04_archive\\locked.zip' '-ptraining2026'",
+  "created": "2026-10-22T10:16:11.156881+08:00",
+  "exit_code": 0,
+  "text": "\r\n7-Zip 26.04 (x64) : Copyright (c) 1999-2026 Igor Pavlov : 2026-10-05\r\n\r\nScanning the drive for archives:\r\n1 file, 174 bytes (1 KiB)\r\n\r\nTesting archive: E:\\学习培训\\培训\\取证\\output\\平台API验收_51983a32\\labs\\04_archive\\locked.zip\r\n--\r\nPath = E:\\学习培训\\培训\\取证\\output\\平台API验收_51983a32\\labs\\04_archive\\locked.zip\r\nType = zip\r\nPhysical Size = 174\r\n\r\nEverything is Ok\r\n\r\nSize:       48\r\nCompressed: 174\r\n",
+  "error": "",
+  "duration": 0.16,
+  "files": [
+    {
+      "name": "运行报告.txt",
+      "bytes": 801,
+      "path": "out/platform_runs/691fc5ec9fbc4355/运行报告.txt"
+    }
+  ],
+  "data": null,
+  "host": "Windows · PowerShell",
+  "input": "04_archive/locked.zip"
+}

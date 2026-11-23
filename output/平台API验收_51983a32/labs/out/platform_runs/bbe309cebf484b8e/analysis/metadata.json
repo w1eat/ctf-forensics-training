@@ -1,0 +1,35 @@
+{
+  "command": "& 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\tools\\exiftool\\exiftool.exe' '-charset' 'filename=UTF8' '-@' 'out/platform_runs/bbe309cebf484b8e/analysis/_exif.args'",
+  "exit_code": 0,
+  "preview": "[{\r\n  \"SourceFile\": \"./01_file/unknown.dat\",\r\n  \"ExifTool:ExifToolVersion\": 13.59,\r\n  \"System:FileName\": \"unknown.dat\",\r\n  \"System:Directory\": \"./01_file\",\r\n  \"System:FileSize\": \"794 bytes\",\r\n  \"System:FileModifyDate\": \"2026:10:22 10:16:06+08:00\",\r\n  \"System:FileAccessDate\": \"2026:10:22 10:16:06+08:00\",\r\n  \"System:FileCreateDate\": \"2026:10:22 10:16:06+08:00\",\r\n  \"System:FilePermissions\": \"-rw-rw-rw-\",\r\n  \"File:FileType\": \"PNG\",\r\n  \"File:FileTypeExtension\": \"png\",\r\n  \"File:MIMEType\": \"image/png\",\r\n  \"PNG:ImageWidth\": 256,\r\n  \"PNG:ImageHeight\": 160,\r\n  \"PNG:BitDepth\": 8,\r\n  \"PNG:ColorType\": \"RGB\",\r\n  \"PNG:Compression\": \"Deflate/Inflate\",\r\n  \"PNG:Filter\": \"Adaptive\",\r\n  \"PNG:Interlace\": \"Noninterlaced\",\r\n  \"PNG:Title\": \"CTF Foundation - File Identity\",\r\n  \"PNG:Comment\": \"ZmxhZ3tmaWxlX3R5cGVfYmVmb3JlX2V4dGVuc2lvbn0=\",\r\n  \"Composite:ImageSize\": \"256x160\",\r\n  \"Composite:Megapixels\": 0.041\r\n}]\r\n",
+  "diagnostics": "",
+  "log": "metadata.txt",
+  "argument_file": "-a\n-u\n-G1\n-j\n./01_file/unknown.dat\n",
+  "fields": [
+    {
+      "SourceFile": "./01_file/unknown.dat",
+      "ExifTool:ExifToolVersion": 13.59,
+      "System:FileName": "unknown.dat",
+      "System:Directory": "./01_file",
+      "System:FileSize": "794 bytes",
+      "System:FileModifyDate": "2026:10:22 10:16:06+08:00",
+      "System:FileAccessDate": "2026:10:22 10:16:06+08:00",
+      "System:FileCreateDate": "2026:10:22 10:16:06+08:00",
+      "System:FilePermissions": "-rw-rw-rw-",
+      "File:FileType": "PNG",
+      "File:FileTypeExtension": "png",
+      "File:MIMEType": "image/png",
+      "PNG:ImageWidth": 256,
+      "PNG:ImageHeight": 160,
+      "PNG:BitDepth": 8,
+      "PNG:ColorType": "RGB",
+      "PNG:Compression": "Deflate/Inflate",
+      "PNG:Filter": "Adaptive",
+      "PNG:Interlace": "Noninterlaced",
+      "PNG:Title": "CTF Foundation - File Identity",
+      "PNG:Comment": "ZmxhZ3tmaWxlX3R5cGVfYmVmb3JlX2V4dGVuc2lvbn0=",
+      "Composite:ImageSize": "256x160",
+      "Composite:Megapixels": 0.041
+    }
+  ]
+}

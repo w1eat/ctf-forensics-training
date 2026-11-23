@@ -1,0 +1,290 @@
+{
+  "date": "2026-10-20",
+  "regression_before": {
+    "tool": "file_hash",
+    "page_before": 1028.5093994140625,
+    "page_after": 0
+  },
+  "results": {
+    "desktop": {
+      "checks": [
+        {
+          "id": "text_preview",
+          "before": {
+            "page": 1313.821044921875,
+            "list": 0,
+            "active": [
+              "auto_analyze"
+            ]
+          },
+          "after": {
+            "page": 1313.821044921875,
+            "list": 0,
+            "focus": "text_preview",
+            "active": [
+              "text_preview"
+            ]
+          },
+          "sameButton": true,
+          "pass": true
+        },
+        {
+          "id": "file_hash",
+          "before": {
+            "page": 1313.821044921875,
+            "list": 0,
+            "focus": "text_preview",
+            "active": [
+              "text_preview"
+            ]
+          },
+          "after": {
+            "page": 1313.821044921875,
+            "list": 0,
+            "focus": "file_hash",
+            "active": [
+              "file_hash"
+            ]
+          },
+          "sameButton": true,
+          "pass": true
+        },
+        {
+          "id": "vol_handles",
+          "before": {
+            "page": 1313.821044921875,
+            "list": 1370.623291015625,
+            "focus": "file_hash",
+            "active": [
+              "file_hash"
+            ]
+          },
+          "after": {
+            "page": 1313.821044921875,
+            "list": 1370.623291015625,
+            "focus": "vol_handles",
+            "active": [
+              "vol_handles"
+            ]
+          },
+          "sameButton": true,
+          "pass": true
+        },
+        {
+          "id": "vol_files",
+          "before": {
+            "page": 1313.821044921875,
+            "list": 1370.623291015625,
+            "focus": "vol_handles",
+            "active": [
+              "vol_handles"
+            ]
+          },
+          "after": {
+            "page": 1313.821044921875,
+            "list": 1370.623291015625,
+            "focus": "vol_files",
+            "active": [
+              "vol_files"
+            ]
+          },
+          "sameButton": true,
+          "pass": true
+        },
+        {
+          "id": "file_hash",
+          "before": {
+            "page": 1313.821044921875,
+            "list": 0,
+            "focus": "vol_files",
+            "active": [
+              "vol_files"
+            ]
+          },
+          "after": {
+            "page": 1313.821044921875,
+            "list": 0,
+            "focus": "file_hash",
+            "active": [
+              "file_hash"
+            ]
+          },
+          "sameButton": true,
+          "pass": true
+        }
+      ],
+      "passed": 5,
+      "total": 5,
+      "errors": []
+    },
+    "mobile_and_navigation": {
+      "checks": [
+        {
+          "name": "mobile text_preview",
+          "before": {
+            "page": 2102.98095703125,
+            "list": 22.981029510498047,
+            "focus": "file_hash",
+            "query": ""
+          },
+          "after": {
+            "page": 2102.98095703125,
+            "list": 22.981029510498047,
+            "focus": "text_preview",
+            "query": ""
+          },
+          "pass": true
+        },
+        {
+          "name": "mobile file_hash",
+          "before": {
+            "page": 2102.98095703125,
+            "list": 22.981029510498047,
+            "focus": "text_preview",
+            "query": ""
+          },
+          "after": {
+            "page": 2102.98095703125,
+            "list": 22.981029510498047,
+            "focus": "file_hash",
+            "query": ""
+          },
+          "pass": true
+        },
+        {
+          "name": "mobile vol_handles",
+          "before": {
+            "page": 2102.98095703125,
+            "list": 831.653076171875,
+            "focus": "file_hash",
+            "query": ""
+          },
+          "after": {
+            "page": 2102.98095703125,
+            "list": 831.653076171875,
+            "focus": "vol_handles",
+            "query": ""
+          },
+          "pass": true
+        },
+        {
+          "name": "mobile vol_files",
+          "before": {
+            "page": 2102.98095703125,
+            "list": 831.653076171875,
+            "focus": "vol_handles",
+            "query": ""
+          },
+          "after": {
+            "page": 2102.98095703125,
+            "list": 831.653076171875,
+            "focus": "vol_files",
+            "query": ""
+          },
+          "pass": true
+        },
+        {
+          "name": "filtered list",
+          "before": {
+            "page": 2102.98095703125,
+            "list": 12.574524879455566,
+            "query": "Volatility"
+          },
+          "after": {
+            "page": 2102.98095703125,
+            "list": 12.574524879455566,
+            "focus": "vol_handles",
+            "query": "Volatility"
+          },
+          "pass": true
+        },
+        {
+          "name": "keyboard selection",
+          "before": {
+            "page": 2102.98095703125,
+            "list": 12.574524879455566,
+            "focus": "vol_handles",
+            "query": "Volatility"
+          },
+          "after": {
+            "page": 2102.98095703125,
+            "list": 12.574524879455566,
+            "focus": "vol_handles",
+            "query": "Volatility"
+          },
+          "pass": true
+        },
+        {
+          "name": "navigation from tools",
+          "panelVisible": true,
+          "page": 0,
+          "active": "vol_help",
+          "hash": "#workbench",
+          "pass": true
+        }
+      ],
+      "passed": 7,
+      "total": 7
+    },
+    "connected": {
+      "checks": [
+        {
+          "id": "text_preview",
+          "before": {
+            "page": 1209.756103515625,
+            "list": 76.31436157226562,
+            "current": "01_file/unknown.dat",
+            "input": "01_file/unknown.dat",
+            "preview": "实际执行命令 · Windows · PowerShell"
+          },
+          "after": {
+            "page": 1209.756103515625,
+            "list": 76.31436157226562,
+            "current": "01_file/unknown.dat",
+            "input": "01_file/unknown.dat",
+            "preview": "实际执行命令 · Windows · PowerShell"
+          },
+          "pass": true
+        },
+        {
+          "id": "file_hash",
+          "before": {
+            "page": 1209.756103515625,
+            "list": 76.31436157226562,
+            "current": "01_file/unknown.dat",
+            "input": "01_file/unknown.dat",
+            "preview": "实际执行命令 · Windows · PowerShell"
+          },
+          "after": {
+            "page": 1209.756103515625,
+            "list": 76.31436157226562,
+            "current": "01_file/unknown.dat",
+            "input": "01_file/unknown.dat",
+            "preview": "实际执行命令 · Windows · PowerShell"
+          },
+          "pass": true
+        },
+        {
+          "id": "vol_handles",
+          "before": {
+            "page": 1209.756103515625,
+            "list": 1370.623291015625,
+            "current": "01_file/unknown.dat",
+            "input": "01_file/unknown.dat",
+            "preview": "实际执行命令 · Windows · PowerShell"
+          },
+          "after": {
+            "page": 1209.756103515625,
+            "list": 1370.623291015625,
+            "current": "01_file/unknown.dat",
+            "input": "01_file/unknown.dat",
+            "preview": "实际执行命令 · Windows · PowerShell"
+          },
+          "pass": true
+        }
+      ],
+      "passed": 3,
+      "total": 3
+    }
+  }
+}

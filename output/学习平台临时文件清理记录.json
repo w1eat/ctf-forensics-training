@@ -1,0 +1,327 @@
+{
+    "date":  "2026-10-19",
+    "files":  7558,
+    "freed_bytes":  335340134,
+    "targets":  [
+                    {
+                        "path":  ".playwright-mcp",
+                        "files":  6,
+                        "bytes":  26969
+                    },
+                    {
+                        "path":  "output\\平台分发验证 空格",
+                        "files":  6691,
+                        "bytes":  329708947
+                    },
+                    {
+                        "path":  "output\\讲义语法检查",
+                        "files":  49,
+                        "bytes":  19672
+                    },
+                    {
+                        "path":  "练习材料\\out\\platform_runs",
+                        "files":  401,
+                        "bytes":  262058
+                    },
+                    {
+                        "path":  "练习材料\\out\\平台运行",
+                        "files":  4,
+                        "bytes":  8317
+                    },
+                    {
+                        "path":  "练习材料\\out\\platform_args",
+                        "files":  1,
+                        "bytes":  45
+                    },
+                    {
+                        "path":  "练习材料\\inputs\\字符测试",
+                        "files":  1,
+                        "bytes":  733
+                    },
+                    {
+                        "path":  "练习材料\\inputs\\fb18130b9f0f",
+                        "files":  1,
+                        "bytes":  733
+                    },
+                    {
+                        "path":  "练习材料\\inputs\\_platform_qa_2146e73945",
+                        "files":  3,
+                        "bytes":  1374
+                    },
+                    {
+                        "path":  "练习材料\\inputs\\_platform_qa_e25a21b458",
+                        "files":  3,
+                        "bytes":  1374
+                    },
+                    {
+                        "path":  "练习材料\\inputs\\_platform_qa_e27d0f6dd9",
+                        "files":  3,
+                        "bytes":  1374
+                    },
+                    {
+                        "path":  "练习材料\\inputs\\156fcb968030",
+                        "files":  1,
+                        "bytes":  19
+                    },
+                    {
+                        "path":  "练习材料\\inputs\\af90eb726c25",
+                        "files":  1,
+                        "bytes":  19
+                    },
+                    {
+                        "path":  "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\__pycache__",
+                        "files":  1,
+                        "bytes":  277533
+                    },
+                    {
+                        "path":  "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\capstone\\__pycache__",
+                        "files":  37,
+                        "bytes":  610001
+                    },
+                    {
+                        "path":  "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\Crypto\\__pycache__",
+                        "files":  1,
+                        "bytes":  493
+                    },
+                    {
+                        "path":  "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\Crypto\\Cipher\\__pycache__",
+                        "files":  4,
+                        "bytes":  21209
+                    },
+                    {
+                        "path":  "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\Crypto\\Hash\\__pycache__",
+                        "files":  3,
+                        "bytes":  19392
+                    },
+                    {
+                        "path":  "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\Crypto\\Random\\__pycache__",
+                        "files":  1,
+                        "bytes":  1461
+                    },
+                    {
+                        "path":  "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\Crypto\\Util\\__pycache__",
+                        "files":  6,
+                        "bytes":  28156
+                    },
+                    {
+                        "path":  "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\ordlookup\\__pycache__",
+                        "files":  4,
+                        "bytes":  35189
+                    },
+                    {
+                        "path":  "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\PIL\\__pycache__",
+                        "files":  29,
+                        "bytes":  662803
+                    },
+                    {
+                        "path":  "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\volatility3\\__pycache__",
+                        "files":  1,
+                        "bytes":  3077
+                    },
+                    {
+                        "path":  "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\volatility3\\cli\\__pycache__",
+                        "files":  4,
+                        "bytes":  92977
+                    },
+                    {
+                        "path":  "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\volatility3\\framework\\__pycache__",
+                        "files":  4,
+                        "bytes":  31313
+                    },
+                    {
+                        "path":  "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\volatility3\\framework\\automagic\\__pycache__",
+                        "files":  10,
+                        "bytes":  141642
+                    },
+                    {
+                        "path":  "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\volatility3\\framework\\configuration\\__pycache__",
+                        "files":  2,
+                        "bytes":  37672
+                    },
+                    {
+                        "path":  "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\volatility3\\framework\\constants\\__pycache__",
+                        "files":  3,
+                        "bytes":  7282
+                    },
+                    {
+                        "path":  "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\volatility3\\framework\\constants\\linux\\__pycache__",
+                        "files":  1,
+                        "bytes":  11536
+                    },
+                    {
+                        "path":  "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\volatility3\\framework\\constants\\windows\\__pycache__",
+                        "files":  1,
+                        "bytes":  672
+                    },
+                    {
+                        "path":  "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\volatility3\\framework\\contexts\\__pycache__",
+                        "files":  1,
+                        "bytes":  22829
+                    },
+                    {
+                        "path":  "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\volatility3\\framework\\interfaces\\__pycache__",
+                        "files":  9,
+                        "bytes":  161885
+                    },
+                    {
+                        "path":  "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\volatility3\\framework\\layers\\__pycache__",
+                        "files":  9,
+                        "bytes":  113848
+                    },
+                    {
+                        "path":  "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\volatility3\\framework\\layers\\scanners\\__pycache__",
+                        "files":  2,
+                        "bytes":  9679
+                    },
+                    {
+                        "path":  "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\volatility3\\framework\\objects\\__pycache__",
+                        "files":  3,
+                        "bytes":  74503
+                    },
+                    {
+                        "path":  "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\volatility3\\framework\\plugins\\__pycache__",
+                        "files":  10,
+                        "bytes":  73361
+                    },
+                    {
+                        "path":  "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\volatility3\\framework\\plugins\\linux\\__pycache__",
+                        "files":  41,
+                        "bytes":  318438
+                    },
+                    {
+                        "path":  "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\volatility3\\framework\\plugins\\linux\\graphics\\__pycache__",
+                        "files":  2,
+                        "bytes":  15945
+                    },
+                    {
+                        "path":  "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\volatility3\\framework\\plugins\\linux\\malware\\__pycache__",
+                        "files":  13,
+                        "bytes":  122323
+                    },
+                    {
+                        "path":  "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\volatility3\\framework\\plugins\\linux\\tracing\\__pycache__",
+                        "files":  4,
+                        "bytes":  31514
+                    },
+                    {
+                        "path":  "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\volatility3\\framework\\plugins\\mac\\__pycache__",
+                        "files":  23,
+                        "bytes":  136911
+                    },
+                    {
+                        "path":  "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\volatility3\\framework\\plugins\\renderers\\__pycache__",
+                        "files":  2,
+                        "bytes":  11509
+                    },
+                    {
+                        "path":  "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\volatility3\\framework\\plugins\\windows\\__pycache__",
+                        "files":  78,
+                        "bytes":  692590
+                    },
+                    {
+                        "path":  "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\volatility3\\framework\\plugins\\windows\\malware\\__pycache__",
+                        "files":  14,
+                        "bytes":  130879
+                    },
+                    {
+                        "path":  "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\volatility3\\framework\\plugins\\windows\\registry\\__pycache__",
+                        "files":  10,
+                        "bytes":  191624
+                    },
+                    {
+                        "path":  "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\volatility3\\framework\\renderers\\__pycache__",
+                        "files":  3,
+                        "bytes":  37057
+                    },
+                    {
+                        "path":  "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\volatility3\\framework\\symbols\\__pycache__",
+                        "files":  5,
+                        "bytes":  73688
+                    },
+                    {
+                        "path":  "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\volatility3\\framework\\symbols\\generic\\__pycache__",
+                        "files":  1,
+                        "bytes":  3026
+                    },
+                    {
+                        "path":  "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\volatility3\\framework\\symbols\\linux\\__pycache__",
+                        "files":  4,
+                        "bytes":  118639
+                    },
+                    {
+                        "path":  "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\volatility3\\framework\\symbols\\linux\\extensions\\__pycache__",
+                        "files":  4,
+                        "bytes":  210883
+                    },
+                    {
+                        "path":  "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\volatility3\\framework\\symbols\\linux\\utilities\\__pycache__",
+                        "files":  3,
+                        "bytes":  68556
+                    },
+                    {
+                        "path":  "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\volatility3\\framework\\symbols\\mac\\__pycache__",
+                        "files":  1,
+                        "bytes":  11848
+                    },
+                    {
+                        "path":  "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\volatility3\\framework\\symbols\\mac\\extensions\\__pycache__",
+                        "files":  1,
+                        "bytes":  27370
+                    },
+                    {
+                        "path":  "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\volatility3\\framework\\symbols\\windows\\__pycache__",
+                        "files":  4,
+                        "bytes":  88371
+                    },
+                    {
+                        "path":  "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\volatility3\\framework\\symbols\\windows\\extensions\\__pycache__",
+                        "files":  14,
+                        "bytes":  228458
+                    },
+                    {
+                        "path":  "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\volatility3\\plugins\\__pycache__",
+                        "files":  1,
+                        "bytes":  846
+                    },
+                    {
+                        "path":  "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\volatility3\\plugins\\linux\\__pycache__",
+                        "files":  1,
+                        "bytes":  1248
+                    },
+                    {
+                        "path":  "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\volatility3\\plugins\\mac\\__pycache__",
+                        "files":  1,
+                        "bytes":  1244
+                    },
+                    {
+                        "path":  "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\volatility3\\plugins\\windows\\__pycache__",
+                        "files":  2,
+                        "bytes":  5691
+                    },
+                    {
+                        "path":  "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\volatility3\\plugins\\windows\\registry\\__pycache__",
+                        "files":  2,
+                        "bytes":  8198
+                    },
+                    {
+                        "path":  "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\volatility3\\schemas\\__pycache__",
+                        "files":  1,
+                        "bytes":  8426
+                    },
+                    {
+                        "path":  "学员工具包_Windows64\\runtime\\python\\Lib\\site-packages\\volatility3\\symbols\\__pycache__",
+                        "files":  1,
+                        "bytes":  501
+                    },
+                    {
+                        "path":  "工具包构建\\__pycache__",
+                        "files":  3,
+                        "bytes":  80213
+                    },
+                    {
+                        "path":  "课件源码\\__pycache__",
+                        "files":  8,
+                        "bytes":  243991
+                    }
+                ]
+}

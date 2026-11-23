@@ -1,0 +1,91 @@
+<!doctype html><meta charset="utf-8"><title>取证分析结果</title><style>body{font:15px/1.8 Microsoft YaHei;background:#f7f8f2;color:#193c33;padding:32px}pre{white-space:pre-wrap;overflow-wrap:anywhere}</style><h1>文件时间线 / MACB</h1><pre>{
+  &quot;kind&quot;: &quot;casework&quot;,
+  &quot;operation&quot;: &quot;disk_timeline&quot;,
+  &quot;title&quot;: &quot;文件时间线 / MACB&quot;,
+  &quot;columns&quot;: [
+    &quot;UTC 时间&quot;,
+    &quot;事件&quot;,
+    &quot;分区扇区&quot;,
+    &quot;元数据编号&quot;,
+    &quot;路径&quot;,
+    &quot;字节数&quot;
+  ],
+  &quot;rows&quot;: [
+    [
+      &quot;2026-10-18T01:00:00Z&quot;,
+      &quot;M 内容修改&quot;,
+      2048,
+      &quot;3&quot;,
+      &quot;/README.TXT&quot;,
+      &quot;64&quot;
+    ]
+  ],
+  &quot;entries&quot;: [
+    {
+      &quot;epoch&quot;: 1792285200,
+      &quot;utc&quot;: &quot;2026-10-18T01:00:00Z&quot;,
+      &quot;event&quot;: &quot;M 内容修改&quot;,
+      &quot;field&quot;: &quot;mtime&quot;,
+      &quot;sector&quot;: 2048,
+      &quot;sector_size&quot;: 512,
+      &quot;inode&quot;: &quot;3&quot;,
+      &quot;path&quot;: &quot;/README.TXT&quot;,
+      &quot;mode&quot;: &quot;r/rrwxrwxrwx&quot;,
+      &quot;bytes&quot;: &quot;64&quot;
+    }
+  ],
+  &quot;total_events&quot;: 2,
+  &quot;file_records&quot;: 6,
+  &quot;limited&quot;: true,
+  &quot;parse_errors&quot;: [],
+  &quot;volumes&quot;: [
+    {
+      &quot;sector&quot;: 2048,
+      &quot;sector_size&quot;: 512,
+      &quot;length&quot;: 16384,
+      &quot;description&quot;: &quot;DOS FAT16 (0x06)&quot;,
+      &quot;filesystem&quot;: &quot;FAT16&quot;
+    }
+  ],
+  &quot;commands&quot;: [
+    {
+      &quot;argv&quot;: [
+        &quot;E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\tools\\sleuthkit\\bin\\mmls.exe&quot;,
+        &quot;E:\\学习培训\\培训\\取证\\output\\工作台验收_d3656ec2\\labs\\05_disk\\tiny_fat16.dd&quot;
+      ],
+      &quot;exit_code&quot;: 0,
+      &quot;report&quot;: &quot;partitions.txt&quot;,
+      &quot;diagnostics&quot;: &quot;partitions.diagnostics.txt&quot;
+    },
+    {
+      &quot;argv&quot;: [
+        &quot;E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\tools\\sleuthkit\\bin\\fsstat.exe&quot;,
+        &quot;-b&quot;,
+        &quot;512&quot;,
+        &quot;-o&quot;,
+        &quot;2048&quot;,
+        &quot;E:\\学习培训\\培训\\取证\\output\\工作台验收_d3656ec2\\labs\\05_disk\\tiny_fat16.dd&quot;
+      ],
+      &quot;exit_code&quot;: 0,
+      &quot;report&quot;: &quot;fs_2048.txt&quot;,
+      &quot;diagnostics&quot;: &quot;fs_2048.diagnostics.txt&quot;
+    },
+    {
+      &quot;argv&quot;: [
+        &quot;E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\tools\\sleuthkit\\bin\\fls.exe&quot;,
+        &quot;-r&quot;,
+        &quot;-m&quot;,
+        &quot;/&quot;,
+        &quot;-b&quot;,
+        &quot;512&quot;,
+        &quot;-o&quot;,
+        &quot;2048&quot;,
+        &quot;E:\\学习培训\\培训\\取证\\output\\工作台验收_d3656ec2\\labs\\05_disk\\tiny_fat16.dd&quot;
+      ],
+      &quot;exit_code&quot;: 0,
+      &quot;report&quot;: &quot;body_2048.txt&quot;,
+      &quot;diagnostics&quot;: &quot;body_2048.diagnostics.txt&quot;
+    }
+  ],
+  &quot;note&quot;: &quot;UTC 时间；CSV 保存所有匹配事件，网页有展示上限。M=内容修改、A=访问、C=元数据变更、B=创建（文件系统支持时）。C 不是创建时间；时间戳可被修改，需结合内容与其他痕迹验证。结束日期包含当日，带时间的结束值为不包含边界。&quot;
+}</pre>

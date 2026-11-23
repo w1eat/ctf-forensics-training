@@ -1,0 +1,19 @@
+{
+  "date": "2026-10-21",
+  "total": 2,
+  "passed": 2,
+  "checks": [
+    {
+      "name": "Packaged one-click CMD works without Python on PATH",
+      "pass_": true
+    },
+    {
+      "name": "All runtime checks pass in relocated formal archive",
+      "pass_": true
+    }
+  ],
+  "runtime_extracted": "E:\\学习培训\\培训\\取证\\output\\工具台分发验收_93769cf1\\中文 空格\\学员工具包_Windows64",
+  "system_security_settings_changed": false,
+  "vc_system_install_executed": false,
+  "clean_vm_tested": false
+}

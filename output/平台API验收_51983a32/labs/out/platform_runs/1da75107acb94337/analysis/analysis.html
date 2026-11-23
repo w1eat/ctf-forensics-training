@@ -1,0 +1,314 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>文件分析报告</title><style>body{font:14px/1.85 system-ui,sans-serif;max-width:1140px;margin:36px auto;padding:0 24px;color:#254a36;background:#f5f7ed}section{border:1px solid #ccdabb;background:#fffef8;margin:22px 0;padding:22px;border-radius:8px}h1{font-size:29px}h2{font-size:20px}h3{font-size:14px;margin-top:22px}small,.label{font-size:11px;font-weight:normal;color:#7a895f}.table{overflow:auto;max-height:540px}table{border-collapse:collapse;width:100%;font-size:11px}th,td{text-align:left;vertical-align:top;padding:8px 10px;border-bottom:1px solid #dce4d0;max-width:450px;overflow-wrap:anywhere}th{background:#e5edd9;position:sticky;top:0}pre{white-space:pre-wrap;overflow-wrap:anywhere;font:11px/1.85 Consolas,monospace;background:#edf2e5;padding:14px;border-radius:4px;max-height:480px;overflow:auto}details{margin-top:16px}summary{cursor:pointer;color:#66844f;font-size:12px}.error{background:#f6e4d7;padding:12px;border-radius:4px}@media(max-width:650px){body{padding:0 13px;margin:20px auto}section{padding:15px}h1{font-size:24px}}</style><h1>文件自动分析报告</h1><h2>FAT16 分区镜像 · 起点 2048</h2><p>tiny_fat16.dd</p><p>2026-10-22T10:16:28.714172+08:00 · Windows PowerShell</p><p>流程：disk · 模式：quick · 子文件深度：2 · 导出 / 分析文件：2 / 32</p><section><h2>flag 形态候选 · 请结合题干验证</h2><div class="table"><table><thead><tr><th>来源 / 对象</th><th>位置</th><th>编码</th><th>候选内容</th></tr></thead><tbody><tr><td>_ECRET.TXT</td><td>0x0</td><td>ascii</td><td>flag{deleted_entry_is_a_clue}</td></tr><tr><td>tiny_fat16.dd</td><td>0x114400</td><td>ascii</td><td>flag{deleted_entry_is_a_clue}</td></tr></tbody></table></div></section><section><h2>识别文件结构与类型 <small>已执行</small></h2><details><summary>原始结构与完整范围记录</summary><pre>{
+  &quot;kind&quot;: &quot;disk&quot;,
+  &quot;label&quot;: &quot;MBR 磁盘候选&quot;,
+  &quot;evidence&quot;: &quot;结构标记候选；继续由 TSK fsstat 验证，不使用练习固定扇区。&quot;,
+  &quot;extension&quot;: &quot;.dd&quot;,
+  &quot;bytes&quot;: 9437184,
+  &quot;header&quot;: &quot;00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00&quot;
+}</pre></details></section><section><h2>全文件摘要与字节熵 <small>已执行</small></h2><pre>SHA256 4293659eb90411fd57ae90c14745a8c3a2e57db360552e6a2e6dcb6398fd65ed
+字节数 9437184 · 熵 0.00048</pre><p>MD5 / SHA1 仅用于已知摘要对照；证据一致性优先记录 SHA256。熵高不等于一定加密。</p><details><summary>原始结构与完整范围记录</summary><pre>{
+  &quot;kind&quot;: &quot;hash&quot;,
+  &quot;name&quot;: &quot;tiny_fat16.dd&quot;,
+  &quot;bytes&quot;: 9437184,
+  &quot;md5&quot;: &quot;4d05fcb24f6bf93efc8add1b611c9c20&quot;,
+  &quot;sha1&quot;: &quot;fbd56008f62412d88e19af80facaefc2860e78cd&quot;,
+  &quot;sha256&quot;: &quot;4293659eb90411fd57ae90c14745a8c3a2e57db360552e6a2e6dcb6398fd65ed&quot;,
+  &quot;entropy&quot;: 0.00048,
+  &quot;entropy_windows&quot;: [
+    {
+      &quot;offset&quot;: 0,
+      &quot;bytes&quot;: 1048576,
+      &quot;entropy&quot;: 0.00022
+    },
+    {
+      &quot;offset&quot;: 1048576,
+      &quot;bytes&quot;: 1048576,
+      &quot;entropy&quot;: 0.00349
+    },
+    {
+      &quot;offset&quot;: 2097152,
+      &quot;bytes&quot;: 1048576,
+      &quot;entropy&quot;: -0.0
+    },
+    {
+      &quot;offset&quot;: 3145728,
+      &quot;bytes&quot;: 1048576,
+      &quot;entropy&quot;: -0.0
+    },
+    {
+      &quot;offset&quot;: 4194304,
+      &quot;bytes&quot;: 1048576,
+      &quot;entropy&quot;: -0.0
+    },
+    {
+      &quot;offset&quot;: 5242880,
+      &quot;bytes&quot;: 1048576,
+      &quot;entropy&quot;: -0.0
+    },
+    {
+      &quot;offset&quot;: 6291456,
+      &quot;bytes&quot;: 1048576,
+      &quot;entropy&quot;: -0.0
+    },
+    {
+      &quot;offset&quot;: 7340032,
+      &quot;bytes&quot;: 1048576,
+      &quot;entropy&quot;: -0.0
+    },
+    {
+      &quot;offset&quot;: 8388608,
+      &quot;bytes&quot;: 1048576,
+      &quot;entropy&quot;: -0.0
+    }
+  ],
+  &quot;note&quot;: &quot;MD5 / SHA1 仅用于已知摘要对照；证据一致性优先记录 SHA256。熵高不等于一定加密。&quot;
+}</pre></details></section><section><h2>通用字符串与嵌入签名 <small>已执行</small></h2><p>仅提取 ASCII 可打印字符及其 UTF-16LE 表示；不覆盖所有语言。跨块长串可能分段显示。</p><p>扫描范围：4194304 / 9437184 字节</p><details><summary>原始结构与完整范围记录</summary><pre>{
+  &quot;kind&quot;: &quot;scan&quot;,
+  &quot;strings&quot;: {
+    &quot;columns&quot;: [
+      &quot;字节偏移&quot;,
+      &quot;编码&quot;,
+      &quot;可读内容（最多 1024 字节）&quot;,
+      &quot;匹配字节数&quot;
+    ],
+    &quot;rows&quot;: [
+      [
+        &quot;0x100003&quot;,
+        &quot;ASCII&quot;,
+        &quot;CTFDEMO &quot;,
+        8
+      ],
+      [
+        &quot;0x10002b&quot;,
+        &quot;ASCII&quot;,
+        &quot;CTFTRAININGFAT16   &quot;,
+        19
+      ],
+      [
+        &quot;0x110200&quot;,
+        &quot;ASCII&quot;,
+        &quot;README  TXT &quot;,
+        12
+      ],
+      [
+        &quot;0x110221&quot;,
+        &quot;ASCII&quot;,
+        &quot;ECRET  TXT &quot;,
+        11
+      ],
+      [
+        &quot;0x114200&quot;,
+        &quot;ASCII&quot;,
+        &quot;Training FAT16 image. Look for a deleted root directory entry.&quot;,
+        62
+      ],
+      [
+        &quot;0x114400&quot;,
+        &quot;ASCII&quot;,
+        &quot;flag{deleted_entry_is_a_clue}&quot;,
+        29
+      ]
+    ]
+  },
+  &quot;signatures&quot;: {
+    &quot;columns&quot;: [
+      &quot;字节偏移&quot;,
+      &quot;签名&quot;,
+      &quot;含义&quot;
+    ],
+    &quot;rows&quot;: []
+  },
+  &quot;scanned_bytes&quot;: 4194304,
+  &quot;total_bytes&quot;: 9437184,
+  &quot;partial&quot;: true,
+  &quot;string_rows_limited&quot;: false,
+  &quot;signature_rows_limited&quot;: false,
+  &quot;note&quot;: &quot;仅提取 ASCII 可打印字符及其 UTF-16LE 表示；不覆盖所有语言。跨块长串可能分段显示。&quot;
+}</pre></details></section><section><h2>文件系统 2048：递归目录与删除项 <small>已执行</small></h2><p class="label">实际命令 · Windows PowerShell</p><pre>&amp; &#x27;E:\学习培训\培训\取证\学员工具包_Windows64\tools\sleuthkit\bin\fls.exe&#x27; &#x27;-r&#x27; &#x27;-p&#x27; &#x27;-b&#x27; &#x27;512&#x27; &#x27;-o&#x27; &#x27;2048&#x27; &#x27;E:\学习培训\培训\取证\output\平台API验收_51983a32\labs\05_disk\tiny_fat16.dd&#x27;</pre><details><summary>原始结构与完整范围记录</summary><pre>{
+  &quot;command&quot;: &quot;&amp; &#x27;E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\tools\\sleuthkit\\bin\\fls.exe&#x27; &#x27;-r&#x27; &#x27;-p&#x27; &#x27;-b&#x27; &#x27;512&#x27; &#x27;-o&#x27; &#x27;2048&#x27; &#x27;E:\\学习培训\\培训\\取证\\output\\平台API验收_51983a32\\labs\\05_disk\\tiny_fat16.dd&#x27;&quot;,
+  &quot;exit_code&quot;: 0,
+  &quot;preview&quot;: &quot;r/r 3:\tREADME.TXT\r\nr/r * 4:\t_ECRET.TXT\r\nv/v 260083:\t$MBR\r\nv/v 260084:\t$FAT1\r\nv/v 260085:\t$FAT2\r\nV/V 260086:\t$OrphanFiles\r\n&quot;,
+  &quot;diagnostics&quot;: &quot;&quot;,
+  &quot;log&quot;: &quot;fls.txt&quot;,
+  &quot;argument_file&quot;: null
+}</pre></details></section><section><h2>磁盘 / 分区镜像 <small>已执行</small></h2><h3>已验证的文件系统</h3><div class="table"><table><thead><tr><th>起始扇区</th><th>扇区字节</th><th>文件系统</th><th>说明</th></tr></thead><tbody><tr><td>2048</td><td>512</td><td>FAT16</td><td>DOS FAT16 (0x06)</td></tr></tbody></table></div><h3>起点 2048：文件 / 删除项（前 500，完整目录见 CSV）</h3><div class="table"><table><thead><tr><th>元数据编号</th><th>类型</th><th>删除标记</th><th>路径</th><th>优先分</th></tr></thead><tbody><tr><td>3</td><td>r/r</td><td>False</td><td>README.TXT</td><td>10</td></tr><tr><td>4</td><td>r/r</td><td>True</td><td>_ECRET.TXT</td><td>35</td></tr><tr><td>260083</td><td>v/v</td><td>False</td><td>$MBR</td><td>-1</td></tr><tr><td>260084</td><td>v/v</td><td>False</td><td>$FAT1</td><td>-1</td></tr><tr><td>260085</td><td>v/v</td><td>False</td><td>$FAT2</td><td>-1</td></tr><tr><td>260086</td><td>V/V</td><td>False</td><td>$OrphanFiles</td><td>-1</td></tr></tbody></table></div><h3>起点 2048：候选文件导出</h3><div class="table"><table><thead><tr><th>编号</th><th>原路径</th><th>状态</th><th>字节</th><th>关键词命中</th><th>输出</th></tr></thead><tbody><tr><td>4</td><td>_ECRET.TXT</td><td>exported</td><td>31</td><td>1</td><td>workflow/fs_2048/recovered/001__ECRET.TXT</td></tr><tr><td>3</td><td>README.TXT</td><td>exported</td><td>64</td><td>0</td><td>workflow/fs_2048/recovered/002_README.TXT</td></tr></tbody></table></div><details><summary>原始结构与完整范围记录</summary><pre>{
+  &quot;kind&quot;: &quot;disk&quot;,
+  &quot;mode&quot;: &quot;partition_table&quot;,
+  &quot;volumes&quot;: [
+    {
+      &quot;sector&quot;: 2048,
+      &quot;sector_size&quot;: 512,
+      &quot;length&quot;: 16384,
+      &quot;description&quot;: &quot;DOS FAT16 (0x06)&quot;,
+      &quot;filesystem&quot;: &quot;FAT16&quot;,
+      &quot;summary&quot;: &quot;FILE SYSTEM INFORMATION\r\n--------------------------------------------\r\nFile System Type: FAT16\r\n\r\nOEM Name: CTFDEMO \r\nVolume ID: 0xc7f02610\r\nVolume Label (Boot Sector): CTFTRAINING\r\nVolume Label (Root Directory):\r\nFile System Type Label: FAT16   \r\n\r\nSectors before file system: 2048\r\n\r\nFile System Layout (in sectors)\r\nTotal Range: 0 - 16383\r\n* Reserved: 0 - 0\r\n** Boot Sector: 0\r\n* FAT 0: 1 - 64\r\n* FAT 1: 65 - 128\r\n* Data Area: 129 - 16383\r\n** Root Directory: 129 - 160\r\n** Cluster Area: 161 - 16383\r\n\r\nMETADATA INFORMATION\r\n--------------------------------------------\r\nRange: 2 - 260086\r\nRoot Directory: 2\r\n\r\nCONTENT INFORMATION\r\n--------------------------------------------\r\nSector Size: 512\r\nCluster Size: 512\r\nTotal Cluster Range: 2 - 16224\r\n\r\nFAT CONTENTS (in sectors)\r\n--------------------------------------------\r\n161-161 (1) -&gt; EOF\r\n&quot;,
+      &quot;command&quot;: &quot;&amp; &#x27;E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\tools\\sleuthkit\\bin\\fsstat.exe&#x27; &#x27;-b&#x27; &#x27;512&#x27; &#x27;-o&#x27; &#x27;2048&#x27; &#x27;E:\\学习培训\\培训\\取证\\output\\平台API验收_51983a32\\labs\\05_disk\\tiny_fat16.dd&#x27;&quot;,
+      &quot;entries&quot;: 6,
+      &quot;deleted_entries&quot;: 1,
+      &quot;candidate_count&quot;: 2,
+      &quot;exported&quot;: 2,
+      &quot;inventory&quot;: &quot;workflow/fs_2048/file_inventory.csv&quot;,
+      &quot;budget_limited&quot;: false
+    }
+  ],
+  &quot;probe&quot;: {
+    &quot;command&quot;: &quot;&amp; &#x27;E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\tools\\sleuthkit\\bin\\mmls.exe&#x27; &#x27;E:\\学习培训\\培训\\取证\\output\\平台API验收_51983a32\\labs\\05_disk\\tiny_fat16.dd&#x27;&quot;,
+    &quot;exit_code&quot;: 0,
+    &quot;preview&quot;: &quot;DOS Partition Table\r\nOffset Sector: 0\r\nUnits are in 512-byte sectors\r\n\r\n      Slot      Start        End          Length       Description\r\n000:  Meta      0000000000   0000000000   0000000001   Primary Table (#0)\r\n001:  -------   0000000000   0000002047   0000002048   Unallocated\r\n002:  000:000   0000002048   0000018431   0000016384   DOS FAT16 (0x06)\r\n&quot;,
+    &quot;diagnostics&quot;: &quot;&quot;,
+    &quot;log&quot;: &quot;mmls.txt&quot;,
+    &quot;argument_file&quot;: null
+  },
+  &quot;attempts&quot;: [
+    {
+      &quot;sector&quot;: 2048,
+      &quot;exit_code&quot;: 0,
+      &quot;command&quot;: &quot;&amp; &#x27;E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\tools\\sleuthkit\\bin\\fsstat.exe&#x27; &#x27;-b&#x27; &#x27;512&#x27; &#x27;-o&#x27; &#x27;2048&#x27; &#x27;E:\\学习培训\\培训\\取证\\output\\平台API验收_51983a32\\labs\\05_disk\\tiny_fat16.dd&#x27;&quot;,
+      &quot;diagnostics&quot;: &quot;&quot;
+    }
+  ],
+  &quot;partition_limit&quot;: 8,
+  &quot;partitions_limited&quot;: false,
+  &quot;tables&quot;: [
+    {
+      &quot;title&quot;: &quot;已验证的文件系统&quot;,
+      &quot;columns&quot;: [
+        &quot;起始扇区&quot;,
+        &quot;扇区字节&quot;,
+        &quot;文件系统&quot;,
+        &quot;说明&quot;
+      ],
+      &quot;rows&quot;: [
+        [
+          2048,
+          512,
+          &quot;FAT16&quot;,
+          &quot;DOS FAT16 (0x06)&quot;
+        ]
+      ]
+    },
+    {
+      &quot;title&quot;: &quot;起点 2048：文件 / 删除项（前 500，完整目录见 CSV）&quot;,
+      &quot;columns&quot;: [
+        &quot;元数据编号&quot;,
+        &quot;类型&quot;,
+        &quot;删除标记&quot;,
+        &quot;路径&quot;,
+        &quot;优先分&quot;
+      ],
+      &quot;rows&quot;: [
+        [
+          &quot;3&quot;,
+          &quot;r/r&quot;,
+          false,
+          &quot;README.TXT&quot;,
+          10
+        ],
+        [
+          &quot;4&quot;,
+          &quot;r/r&quot;,
+          true,
+          &quot;_ECRET.TXT&quot;,
+          35
+        ],
+        [
+          &quot;260083&quot;,
+          &quot;v/v&quot;,
+          false,
+          &quot;$MBR&quot;,
+          -1
+        ],
+        [
+          &quot;260084&quot;,
+          &quot;v/v&quot;,
+          false,
+          &quot;$FAT1&quot;,
+          -1
+        ],
+        [
+          &quot;260085&quot;,
+          &quot;v/v&quot;,
+          false,
+          &quot;$FAT2&quot;,
+          -1
+        ],
+        [
+          &quot;260086&quot;,
+          &quot;V/V&quot;,
+          false,
+          &quot;$OrphanFiles&quot;,
+          -1
+        ]
+      ]
+    },
+    {
+      &quot;title&quot;: &quot;起点 2048：候选文件导出&quot;,
+      &quot;columns&quot;: [
+        &quot;编号&quot;,
+        &quot;原路径&quot;,
+        &quot;状态&quot;,
+        &quot;字节&quot;,
+        &quot;关键词命中&quot;,
+        &quot;输出&quot;
+      ],
+      &quot;rows&quot;: [
+        [
+          &quot;4&quot;,
+          &quot;_ECRET.TXT&quot;,
+          &quot;exported&quot;,
+          31,
+          1,
+          &quot;workflow/fs_2048/recovered/001__ECRET.TXT&quot;
+        ],
+        [
+          &quot;3&quot;,
+          &quot;README.TXT&quot;,
+          &quot;exported&quot;,
+          64,
+          0,
+          &quot;workflow/fs_2048/recovered/002_README.TXT&quot;
+        ]
+      ]
+    }
+  ]
+}</pre></details></section><section><h2>全文件关键词与 flag 形态检索 <small>已执行</small></h2><div class="table"><table><thead><tr><th>字节偏移</th><th>编码</th><th>关键词</th><th>上下文</th></tr></thead><tbody><tr><td>0x114400</td><td>utf-8</td><td>flag</td><td>················································flag{deleted_entry_is_a_clue}
+·········································································</td></tr><tr><td>0x100003</td><td>utf-8</td><td>ctf</td><td>·············································�&lt;�CTFDEMO ····@�@· ·@········�·)&amp;��CTFTRAININGFAT16   ············································</td></tr><tr><td>0x10002b</td><td>utf-8</td><td>ctf</td><td>·····�&lt;�CTFDEMO ····@�@· ·@········�·)&amp;��CTFTRAININGFAT16   ····················································································</td></tr></tbody></table></div><p>flag 形态是候选，必须回到文件 / 业务语义验证。命中条数有上限，扫描不会因普通字符串表满而提前结束。</p><p>扫描范围：9437184 / 9437184 字节</p><details><summary>原始结构与完整范围记录</summary><pre>{
+  &quot;columns&quot;: [
+    &quot;字节偏移&quot;,
+    &quot;编码&quot;,
+    &quot;关键词&quot;,
+    &quot;上下文&quot;
+  ],
+  &quot;rows&quot;: [
+    [
+      &quot;0x114400&quot;,
+      &quot;utf-8&quot;,
+      &quot;flag&quot;,
+      &quot;················································flag{deleted_entry_is_a_clue}\r\n·········································································&quot;
+    ],
+    [
+      &quot;0x100003&quot;,
+      &quot;utf-8&quot;,
+      &quot;ctf&quot;,
+      &quot;·············································�&lt;�CTFDEMO ·\u0002\u0001\u0001·\u0002·\u0002·@�@· ·@··\b······�·)\u0010&amp;��CTFTRAININGFAT16   ············································&quot;
+    ],
+    [
+      &quot;0x10002b&quot;,
+      &quot;utf-8&quot;,
+      &quot;ctf&quot;,
+      &quot;·····�&lt;�CTFDEMO ·\u0002\u0001\u0001·\u0002·\u0002·@�@· ·@··\b······�·)\u0010&amp;��CTFTRAININGFAT16   ····················································································&quot;
+    ]
+  ],
+  &quot;flag_candidates&quot;: [
+    {
+      &quot;offset&quot;: &quot;0x114400&quot;,
+      &quot;encoding&quot;: &quot;ascii&quot;,
+      &quot;value&quot;: &quot;flag{deleted_entry_is_a_clue}&quot;
+    }
+  ],
+  &quot;scanned_bytes&quot;: 9437184,
+  &quot;total_bytes&quot;: 9437184,
+  &quot;partial&quot;: false,
+  &quot;limited&quot;: false,
+  &quot;note&quot;: &quot;flag 形态是候选，必须回到文件 / 业务语义验证。命中条数有上限，扫描不会因普通字符串表满而提前结束。&quot;
+}</pre></details></section><section><h2>下一步与原始证据</h2><ul><li>磁盘已按实际起点分析；文件清单保留 inode、删除标记和完整路径。自动只导出有预算的优先候选，未导出内容需继续用 icat 定向提取。</li><li>普通字符串表覆盖前 4194304 字节；专门的关键词 / flag 形态扫描覆盖范围见独立阶段，不受字符串表条数限制。</li><li>命中仅是候选；请结合路径、对象结构和原始输出确认。未导出、跳过与预算限制均保留在报告中。</li></ul><p>派生文件、CSV 与原始工具日志可在平台结果区另行下载。原件保持只读；命令使用上方标注的宿主系统。</p></section></html>

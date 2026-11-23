@@ -1,0 +1,56 @@
+{
+  "id": "d9a94b39e514417a",
+  "action": "binary_patch",
+  "title": "在副本中修改指定字节",
+  "state": "completed",
+  "command": "& 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\runtime\\python\\python.exe' 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\tools\\casework.py' 'patch' '--args' 'E:\\学习培训\\培训\\取证\\output\\工作台验收_d3656ec2\\labs\\out\\platform_runs\\d9a94b39e514417a\\_case_args.json' '--out' 'E:\\学习培训\\培训\\取证\\output\\工作台验收_d3656ec2\\labs\\out\\platform_runs\\d9a94b39e514417a\\evidence' '--kit' 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64' '--labs' 'E:\\学习培训\\培训\\取证\\output\\工作台验收_d3656ec2\\labs'",
+  "created": "2026-10-23T09:41:33.677465+08:00",
+  "exit_code": 0,
+  "text": "{\"title\": \"副本字节补丁\", \"result\": \"result.json\", \"note\": \"只修改新副本中指定的等长字节；原件保持不变。修复后继续使用相应格式解析器验证。\"}\r\n",
+  "error": "",
+  "duration": 0.16,
+  "files": [
+    {
+      "name": "evidence/patched.png",
+      "bytes": 733,
+      "path": "out/platform_runs/d9a94b39e514417a/evidence/patched.png"
+    },
+    {
+      "name": "evidence/result.json",
+      "bytes": 490,
+      "path": "out/platform_runs/d9a94b39e514417a/evidence/result.json"
+    },
+    {
+      "name": "evidence/结果报告.html",
+      "bytes": 922,
+      "path": "out/platform_runs/d9a94b39e514417a/evidence/结果报告.html"
+    },
+    {
+      "name": "运行报告.txt",
+      "bytes": 1189,
+      "path": "out/platform_runs/d9a94b39e514417a/运行报告.txt"
+    }
+  ],
+  "data": {
+    "kind": "casework",
+    "title": "副本字节补丁",
+    "columns": [
+      "字节偏移",
+      "原值 HEX",
+      "新值 HEX",
+      "输出"
+    ],
+    "rows": [
+      [
+        "0x0",
+        "42524f4b454e2121",
+        "89504e470d0a1a0a",
+        "patched.png"
+      ]
+    ],
+    "sha256": "ae0ee32ba37ddd4b7984b217ac5506cc3d8b157d9635e5ab9fb07f00e6b3a4b7",
+    "note": "只修改新副本中指定的等长字节；原件保持不变。修复后继续使用相应格式解析器验证。"
+  },
+  "host": "Windows · PowerShell",
+  "input": "02_png/broken_header.png"
+}

@@ -1,0 +1,65 @@
+{
+  "id": "6653982d2b074deb",
+  "action": "signatures",
+  "title": "扫描嵌入签名",
+  "state": "completed",
+  "command": "& 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\runtime\\python\\python.exe' 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\tools\\analysis_engine.py' 'scan' 'E:\\学习培训\\培训\\取证\\output\\平台API验收_51983a32\\labs\\04_archive\\carrier.bin' '--out' 'E:\\学习培训\\培训\\取证\\output\\平台API验收_51983a32\\labs\\out\\platform_runs\\6653982d2b074deb' '--kit' 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64'",
+  "created": "2026-10-22T10:16:08.957154+08:00",
+  "exit_code": 0,
+  "text": "{\"columns\": [\"字节偏移\", \"签名\", \"含义\"], \"rows\": [[\"0x200\", \"ZIP local\", \"候选；需验证结构和边界\"], [\"0x254\", \"ZIP local\", \"候选；需验证结构和边界\"], [\"0x2a4\", \"ZIP central\", \"候选；需验证结构和边界\"], [\"0x2dc\", \"ZIP central\", \"候选；需验证结构和边界\"], [\"0x314\", \"ZIP end\", \"候选；需验证结构和边界\"]], \"scanned_bytes\": 810, \"total_bytes\": 810, \"partial\": false, \"limited\": false, \"note\": \"仅提取 ASCII 可打印字符及其 UTF-16LE 表示；不覆盖所有语言。跨块长串可能分段显示。\"}\r\n",
+  "error": "",
+  "duration": 0.16,
+  "files": [
+    {
+      "name": "result.json",
+      "bytes": 783,
+      "path": "out/platform_runs/6653982d2b074deb/result.json"
+    },
+    {
+      "name": "运行报告.txt",
+      "bytes": 1180,
+      "path": "out/platform_runs/6653982d2b074deb/运行报告.txt"
+    }
+  ],
+  "data": {
+    "columns": [
+      "字节偏移",
+      "签名",
+      "含义"
+    ],
+    "rows": [
+      [
+        "0x200",
+        "ZIP local",
+        "候选；需验证结构和边界"
+      ],
+      [
+        "0x254",
+        "ZIP local",
+        "候选；需验证结构和边界"
+      ],
+      [
+        "0x2a4",
+        "ZIP central",
+        "候选；需验证结构和边界"
+      ],
+      [
+        "0x2dc",
+        "ZIP central",
+        "候选；需验证结构和边界"
+      ],
+      [
+        "0x314",
+        "ZIP end",
+        "候选；需验证结构和边界"
+      ]
+    ],
+    "scanned_bytes": 810,
+    "total_bytes": 810,
+    "partial": false,
+    "limited": false,
+    "note": "仅提取 ASCII 可打印字符及其 UTF-16LE 表示；不覆盖所有语言。跨块长串可能分段显示。"
+  },
+  "host": "Windows · PowerShell",
+  "input": "04_archive/carrier.bin"
+}

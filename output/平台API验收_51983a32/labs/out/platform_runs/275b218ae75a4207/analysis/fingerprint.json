@@ -1,0 +1,17 @@
+{
+  "kind": "hash",
+  "name": "自选事件.jsonl",
+  "bytes": 62,
+  "md5": "deca03ca28db98f85d8aba1da96bc384",
+  "sha1": "3d81912b61fbc7fc13b0ed491f87a364a2f4d423",
+  "sha256": "b33f475959d73a6dc5fd354d7a32eb31c2db22592aa61b84e8bb729b7c25bfed",
+  "entropy": 4.05034,
+  "entropy_windows": [
+    {
+      "offset": 0,
+      "bytes": 62,
+      "entropy": 4.05034
+    }
+  ],
+  "note": "MD5 / SHA1 仅用于已知摘要对照；证据一致性优先记录 SHA256。熵高不等于一定加密。"
+}

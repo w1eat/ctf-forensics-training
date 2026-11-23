@@ -1,0 +1,27 @@
+{
+  "id": "5725e35897bd4eb0",
+  "action": "file_hash",
+  "title": "计算 SHA256",
+  "state": "completed",
+  "command": "& 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\runtime\\python\\python.exe' 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\tools\\tool_tasks.py' 'hash' 'E:\\学习培训\\培训\\取证\\output\\平台API验收_51983a32\\labs\\01_file\\unknown.dat'",
+  "created": "2026-10-22T10:16:07.391379+08:00",
+  "exit_code": 0,
+  "text": "{\"kind\": \"hash\", \"name\": \"unknown.dat\", \"bytes\": 794, \"sha256\": \"2200c35fc95416c9e301c62313145e183890f30cc3aaa1456f9996e6ca980380\"}\r\n",
+  "error": "",
+  "duration": 0.16,
+  "files": [
+    {
+      "name": "运行报告.txt",
+      "bytes": 551,
+      "path": "out/platform_runs/5725e35897bd4eb0/运行报告.txt"
+    }
+  ],
+  "data": {
+    "kind": "hash",
+    "name": "unknown.dat",
+    "bytes": 794,
+    "sha256": "2200c35fc95416c9e301c62313145e183890f30cc3aaa1456f9996e6ca980380"
+  },
+  "host": "Windows · PowerShell",
+  "input": "01_file/unknown.dat"
+}

@@ -1,0 +1,19 @@
+{
+  "student_cases": 15,
+  "handout_command_blocks": 111,
+  "all_handout_blocks_labeled": true,
+  "main_slides": 81,
+  "main_command_blocks_labeled": 73,
+  "memory_slides": 18,
+  "memory_command_blocks_labeled": 21,
+  "student_has_presenter_instructions": false,
+  "copy_uses_only_code": true,
+  "desktop_horizontal_overflow": false,
+  "mobile_horizontal_overflow": false,
+  "kali_actual_execution": false,
+  "native_windows_checks": 39,
+  "student_zip_crc": true,
+  "instructor_zip_crc": true,
+  "student_zip_hash_files": 6273,
+  "hash_mismatches": 0
+}

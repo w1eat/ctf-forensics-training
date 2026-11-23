@@ -1,0 +1,13 @@
+操作：检查 PNG 完整性
+运行环境：Windows PowerShell
+创建时间：2026-10-22T10:16:09.205750+08:00
+状态：finding
+退出码：2
+命令：& 'E:\学习培训\培训\取证\学员工具包_Windows64\tools\pngcheck\pngcheck.exe' '-v' 'E:\学习培训\培训\取证\output\平台API验收_51983a32\labs\02_png\broken_width.png'
+
+
+File: E:\学习培训\培训\取证\output\平台API验收_51983a32\labs\02_png\broken_width.png (733 bytes)
+  chunk IHDR at offset 0x0000c, length 13
+    1 x 160 image, 24-bit RGB, non-interlaced
+  CRC error in chunk IHDR (computed 42379195, expected 6c7b256b)
+ERRORS DETECTED in E:\学习培训\培训\取证\output\平台API验收_51983a32\labs\02_png\broken_width.png

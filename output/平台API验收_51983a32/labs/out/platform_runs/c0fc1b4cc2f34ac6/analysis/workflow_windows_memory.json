@@ -1,0 +1,11 @@
+{
+  "error": "windows.info 未成功，未运行后续插件；先检查真实 RAM 与匹配符号。",
+  "info": {
+    "command": "& 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\runtime\\python\\python.exe' 'E:\\学习培训\\培训\\取证\\学员工具包_Windows64\\tools\\volatility3\\vol.py' '--offline' '-r' 'json' '-f' 'E:\\学习培训\\培训\\取证\\output\\平台API验收_51983a32\\labs\\inputs\\_platform_qa_bc170e0df4\\preview_only.raw' 'windows.info'",
+    "exit_code": 1,
+    "preview": "\r\nUnsatisfied requirement plugins.Info.kernel.layer_name: \r\nUnsatisfied requirement plugins.Info.kernel.symbol_table_name: \r\n\r\nA translation layer requirement was not fulfilled.  Please verify that:\r\n\tA file was provided to create this layer (by -f, --single-location or by config)\r\n\tThe file exists and is readable\r\n\tThe file is a valid memory image and was acquired cleanly\r\n\r\nA symbol table requirement was not fulfilled.  Please verify that:\r\n\tThe associated translation layer requirement was fulfilled\r\n\tYou have the correct symbol file for the requirement\r\n\tThe symbol file is under the correct directory or zip file\r\n\tThe symbol file is named appropriately or contains the correct banner\r\n\r\n",
+    "diagnostics": "Volatility 3 Framework 2.28.2\r\n\rProgress:  100.00\t\tStacking attempts finished\r\rProgress:  100.00\t\tPDB scanning finished     \rUnable to validate the plugin requirements: ['plugins.Info.kernel.layer_name', 'plugins.Info.kernel.symbol_table_name']\r\n",
+    "log": "vol_info.txt",
+    "argument_file": null
+  }
+}
